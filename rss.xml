@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Hello Hugo</title>
+        <title>天涯共此时</title>
         <link>https://ztygcs.github.io/</link>
         <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
         <generator>Hugo 0.59.1 https://gohugo.io/</generator>
@@ -15,18 +15,84 @@
             <language>en-US</language>
         
         
-            <managingEditor>reuixiy@gmail.com (reuixiy)</managingEditor>
+            <managingEditor>zccon1996@163.com (天涯共此时)</managingEditor>
         
         
-            <webMaster>reuixiy@gmail.com (reuixiy)</webMaster>
+            <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Tue, 26 Nov 2019 23:53:21 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 27 Nov 2019 13:46:13 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
+        
+            <item>
+                <title>草</title>
+                <link>https://ztygcs.github.io/posts/%E8%8D%89/</link>
+                <guid isPermaLink="true">https://ztygcs.github.io/posts/%E8%8D%89/</guid>
+                <pubDate>Tue, 11 Sep 2018 21:19:45 +0800</pubDate>
+                
+                    <author>zccon1996@163.com (天涯共此时)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" />
+用撼动一座岩石的力量<br/>
+生长<br/>
+春雨和冰霜同样<br/>
+只能带来一段故事<br/>
+沉睡的是这个世界的爱意<br/>
+如果不能睁开眼睛<br/>
+就用每一只手触摸你<br/>
+前世冰冷<br/>
+来世温暖<br/>
+只在此生纠缠不清<br/>
+谁也无法把两种根连在一起<br/>
+这是我们的命运<br/>
+哪怕是死后<br/>
+或者被山羊连根拔起<br/>
+我的梦在云云俗口中碎成渣<br/>
+也依然享有最温暖的光阴<br/>
+在下一个春季<br/>
+我确信<br/>
+我的草籽<br/>
+只需一点山风的沐浴<br/>
+就能所向披靡</p>
+
+<p><code>from</code>:[片刻]</p>
+
+<p><code>author</code>: [游走世界的鱼]</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/categories/life/">Life</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/tags/poem/">Poem</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
     </channel>
 </rss>

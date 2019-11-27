@@ -2,18 +2,89 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
-    <title type="text">Hello Hugo</title>
+    <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-26T23:53:20+08:00</updated>
+    <updated>2019-11-27T13:46:13+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
     <author>
-            <name>reuixiy</name>
+            <name>天涯共此时</name>
             <uri>https://ztygcs.github.io/</uri>
             
-                <email>reuixiy@gmail.com</email>
+                <email>zccon1996@163.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.59.1">Hugo</generator>
+        <entry>
+            <title type="text">草</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%8D%89/" />
+            <id>https://ztygcs.github.io/posts/%E8%8D%89/</id>
+            <updated>2019-11-27T13:21:45+08:00</updated>
+            <published>2018-09-11T21:19:45+08:00</published>
+            <author>
+                    <name>天涯共此时</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"><![CDATA[用撼动一座岩石的力量 生长 春雨和冰霜同样 只能带来一段故事 沉睡的是这个世界的爱意 如果不能睁开眼睛 就用每一只手触摸你 前世冰冷 来世温暖 只在此生纠缠不清 谁也无法把两种根连在一起 这是我们的命运 哪怕是死后 或者被山羊连根拔起 我的梦在云云俗口中碎成渣 也依然享有最温暖的光阴 在下一个春季 我确信 我的草籽 只需一点山风的沐浴 就能所向披靡
+from:[片刻]
+author: [游走世界的鱼]]]></summary>
+            
+                <content type="html"><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" />
+用撼动一座岩石的力量<br/>
+生长<br/>
+春雨和冰霜同样<br/>
+只能带来一段故事<br/>
+沉睡的是这个世界的爱意<br/>
+如果不能睁开眼睛<br/>
+就用每一只手触摸你<br/>
+前世冰冷<br/>
+来世温暖<br/>
+只在此生纠缠不清<br/>
+谁也无法把两种根连在一起<br/>
+这是我们的命运<br/>
+哪怕是死后<br/>
+或者被山羊连根拔起<br/>
+我的梦在云云俗口中碎成渣<br/>
+也依然享有最温暖的光阴<br/>
+在下一个春季<br/>
+我确信<br/>
+我的草籽<br/>
+只需一点山风的沐浴<br/>
+就能所向披靡</p>
+
+<p><code>from</code>:[片刻]</p>
+
+<p><code>author</code>: [游走世界的鱼]</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/poem/" term="Poem" label="Poem" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
 </feed>
