@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Wed, 27 Nov 2019 20:08:28 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 27 Nov 2019 21:21:10 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -4909,6 +4909,7 @@ example：
                 
                 
                     <description><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" />
+<p style="text-align:center">
 用撼动一座岩石的力量<br/>
 生长<br/>
 春雨和冰霜同样<br/>
@@ -4929,7 +4930,7 @@ example：
 我确信<br/>
 我的草籽<br/>
 只需一点山风的沐浴<br/>
-就能所向披靡</p>
+就能所向披</p></p>
 
 <p><code>from</code>:[片刻]</p>
 

@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-27T20:08:28+08:00</updated>
+    <updated>2019-11-27T21:21:10+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -4975,7 +4975,7 @@ example：
             <title type="text">草</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%8D%89/" />
             <id>https://ztygcs.github.io/posts/%E8%8D%89/</id>
-            <updated>2019-11-27T15:09:06+08:00</updated>
+            <updated>2019-11-27T21:16:59+08:00</updated>
             <published>2018-09-11T21:19:45+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -4987,6 +4987,7 @@ example：
     <summary type="html"><![CDATA[用撼动一座岩石的力量 生长 春雨和冰霜同样 只能带来一段故事 沉睡的是这个世界的爱意 如果不能睁开眼睛 就用每一只手触摸你 前世冰冷 来世温暖 只在此生纠缠不清 谁也无法把两种根连在一起 这是我们的命运 哪怕是死后 或者被山羊连根拔起 我的梦在云云俗口中碎成渣 也依然享有最温暖的光阴 在下一个春季 我确信 我的草籽 只需一点山风的沐浴 就……]]></summary>
             
                 <content type="html"><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" />
+<p style="text-align:center">
 用撼动一座岩石的力量<br/>
 生长<br/>
 春雨和冰霜同样<br/>
@@ -5007,7 +5008,7 @@ example：
 我确信<br/>
 我的草籽<br/>
 只需一点山风的沐浴<br/>
-就能所向披靡</p>
+就能所向披</p></p>
 
 <p><code>from</code>:[片刻]</p>
 
