@@ -21,10 +21,1651 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Thu, 28 Nov 2019 03:41:29 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2019 03:42:44 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
+        
+            <item>
+                <title>MemE主题优化</title>
+                <link>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
+                <guid isPermaLink="true">https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
+                <pubDate>Wed, 27 Nov 2019 21:45:38 +0800</pubDate>
+                
+                    <author>zccon1996@163.com (天涯共此时)</author>
+                
+                
+                
+                    <description><![CDATA[
+
+<p>折腾了两天，总算是把这个博客给搭建起来了😉😉!</p>
+
+<p>在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！</p>
+
+<p>首先要感谢👏几个博主，第一次看到这个 ..博客主题.. <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a>是从<a href="https://io-oi.me/" target="_blank">reuixiy</a>博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（<code>之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了</code>）。说实话，我感觉<a href="https://io-oi.me/" target="_blank">reuixiy</a>博主讲得实在太 ..详细.. 了，所以感觉自己只是在 ..照葫芦画瓢.. 🙃🙃🙃 。</p>
+
+<p>搭建博客的过程很简单，一般都不会有什么问题，所以这里我就写写关于<code>MemE</code>主题的各个细节的配置问题:<br/>
+..一来..是自己想要更改博客主题样式的时候知道去哪个地方改？怎么改？🖊️<br/>
+..二来..可以提供给需要的朋友一些参考，让更多的人加入这个主题中来！❤️<br/></p>
+
+<p>虽然之前有看过<a href="https://io-oi.me/" target="_blank">reuixiy</a>博主的详细<a href="https://github.com/reuixiy/hugo-theme-meme/blob/master/config-examples/en-us/config.toml" target="_blank">站点配置文件</a>，不过都是英文的，看得实在有点累（我的英文太水了😐）。虽然基本上都是..见名知义..的，可我觉得还是一份中文的文档📄比较适合我。</p>
+
+<p>在更改各个配置的时候我所参考的大部分内容是来自<a href="https://blog.guanqr.com/" target="_blank">Guanqr</a>博主提交到github中的<code>config.toml</code>文件，里面所有的注释都是中文的，对我来说简直太爽了😁😁😁！！！。然后有一些博客的写作格式也是从该博主的<a href="https://github.com/guanqr/blog/commits/master" target="_blank">commit</a>中找到的，自己也尝试着动手改改看，效果还不错！</p>
+
+<p>所以，这里就先谢谢这两位博主了🎉🎉🎉，当然中途出现了一些问题都是从网上找到方法解决的，所以也要感谢那么多给我提供过帮助的博主们！！！🎉🎉🎉</p>
+
+<p>好了，不多说了，步入..正题..，首先给大家看看我的..博客结构目录..：</p>
+
+<h1 id="博客目录结构">博客目录结构</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">blog
+│
+├── archetypes
+├── content  
+├── data 
+├── layouts
+├── public
+├── resources
+├── static	
+├── themes
+└── config.toml</pre></td></tr></table>
+</div>
+</div>
+<p>然后我们按照<code>config.toml</code>文件的大致内容依次梳理(会有部分内容与原文上下位置..不一致..)，其实大部分设置只需要..更改参数..就可以了，这里我就只把对应的..关键字..给出来，你们去自己的<code>config.toml</code>中查找关键字然后自己..更改参数..试试。这里附上我的<a href="https://github.com/ztygcs/config.toml/blob/master/config.toml" target="_blank">config.toml</a>文件。</p>
+
+<h1 id="每一分页文章数">每一分页文章数</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">paginate = 6</pre></td></tr></table>
+</div>
+</div>
+<h1 id="代码高亮">代码高亮</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = &#34;linenos=table&#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="作者信息">作者信息</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[author]
+    # 名字
+    name = &#34;name&#34;
+    # 邮箱
+    email = &#34;zccon1996@163.com&#34;
+    # 座右铭或简介
+    motto = &#34;motto&#34;
+    # 头像
+    avatar = &#34;/icons/apple-touch-icon.png&#34;
+    # 网站（默认值：baseURL）
+    website = &#34;https://ztygcs.github.io&#34;
+    # 推特
+    #twitter = &#34;&#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="菜单栏">菜单栏</h1>
+
+<h2 id="菜单开关项">菜单开关项</h2>
+
+<ul>
+<li><code>enableMenu</code>:是否开启菜单栏</li>
+<li><code>displayMenuInHome</code>： 是否在首页显示</li>
+<li><code>activeInSection</code>：是否按文章分区高亮当前菜单项</li>
+</ul>
+
+<blockquote>
+<p>说明：如果<code>activeInSection</code>开启(设置为<code>true</code>)，那么当某一文章的分区名是某一菜单项中的 <code>url</code> 时，该文章页面中的该菜单项也会被高亮</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">enableMenu = true
+displayMenuInHome = true
+activeInSection = true</pre></td></tr></table>
+</div>
+</div>
+<h2 id="菜单配置项">菜单配置项</h2>
+
+<p>MemE 主题支持以下四种菜单：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 1. main       顶栏下方的菜单栏
+# 2. home       首页的底部链接（适用于「诗意人生」和「视频片段」布局）
+# 3. socials    社交栏（关于页面的极简页脚）
+# 4. links      链接栏（关于页面的极简页脚）</pre></td></tr></table>
+</div>
+</div>
+<p>菜单内的配置说明如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># url           链接地址
+# name          文本（留空（&#34;&#34;）则无）
+# weight        位置
+# pre           内链（internal）或外链（external）
+# post          图标（留空（&#34;&#34;）则无）
+# identifier    图标的 Class 名（菜单栏无效）</pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[menu]
+    ## Menu bar
+    [[menu.main]]
+        url = &#34;/&#34;
+        name = &#34;首页&#34;
+        weight = 1
+        pre = &#34;internal&#34;
+        post = &#34;home&#34;
+    [[menu.main]]
+        url = &#34;/posts/&#34;
+        name = &#34;归档&#34;
+        weight = 2
+        pre = &#34;internal&#34;
+        post = &#34;archive&#34;
+    [[menu.main]]
+        url = &#34;/categories/&#34;
+        name = &#34;分类&#34;
+        weight = 3
+        pre = &#34;internal&#34;
+        post = &#34;th&#34;
+    [[menu.main]]
+        url = &#34;/tags/&#34;
+        name = &#34;标签&#34;
+        weight = 4
+        pre = &#34;internal&#34;
+        post = &#34;tags&#34;
+    [[menu.main]]
+        url = &#34;/about/&#34;
+        name = &#34;关于&#34;
+        weight = 5
+        pre = &#34;internal&#34;
+        post = &#34;user-circle&#34;</pre></td></tr></table>
+</div>
+</div>
+<p>上面代码效果：
+<img src="/images/tech/2019/11/MenuBar.png" alt="" /></p>
+
+<h1 id="顶栏">顶栏</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    # 是否开启
+    enableHeader = true
+
+    # 是否在首页显示
+    displayHeaderInHome = true</pre></td></tr></table>
+</div>
+</div>
+<h2 id="品牌栏-在顶栏内">品牌栏（在顶栏内）</h2>
+
+<h3 id="品牌栏内容">品牌栏内容</h3>
+
+<p><img src="/images/tech/2019/11/TopBar.png" alt="" /></p>
+
+<ul>
+<li><code>siteBrandSVG = true</code> :显示SVG图片（请将你的 SVG 放到 <code>SVG.toml</code> 文件内，并配置以下项。单位：px）
+
+<ul>
+<li>siteBrandSVGWidth:设置SVG..宽度..</li>
+<li>siteBrandSVGHeight:设置SVG..高度..</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>（SVG图片..文件位置..：<code>\themes\meme\data\SVG.toml</code>）</p>
+</blockquote>
+
+<ul>
+<li><p><code>siteBrandSVG = false</code> :使用你的站点标题作为默认值，并以文字的形式显示（下方可配置字号和字色。字体到底部的字体部分配置。单位：em）</p>
+
+<ul>
+<li>siteBrandFontSize = 3</li>
+
+<li><p>siteBrandFontColor = &quot;#fff&quot;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">siteBrandSVG = false
+
+siteBrandSVGWidth = 250
+siteBrandSVGHeight = 100
+siteBrandSVGFill = &#34;#fff&#34;
+
+siteBrandFontSize = 3
+siteBrandFontColor = &#34;#fff&#34;</pre></td></tr></table>
+</div>
+</div></li>
+</ul></li>
+</ul>
+
+<h3 id="品牌栏背景色">品牌栏背景色</h3>
+
+<ul>
+<li><code>siteBrandBackgroundColor</code>用来设置背景色（..hsl格式..）</li>
+
+<li><p><code>siteBrandBackgroundImage</code>用来设置背景图片</p></li>
+
+<li><p>注意：背景色和背景图片只能..二选一..</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">#siteBrandBackgroundColor = &#34;hsl(240, 8%, 12%)&#34;
+siteBrandBackgroundImage = &#34;linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%)&#34;</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h1 id="首页布局">首页布局</h1>
+
+<p>MemE 主题有以下四种首页布局：</p>
+
+<ol>
+<li><code>poetry</code>   ..诗意人生..</li>
+<li><code>footage</code>  ..视频片段..</li>
+<li><code>posts</code>    ..文章摘要..</li>
+
+<li><p><code>page</code>     ..普通页面..</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">#这里设置为文章摘要
+homeLayout = &#34;posts&#34;
+
+## 「诗意人生」
+# 诗句，支持 Markdown
+homePoetry = []
+# 底部链接的内间距，单位：em
+homeLinksPadding = 1
+
+## 「视频片段」
+homePoster = &#34;&#34;
+homeVideoWebm = &#34;&#34;
+homeVideoMp4 = &#34;&#34;
+homeLogo = &#34;&#34;
+homeLogoLink = &#34;&#34;
+homeTitle = &#34;&#34;
+homeMotto = &#34;&#34;
+homeDescription = &#34;&#34;
+homeKeywords = &#34;&#34;
+homeLinksDelimiter = &#34;&#34;</pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+<h1 id="分类页面">分类页面</h1>
+
+<h2 id="分类方式">分类方式</h2>
+
+<p>MemE 主题支持以下两种分类方式：</p>
+
+<ol>
+<li><code>sections</code>       ..分区..</li>
+<li><code>categories</code>   ..部类..</li>
+</ol>
+
+<blockquote>
+<p>其中:
+分区是基于站点的<code>content</code>目录下的文件夹和子文件夹；
+部类是基于文章的<code>Front Matter</code>。
+分类即树状分类，Hexo 是基于文章的 Front Matter，Hugo 则是基于文件系统的结构。由于设计理念的不同，导致了 Hexo与 Hugo 的这个差异，故在此设计这个选项，以对从 Hexo 过来的用户友好。但是请注意：Hugo 中无法完全实现基于 Front Matter的树状分类，故如需保留树状分类，建议适应Hugo 的设计理念——分区。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">categoryBy = &#34;categories&#34;</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>注意：如果你设置为 <code>sections</code>，请务必将此配置文件中的类别（taxonomies）中的 <code>categories</code> 删除，不然分类页面会失效。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 类别
+[taxonomies]
+    category = &#34;categories&#34;
+    tag = &#34;tags&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="分类设置">分类设置</h2>
+
+<ul>
+<li><code>enableTree</code>:是否开启树状布局</li>
+<li><code>displayPosts</code>:分类页面中是否显示文章标题</li>
+<li><code>displayPostsCount</code>:分类页面中是否显示每一分类下的文章数</li>
+</ul>
+
+<blockquote>
+<p>注意：如果你设置 categoryBy 为 <code>sections</code>，则无法关闭树状布局</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    enableTree = true
+    displayPosts = false
+    displayPostsCount = true</pre></td></tr></table>
+</div>
+</div>
+<h1 id="文章分区范围">文章分区范围</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    # 说明：分区的名字即站点的 content 目录下的文件夹的名字。
+    # mainSections = [&#34;posts&#34;]
+
+    # 是否包括全文内容
+    includeContent = true</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：如果<code>includeContent</code>为<code>false</code>，则只会包含文章的摘要。关于摘要，Hugo能按你设置的字数限制自动截取，你也可以在文章中通过<code>&lt; !--more-- &gt;</code>(没有空格)手动控制，或者在文章的Front Matter中通<code>summary</code> 手动指定。其中，应用的优先级顺序：手动指定 &gt; 手动控制 &gt; 自动截取。还需要注意的是，在MemE主题自定义的 Atom 和 RSS 的模板中，有一个比手动指定更高的优先级————Front Matter 中的 <code>description</code>。</p>
+</blockquote>
+
+<h2 id="文章首页摘要字数限制">文章首页摘要字数限制</h2>
+
+<p>查找关键字<code>summaryLength</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">summaryLength = 150</pre></td></tr></table>
+</div>
+</div>
+<h1 id="标签页面">标签页面</h1>
+
+<ul>
+<li><code>enableTagCloud</code>:是否启用标签云</li>
+<li><code>fontUnit</code>:字号单位</li>
+<li><code>largestFontSize</code>:最大字号</li>
+
+<li><p><code>smallestFontSize</code>:最小字号</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">enableTagCloud = true
+fontUnit = &#34;em&#34;
+largestFontSize = 2.5
+smallestFontSize = 1</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h1 id="归档列表页面">归档列表页面</h1>
+
+<ul>
+<li><code>listWidth</code>:宽度</li>
+</ul>
+
+<blockquote>
+<p>说明：listWidth如果留空（&quot;&quot;），则用 42 作为默认值,单位：em</p>
+</blockquote>
+
+<ul>
+<li><code>displayListTitle</code>:是否显示列表标题</li>
+<li><code>listDateFormat</code>:日期的格式</li>
+</ul>
+
+<blockquote>
+<p>注意：<code>日期的格式</code>请遵循格式 <a href="https://gohugo.io/functions/format/" target="_blank">https://gohugo.io/functions/format/</a></p>
+</blockquote>
+
+<ul>
+<li><code>listDatePosition</code>:日期的位置(<code>left</code>或者<code>right</code>)</li>
+<li><code>groupByMonth</code>:是否按月份分隔列表</li>
+<li><code>chineseZodiac</code>:是否开启十二生肖</li>
+<li><code>i18nYear</code>:是否翻译年份（仅对年份标题有效）</li>
+
+<li><p><code>i18nMonth</code>:是否翻译月份（仅对月份标题有效）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">listWidth = 36
+displayListTitle = true
+#listDateFormat = &#34;January 2&#34;
+	listDateFormat = &#34;01 月 02 日&#34;
+listDatePosition = &#34;right&#34;
+groupByMonth = false
+chineseZodiac = true
+i18nYear = true
+i18nMonth = true</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h1 id="深色模式">深色模式</h1>
+
+<h2 id="模式设置">模式设置</h2>
+
+<ul>
+<li><code>enableDarkMode</code>:是否开启</li>
+<li><code>defaultTheme</code>:默认模式</li>
+</ul>
+
+<blockquote>
+<p>说明：<code>defaultTheme</code>分两种：light（浅色模式）或 dark（深色模式）</p>
+</blockquote>
+
+<ul>
+<li><code>hideThemeToggle</code>:是否隐藏模式切换开关</li>
+
+<li><p><code>hideThemeToggleInHome</code>:是否在首页隐藏模式切换开关</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">enableDarkMode = true
+defaultTheme = &#34;light&#34;
+hideThemeToggle = false
+hideThemeToggleInHome = false</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：如果开启了深色模式，即使你隐藏了开关，你的读者依然可能以深色模式阅读你的博客，如果该读者的系统设置为深色模式的话。类似，如果你开启深色模式并将默认模式修改为它，即使你隐藏开关，你的读者依然可能以浅色模式模式阅读你的博客。</p>
+</blockquote></li>
+</ul>
+
+<h2 id="模式颜色">模式颜色</h2>
+
+<ul>
+<li><code>primaryColorLight</code>:浅色模式的主色</li>
+
+<li><p><code>primaryColorDark</code>:深色模式的主色</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">primaryColorLight = &#34;220, 90%, 56%&#34;
+primaryColorDark = &#34;201, 65%, 62%&#34;</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>注意：只支持 ..HSL.. 颜色值</p>
+</blockquote></li>
+</ul>
+
+<h1 id="文章设置">文章设置</h1>
+
+<ul>
+<li><code>duration</code>:超链接的颜色变化持续时间（单位：秒）</li>
+<li><code>postWidth</code>:文章的内容宽度</li>
+<li><code>original</code>:文章是否为原创（全局设置）</li>
+<li><code>displayPostDescription</code>:文章描述是否显示</li>
+</ul>
+
+<blockquote>
+<p>说明：<br/>
+1.<code>postWidth</code>文章的内容宽度如果留空（&quot;&quot;），则用 42 作为默认值,单位：em<br/>
+2.<code>original</code>会影响文章的作者信息和版权信息,文章的 Front Matter 中的 <code>original</code>的优先级高于此处</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">duration = 0.5
+postWidth = 36
+original = true
+displayPostDescription = true</pre></td></tr></table>
+</div>
+</div>
+<h2 id="文章元信息">文章元信息</h2>
+
+<ul>
+<li>enablePostMeta是否开启（全局设置）</li>
+</ul>
+
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>meta</code>的优先级高于此处</p>
+</blockquote>
+
+<ul>
+<li>enablePostMetaInHome是否在首页开启</li>
+</ul>
+
+<blockquote>
+<p>说明：仅对「文章摘要」和「普通页面」首页布局有效</p>
+</blockquote>
+
+<ul>
+<li>postMetaDateFormat日期格式</li>
+</ul>
+
+<blockquote>
+<p>注意：请遵循格式 <a href="https://gohugo.io/functions/format/" target="_blank">https://gohugo.io/functions/format/</a></p>
+</blockquote>
+
+<ul>
+<li><code>displayPublishedDate</code>:是否显示发布时间</li>
+<li><code>publishedDateIcon</code>:发布时间的图标</li>
+<li><code>displayModifiedDate</code>:是否显示修改时间</li>
+<li><code>modifiedDateIcon</code>:修改时间的图标</li>
+<li><code>displayExpiredDate</code>:是否显示过期时间</li>
+<li><code>expiredDateIcon</code>:过期时间的图标</li>
+<li><code>displayCategory</code>:是否显示分类</li>
+<li><code>categoryIcon</code>:分类的图标</li>
+<li><code>categoryDelimiter</code>:分类之间的分隔符</li>
+<li><code>displayWordCount</code>:是否显示字数统计</li>
+<li><code>wordCountIcon</code>:字数统计的图标</li>
+<li><code>displayReadingTime</code>:是否显示阅读时长</li>
+
+<li><p><code>readingTimeIcon</code>:阅读时长的图标</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">enablePostMeta = true
+enablePostMetaInHome = true
+postMetaDateFormat = &#34;2006.1.2&#34;
+displayPublishedDate = true
+publishedDateIcon = &#34;calendar-alt&#34; 
+displayModifiedDate = true
+modifiedDateIcon = &#34;calendar-check&#34;
+displayExpiredDate = true
+expiredDateIcon = &#34;calendar-times&#34;
+displayCategory = true
+categoryIcon = &#34;folder&#34;
+categoryDelimiter = &#34;/&#34;
+displayWordCount = true
+wordCountIcon = &#34;pencil-alt&#34;
+displayReadingTime = true
+readingTimeIcon = &#34;clock&#34;</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h2 id="文章目录">文章目录</h2>
+
+<ul>
+<li><code>enableTOC</code>:是否开启（全局设置）</li>
+</ul>
+
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>toc</code>的优先级高于此处</p>
+</blockquote>
+
+<ul>
+<li><code>displayTOCTitle</code>:是否显示目录标题</li>
+
+<li><p><code>linkHeadingsToTOC</code>:是否链接文章的分节标题到目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">enableTOC = true
+displayTOCTitle = true
+linkHeadingsToTOC = true</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h2 id="文章分节标题锚点">文章分节标题锚点</h2>
+
+<ul>
+<li><code>enableHeadingsAnchor</code>:是否开启</li>
+<li><code>headingsOpt</code>:分节标题的级别范围</li>
+</ul>
+
+<blockquote>
+<p>说明：正则格式，默认 1-6，即 1|2|3|4|5|6，即 h1 到 h6。</p>
+</blockquote>
+
+<ul>
+<li><code>anchorSymbol</code>:锚点符号</li>
+</ul>
+
+<blockquote>
+<p>说明：锚点图标的优先级高于锚点符号,默认值：§</p>
+</blockquote>
+
+<ul>
+<li><code>anchorIcon</code>锚点图标</li>
+</ul>
+
+<blockquote>
+<p>说明：留空（&quot;&quot;）则回退到锚点符号</p>
+</blockquote>
+
+<ul>
+<li><code>enableAnchorLink</code>:是否开启锚点链接</li>
+
+<li><p><code>enableAnchorAutoHide</code>:是否自动隐藏锚点</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">enableHeadingsAnchor = true
+headingsOpt = &#34;1-6&#34;
+anchorSymbol = &#34;#&#34;
+anchorIcon = &#34;link&#34;
+enableAnchorLink = true
+enableAnchorAutoHide = true</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h1 id="说明文字">说明文字</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableCaption = true
+
+# 说明文字的前缀
+captionPrefix = &#34;◎ &#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="图片外链">图片外链</h1>
+
+<blockquote>
+<p>说明：仅在生产环境（production）下渲染只支持相对于网站根目录的绝对链接比如：/images/meme.jpg(~/blog/static/images/meme.jpg)</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableImageHost = false
+
+# 图片外链地址
+imageHostURL = &#34;https://example.com/&#34;
+
+# 是否将 HTML 的头部元数据中的图片链接也替换为外链
+headAlso = false</pre></td></tr></table>
+</div>
+</div>
+<h1 id="视频外链">视频外链</h1>
+
+<blockquote>
+<p>说明：仅在生产环境（production）下渲染只支持相对于站点根目录的绝对链接比如：/videos/meme.mp4</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableVideoHost = false
+
+# 视频外链地址
+videoHostURL = &#34;https://example.com/&#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="脚注">脚注</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否用方括号包裹脚注的引用序号
+squareBrackets = true
+
+# 替换脚注的返回链接中的文本为图标
+footnoteReturnLinkIcon = &#34;angle-up&#34;</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：如果不为空（&quot;&quot;），则会用图标替换<code>footnoteReturnLinkContents</code></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否自行插入分隔线
+insertHrBySelf = true</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：如果是，则会将自动生成的分隔线删除。实际上，你自己添加的分隔线会被删除。如果你喜欢在 Markdown 中手动插入<code>---</code> 以将文章的正文内容与脚注内容分隔开来，那么这项设置将会非常有用。</p>
+</blockquote>
+
+<h1 id="字体排版">字体排版</h1>
+
+<blockquote>
+<p>说明：任何一项留空，浏览器都会回退到主体字体 <code>fontFamilyBody</code>，故没必要全部设置。此外，如果你的品牌栏用的 SVG，则可留空品牌栏字体。</p>
+</blockquote>
+
+<h2 id="品牌栏">品牌栏</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    fontFamilySiteBrand = &#34;&#39;Liu Jian Mao Cao&#39;, cursive&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="菜单栏-1">菜单栏</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    fontFamilyMenu = &#34;&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="各类标题">各类标题</h2>
+
+<blockquote>
+<p>文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    #fontFamilyTitle = &#34;Comfortaa, sans-serif&#34;
+	fontFamilyTitle = &#34;&#39;Cinzel Decorative&#39;, &#39;Noto Serif SC&#39;, serif&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="目录-分节标题">目录、分节标题</h2>
+
+<blockquote>
+<p>分节标题、目录标题</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">#fontFamilyHeadings = &#34;Comfortaa, sans-serif&#34;
+fontFamilyHeadings = &#34;&#39;Cinzel Decorative&#39;, &#39;Noto Serif SC&#39;, serif&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="代码-上标">代码、上标</h2>
+
+<blockquote>
+<p>代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">#fontFamilyCode = &#34;&#39;Source Code Pro&#39;, monospace&#34;
+fontFamilyCode = &#34;&#39;Source Code Pro&#39;, &#39;Noto Serif SC&#39;, monospace&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="引用">引用</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontFamilyQuote = &#34;&#39;EB Garamond&#39;, &#39;STKaiti&#39;, &#39;KaiTi&#39;, &#39;SimKai&#39;, &#39;Noto Serif SC&#39;, serif&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="文章目录-1">文章目录</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontFamilyTOC = &#34;&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="说明文字-1">说明文字</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontFamilyCaption = &#34;&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="页脚">页脚</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontFamilyFooter = &#34;&#39;Ma Shan Zheng&#39;, cursive&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="主体">主体</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontFamilyBody = &#34;&#39;EB Garamond&#39;, &#39;Noto Serif SC&#39;, serif&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="网络字体链接">网络字体链接</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontsLink = &#34;https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&amp;display=swap&amp;subset=chinese-simplified&#34;</pre></td></tr></table>
+</div>
+</div>
+<h3 id="具体设置方式">具体设置方式</h3>
+
+<p>进入<a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> 之后，搜索或选择喜欢的字体库
+<img src="/images/tech/2019/11/FontSelect.png" alt="" />
+点击加号，在屏幕右下角的弹框的<code>CUSTOMIZE</code>标签中进一步选择
+<img src="/images/tech/2019/11/FontSelect2.png" alt="" />
+点击<code>EMBED</code>标签
+<img src="/images/tech/2019/11/FontSelect3.png" alt="" />
+这里有生成的字体链接：</p>
+
+<p><code>https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700&amp;display=swap&amp;subset=chinese-simplified</code>以及设置字体时填入的参数<code>'Noto Serif SC', serif</code></p>
+
+<p>例如，假设你的字体链接为<code>fontsLink = &quot;https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700&amp;display=swap&amp;subset=chinese-simplified&quot;</code></p>
+
+<p>现在你想给页脚<code>fontFamilyFooter</code>配置另一种字体，比如<code>ZCOOL XiaoWei</code>，去网站选择之后生成的信息如下：
+<img src="/images/tech/2019/11/FontSelect4.png" alt="" />
+现在你需要在原来的字体链接<code>&amp;display=swap&amp;subset=chinese-simplified</code>的前面加上<code>|ZCOOL+XiaoWei:</code>，然后设置<code>fontFamilyFooter = &quot;'ZCOOL XiaoWei', serif&quot;</code>，在本地预览一下，应该成功了！(注意观察上图生成的代码和你添加到配置文件中的区别)</p>
+
+<blockquote>
+<p>说明：要想读者一定体验到你设置的字体，最好采用网络字体。MemE 主题目前仅支持Google Fonts 的链接，请前往 <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> 获取。此项留空，则不会采用网络字体。</p>
+</blockquote>
+
+<h2 id="字号-单位-px">字号（单位：px）</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">fontSize = 16</pre></td></tr></table>
+</div>
+</div>
+<h1 id="行间距">行间距</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">lineHeight = 2</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：只会应用到文章的段落和目录</p>
+</blockquote>
+
+<h1 id="段首缩排">段首缩排</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableParagraphIndent = true
+
+# 分段样式（全局设置）
+paragraphStyle = &#34;margin&#34;</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：段间距式（margin）或段首缩排（indent）文章的 Front Matter 中 <code>indent</code>的优先级高于此处</p>
+</blockquote>
+
+<h1 id="两端对齐">两端对齐</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启（全局设置）
+enableJustify = true</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>align</code>的优先级高于此处</p>
+</blockquote>
+
+<h1 id="首字下沉">首字下沉</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启（全局设置）
+enableDropCap = true</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>dropCap</code>的优先级高于此处</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否在每一分隔线之后首字下沉（全局设置）
+enableDropCapAfterHr = false</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>dropCapAfterHr</code>的优先级高于此处</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否删除首字下沉前的分隔线（全局设置）
+deleteHrBeforeDropCap = false</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>deleteHrBeforeDropCap</code>的优先级高于此处</p>
+</blockquote>
+
+<h1 id="大型小写-英文">大型小写（英文）</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启（全局设置）
+enableSmallCaps = false</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：只会应用到分节标题和目录标题文章的 Front Matter 中的 <code>smallCaps</code>的优先级高于此处</p>
+</blockquote>
+
+<h1 id="着重号">着重号</h1>
+
+<blockquote>
+<p>说明：MemE 主题自创的新 Markdown, 语法为在内容左右两边分别加上两个半角状态下的点<code>..</code></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableEmphasisPoint = true</pre></td></tr></table>
+</div>
+</div>
+<h1 id="文章版权">文章版权</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">#是否开启
+enablePostCopyright = true
+
+displayPostCopyright = false</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>displayCopyright</code>的优先级高于此处</p>
+</blockquote>
+
+<h1 id="文章更新徽章">文章更新徽章</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enablePostUpdatedBadge = true
+
+# 是否显示（全局设置）
+displayUpdatedBadge = true   </pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>badge</code>的优先级高于此处</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否添加 `title`
+enableBadgeTitle = true
+# `title` 的前缀
+badgeTitlePrefix = &#34;Updated @ &#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="相关文章">相关文章</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableRelatedPosts = true
+
+# 是否显示（全局设置）
+displayRelatedPosts = true</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：文章的 Front Matter 中的 <code>related</code>的优先级高于此处</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 相关文章数
+relatedPostsNumber = 5
+# 相关文章标题右边的图标
+relatedPostsIcon = &#34;plus-circle&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="文章标签">文章标签</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enablePostTags = true
+# 标签图标
+postTagsIcon = &#34;tag&#34;</pre></td></tr></table>
+</div>
+</div>
+<h2 id="文章上下篇">文章上下篇</h2>
+
+<blockquote>
+<p>说明：在 MemE 主题中，文章上下篇是从空间位置角度设计的，而不是像大多数其它主题所做的那样——从时间角度设计。因此，如果你点击左边的上篇，跳转的是一篇更新的文章；如果你点击右边的下篇，跳转的是一篇更旧的文章。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enablePostNav = true
+
+# 是否仅限于相同的文章分区
+postNavInSection = false</pre></td></tr></table>
+</div>
+</div>
+<h1 id="页脚-1">页脚</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableFooter = true</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：「诗意人生」和「视频片段」首页布局的首页没有页脚</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否显示版权符号（©）
+displayCopyrightSymbol = true
+
+# 是否显示站点的创建年份
+displaySiteCreatedYear = true
+
+# Leave it empty(&#34;&#34;) if you don’t wantthe icon
+# 年份与作者之间的图标
+iconBetweenYearAndAuthor = &#34;heart&#34;
+iconColor = &#34;#e93448&#34;
+
+# 是否开启图标的跳动效果
+iconAnimation = true
+
+# 是否显示 Hugo 和 MemE 的链接
+displayPoweredBy = true
+
+# 是否显示站点的版权信息
+displaySiteCopyright = true
+
+# 自定义页脚（支持 Markdown）
+customFooter = &#34;&#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="极简页脚">极简页脚</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableMinimalFooter = true
+
+# 是否开启关于页面的极简页脚
+enableAboutPageMinimalFooter = true</pre></td></tr></table>
+</div>
+</div>
+<h1 id="返回顶部按钮">返回顶部按钮</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启
+enableBackToTop = true
+# 是否在首页显示
+displayBackToTopInHome = true
+# 按钮图标
+backToTopIcon = &#34;arrow-up&#34;</pre></td></tr></table>
+</div>
+</div>
+<h1 id="多语言">多语言</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># 是否开启多语言按钮
+enableLangToggle = true
+
+# 是否在首页隐藏多语言按钮
+hideLangToggleInHome = false
+
+# 是否自动隐藏多语言按钮
+autoHideLangToggle = false</pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>说明：即仅当该文章有相应的翻译版本时才显示按钮</p>
+</blockquote>
+
+<h1 id="实现诗歌引用格式">实现诗歌引用格式</h1>
+
+<p>在<code>\static\images</code>文件夹中..新建..<code>左引号</code>文件<code>quote-l.svg</code>与<code>右引号</code>文件<code>quote-r.svg</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">#文件地址： \static\images\quote-l.svg
+<span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+
+<span class="c">&lt;!-- License Agreement at http://iconmonstr.com/license/ --&gt;</span>
+
+<span class="cp">&lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">version=</span><span class="s">&#34;1.1&#34;</span> <span class="na">xmlns=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">xmlns:xlink=</span><span class="s">&#34;http://www.w3.org/1999/xlink&#34;</span> <span class="na">x=</span><span class="s">&#34;0px&#34;</span> <span class="na">y=</span><span class="s">&#34;0px&#34;</span>
+	 <span class="na">width=</span><span class="s">&#34;512px&#34;</span> <span class="na">height=</span><span class="s">&#34;512px&#34;</span> <span class="na">viewBox=</span><span class="s">&#34;0 0 512 512&#34;</span> <span class="na">enable-background=</span><span class="s">&#34;new 0 0 512 512&#34;</span> <span class="na">xml:space=</span><span class="s">&#34;preserve&#34;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">&#34;quote-5-icon&#34;</span> <span class="na">d=</span><span class="s">&#34;M55.178,332.895c-22.22-79.435,26.876-198.974,151.004-223.472l16.886,36.498
+</span><span class="s">	c-38.022,14.331-63.218,47.064-66.943,81.466c42.757,6.73,75.459,43.737,75.459,88.385
+</span><span class="s">	C231.583,415.014,85.181,440.162,55.178,332.895z M285.595,332.895c-22.22-79.435,26.876-198.974,151.004-223.472l16.886,36.498
+</span><span class="s">	c-38.022,14.331-63.218,47.064-66.943,81.466c42.757,6.73,75.459,43.737,75.459,88.385C462,415.014,315.598,440.162,285.595,332.895
+</span><span class="s">	z&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">#文件地址： \static\images\quote-r.svg
+<span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+
+<span class="c">&lt;!-- License Agreement at http://iconmonstr.com/license/ --&gt;</span>
+
+<span class="cp">&lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">version=</span><span class="s">&#34;1.1&#34;</span> <span class="na">xmlns=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">xmlns:xlink=</span><span class="s">&#34;http://www.w3.org/1999/xlink&#34;</span> <span class="na">x=</span><span class="s">&#34;0px&#34;</span> <span class="na">y=</span><span class="s">&#34;0px&#34;</span>
+	 <span class="na">width=</span><span class="s">&#34;512px&#34;</span> <span class="na">height=</span><span class="s">&#34;512px&#34;</span> <span class="na">viewBox=</span><span class="s">&#34;0 0 512 512&#34;</span> <span class="na">enable-background=</span><span class="s">&#34;new 0 0 512 512&#34;</span> <span class="na">xml:space=</span><span class="s">&#34;preserve&#34;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">&#34;quote-6-icon&#34;</span> <span class="na">d=</span><span class="s">&#34;M456.822,179.107c22.219,79.434-26.877,198.973-151.004,223.471l-16.887-36.498
+</span><span class="s">	c38.023-14.33,63.219-47.064,66.943-81.465c-42.756-6.73-75.459-43.739-75.459-88.385
+</span><span class="s">	C280.416,96.986,426.818,71.837,456.822,179.107z M226.405,179.107c22.22,79.434-26.876,198.973-151.004,223.471L58.515,366.08
+</span><span class="s">	c38.022-14.33,63.218-47.064,66.943-81.465C82.702,277.885,50,240.876,50,196.23C50,96.986,196.402,71.837,226.405,179.107z&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>在<code>\themes\meme\assets\scss\_custom\custom.scss</code>文件中添加以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span><span class="p">#</span><span class="nn">div-default</span> <span class="p">{</span>
+    <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">color</span><span class="o">-</span><span class="n">div</span><span class="o">-</span><span class="kc">default</span><span class="o">-</span><span class="n">bg</span><span class="p">);</span>	   
+    <span class="k">border-left-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">color</span><span class="o">-</span><span class="n">div</span><span class="o">-</span><span class="kc">default</span><span class="p">);</span>	    
+<span class="p">}</span> 
+<span class="p">.</span><span class="nc">blockquote-center</span><span class="p">::</span><span class="nd">after</span><span class="o">,</span> <span class="p">.</span><span class="nc">blockquote-center</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
+    <span class="k">background-size</span><span class="p">:</span> <span class="mi">22</span><span class="kt">px</span> <span class="mi">22</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">opacity</span><span class="p">:</span> <span class="mf">.2</span><span class="p">;</span>
+    <span class="err">//</span><span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">blockquote-center</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/quote-l.svg</span><span class="p">);</span>
+    <span class="k">background-position</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-6</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">-20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">blockquote-center</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/quote-r.svg</span><span class="p">);</span>
+    <span class="k">background-position</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="p">:</span> <span class="mi">-20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">blockquote-center</span> <span class="nt">div</span><span class="o">,</span> <span class="p">.</span><span class="nc">blockquote-center</span> <span class="nt">p</span> <span class="p">{</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">blockquote-center</span> <span class="p">{</span>
+    <span class="k">border-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>在博客文章中使用的时候，用以下代码块包起来</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;blockquote class=&#34;blockquote-center&#34;&gt;&lt;p&gt;
+涉江采芙蓉，&lt;br/&gt;
+兰泽多芳草。
+&lt;/p&gt;&lt;/blockquote&gt;</pre></td></tr></table>
+</div>
+</div>
+<p>这样就实现了下面的效果：
+<blockquote class="blockquote-center"><p>
+涉江采芙蓉，<br/>
+兰泽多芳草。
+</p></blockquote></p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/categories/technology/">Technology</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/categories/hugo/">Hugo</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/tags/meme/">MemE</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/tags/hugo/">Hugo</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Markdown语法基础</title>
