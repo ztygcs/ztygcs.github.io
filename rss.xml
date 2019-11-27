@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Thu, 28 Nov 2019 03:42:44 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2019 03:56:01 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -1643,7 +1643,7 @@ autoHideLangToggle = false</pre></td></tr></table>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/hugo/">Hugo</category>
+                                    <category domain="https://ztygcs.github.io/categories/hugo/">hugo</category>
                                 
                             
                         
@@ -2212,7 +2212,7 @@ Enabled by default. You can disable it from the package settings.</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/hugo/">Hugo</category>
+                                    <category domain="https://ztygcs.github.io/categories/hugo/">hugo</category>
                                 
                             
                         
@@ -6628,19 +6628,7 @@ poem
                 
                 
                 
-                    <description><![CDATA[<p>{% dplayer</p>
-
-<p>&quot;url=<a href="https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4&quot;" target="_blank">https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4&quot;</a></p>
-
-<p>&quot;api=<a href="https://api.prprpr.me/dplayer/&quot;" target="_blank">https://api.prprpr.me/dplayer/&quot;</a></p>
-
-<p>&quot;pic=/img/CoverImage/Life/毕业.jpg&quot;</p>
-
-<p>&quot;loop=false&quot;</p>
-
-<p>&quot;autoplay=false&quot;</p>
-
-<p>%}</p>
+                    <description><![CDATA[<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4" alt="" /></p>
 ]]></description>
                 
                 
