@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Wed, 27 Nov 2019 21:21:47 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2019 03:40:18 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -38,9 +38,9 @@
                 
                     <description><![CDATA[
 
-<h1 id="一-syntax-guide">一、Syntax guide</h1>
+<h1 id="syntax-guide">Syntax guide</h1>
 
-<h2 id="1-1-headers">1.1 Headers</h2>
+<h2 id="headers">Headers</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -61,7 +61,7 @@
 ###### This is an &lt;h6&gt; tag</pre></td></tr></table>
 </div>
 </div>
-<h2 id="1-2-emphasis">1.2 Emphasis</h2>
+<h2 id="emphasis">Emphasis</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -98,9 +98,9 @@ _You **can** combine them_
 
 <p>Meme主题新增：<code>着重点</code>: ..This..  ..will..  ..be..  ..emphasis..</p>
 
-<h2 id="1-3-lists">1.3 Lists</h2>
+<h2 id="lists">Lists</h2>
 
-<h3 id="1-3-1-unordered-list">1.3.1 Unordered List</h3>
+<h3 id="unordered-list">Unordered List</h3>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -129,7 +129,7 @@ _You **can** combine them_
 </ul></li>
 </ul>
 
-<h3 id="1-3-2-ordered-list">1.3.2 Ordered List</h3>
+<h3 id="ordered-list">Ordered List</h3>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -161,7 +161,7 @@ _You **can** combine them_
 </ol></li>
 </ol>
 
-<h2 id="1-4-images">1.4 Images</h2>
+<h2 id="images">Images</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -179,7 +179,7 @@ Format: ![Alt Text](url)</pre></td></tr></table>
 <p><img src="/images/tech/2019/11/github_icon.png" alt="github_icon" />
 Format: <img src="/images/tech/2019/11/github_icon.png" alt="Alt Text" /></p>
 
-<h2 id="1-5-links">1.5 Links</h2>
+<h2 id="links">Links</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -197,7 +197,7 @@ Format: <img src="/images/tech/2019/11/github_icon.png" alt="Alt Text" /></p>
 <p><a href="http://github.com" target="_blank">http://github.com</a> - automatic!
 <a href="http://github.com" target="_blank">GitHub</a></p>
 
-<h2 id="1-6-blockquote">1.6 Blockquote</h2>
+<h2 id="blockquote">Blockquote</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -223,7 +223,7 @@ Format: <img src="/images/tech/2019/11/github_icon.png" alt="Alt Text" /></p>
 the present is our past.</p>
 </blockquote>
 
-<h2 id="1-7-horizontal-rule">1.7 Horizontal Rule</h2>
+<h2 id="horizontal-rule">Horizontal Rule</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -274,7 +274,7 @@ Underscores</pre></td></tr></table>
 
 <p>Underscores</p>
 
-<h2 id="1-8-inline-code">1.8 Inline code</h2>
+<h2 id="inline-code">Inline code</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -292,11 +292,11 @@ Underscores</pre></td></tr></table>
 <p>I think you should use an
 <code>&lt;addr&gt;</code> element here instead.</p>
 
-<h2 id="1-9-fenced-code-block">1.9 Fenced code block</h2>
+<h2 id="fenced-code-block">Fenced code block</h2>
 
 <p>You can create fenced code blocks by placing triple backticks ``` before and after the code block.</p>
 
-<h3 id="1-9-1-syntax-highlighting">1.9.1 Syntax Highlighting</h3>
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
 
 <p>You can add an optional language identifier to enable syntax highlighting in your fenced code block.</p>
 
@@ -313,7 +313,7 @@ Underscores</pre></td></tr></table>
 <span class="nb">puts</span> <span class="n">markdown</span><span class="o">.</span><span class="n">to_html</span></code></pre></td></tr></table>
 </div>
 </div>
-<h3 id="1-9-2-code-block-class-mpe-extended-feature">1.9.2 Code block class (MPE extended feature)</h3>
+<h3 id="code-block-class-mpe-extended-feature">Code block class (MPE extended feature)</h3>
 
 <p>You can set <code>class</code> for your code blocks.</p>
 
@@ -330,7 +330,7 @@ Underscores</pre></td></tr></table>
 }</code></pre></td></tr></table>
 </div>
 </div>
-<h3 id="1-9-3-line-numbers">1.9.3 line-numbers</h3>
+<h3 id="line-numbers">line-numbers</h3>
 
 <p>You can enable line number for a code block by adding <code>line-numbers</code> class.</p>
 
@@ -347,7 +347,7 @@ Underscores</pre></td></tr></table>
 }</code></pre></td></tr></table>
 </div>
 </div>
-<h3 id="1-9-4-highlighting-rows">1.9.4 highlighting rows</h3>
+<h3 id="highlighting-rows">highlighting rows</h3>
 
 <p>You can highlight rows by add <code>highlight</code> attribute:</p>
 <div class="highlight"><div class="chroma">
@@ -369,7 +369,7 @@ Underscores</pre></td></tr></table>
 <pre class="chroma"><code class="language-javascript {highlight=[1-10,15,20-22]}" data-lang="javascript {highlight=[1-10,15,20-22]}"></code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="1-10-task-lists">1.10 Task lists</h2>
+<h2 id="task-lists">Task lists</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -395,7 +395,7 @@ Underscores</pre></td></tr></table>
 <li><label><input type="checkbox" disabled class="task-list-item"> this is an incomplete item</label></li>
 </ul>
 
-<h2 id="1-11-tables">1.11 Tables</h2>
+<h2 id="tables">Tables</h2>
 
 <p>You can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>:</p>
 
@@ -437,13 +437,13 @@ Underscores</pre></td></tr></table>
 </tbody>
 </table>
 
-<h1 id="二-extended-syntax">二、Extended syntax</h1>
+<h1 id="extended-syntax">Extended syntax</h1>
 
-<h2 id="2-1-table">2.1 Table</h2>
+<h2 id="table">Table</h2>
 
 <p>Need to enable <code>enableExtendedTableSyntax</code> in extension settings to get it work.</p>
 
-<h2 id="2-2-emoji-font-awesome">2.2 Emoji &amp; Font-Awesome</h2>
+<h2 id="emoji-font-awesome">Emoji &amp; Font-Awesome</h2>
 
 <p>This only works for <code>markdown-it parser</code> but not <code>pandoc parser</code>.
 Enabled by default. You can disable it from the package settings.</p>
@@ -459,7 +459,7 @@ Enabled by default. You can disable it from the package settings.</p>
 :fa-car:</pre></td></tr></table>
 </div>
 </div>
-<h2 id="2-3-superscript">2.3 Superscript</h2>
+<h2 id="superscript">Superscript</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -474,7 +474,7 @@ Enabled by default. You can disable it from the package settings.</p>
 
 <p>30<sup>th</sup></p>
 
-<h2 id="2-4-subscript">2.4 Subscript</h2>
+<h2 id="subscript">Subscript</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -489,7 +489,7 @@ Enabled by default. You can disable it from the package settings.</p>
 
 <p>H<sub>2</sub>O</p>
 
-<h2 id="2-5-footnotes">2.5 Footnotes</h2>
+<h2 id="footnotes">Footnotes</h2>
 
 <p><strong>code:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4510,7 +4510,9 @@ example：
                 
                 
                 
-                    <description><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34248552&auto=0&height=66"></iframe>
+                    <description><![CDATA[<p style="text-align:center">
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34248552&auto=0&height=66"></iframe>
+</p>
 ]]></description>
                 
                 
@@ -4910,6 +4912,9 @@ example：
                 
                     <description><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" />
 <p style="text-align:center">
+poem
+</p>
+<blockquote class="blockquote-center" style="font-size:18px"><p>
 用撼动一座岩石的力量<br/>
 生长<br/>
 春雨和冰霜同样<br/>
@@ -4930,7 +4935,8 @@ example：
 我确信<br/>
 我的草籽<br/>
 只需一点山风的沐浴<br/>
-就能所向披</p></p>
+就能所向披
+</p></blockquote></p>
 
 <p><code>from</code>:[片刻]</p>
 
