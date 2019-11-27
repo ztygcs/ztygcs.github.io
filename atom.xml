@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-27T15:21:30+08:00</updated>
+    <updated>2019-11-27T20:08:28+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,15 +20,16 @@
             <title type="text">Markdown语法基础</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" />
             <id>https://ztygcs.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/</id>
-            <updated>2019-11-27T15:19:29+08:00</updated>
+            <updated>2019-11-27T19:19:18+08:00</updated>
             <published>2019-11-26T21:32:49+08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[一、Syntax guide 1.1 Headers code:
-1 2 3 4 5 6  # This is an <h1> tag ## This is an <h2> tag ### This is an <h3> tag #### This is an <h4> tag ##### This is an <h5> tag ###### This is an <h6> tag   1.]]></summary>
+            
+    
+    <summary type="html"><![CDATA[一、Syntax guide 1.1 Headers code: 1 2 3 4 5 6 # This is an <h1> tag ## This is an <h2> tag ### This is an <h3> tag #### This is an <h4> tag ##### This is an <h5> tag ###### This is an <h6> tag 1.2 Emphasis code: 1 2 3 4 5 6 <em>This text will be italic</em> <em>This will also be italic</em> <strong>This text will be bold</strong> <strong>This will also be bold</strong> <em>You <strong>can</strong> combine them</em> <del>This text will be strikethrough</del> demo: 斜体：This text will be italic 斜体：This will also be italic 粗体：This text will be bold 粗体：This will also be bold 斜体+粗体：You can combine them 删……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -89,6 +90,8 @@ _You **can** combine them_
 <p><code>斜体+粗体</code>：<em>You <strong>can</strong> combine them</em></p>
 
 <p><code>删除线</code>:<del>This text will be strikethrough</del></p>
+
+<p>Meme主题新增：<code>着重点</code>: ..This..  ..will..  ..be..  ..emphasis..</p>
 
 <h2 id="1-3-lists">1.3 Lists</h2>
 
@@ -211,7 +214,7 @@ Format: <img src="/images/tech/2019/11/github_icon.png" alt="Alt Text" /></p>
 <p>As Kanye West said:</p>
 
 <blockquote>
-<p>We&rsquo;re living the future so
+<p>We're living the future so
 the present is our past.</p>
 </blockquote>
 
@@ -252,7 +255,7 @@ Underscores</pre></td></tr></table>
 </div>
 <p><strong>demo:</strong></p>
 
-<p>Three or more&hellip;</p>
+<p>Three or more...</p>
 
 <hr />
 
@@ -447,7 +450,7 @@ Enabled by default. You can disable it from the package settings.</p>
 </span><span class="lnt">2
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">:smile:
+<pre class="chroma">😄
 :fa-car:</pre></td></tr></table>
 </div>
 </div>
@@ -588,16 +591,16 @@ Enabled by default. You can disable it from the package settings.</p>
             <title type="text">大文件上传导致Github报错</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%AF%BC%E8%87%B4github%E6%8A%A5%E9%94%99/" />
             <id>https://ztygcs.github.io/posts/%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%AF%BC%E8%87%B4github%E6%8A%A5%E9%94%99/</id>
-            <updated>2019-11-27T15:19:55+08:00</updated>
+            <updated>2019-11-27T18:09:43+08:00</updated>
             <published>2019-11-23T23:38:20+08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[start 今天用Hexo写博客的时候在本地加入了一个大视频文件（270M）做本地测试，结果不小心使用hexo d部署到了github上，中途出现问题。
-一、问题描述： 上面标注的地方已经提示的很明显了，就是我上传的一个视频文件过大（大于100M），导致部署失败。
-1 2 3 4 5 6 7 8  remote: error: GH001: Large files detected. You may want to try Git Large File Storage - <a href="https://git-lfs.github.com" target="_blank">https://git-lfs.github.com</a>. remote: error: Trace: 1ed90a12b5f48203c8ec19d87330097b remote: error: See <a href="http://git.io/iEPt8g" target="_blank">http://git.io/iEPt8g</a> for more information.]]></summary>
+            
+    
+    <summary type="html"><![CDATA[start 今天用Hexo写博客的时候在本地加入了一个大视频文件（270M）做本地测试，结果不小心使用hexo d部署到了github上，中途出现问题。 一、问题描述： 上面标注的地方已经提示的很明显了，就是我上传的一个视频文件过大（大于100M），导致部署失败。 1 2 3 4 5 6 7 8 remote: error: GH001: Large files detected. You may want to try Git Large File Storage - <a href="https://git-lfs.github.com" target="_blank">https://git-lfs.github.com</a>. remote:……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -657,7 +660,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
 
 <h2 id="3-1方法一">3.1方法一</h2>
 
-<p><strong>Removing files from a repository&rsquo;s history</strong>
+<p><strong>Removing files from a repository's history</strong>
 <blockquote class="colorquote warning"><p>注：这个方法并没有解决我的问题</p></blockquote>
 <img src="/images/tech/2019/11/large_file4.png" alt="" /></p>
 
@@ -670,7 +673,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
 <p>2.Change the current working directory to your local repository.<br/>
     切换当前目录至本地仓库<br/></p>
 
-<p>3.To remove the file, enter git rm &ndash;cached:<br/>输入<code>git rm --cached giant_file</code>以移除文件<br/></p>
+<p>3.To remove the file, enter git rm --cached:<br/>输入<code>git rm --cached giant_file</code>以移除文件<br/></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
@@ -681,7 +684,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
 # Stage our giant file for removal, but leave it on disk</pre></td></tr></table>
 </div>
 </div>
-<p>4.Commit this change using &ndash;amend -CHEAD:<br/>
+<p>4.Commit this change using --amend -CHEAD:<br/>
     输入<code>git commit --amend -CHEAD</code>使得change生效<br/></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -813,11 +816,9 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[本文是以Annie主题+Gitalk评论插件搭建的博客评论功能，其中涉及到Github仓库的创建和OAuth应用的申请。
-一、新建github仓库 首先登陆个人的github,点击New repository创建新的仓库
-二、注册OAuth应用 Gitalk评论插件的授权机制依赖于OAuth Application，故使用Gitalk之前注册新应用。注册链接
-进入注册应用界面：
-   参数 说明 示例     Application name 应用名称(可任意填写) Gitalk   Homepage URL 仓库地址(这里填写步骤一中仓库Blog-Comments的地址) <a href="https://github.com/zccon/Blog-Comments" target="_blank">https://github.com/zccon/Blog-Comments</a>   Application description 应用描述（可任意填写） Gitalk   Authorization callback URL 博客地址（这里填写个人博客主页地址） <a href="https://zccon.github.io/" target="_blank">https://zccon.github.io/</a>    三、获取Client ID和Client Secret 四、编辑主题配置文件 打开主题目录下的_config.]]></summary>
+            
+    
+    <summary type="html"><![CDATA[本文是以Annie主题+Gitalk评论插件搭建的博客评论功能，其中涉及到Github仓库的创建和OAuth应用的申请。 一、新建github仓库 首先登陆个人的github,点击New repository创建新的仓库 二、注册OAuth应用 Gitalk评论插件的授权机制依赖于OAuth Applicati……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -941,13 +942,13 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
 <tr>
 <td align="center">clientID</td>
 <td align="center"><code>步骤三</code>中获取的<code>Client ID</code></td>
-<td align="center">&lsquo;1a2&hellip;&rsquo;</td>
+<td align="center">'1a2...'</td>
 </tr>
 
 <tr>
 <td align="center">clientSecret</td>
 <td align="center"><code>步骤三</code>中获取的<code>Client Secret</code></td>
-<td align="center">&lsquo;3cf&hellip;&rsquo;</td>
+<td align="center">'3cf...'</td>
 </tr>
 
 <tr>
@@ -959,19 +960,19 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
 <tr>
 <td align="center">repo</td>
 <td align="center"><code>步骤一</code>中创建的仓库名（issues的容器）</td>
-<td align="center">&lsquo;Blog-Comments&rsquo;</td>
+<td align="center">'Blog-Comments'</td>
 </tr>
 
 <tr>
 <td align="center">owner</td>
 <td align="center">博客仓库的拥有者</td>
-<td align="center">&lsquo;zccon&rsquo;</td>
+<td align="center">'zccon'</td>
 </tr>
 
 <tr>
 <td align="center">admin</td>
 <td align="center">博客仓库的管理者</td>
-<td align="center">&lsquo;zccon&rsquo;</td>
+<td align="center">'zccon'</td>
 </tr>
 
 <tr>
@@ -1041,21 +1042,16 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
             <title type="text">Emoji表情库</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/emoji%E8%A1%A8%E6%83%85%E5%BA%93/" />
             <id>https://ztygcs.github.io/posts/emoji%E8%A1%A8%E6%83%85%E5%BA%93/</id>
-            <updated>2019-11-27T15:19:16+08:00</updated>
+            <updated>2019-11-27T18:08:07+08:00</updated>
             <published>2019-11-22T22:47:32+08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[Smileys & People 😀😃😄😁😆😅😂🤣😊😇🙂🙃😉😌😍😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🤩😏😒😞😔😟😕🙁☹️😣😖😫😩😢😭😤😠😡🤬🤯😳😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦😧😮😲😴🤤😪😵🤐🤢🤮🤧😷🤒🤕🤑🤠😈👿👹👺🤡💩👻💀☠️👽👾🤖🎃😺😸😹😻😼😽🙀😿😾🤲👐🙌👏🤝👍👎👊✊🤛🤜🤞✌️🤟🤘👌👈👉👆👇☝️✋🤚🖐️🖖👋🤙💪🖕✍️🙏💄💋👄👅👂👃👣👁️👀🧠🗣️👤👥👶👧🧒👦👩🧑👨👱‍♀️👱👱‍♂️🧔👵🧓👴👲👳👳‍♀️👳‍♂️🧕👮👮‍♀️👮‍♂️👷👷‍♀️👷‍♂️💂‍♀️💂💂‍♂️🕵️🕵️‍♀️🕵️‍♂️👩‍⚕️👨‍⚕️👩‍🌾👨‍🌾👩‍🍳👨‍🍳👩‍🎓👨‍🎓👩‍🎤👨‍🎤👩‍🏫👨‍🏫👩‍🏭👨‍🏭👩‍💻👨‍💻👩‍💼👨‍💼👩‍🔧👨‍🔧👩‍🔬👨‍🔬👩‍🎨👨‍🎨👩‍🚒👨‍🚒👩‍✈️👨‍✈️👩‍🚀👨‍🚀👩‍⚖️👨‍⚖️👰🤵👸🤴🤶🎅🧙🧙‍♀️🧙‍♂️🧝🧝‍♀️🧝‍♂️🧛🧛‍♀️🧛‍♂️🧟🧟‍♀️🧟‍♂️🧞🧞‍♀️🧞‍♂️🧜🧜‍♀️🧜‍♂️🧚🧚‍♀️🧚‍♂️👼🤰🤱🙇🙇‍♀️🙇‍♂️💁💁‍♀️💁‍♂️🙅🙅‍♀️🙅‍♂️🙆🙆‍♀️🙆‍♂️🙋🙋‍♀️🙋‍♂️💃🕺👯👯‍♂️👯‍♀️🕴️🚶🚶‍♀️🚶‍♂️🏃🏃‍♀️🏃‍♂🧑‍🤝‍🧑👫👭👬💑👩‍❤️‍👨👩‍❤️‍👩👨‍❤️‍👨💏👩‍❤️‍💋👨👩‍❤️‍💋👩👨‍❤️‍💋👨👪👨‍👩‍👦👨‍👩‍👧👨‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👩‍👧‍👧👩‍👩‍👦👩‍👩‍👧👩‍👩‍👧‍👦👩‍👩‍👦‍👦👩‍👩‍👧‍👧👨‍👨‍👦👨‍👨‍👧👨‍👨‍👧‍👦👨‍👨‍👦‍👦👨‍👨‍👧‍👧👩‍👦👩‍👧👩‍👧‍👦👩‍👦‍👦👩‍👧‍👧👨‍👦👨‍👧👨‍👧‍👦👨‍👦‍👦👨‍👧‍👧🧥👚👕👖👔👗👙👘👠👡👢👞👟🧦🧤🧣🎩🧢👒🎓⛑️👑💍👝👛👜💼🎒👓🕶️🌂
-Animals & Nature 🐶🐱🐭🐹🐰🦊🐻🐼🐨🐯🦁🐮🐷🐽🐸🐵🙈🙉🙊🐒🐔🐧🐦🐤🐣🐥🦆🦅🦉🦇🐺🐗🐴🦄🐝🐛🦋🐌🐚🐞🐜🦗🕷️🕸️🦂🐢🐍🦎🦖🦕🐙🦑🦐🦀🐡🐠🐟🐬🐳🐋🦈🐊🐅🐆🦓🦍🐘🦏🐪🐫🦒🐃🐂🐄🐎🐖🐏🐑🐐🐕🦌🐕‍🐩🐈🐓🦃🕊️🐇🐁🐀🐿️🦔🐾🐉🐲🌵🎄🌲🌳🌴🌱🌿☘️🍀🎍🎋🍃🍂🍁🍄🌾💐🌷🌹🥀🌺🌸🌼🌻🌞🌝🌛🌜🌚🌕🌖🌗🌘🌑🌒🌓🌔🌙🌎🌍🌏💫⭐🌟✨⚡☄️💥🔥🌪️🌈☀️🌤️⛅🌥️☁️🌦️🌧️⛈️🌩️🌨️❄️☃️⛄🌬️💨💧💦☔☂️🌊🌫️
-Food & Drink 🍏🍎🍐🍊🍋🍌🍉🍇🍓🍈🍒🍑🍍🥥🥝🍅🍆🥑🥦🥒🌶️🌽🥕🥔🍠🥐🍞🥖🥨🧀🥚🍳🥞🥓🥩🍗🍖🌭🍔🍟🍕🥪🥙🌮🌯🥗🥘🥫🍝🍜🍲🍛🍣🍱🥟🍤🍙🍚🍘🍥🥠🍢🍡🍧🍨🍦🥧🍰🎂🍮🍭🍬🍫🍿🍩🍪🌰🥜🍯🥛🍼☕🍵🥤🍶🍺🍻🥂🍷🥃🍸🍹🍾🥄🍴🍽️🥣🥡🥢
-Activity ⚽🏀🏈⚾🎾🏐🏉🎱🏓🏸🏒🏑🏏🥅⛳🏹🎣🥊🥋🎽🛷⛸️🥌🎿⛷️🏂🏋️🏋️‍♀️🏋️‍♂️🤼🤼♀️🤼♂️🤸🤸‍♀️🤸‍♂️⛹️⛹️‍♀️⛹️‍♂️🤺🤾🤾‍♀️🤾‍♂️🏌️🏌️‍♀️🏌️‍♂️🏇🧘🧘‍♀️🧘‍♂️🏄🏄‍♀️🏄‍♂️🏊🏊‍♀️🏊‍♂️🤽🤽‍♀️🤽‍♂️🚣🚣‍♀️🚣‍♂️🧗🧗‍♀️🧗‍♂️🚵🚵‍♀️🚵‍♂️🚴🚴‍♀️🚴‍♂️🏆🥇🥈🥉🏅🎖️🏵️🎗️🎫🎟️🎪🤹🤹‍♀️🤹‍♂️🎭🎨🎬🎤🎧🎼🎹🥁🎷🎺🎸🎻🎲♟️🎯🎳🎮🎰
-Travel & Places 🚗🚕🚙🚌🚎🏎️🚓🚑🚐🚒🚚🚛🚜🛵🏍️🛴🚲🚨🚔🚍🚘🚖🚡🚠🚟🚃🚋🚞🚝🚄🚅🚈🚂🚆🚇🚊🚉✈️🛫🛬🛩️💺🛰️🚀🛸🚁🛶⛵🚤🛥️🛳️⛴️🚢⚓⛽🚧🚦🚥🚏🗺️🗿🗽🗼🏰🏯🏟️🎡🎢🎠⛲⛱️🏖️🏝️🏜️🌋⛰️🏔️🗻🏕️⛺🏠🏡🏘️🏚️🏗️🏭🏢🏬🏣🏤🏥🏦🏨🏪🏫🏩💒🏛️⛪🕌🕍🕋⛩️🛤️🛣️🗾🎑🏞️🌅🌄🌠🎇🎆🌇🌆🏙️🌃🌌🌉🌁
-Objects ⌚📱📲💻⌨️🖥️🖨️🖱️🖲️🕹️🗜️💽💾💿📀📼📷📸📹🎥📽️🎞️📞☎️📟📠📺📻🎙️🎚️🎛️⏱️⏲️⏰🕰️⌛⏳📡🔋🔌💡🔦🕯️🛢️💸💵💴💶💷💰💳💎⚖️🔧🔨⚒️🛠️⛏️🔩⚙️⛓️⚔️🛡️🚬⚰️⚱️🏺🔮📿💈⚗️🔭🔬🕳️💊💉🌡️🚽🚰🚿🛁🛀🛎️🔑🗝️🚪🛋️🛏️🛌🖼️🛍️🛒🎁🎈🎏🎀🎊🎉🎎🏮🎐✉️📩📨📧💌📥📤📦🏷️📪📫📬📭📮📯📜📃📄📑🧾📊📈📉🗒️🗓️📆📅🗑️📇🗃️🗳️🗄️📋📁📂🗂️🗞️📰📓📔📒📕📗📘📙📚📖🔖🔗📎🖇️📐📏📌📍✂️🖊️🖋️✒️🖌️🖍️📝✏️🔍🔎🔏🔐🔒🔓
-Symbols ❤️🧡💛💚💙💜🖤💔❣️💕💞💓💗💖💘💝💟☮️✝️☪️🕉️☸️✡️🔯🕎☯️☦️🛐⛎♈♉♊♋♌♍♎♏♐♑♒♓🆔⚛️🉑☢️☣️📴📳🈶🈚🈸🈺🈷️✴️🆚💮🉐㊙️㊗️🈴🈵🈹🈲🅰️🅱️🆎🆑🅾️🆘❌⭕🛑⛔📛🚫💯💢♨️🚷🚯🚳🚱🔞📵🚭❗❕❓❔🔆️⚠️🚸🔱⚜️🔰♻️✅🈯💹❇️✳️🔣ℹ️🔤🔡🔠🆖🆗🆙🆒🆕🆓0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔢⏏️▶️⏸️⏯️⏹️⏺️⏭️⏮️⏩⏪⏬◀➡️⬅️⬆️⬇️↪️↩️⤴️⤵️🔀🔁🔂🔄🔃🎵🎶➕➖➗✖️💲🔚🔙🔛🔝🔜✔️☑️🔘⚪⚫🔴🔵🔺🔻🔶🔷🔳🔲🔈🔇🔉🔊🔔🔕📣📢🗨️👁️‍🗨️💬💭🗯️🃏🎴🀄🕐🕑🕒🕓🕔🕕🕖🕗🕘🕙🕚🕛🕜🕝🕞🕟🕠🕡🕢🕣🕤🕥🕦🕧️⚕️
-Flags 🏳️🏴🏁🚩🏳️‍🌈🏴‍☠️]]></summary>
+            
+    
+    <summary type="html"><![CDATA[Smileys & People 😀😃😄😁😆😅😂🤣😊😇🙂🙃😉😌😍😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🤩😏😒😞😔😟😕🙁☹️😣😖😫😩😢😭😤😠😡🤬🤯😳😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦😧😮😲😴🤤😪😵🤐🤢🤮🤧😷🤒🤕🤑🤠😈👿👹👺🤡💩👻💀☠️👽👾🤖🎃😺😸😹😻😼😽🙀😿😾🤲👐🙌👏🤝👍👎👊✊🤛🤜🤞✌️🤟🤘👌👈👉👆👇☝️✋🤚🖐️🖖👋🤙💪🖕✍️🙏💄💋👄👅👂👃……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -1137,13 +1133,9 @@ Flags 🏳️🏴🏁🚩🏳️‍🌈🏴‍☠️]]></summary>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[开始之前的说明
-  文中所有的指令都是在Hexo文件夹下开启的命令行中执行的
- 代码对比
-1 2 3  This is a diff block. + This is add! - This is subtract!    Bash指令
-1  bash指令   提示信息
-  这是一个info提示
- 这是一个success提示  这是一个warning提示]]></summary>
+            
+    
+    <summary type="html"><![CDATA[开始之前的说明 文中所有的指令都是在Hexo文件夹下开启的命令行中执行的 代码对比 1 2 3 This is a diff block. + This is add! - This is subtract! Bash指令 1 bash指令 提示信息 这是一个info提示 这是一个success提示 这是一个warning提示 这是一个danger提示 文件目录 序号 名词 说明 目录 1 站点配置文件 站点目录下的_conf……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -1359,7 +1351,7 @@ random_url: https://sariay.github.io/Random-img/
 </div></li>
 </ol>
 
-<p>你可以将<strong>随机图片集</strong>上传到云（腾讯云、七牛云等），然后获取<strong>https://&hellip;&hellip;/Random-img/</strong>格式的地址，最后将<code>random_url</code>的值设置为该地址。</p>
+<p>你可以将<strong>随机图片集</strong>上传到云（腾讯云、七牛云等），然后获取<strong>https://....../Random-img/</strong>格式的地址，最后将<code>random_url</code>的值设置为该地址。</p>
 
 <p>你也可以在主题目录下的img文件夹中新建Random-img文件夹，将<strong>0.jpg</strong>、<strong>1.jpg</strong>、<strong>2.jpg</strong>、<strong>3.jpg</strong>……<strong>110.jpg</strong>命名格式的图片放入其中，然后将<code>random_url</code>的值设置为<strong>/img/Random-img/</strong>。</p>
 
@@ -2550,10 +2542,9 @@ totop:
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[参考网址
-一、删除xml文件中的静态引用 找到<NavigationView>控件，将控件里的静态引用删除
-1 2 3 4 5 6 7 8  <android.support.design.widget.NavigationView app:theme="@style/myNavigationDrawerStyle" android:id="@+id/nav_view" android:layout_width="280dp" android:layout_height="match_parent" android:layout_gravity="start" app:headerLayout="@layout/nav_header" app:menu="@menu/nav_menu"/>  1 2  - app:headerLayout="@layout/nav_header" - app:menu="@menu/nav_menu"    二、绑定控件 在MainActivity的onCreate()函数中绑定控件<NavigationView>
-1  + NavigationView navView = (NavigationView) findViewById(R.id.nav_view);    三、引入Header和Menu 1 2 3 4 5  NavigationView navView = (NavigationView) findViewById(R.]]></summary>
+            
+    
+    <summary type="html"><![CDATA[参考网址 一、删除xml文件中的静态引用 找到<NavigationView>控件，将控件里的静态引用删除 1 2 3 4 5 6 7 8 <android.support.design.widget.NavigationView app:theme="@style/myNavigationDrawerStyle" android:id="@+id/nav_view" android:layout_width="280dp" android:layout_height="match_parent" android:layout_gravity="start" app:headerLayout="@layout/nav_header" app:menu="@menu/nav_menu"/> 1 2 - app:headerLayout="@layout/nav_header" - app:menu="@menu/nav_menu" 二、绑定控件 在MainActivity的onCreate()函数中绑定控件<NavigationView> 1 + NavigationView navView = (NavigationView) findViewById(R.id.nav_view); 三、引入H……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -2720,7 +2711,9 @@ navView.inflateMenu(R.menu.nav_menu);
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[折线图]]></summary>
+            
+    
+    <summary type="html"><![CDATA[折线图]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -3263,16 +3256,9 @@ navView.inflateMenu(R.menu.nav_menu);
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[<p>这两天一直被这个问题所困扰，弹出什么鬼错误：   一串看不懂的东西，刚开始以为是程序的版本号和测试机的版本号不匹配导致的问题，然后跑到app下的build.gradle里面强行修改版本号   然后下面又出了问题。。。   好吧，那我把你也给改一改。重新运行一下，   我的天，又来一个看不懂的东西
-这又是什么玩意儿，算了，还原吧，继续研究第一个问题 就当啥都没发生，重新开始。 直接找度娘吧，错误复制粘贴直接搜   总有人有和我一样的问题吧，一个个的找，
- Solution one: 这个没啥用啊，multiDexEnabled true已经加了，换一个吧 （没解决）</p>
-
-<p>Solution two: 答案比较简洁，不太确定哪个jar重复，那就照着葫芦画个瓢吧，哈哈。 结果还是不行 （没解决）</p>
-
-<p>Solution three: 都是英文，直接放弃吧 (没解决)</p>
-
-<p>突然有点累了 。 。 。 。 有时候解决问题还是要从根源找起，既然有错误提示，那就把错误提示翻译过来，看他说了啥。   虽然还是不太懂，但是我好想看到了重点，重复条目 重复条目 重复条目，重要的东西还是要说三遍，强调一下。话说这个好像在哪里见过，，，Number one和Number two里面好像都有，对，没错，前面都提到过。好了，大概知道了，有个东西（包）重复引用了，应该要删掉一个，看到网上说什么引入的Libary与现有的工程中的某些Libs重复了，那就找吧，这个好像有点像，在错误提示里后面那一串和它挺像的，那就把它删了吧，同时把build.</p>
-]]></summary>
+            
+    
+    <summary type="html"><![CDATA[这两天一直被这个问题所困扰，弹出什么鬼错误： 一串看不懂的东西，刚开始以为是程序的版本号和测试机的版本号不匹配导致的问题，然后跑到app下的build.gradle里面强行修改版本号 然后下面又出了问题。。。 好吧，那我把你也给改一改。重新运行一下， 我的天，又来一个看不懂的东西 这又是什么玩意儿，算了，还原……]]></summary>
             
                 <content type="html"><![CDATA[<p>这两天一直被这个问题所困扰，弹出什么鬼错误：
 <hr/>
@@ -3401,12 +3387,9 @@ navView.inflateMenu(R.menu.nav_menu);
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[ListView
-一、作用 当手机屏幕空间有限而不能一次将内容显示完时，需要借助ListView允许用户通过手指上下滑动的方式将屏幕外的数据滚动到屏幕内，同时屏幕上原有的数据滚动出屏幕。例如查看QQ消息等。
-二、用法 2.1新建项目 新建一个ListView项目，修改activity_main.xml中的代码：
-1 2 3 4 5 6 7 8 9 10  <LinearLayout xmlns:android="<a href="http://schemas.android.com/apk/res/android&#34" target="_blank">http://schemas.android.com/apk/res/android&#34</a>; android:layout_width="match_parent" android:layout_height="match_parent"> <ListView android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="match_parent"/> </LinearLayout>   activity_main.xml布局中加入ListView控件，并指定控件的id为list_view，width和height与父布局相同，即布满手机屏幕
-2.2新建实体类 定义一个水果实体类Fruit，作为ListView适配器的的适配类型
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  public class Fruit { private String name; private int imageId; public Fruit(String name,int imageId){ this.]]></summary>
+            
+    
+    <summary type="html"><![CDATA[ListView 一、作用 当手机屏幕空间有限而不能一次将内容显示完时，需要借助ListView允许用户通过手指上下滑动的方式将屏幕外的数据滚动到屏幕内，同时屏幕上原有的数据滚动出屏幕。例如查看QQ消息等。 二、用法 2.1新建项目 新建一个ListView项目，修改activity_main.xml中的代码： 1 2 3 4 5 6……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -3753,7 +3736,9 @@ navView.inflateMenu(R.menu.nav_menu);
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[四大布局]]></summary>
+            
+    
+    <summary type="html"><![CDATA[四大布局]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -4157,7 +4142,9 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[基本控件]]></summary>
+            
+    
+    <summary type="html"><![CDATA[基本控件]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -4194,7 +4181,7 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
 <p><code>android:text</code>=”This is TextView”指定显示的内容
 <code>android:gravity</code>用来指定文字对齐方式</p>
 
-<p>另外还有<code>android:textColor</code> =&ldquo;#ff0000&rdquo;和<code>android:textSize</code> =&ldquo;24sp&rdquo;用来指定文字的颜色和大小</p>
+<p>另外还有<code>android:textColor</code> =&quot;#ff0000&quot;和<code>android:textSize</code> =&quot;24sp&quot;用来指定文字的颜色和大小</p>
 
 <p>example：<img src="/images/tech/2018/09/17/TextView.png" alt="" /></p>
 
@@ -4221,7 +4208,7 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
 	<span class="na">android:textAllCaps=</span><span class="s">&#34;false&#34;</span><span class="nt">/&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
-<p><code>android:text</code> =&ldquo;Button&rdquo;用来指定按钮上面显示的内容，系统会将Button自动进行大写转换，若不想转换，加入<code>android:textAllCaps</code> =&ldquo;false&rdquo;即可。</p>
+<p><code>android:text</code> =&quot;Button&quot;用来指定按钮上面显示的内容，系统会将Button自动进行大写转换，若不想转换，加入<code>android:textAllCaps</code> =&quot;false&quot;即可。</p>
 
 <ol>
 <li><p>在活动中为Button的点击事件注册一个监听器
@@ -4459,14 +4446,9 @@ example：
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">周一 周二 周三 周四 周五 周六 周日     1~2节     数据挖掘及应用 应用高等工程数学 应用高等工程数学   3~4节     数据挖掘及应用 第一外国语（英语一）    5~6节   多媒体通信技术    中国特色社会主义理论研究与实践   7~8节   多媒体通信技术   第一外国语（英语一） 中国特色社会主义理论研究与实践   9~10节  嵌入式系统设计   现代数字信号处理     11~12节  嵌入式系统设计   现代数字信号处理      </pre></td></tr></table>
-</div>
-</div>]]></summary>
+            
+    
+    <summary type="html"><![CDATA[周一 周二 周三 周四 周五 周六 周日 1~2节 数据挖掘及应用 应用高等工程数学 应用高等工程数学 3~4节 数据挖掘及应用 第一外国语（英语一） 5~6节 多媒体通信技术 中国特色社会主义理论研究与实践 7~8节 多媒体通信技术 第一外国语（英语一） 中国特色社会主义理论研究与实践 9~10节 嵌入式系统设计 现代数字信号处理 11~12节……]]></summary>
             
                 <content type="html"><![CDATA[<table>
 <thead>
@@ -4709,19 +4691,16 @@ example：
             <title type="text">用Hexo写博客及语法规则</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" />
             <id>https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</id>
-            <updated>2019-11-27T15:20:19+08:00</updated>
+            <updated>2019-11-27T18:54:29+08:00</updated>
             <published>2018-09-12T10:15:53+08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[新建一篇文章 命令：
-1  $ hexo new "文章标题"   例如，执行命令：hexo new "Helloworld",\source_posts文件夹下会出现对应的文件Helloworld.md,打开即可编辑。
-为文章设置标签 在新建的文章头部tags:标签后输入标签名（冒号与标签名之间有空格）
-1 2 3 4 5  — title: Helloworld date: 2018-09-12 10:15:53 tags: —   例如，tags: Hexo,这样就为本篇文章贴上了Hexo标签，如果想加入多个标签，则输入tags: [标签1, 标签2]
-为文章设置分类 在tags标签下加入categories，并添加自定义分类(如：article)，如下:
-1 2 3 4 5 6  — title: Helloworld date: 2018-09-12 10:15:53 tags: Hexo categories: article —   字体样式 语法：]]></summary>
+            
+    
+    <summary type="html"><![CDATA[新建一篇文章 命令： 1 $ hexo new "文章标题" 例如，执行命令：hexo new "Helloworld",\source_posts文件夹下会出现对应的文件Helloworld.md,打开即可编辑。 为文章设置标签 在新建的文章头部tags:标签后输入标签名（冒号与标签名之间有空格……]]></summary>
             
                 <content type="html"><![CDATA[
 
@@ -5003,9 +4982,9 @@ example：
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[用撼动一座岩石的力量 生长 春雨和冰霜同样 只能带来一段故事 沉睡的是这个世界的爱意 如果不能睁开眼睛 就用每一只手触摸你 前世冰冷 来世温暖 只在此生纠缠不清 谁也无法把两种根连在一起 这是我们的命运 哪怕是死后 或者被山羊连根拔起 我的梦在云云俗口中碎成渣 也依然享有最温暖的光阴 在下一个春季 我确信 我的草籽 只需一点山风的沐浴 就能所向披靡
-from:[片刻]
-author: [游走世界的鱼]]]></summary>
+            
+    
+    <summary type="html"><![CDATA[用撼动一座岩石的力量 生长 春雨和冰霜同样 只能带来一段故事 沉睡的是这个世界的爱意 如果不能睁开眼睛 就用每一只手触摸你 前世冰冷 来世温暖 只在此生纠缠不清 谁也无法把两种根连在一起 这是我们的命运 哪怕是死后 或者被山羊连根拔起 我的梦在云云俗口中碎成渣 也依然享有最温暖的光阴 在下一个春季 我确信 我的草籽 只需一点山风的沐浴 就……]]></summary>
             
                 <content type="html"><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" />
 用撼动一座岩石的力量<br/>
@@ -5084,15 +5063,15 @@ author: [游走世界的鱼]]]></summary>
             
                 <content type="html"><![CDATA[<p>{% dplayer</p>
 
-<p>&ldquo;url=<a href="https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4&quot;" target="_blank">https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4&quot;</a></p>
+<p>&quot;url=<a href="https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4&quot;" target="_blank">https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4&quot;</a></p>
 
-<p>&ldquo;api=<a href="https://api.prprpr.me/dplayer/&quot;" target="_blank">https://api.prprpr.me/dplayer/&quot;</a></p>
+<p>&quot;api=<a href="https://api.prprpr.me/dplayer/&quot;" target="_blank">https://api.prprpr.me/dplayer/&quot;</a></p>
 
-<p>&ldquo;pic=/img/CoverImage/Life/毕业.jpg&rdquo;</p>
+<p>&quot;pic=/img/CoverImage/Life/毕业.jpg&quot;</p>
 
-<p>&ldquo;loop=false&rdquo;</p>
+<p>&quot;loop=false&quot;</p>
 
-<p>&ldquo;autoplay=false&rdquo;</p>
+<p>&quot;autoplay=false&quot;</p>
 
 <p>%}</p>
 ]]></content>
