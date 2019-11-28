@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-28T17:02:23+08:00</updated>
+    <updated>2019-11-28T18:07:53+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -6397,7 +6397,7 @@ example：
             <title type="text">用Hexo写博客及语法规则</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" />
             <id>https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</id>
-            <updated>2019-11-27T22:00:09+08:00</updated>
+            <updated>2019-11-28T17:11:45+08:00</updated>
             <published>2018-09-12T10:15:53+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6585,6 +6585,22 @@ example：
 <pre class="chroma">![](/image/egg.jpg)</pre></td></tr></table>
 </div>
 </div>
+<h1 id="插入视频"><strong>插入视频</strong></h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;video src=&#34;/videos/a.mp4&#34; poster=&#34;/images/b.jpg&#34;  style=&#34;object-fit:fill&#34; controls&gt;&lt;/video&gt;</pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">![](/videos/a.mp4 &#34;说明文字&#34;)</pre></td></tr></table>
+</div>
+</div>
 <p>效果：
 <img src="/images/tech/2018/09/12/egg.jpg" alt="" /></p>
 
@@ -6763,7 +6779,7 @@ poem
             <title type="text">毕业</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/" />
             <id>https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/</id>
-            <updated>2019-11-28T17:02:01+08:00</updated>
+            <updated>2019-11-28T17:12:16+08:00</updated>
             <published>2018-06-08T09:55:00+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6772,9 +6788,7 @@ poem
                     </author>
             <summary type="html"><![CDATA[长江大学14级电信学院毕业]]></summary>
             
-                <content type="html"><![CDATA[<p>![]()</p>
-
-<video src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/videos/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%99%A2.mp4" poster="/videos/草.jpg"  style="object-fit:fill" controls></video>
+                <content type="html"><![CDATA[<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/videos/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%99%A2.mp4" alt="" title="Yangtze University" /></p>
 ]]></content>
             
             

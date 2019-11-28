@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Thu, 28 Nov 2019 17:02:23 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2019 18:07:53 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -6507,6 +6507,22 @@ example：
 <pre class="chroma">![](/image/egg.jpg)</pre></td></tr></table>
 </div>
 </div>
+<h1 id="插入视频"><strong>插入视频</strong></h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;video src=&#34;/videos/a.mp4&#34; poster=&#34;/images/b.jpg&#34;  style=&#34;object-fit:fill&#34; controls&gt;&lt;/video&gt;</pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">![](/videos/a.mp4 &#34;说明文字&#34;)</pre></td></tr></table>
+</div>
+</div>
 <p>效果：
 <img src="/images/tech/2018/09/12/egg.jpg" alt="" /></p>
 
@@ -6686,9 +6702,7 @@ poem
                 
                 
                 
-                    <description><![CDATA[<p>![]()</p>
-
-<video src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/videos/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%99%A2.mp4" poster="/videos/草.jpg"  style="object-fit:fill" controls></video>
+                    <description><![CDATA[<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/videos/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%99%A2.mp4" alt="" title="Yangtze University" /></p>
 ]]></description>
                 
                 
