@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-28T18:07:53+08:00</updated>
+    <updated>2019-11-28T19:27:28+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">MemE主题优化</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
             <id>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</id>
-            <updated>2019-11-28T15:12:42+08:00</updated>
+            <updated>2019-11-28T18:29:51+08:00</updated>
             <published>2019-11-27T21:45:38+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -29,9 +29,11 @@
                     </author>
             
     
-    <summary type="html"><![CDATA[折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建……]]></summary>
+    <summary type="html"><![CDATA[前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次……]]></summary>
             
                 <content type="html"><![CDATA[
+
+<h1 id="前言">前言</h1>
 
 <p>折腾了两天，总算是把这个博客给搭建起来了😉😉!</p>
 
@@ -1638,7 +1640,7 @@ autoHideLangToggle = false</pre></td></tr></table>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -2187,7 +2189,7 @@ Enabled by default. You can disable it from the package settings.</p>
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/hello-world/" />
             <id>https://ztygcs.github.io/posts/hello-world/</id>
-            <updated>2019-11-27T21:57:38+08:00</updated>
+            <updated>2019-11-28T19:22:56+08:00</updated>
             <published>2019-11-26T14:45:13+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2215,7 +2217,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     

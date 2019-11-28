@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Thu, 28 Nov 2019 18:07:53 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2019 19:27:28 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -37,6 +37,8 @@
                 
                 
                     <description><![CDATA[
+
+<h1 id="前言">前言</h1>
 
 <p>折腾了两天，总算是把这个博客给搭建起来了😉😉!</p>
 
@@ -1643,7 +1645,7 @@ autoHideLangToggle = false</pre></td></tr></table>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/hugo/">hugo</category>
+                                    <category domain="https://ztygcs.github.io/categories/hugo/">Hugo</category>
                                 
                             
                         
@@ -2212,7 +2214,7 @@ Enabled by default. You can disable it from the package settings.</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/hugo/">hugo</category>
+                                    <category domain="https://ztygcs.github.io/categories/hugo/">Hugo</category>
                                 
                             
                         
