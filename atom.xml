@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-28T15:10:41+08:00</updated>
+    <updated>2019-11-28T16:13:16+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">MemE主题优化</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
             <id>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</id>
-            <updated>2019-11-28T15:10:19+08:00</updated>
+            <updated>2019-11-28T15:12:42+08:00</updated>
             <published>2019-11-27T21:45:38+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -37,7 +37,7 @@
 
 <p>在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！</p>
 
-<p>首先要感谢👏几个博主，第一次看到这个 ..博客主题..  <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a> 是从 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（<code>之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了</code>）。说实话，我感觉 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博主讲得实在太 ..详细.. 了，所以感觉自己只是在 ..照葫芦画瓢.. 🙃🙃🙃 。</p>
+<p>首先要感谢👏几个博主，第一次看到这个 ..博客主题..  <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a> 是从 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（<code>之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了</code>）。说实话，我感觉 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博主讲得实在太..详细..了，所以感觉自己只是在..照葫芦画瓢..🙃🙃🙃 。</p>
 
 <p>搭建博客的过程很简单，一般都不会有什么问题，所以这里我就写写关于<code>MemE</code>主题的各个细节的配置问题:<br/>
 ..一来..是自己想要更改博客主题样式的时候知道去哪个地方改？怎么改？🖊️<br/>
@@ -6259,27 +6259,28 @@ example：
             <title type="text">送别(口琴版)</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E9%80%81%E5%88%AB%E5%8F%A3%E7%90%B4%E7%89%88/" />
             <id>https://ztygcs.github.io/posts/%E9%80%81%E5%88%AB%E5%8F%A3%E7%90%B4%E7%89%88/</id>
-            <updated>2019-11-28T13:52:13+08:00</updated>
+            <updated>2019-11-28T16:03:14+08:00</updated>
             <published>2018-09-12T13:34:26+08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[长亭外，古道边，芳草碧连天。晚风拂柳笛声残，夕阳山外山。 天之涯，地之角，知交半零落。一壶浊酒尽余欢，今宵别梦寒。 长亭外，古道边，芳草碧连天。问君此去几时还，来时莫徘徊。 天之涯，地之角，知交半零落。人生难得是欢聚，惟有别离多。]]></summary>
+            <summary type="html"><![CDATA[长亭外，古道边，芳草碧连天。 晚风拂柳笛声残，夕阳山外山。 天之涯，地之角，知交半零落。 一壶浊酒尽余欢，今宵别梦寒。 长亭外，古道边，芳草碧连天。 问君此去几时还，来时莫徘徊。 天之涯，地之角，知交半零落。 人生难得是欢聚，惟有别离多。]]></summary>
             
                 <content type="html"><![CDATA[<p style="text-align:center">
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34248552&auto=0&height=66"></iframe>
 </p>
 
 <blockquote class="blockquote-center"><p>
-长亭外，古道边，芳草碧连天。晚风拂柳笛声残，夕阳山外山。<br/>
-
-天之涯，地之角，知交半零落。一壶浊酒尽余欢，今宵别梦寒。<br/>
-
-长亭外，古道边，芳草碧连天。问君此去几时还，来时莫徘徊。<br/>
-
-天之涯，地之角，知交半零落。人生难得是欢聚，惟有别离多。
+长亭外，古道边，芳草碧连天。<br/>
+晚风拂柳笛声残，夕阳山外山。<br/>
+天之涯，地之角，知交半零落。<br/>
+一壶浊酒尽余欢，今宵别梦寒。<br/>
+长亭外，古道边，芳草碧连天。<br/>
+问君此去几时还，来时莫徘徊。<br/>
+天之涯，地之角，知交半零落。<br/>
+人生难得是欢聚，惟有别离多。
 </p></blockquote>
 ]]></content>
             
@@ -6762,7 +6763,7 @@ poem
             <title type="text">毕业</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/" />
             <id>https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/</id>
-            <updated>2019-11-28T03:55:19+08:00</updated>
+            <updated>2019-11-28T16:12:26+08:00</updated>
             <published>2018-06-08T09:55:00+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6771,7 +6772,7 @@ poem
                     </author>
             <summary type="html"><![CDATA[长江大学14级电信学院毕业]]></summary>
             
-                <content type="html"><![CDATA[<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/videos/%E9%95%BF%E5%A4%A714%E7%BA%A7%E7%94%B5%E4%BF%A1%E5%AD%A6%E9%99%A2.mp4" alt="" /></p>
+                <content type="html"><![CDATA[<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/videos/%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%99%A2.mp4" alt="" /></p>
 ]]></content>
             
             
