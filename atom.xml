@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-29T21:39:30+08:00</updated>
+    <updated>2019-11-29T22:15:05+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -17,10 +17,64 @@
     
     <generator uri="https://gohugo.io/" version="0.59.1">Hugo</generator>
         <entry>
+            <title type="text">百鸟朝凤</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E7%99%BE%E9%B8%9F%E6%9C%9D%E5%87%A4/" />
+            <id>https://ztygcs.github.io/posts/%E7%99%BE%E9%B8%9F%E6%9C%9D%E5%87%A4/</id>
+            <updated>2019-11-29T22:06:12+08:00</updated>
+            <published>2019-11-29T21:51:27+08:00</published>
+            <author>
+                    <name>天涯共此时</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            <summary type="html"><![CDATA[]]></summary>
+            
+                <content type="html"><![CDATA[<p style="text-align:center">
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=144291&auto=-1&height=66"></iframe>
+
+</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/music/" term="Music" label="Music" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/music/" term="Music" label="Music" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">MemE主题优化</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
             <id>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</id>
-            <updated>2019-11-29T21:05:39+08:00</updated>
+            <updated>2019-11-29T22:07:34+08:00</updated>
             <published>2019-11-27T21:45:38+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -1858,6 +1912,8 @@ autoHideLangToggle = false</pre></td></tr></table>
 </div>
 </div>
 <h1 id="插入音频">插入音频</h1>
+
+<h2 id="audio标签">audio标签</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
@@ -1873,7 +1929,9 @@ autoHideLangToggle = false</pre></td></tr></table>
 你的浏览器暂不支持该音频！
 <span class="p">&lt;/</span><span class="nt">audio</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div>
+<h2 id="video标签">video标签</h2>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
 </span><span class="lnt">2
@@ -1886,7 +1944,9 @@ autoHideLangToggle = false</pre></td></tr></table>
 <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/audios/星空.mp3&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
-</div>]]></content>
+</div>
+<h2 id="通过网易云外链添加">通过网易云外链添加</h2>
+]]></content>
             
             
             
@@ -1904,7 +1964,7 @@ autoHideLangToggle = false</pre></td></tr></table>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -2481,7 +2541,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -6525,7 +6585,7 @@ example：
             <title type="text">送别(口琴版)</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E9%80%81%E5%88%AB%E5%8F%A3%E7%90%B4%E7%89%88/" />
             <id>https://ztygcs.github.io/posts/%E9%80%81%E5%88%AB%E5%8F%A3%E7%90%B4%E7%89%88/</id>
-            <updated>2019-11-28T16:03:14+08:00</updated>
+            <updated>2019-11-29T22:09:14+08:00</updated>
             <published>2018-09-12T13:34:26+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6535,7 +6595,7 @@ example：
             <summary type="html"><![CDATA[长亭外，古道边，芳草碧连天。 晚风拂柳笛声残，夕阳山外山。 天之涯，地之角，知交半零落。 一壶浊酒尽余欢，今宵别梦寒。 长亭外，古道边，芳草碧连天。 问君此去几时还，来时莫徘徊。 天之涯，地之角，知交半零落。 人生难得是欢聚，惟有别离多。]]></summary>
             
                 <content type="html"><![CDATA[<p style="text-align:center">
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34248552&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=34248552&auto=0&height=66"></iframe>
 </p>
 
 <blockquote class="blockquote-center"><p>
