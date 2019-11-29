@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Fri, 29 Nov 2019 11:28:33 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 29 Nov 2019 21:07:38 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -1860,6 +1860,36 @@ autoHideLangToggle = false</pre></td></tr></table>
     <span class="nt">margin</span><span class="nd">:</span> <span class="o">(</span><span class="err">$</span><span class="nt">fontSize</span> <span class="o">*</span> <span class="nt">0</span><span class="nc">.5</span><span class="o">)</span><span class="p">;</span>
     <span class="nt">display</span><span class="nd">:</span> <span class="nt">inline-block</span><span class="p">;</span>
 <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="插入音频">插入音频</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">#通过<span class="p">&lt;</span><span class="nt">audio</span><span class="p">&gt;</span>标签插入
+<span class="p">&lt;</span><span class="nt">audio</span> <span class="na">controls</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;clear:both;display:block;margin:auto&#34;</span> <span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/audios/xx.mp3&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="p">&gt;</span>
+你的浏览器暂不支持该音频！
+<span class="p">&lt;/</span><span class="nt">audio</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">#通过<span class="p">&lt;</span><span class="nt">video</span><span class="p">&gt;</span>标签插入
+<span class="p">&lt;</span><span class="nt">video</span> <span class="na">poster</span><span class="o">=</span><span class="s">&#34;/images/background.jpg&#34;</span> <span class="na">controls</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/audios/星空.mp3&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
                 
@@ -6861,8 +6891,9 @@ example：
                 
                 
                 
-                    <description><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" title="草" />
-<p style="text-align:center">
+                    <description><![CDATA[<p><img src="/images/life/2019/11/草.jpg" alt="草" title="草" /></p>
+
+<p><p style="text-align:center">
 poem
 </p>
 <blockquote class="blockquote-center" style="font-size:18px"><p>
@@ -6886,7 +6917,7 @@ poem
 我确信<br/>
 我的草籽<br/>
 只需一点山风的沐浴<br/>
-就能所向披
+就能所向披靡
 </p></blockquote></p>
 
 <p><code>from</code>:[片刻]</p>
