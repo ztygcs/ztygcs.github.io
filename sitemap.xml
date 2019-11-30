@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ztygcs.github.io/posts/</loc>
+    <lastmod>2019-11-30T16:15:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/posts/test/</loc>
+    <lastmod>2019-11-30T16:15:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/</loc>
+    <lastmod>2019-11-30T16:15:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ztygcs.github.io/categories/</loc>
     <lastmod>2019-11-30T15:27:49+08:00</lastmod>
   </url>
@@ -14,11 +29,6 @@
   
   <url>
     <loc>https://ztygcs.github.io/categories/philosophy/</loc>
-    <lastmod>2019-11-30T15:27:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ztygcs.github.io/posts/</loc>
     <lastmod>2019-11-30T15:27:49+08:00</lastmod>
   </url>
   
@@ -43,17 +53,12 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/</loc>
-    <lastmod>2019-11-30T15:27:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ztygcs.github.io/tags/hugo/</loc>
+    <loc>https://ztygcs.github.io/categories/hugo/</loc>
     <lastmod>2019-11-29T22:07:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/categories/hugo/</loc>
+    <loc>https://ztygcs.github.io/tags/hugo/</loc>
     <lastmod>2019-11-29T22:07:34+08:00</lastmod>
   </url>
   
@@ -98,12 +103,12 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/tags/hexo/</loc>
+    <loc>https://ztygcs.github.io/categories/hexo/</loc>
     <lastmod>2019-11-28T17:11:45+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/categories/hexo/</loc>
+    <loc>https://ztygcs.github.io/tags/hexo/</loc>
     <lastmod>2019-11-28T17:11:45+08:00</lastmod>
   </url>
   
@@ -253,12 +258,12 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/categories/music/</loc>
+    <loc>https://ztygcs.github.io/tags/music/</loc>
     <lastmod>2019-11-29T22:09:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/tags/music/</loc>
+    <loc>https://ztygcs.github.io/categories/music/</loc>
     <lastmod>2019-11-29T22:09:14+08:00</lastmod>
   </url>
   
