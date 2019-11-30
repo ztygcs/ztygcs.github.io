@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-30T16:16:04+08:00</updated>
+    <updated>2019-11-30T16:20:35+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Test</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/test/" />
             <id>https://ztygcs.github.io/posts/test/</id>
-            <updated>2019-11-30T16:15:52+08:00</updated>
+            <updated>2019-11-30T16:19:18+08:00</updated>
             <published>2019-11-30T15:44:23+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -31,14 +31,11 @@
     
     <summary type="html"><![CDATA["少年贪玩，青年迷恋爱情，壮年汲汲于成名成家，暮年自安于自欺欺人。人寿几何，顽铁能炼成的精金，能有多少？但不同程度的锻炼，必有不同程度的成绩；不同程度的纵欲放肆，必积下不同程度的顽劣。" 上苍不会让所有幸福集中到某个人身上，得到爱情未必拥有金钱；拥有金钱未必得到快乐；得到快乐未必拥有健康；拥有健康未必……]]></summary>
             
-                <content type="html"><![CDATA[<div class="mytag1">
-    
-<div class="mytag2">
+                <content type="html"><![CDATA[<div class="mytag">
 <p style="margin:25px">
    <b>"少年贪玩，青年迷恋爱情，壮年汲汲于成名成家，暮年自安于自欺欺人。人寿几何，顽铁能炼成的精金，能有多少？但不同程度的锻炼，必有不同程度的成绩；不同程度的纵欲放肆，必积下不同程度的顽劣。"<br />上苍不会让所有幸福集中到某个人身上，得到爱情未必拥有金钱；拥有金钱未必得到快乐；得到快乐未必拥有健康；拥有健康未必一切都会如愿以偿。保持知足常乐的心态才是淬炼心智、净化心灵的最佳途径。一切快乐的享受都属于精神，这种快乐把忍受变为享受，是精神对于物质的胜利，这便是人生哲学。"</b>
 </p>
 <div style="text-align:right;margin:15px" ><footer>——<cite>杨绛</cite></footer></div> 
-</div>
 </div>
 ]]></content>
             
@@ -2035,7 +2032,7 @@ autoHideLangToggle = false</pre></td></tr></table>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
                             
                         
                     
@@ -2612,7 +2609,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
                             
                         
                     
