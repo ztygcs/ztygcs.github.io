@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-11-30T18:07:29+08:00</updated>
+    <updated>2019-11-30T21:07:05+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">《欢迎来到哲学的世界》</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%93%B2%E5%AD%A6%E7%9A%84%E4%B8%96%E7%95%8C/" />
             <id>https://ztygcs.github.io/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%93%B2%E5%AD%A6%E7%9A%84%E4%B8%96%E7%95%8C/</id>
-            <updated>2019-11-30T15:27:49+08:00</updated>
+            <updated>2019-11-30T20:14:38+08:00</updated>
             <published>2019-11-30T15:01:44+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -107,7 +107,7 @@
             <title type="text">MemE主题优化</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
             <id>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</id>
-            <updated>2019-11-30T17:54:27+08:00</updated>
+            <updated>2019-11-30T18:16:09+08:00</updated>
             <published>2019-11-27T21:45:38+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -1566,15 +1566,11 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml">#文件地址： \static\images\quote-l.svg
+<pre class="chroma"><code class="language-xml" data-lang="xml">文件地址： \static\images\quote-l.svg
 <span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-
 <span class="c">&lt;!-- License Agreement at http://iconmonstr.com/license/ --&gt;</span>
-
 <span class="cp">&lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">version=</span><span class="s">&#34;1.1&#34;</span> <span class="na">xmlns=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">xmlns:xlink=</span><span class="s">&#34;http://www.w3.org/1999/xlink&#34;</span> <span class="na">x=</span><span class="s">&#34;0px&#34;</span> <span class="na">y=</span><span class="s">&#34;0px&#34;</span>
 	 <span class="na">width=</span><span class="s">&#34;512px&#34;</span> <span class="na">height=</span><span class="s">&#34;512px&#34;</span> <span class="na">viewBox=</span><span class="s">&#34;0 0 512 512&#34;</span> <span class="na">enable-background=</span><span class="s">&#34;new 0 0 512 512&#34;</span> <span class="na">xml:space=</span><span class="s">&#34;preserve&#34;</span><span class="nt">&gt;</span>
@@ -1598,15 +1594,11 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml">#文件地址： \static\images\quote-r.svg
+<pre class="chroma"><code class="language-xml" data-lang="xml">文件地址： \static\images\quote-r.svg
 <span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-
 <span class="c">&lt;!-- License Agreement at http://iconmonstr.com/license/ --&gt;</span>
-
 <span class="cp">&lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">version=</span><span class="s">&#34;1.1&#34;</span> <span class="na">xmlns=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">xmlns:xlink=</span><span class="s">&#34;http://www.w3.org/1999/xlink&#34;</span> <span class="na">x=</span><span class="s">&#34;0px&#34;</span> <span class="na">y=</span><span class="s">&#34;0px&#34;</span>
 	 <span class="na">width=</span><span class="s">&#34;512px&#34;</span> <span class="na">height=</span><span class="s">&#34;512px&#34;</span> <span class="na">viewBox=</span><span class="s">&#34;0 0 512 512&#34;</span> <span class="na">enable-background=</span><span class="s">&#34;new 0 0 512 512&#34;</span> <span class="na">xml:space=</span><span class="s">&#34;preserve&#34;</span><span class="nt">&gt;</span>
@@ -1656,8 +1648,8 @@
 </span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nn">#文件位置</span><span class="err">：\</span><span class="nt">themes</span><span class="err">\</span><span class="nt">meme</span><span class="err">\</span><span class="nt">assets</span><span class="err">\</span><span class="nt">scss</span><span class="err">\</span><span class="nt">_custom</span><span class="err">\</span><span class="nt">custom</span><span class="nc">.scss</span>
-<span class="nt">p</span><span class="nn">#div-default</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//文件位置：\themes\meme\assets\scss\_custom\custom.scss
+</span><span class="c1"></span><span class="nt">p</span><span class="nn">#div-default</span> <span class="p">{</span>
     <span class="nt">background</span><span class="nd">:</span> <span class="nt">var</span><span class="o">(</span><span class="nt">--color-div-default-bg</span><span class="o">)</span><span class="p">;</span>	   
     <span class="nt">border-left-color</span><span class="nd">:</span> <span class="nt">var</span><span class="o">(</span><span class="nt">--color-div-default</span><span class="o">)</span><span class="p">;</span>	    
 <span class="p">}</span> 
@@ -1730,8 +1722,8 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nn">#文件位置</span><span class="err">：\</span><span class="nt">themes</span><span class="err">\</span><span class="nt">meme</span><span class="err">\</span><span class="nt">assets</span><span class="err">\</span><span class="nt">scss</span><span class="err">\</span><span class="nt">_custom</span><span class="err">\</span><span class="nt">custom</span><span class="nc">.scss</span>
-<span class="nc">.colorfulfont</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//文件位置：\themes\meme\assets\scss\_custom\custom.scss
+</span><span class="c1"></span><span class="nc">.colorfulfont</span> <span class="p">{</span>
 <span class="nt">background</span><span class="nd">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">to</span> <span class="nt">right</span><span class="o">,</span> <span class="nt">red</span><span class="o">,</span><span class="nn">#45ed63</span><span class="o">)</span><span class="p">;</span>
 <span class="nt">-webkit-background-clip</span><span class="nd">:</span> <span class="nt">text</span><span class="p">;</span>
 <span class="nt">color</span><span class="nd">:</span> <span class="nt">transparent</span><span class="p">;</span>
@@ -1773,8 +1765,8 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nn">#文件位置</span><span class="err">：\</span><span class="nt">themes</span><span class="err">\</span><span class="nt">meme</span><span class="err">\</span><span class="nt">assets</span><span class="err">\</span><span class="nt">scss</span><span class="err">\</span><span class="nt">_common</span><span class="err">\</span><span class="nt">back-to-top</span><span class="nc">.scss</span>
-<span class="nc">.back-to-top</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//文件位置：\themes\meme\assets\scss\_common\back-to-top.scss
+</span><span class="c1"></span><span class="nc">.back-to-top</span> <span class="p">{</span>
     <span class="nt">font-size</span><span class="nd">:</span> <span class="nt">120</span><span class="err">%</span><span class="p">;</span>
     <span class="nt">color</span><span class="nd">:</span> <span class="nt">var</span><span class="o">(</span><span class="nt">--color-contrast-medium</span><span class="o">)</span><span class="p">;</span>
     <span class="nt">position</span><span class="nd">:</span> <span class="nt">fixed</span><span class="p">;</span>
@@ -1853,9 +1845,9 @@
 </span><span class="lnt">60
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nn">#</span> <span class="nt">文件位置</span><span class="err">：\</span><span class="nt">themes</span><span class="err">\</span><span class="nt">meme</span><span class="err">\</span><span class="nt">assets</span><span class="err">\</span><span class="nt">scss</span><span class="err">\</span><span class="nt">_common</span><span class="err">\</span><span class="nt">list</span><span class="nc">.scss</span>
-<span class="o">//</span><span class="nt">归档页总标题</span><span class="err">（</span><span class="nt">posts</span><span class="err">）</span>
-<span class="nc">.list-title</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//文件位置：\themes\meme\assets\scss\_common\list.scss
+</span><span class="c1">//归档页总标题（posts）
+</span><span class="c1"></span><span class="nc">.list-title</span> <span class="p">{</span>
     <span class="nt">text-align</span><span class="nd">:</span> <span class="nt">center</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c1">//归档页文章列表
@@ -1975,7 +1967,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">#通过<span class="p">&lt;</span><span class="nt">audio</span><span class="p">&gt;</span>标签插入
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!--通过&lt;audio&gt;标签插入--&gt;</span>
 <span class="p">&lt;</span><span class="nt">audio</span> <span class="na">controls</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;clear:both;display:block;margin:auto&#34;</span> <span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/audios/xx.mp3&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="p">&gt;</span>
 你的浏览器暂不支持该音频！
@@ -1991,7 +1983,7 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">#通过<span class="p">&lt;</span><span class="nt">video</span><span class="p">&gt;</span>标签插入
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!--通过&lt;video&gt;标签插入--&gt;</span>
 <span class="p">&lt;</span><span class="nt">video</span> <span class="na">poster</span><span class="o">=</span><span class="s">&#34;/images/background.jpg&#34;</span> <span class="na">controls</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/audios/星空.mp3&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span></code></pre></td></tr></table>
@@ -2050,8 +2042,8 @@
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nn">#文件位置</span><span class="err">：`\</span><span class="nt">themes</span><span class="err">\</span><span class="nt">meme</span><span class="err">\</span><span class="nt">assets</span><span class="err">\</span><span class="nt">scss</span><span class="err">\</span><span class="nt">_custom</span><span class="err">\</span><span class="nt">custom</span><span class="nc">.scss</span><span class="err">`</span>
-<span class="nc">.mytag</span><span class="p">{</span>
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//文件位置：`\themes\meme\assets\scss\_custom\custom.scss`
+</span><span class="c1"></span><span class="nc">.mytag</span><span class="p">{</span>
     <span class="nt">position</span><span class="nd">:</span> <span class="nt">relative</span><span class="p">;</span>
     <span class="nt">left</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span> <span class="nt">right</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
     <span class="nt">width</span><span class="nd">:</span> <span class="nt">100</span><span class="err">%</span><span class="p">;</span>
@@ -2117,7 +2109,7 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -2694,7 +2686,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -7301,6 +7293,66 @@ poem
                             
                             
                                 <category scheme="https://ztygcs.github.io/tags/video/" term="video" label="video" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">蜜蜂</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/" />
+            <id>https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/</id>
+            <updated>2019-11-30T21:06:38+08:00</updated>
+            <published>2016-02-26T20:40:09+08:00</published>
+            <author>
+                    <name>天涯共此时</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            <summary type="html"><![CDATA[今天天气🌤️真好 下午的阳光好暖和 一个人到门口的油菜地里玩 冬天的痕迹慢慢消失了 小蜜蜂🐝都跑出来了 大家东跑西跑忙着采蜜 乐此不疲 我就偷偷的给你们拍个照把 hahaha😁]]></summary>
+            
+                <content type="html"><![CDATA[<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2016/bee.png" alt="" title="门前油菜地的蜜蜂" /></p>
+
+<p>今天天气🌤️真好<br/>
+下午的阳光好暖和<br/>
+一个人到门口的油菜地里玩<br/>
+冬天的痕迹慢慢消失了<br/>
+<font color="#ffde35">小蜜蜂</font>🐝都跑出来了<br/>
+大家东跑西跑忙着采蜜<br/>
+乐此不疲<br/>
+我就偷偷的给你们拍个照把<br/>
+hahaha😁</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/bee/" term="Bee" label="Bee" />
                             
                         
                     
