@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Mon, 02 Dec 2019 16:12:22 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 02 Dec 2019 16:59:14 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -2712,9 +2712,11 @@ Enabled by default. You can disable it from the package settings.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">[^1]: Hi! This is a footnote</pre></td></tr></table>
+<pre class="chroma">Content [^1]
+[^1]: Hi! This is a footnote</pre></td></tr></table>
 </div>
 </div>
 <p><strong>demo:</strong></p>
@@ -4908,10 +4910,7 @@ totop:
 
 <p>然而，导演在这部电影里并没有什么野心来表现议题的沉重性，在片子的结尾也没有给出彻底的悲惨结局或是皆大欢喜的结局，甚至就这样戛然而止了。</p>
 
-<p>影评：
-<font class = "colorfulfont">
-<a href="https://baijiahao.baidu.com/s?id=1610035941429632871&amp;wfr=spider&amp;for=pc" target="_blank">《错误教育》爱人无罪，教人憎恨才是</a>
-</font></p>
+<p>这里附上一个影评<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 <h4 id="拓展-谈谈同性婚姻合法化">拓展：谈谈同性婚姻合法化</h4>
 
@@ -4921,11 +4920,18 @@ totop:
 <p>注：2017年5月24日，中国台湾“司法院”大法官就同性婚姻释宪案作出司法解释，认定现行民法未允许同性结婚属于“违宪”，此举让中国台湾成为亚洲第一个同性婚姻合法的地区。</p>
 </blockquote>
 
-<p>电影获取：<br/>
-<font class = "colorfulfont">
-<a href="https://pan.baidu.com/s/11Df3LDj3O3RMQDRBDdsFrw" target="_blank">链接</a><br/>
-</font>
- 提取码: 8i8x</p>
+<p>电影获取：<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="https://baijiahao.baidu.com/s?id=1610035941429632871&amp;wfr=spider&amp;for=pc" target="_blank">《错误教育》爱人无罪，教人憎恨才是</a>
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2"><a href="https://pan.baidu.com/s/11Df3LDj3O3RMQDRBDdsFrw" target="_blank">链接</a> 提取码: 8i8x
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+</ol>
+</div>
 ]]></description>
                 
                 

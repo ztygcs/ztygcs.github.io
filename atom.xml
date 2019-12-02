@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-12-02T16:12:22+08:00</updated>
+    <updated>2019-12-02T16:59:14+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -2252,7 +2252,7 @@
             <title type="text">Markdown语法基础</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" />
             <id>https://ztygcs.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/</id>
-            <updated>2019-11-28T03:10:34+08:00</updated>
+            <updated>2019-12-02T16:45:54+08:00</updated>
             <published>2019-11-26T21:32:49+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2722,9 +2722,11 @@ Enabled by default. You can disable it from the package settings.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">[^1]: Hi! This is a footnote</pre></td></tr></table>
+<pre class="chroma">Content [^1]
+[^1]: Hi! This is a footnote</pre></td></tr></table>
 </div>
 </div>
 <p><strong>demo:</strong></p>
@@ -4915,7 +4917,7 @@ totop:
             <title type="text">《错误教育》</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2/" />
             <id>https://ztygcs.github.io/posts/%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2/</id>
-            <updated>2019-12-02T16:11:38+08:00</updated>
+            <updated>2019-12-02T16:52:23+08:00</updated>
             <published>2019-04-17T15:27:59+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -4951,10 +4953,7 @@ totop:
 
 <p>然而，导演在这部电影里并没有什么野心来表现议题的沉重性，在片子的结尾也没有给出彻底的悲惨结局或是皆大欢喜的结局，甚至就这样戛然而止了。</p>
 
-<p>影评：
-<font class = "colorfulfont">
-<a href="https://baijiahao.baidu.com/s?id=1610035941429632871&amp;wfr=spider&amp;for=pc" target="_blank">《错误教育》爱人无罪，教人憎恨才是</a>
-</font></p>
+<p>这里附上一个影评<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 <h4 id="拓展-谈谈同性婚姻合法化">拓展：谈谈同性婚姻合法化</h4>
 
@@ -4964,11 +4963,18 @@ totop:
 <p>注：2017年5月24日，中国台湾“司法院”大法官就同性婚姻释宪案作出司法解释，认定现行民法未允许同性结婚属于“违宪”，此举让中国台湾成为亚洲第一个同性婚姻合法的地区。</p>
 </blockquote>
 
-<p>电影获取：<br/>
-<font class = "colorfulfont">
-<a href="https://pan.baidu.com/s/11Df3LDj3O3RMQDRBDdsFrw" target="_blank">链接</a><br/>
-</font>
- 提取码: 8i8x</p>
+<p>电影获取：<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="https://baijiahao.baidu.com/s?id=1610035941429632871&amp;wfr=spider&amp;for=pc" target="_blank">《错误教育》爱人无罪，教人憎恨才是</a>
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2"><a href="https://pan.baidu.com/s/11Df3LDj3O3RMQDRBDdsFrw" target="_blank">链接</a> 提取码: 8i8x
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+</ol>
+</div>
 ]]></content>
             
             
