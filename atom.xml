@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-12-02T11:29:07+08:00</updated>
+    <updated>2019-12-02T14:26:40+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">PHP学习之开发环境的安装</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/php%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85/" />
             <id>https://ztygcs.github.io/posts/php%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85/</id>
-            <updated>2019-12-02T11:28:08+08:00</updated>
+            <updated>2019-12-02T13:49:22+08:00</updated>
             <published>2019-12-02T10:04:41+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -29,18 +29,18 @@
                     </author>
             
     
-    <summary type="html"><![CDATA[开发环境 win10(64位)+Google Chorme+sublime text3+xampp+Navicat 文件夹的设置 目的：显示文件的后缀 任意打开一个文件夹，点击查看，勾选上文件扩展名。 安装编辑器 sublime text3 sublime text3 下载地址 安装过程就不用说了，直接下一步就好了。 安装 xampp XAMPP 官方下载地址 下载好之后点击.exe后缀文件，进行安装 注意：文件路径不要使用中文 安装好了之后直接打开xa……]]></summary>
+    <summary type="html"><![CDATA[开发环境 win10(64位) + Google Chorme + sublime text3 + xampp + Navicat 文件夹的设置 目的：显示文件的后缀 任意打开一个文件夹，点击 查看 ，勾选上 文件扩展名 。 安装编辑器 sublime text3 sublime text3 下载地址 安装过程就不用说了，直接下一步就好了。 安装 xampp XAMPP 官方下载地址 下载好之后点击 .exe 后缀文件，进行安装 注意：文件路径不要使用中文 安装好了之后直接打开xamp……]]></summary>
             
                 <content type="html"><![CDATA[
 
 <h1 id="开发环境">开发环境</h1>
 
-<p><code>win10(64位)</code>+<code>Google Chorme</code>+<code>sublime text3</code>+<code>xampp</code>+<code>Navicat</code></p>
+<p><code>win10(64位)</code> + <code>Google Chorme</code> + <code>sublime text3</code> + <code>xampp</code> + <code>Navicat</code></p>
 
 <h1 id="文件夹的设置">文件夹的设置</h1>
 
 <p><code>目的</code>：显示文件的后缀<br/>
-任意打开一个文件夹，点击<code>查看</code>，勾选上<code>文件扩展名</code>。
+任意打开一个文件夹，点击 <code>查看</code> ，勾选上 <code>文件扩展名</code> 。
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D.png" alt="" title="勾选上文件扩展名" /></p>
 
 <h1 id="安装编辑器-sublime-text3">安装编辑器 sublime text3</h1>
@@ -52,7 +52,7 @@
 <h1 id="安装-xampp">安装 xampp</h1>
 
 <p><a href="https://www.apachefriends.org/zh_cn/download.html" target="_blank">XAMPP 官方下载地址</a><br/>
-下载好之后点击<code>.exe</code>后缀文件，进行安装</p>
+下载好之后点击 <code>.exe</code> 后缀文件，进行安装</p>
 
 <p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/xampp%E8%A7%A3%E5%8E%8B.png" alt="" title="选择解压路径" /></p>
 
@@ -60,11 +60,11 @@
 <p>注意：文件路径不要使用中文</p>
 </blockquote>
 
-<p>安装好了之后直接打开xampp,这时候点击<code>Apache</code>和<code>MySql</code>的Start按钮，如果<code>Apache</code>和<code>MySql</code>都变成绿底并且拥有端口号，那么就代表xampp打开成功了！
+<p>安装好了之后直接打开xampp,这时候点击 <code>Apache</code> 和 <code>MySql</code> 的Start按钮，如果 <code>Apache</code> 和 <code>MySql</code> 都变成 ..绿底.. 并且拥有 ..端口号.. ，那么就代表 <code>xampp</code> 打开成功了！
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/xampp%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF.png" alt="" title="xampp控制面板" /></p>
 
 <p>如何验证成功了呢？<br/>
-我们在浏览器地址栏中打开<code>127.0.0.1</code>，这时我们就能看到如下的页面
+我们在浏览器地址栏中打开 <code>127.0.0.1</code> ，这时我们就能看到如下的页面
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/xampp_phpversion.png" alt="" title="index.html" /></p>
 
 <blockquote>
@@ -72,13 +72,13 @@
 </blockquote>
 
 <p>那么这个地址代表的是本地哪里的文件呢？<br/>
-在你的xampp安装路径下有个<code>htdocs</code>文件夹，下面会有一个<code>index.html</code>文件，127.0.0.1指的就是这个目录下的这个文件，可以自己创建一个<code>index.html</code>文件替换掉它再刷新网页试试效果
+在你的xampp安装路径下有个 <code>htdocs</code> 文件夹，下面会有一个 <code>index.html</code> 文件，127.0.0.1指的就是这个目录下的这个文件，可以自己创建一个 <code>index.html</code> 文件替换掉它再刷新网页试试效果
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/htdocs.png" alt="" title="index文件路径" />
-如果没有<code>index.html</code>文件，那么浏览器将会显示当前文件夹包含的所有文件列表</p>
+如果没有 <code>index.html</code> 文件，那么浏览器将会显示当前文件夹包含的 ..所有文件列表..</p>
 
 <h1 id="下载php手册">下载php手册</h1>
 
-<p>浏览器地址栏输入<code>https://www.php.net/</code>在里面找到中文版本的下载</p>
+<p>浏览器地址栏输入 <code>https://www.php.net/</code> 在里面找到中文版本的下载</p>
 
 <p>其他php手册：这里是<a href="https://www.w3school.com.cn/php/php_ref.asp" target="_blank">w3school在线php手册</a></p>
 
@@ -89,7 +89,7 @@
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/navicat.png" alt="" title="navicat连接" /></p>
 
 <blockquote>
-<p>用户名和密码均为<code>root</code></p>
+<p>用户名和密码均为 <code>root</code></p>
 </blockquote>
 
 <p>到此为止，php的开发环境就已经安装好了。</p>
@@ -113,7 +113,7 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/php/" term="php" label="php" />
+                                <category scheme="https://ztygcs.github.io/categories/php/" term="Php" label="Php" />
                             
                         
                     
@@ -123,7 +123,7 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/php/" term="php" label="php" />
+                                <category scheme="https://ztygcs.github.io/tags/php/" term="Php" label="Php" />
                             
                         
                     
@@ -222,7 +222,7 @@
             <title type="text">MemE主题优化</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
             <id>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</id>
-            <updated>2019-11-30T18:16:09+08:00</updated>
+            <updated>2019-12-02T12:39:50+08:00</updated>
             <published>2019-11-27T21:45:38+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2224,7 +2224,7 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -2773,7 +2773,7 @@ Enabled by default. You can disable it from the package settings.</p>
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/hello-world/" />
             <id>https://ztygcs.github.io/posts/hello-world/</id>
-            <updated>2019-11-28T19:22:56+08:00</updated>
+            <updated>2019-12-02T13:07:59+08:00</updated>
             <published>2019-11-26T14:45:13+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2801,7 +2801,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="hugo" label="hugo" />
+                                <category scheme="https://ztygcs.github.io/categories/hugo/" term="Hugo" label="Hugo" />
                             
                         
                     
@@ -4817,7 +4817,7 @@ totop:
             <title type="text">《无名之辈》</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/" />
             <id>https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/</id>
-            <updated>2019-11-30T22:16:41+08:00</updated>
+            <updated>2019-12-02T12:39:59+08:00</updated>
             <published>2019-11-01T21:40:01+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -4898,7 +4898,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
@@ -7082,7 +7082,7 @@ example：
             <title type="text">用Hexo写博客及语法规则</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" />
             <id>https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</id>
-            <updated>2019-11-28T17:11:45+08:00</updated>
+            <updated>2019-12-02T13:18:20+08:00</updated>
             <published>2018-09-12T10:15:53+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7165,10 +7165,10 @@ example：
 ***加粗斜体***</pre></td></tr></table>
 </div>
 </div>
-<p>效果：
-*斜体*，<em>斜体</em>
-<strong>粗体</strong>
-<strong><em>加粗斜体</em></strong></p>
+<p>效果：<br/>
+*斜体*，<em>斜体</em><br/>
+<strong>粗体</strong><br/>
+<strong><em>加粗斜体</em></strong><br/></p>
 
 <h1 id="字体大小与颜色"><strong>字体大小与颜色</strong></h1>
 
@@ -7186,18 +7186,18 @@ example：
 <pre class="chroma">&lt;font face=&#34;黑体&#34;&gt;我是黑体字&lt;/font&gt;
 &lt;font face=&#34;楷体&#34;&gt;我是楷体&lt;/font&gt;
 &lt;font face=&#34;STCAIYUN&#34;&gt;我是华文彩云&lt;/font&gt;
-&lt;font color=#0099ff size=3 face=&#34;幼圆&#34;&gt;我是幼圆 size=3 color=#0099ff&lt;/font&gt;
-&lt;font color=#00ffff size=4&gt;size=4 color=#00ffff&lt;/font&gt;
-&lt;font color=gray size=5&gt;size=5 color=gray&lt;/font&gt;</pre></td></tr></table>
+&lt;font color=#0099ff size=2 face=&#34;幼圆&#34;&gt;我是幼圆 size=2 color=#0099ff&lt;/font&gt;
+&lt;font color=#00ffff size=3&gt;size=3 color=#00ffff&lt;/font&gt;
+&lt;font color=gray size=4&gt;size=4 color=gray&lt;/font&gt;</pre></td></tr></table>
 </div>
 </div>
 <p>效果：
-<font face="黑体">我是黑体字</font>
-<font face="楷体">我是楷体</font>
-<font face="STCAIYUN">我是华文彩云</font>
-<font color=#0099ff size=3 face="幼圆">我是幼圆 size=3 color=#0099ff</font>
-<font color=#00ffff size=4>size=4 color=#00ffff</font>
-<font color=gray size=5>size=5 color=gray</font></p>
+<font face="黑体">我是黑体字</font><br/>
+<font face="楷体">我是楷体</font><br/>
+<font face="STCAIYUN">我是华文彩云</font><br/>
+<font color=#0099ff size=2 face="幼圆">我是幼圆 size=2 color=#0099ff</font><br/>
+<font color=#00ffff size=3>size=3 color=#00ffff</font><br/>
+<font color=gray size=4>size=4 color=gray</font></p>
 
 <h1 id="文字底色"><strong>文字底色</strong></h1>
 
@@ -7273,17 +7273,21 @@ example：
 <h1 id="插入视频"><strong>插入视频</strong></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&lt;video src=&#34;/videos/a.mp4&#34; poster=&#34;/images/b.jpg&#34;  style=&#34;object-fit:fill&#34; controls&gt;&lt;/video&gt;</pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">//方法一
+<span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/videos/a.mp4&#34;</span> <span class="na">poster</span><span class="o">=</span><span class="s">&#34;/images/b.jpg&#34;</span>  <span class="na">style</span><span class="o">=</span><span class="s">&#34;object-fit:fill&#34;</span> <span class="na">controls</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">![](/videos/a.mp4 &#34;说明文字&#34;)</pre></td></tr></table>
+<pre class="chroma">//方法二
+![](/videos/a.mp4 &#34;说明文字&#34;)</pre></td></tr></table>
 </div>
 </div>
 <p>效果：
@@ -7302,40 +7306,59 @@ example：
 <code>+ 无序列表2</code>
 <code>- 无序列表3</code></p>
 
-<p>效果：
-* 无序列表1
-+ 无序列表2
-- 无序列表3</p>
+<p>效果：</p>
+
+<ul>
+<li><p>无序列表1</p></li>
+
+<li><p>无序列表2</p></li>
+
+<li><p>无序列表3</p></li>
+</ul>
 
 <h2 id="有序列表">有序列表</h2>
 
 <p>语法：
-<code>1.无序列表1</code>
-<code>2.无序列表2</code>
-<code>3.无序列表3</code></p>
-
-<p>效果：
-1.无序列表1
-2.无序列表2
-3.无序列表3</p>
-
-<h1 id="表格"><strong>表格</strong></h1>
-
-<p>-默认左对齐
-:- 左对齐
--: 右对齐
-:-: 居中对齐</p>
-
-<p>语法：
-<code>|表头1|表头2|表头3|表头4</code>
-<code>|-|:-|:-:|-:|</code>
-<code>|默认左对齐|左对齐|居中对齐|右对齐|</code></p>
+<code>1.有序列表1</code>
+<code>2.有序列表2</code>
+<code>3.有序列表3</code></p>
 
 <p>效果：</p>
 
-<p>|表头1|表头2|表头3|表头4
-|-|:-|:-:|-:|
-|默认左对齐|左对齐|居中对齐|右对齐|</p>
+<p>1.有序列表1</p>
+
+<p>2.有序列表2</p>
+
+<p>3.有序列表3</p>
+
+<h1 id="表格"><strong>表格</strong></h1>
+
+<p>语法：
+<code>|表头1|表头2|表头3|表头4</code>
+<code>|:-:|:-:|:-:|:-:|</code>
+<code>|内容1|内容2|内容3|内容4|</code></p>
+
+<p>效果：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">表头1</th>
+<th align="center">表头2</th>
+<th align="center">表头3</th>
+<th align="center">表头4</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">内容1</td>
+<td align="center">内容2</td>
+<td align="center">内容3</td>
+<td align="center">内容4</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
             
             
@@ -7465,7 +7488,7 @@ poem
             <title type="text">毕业</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/" />
             <id>https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/</id>
-            <updated>2019-11-29T22:29:02+08:00</updated>
+            <updated>2019-12-02T12:40:35+08:00</updated>
             <published>2018-06-08T09:55:00+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7506,7 +7529,88 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/video/" term="video" label="video" />
+                                <category scheme="https://ztygcs.github.io/tags/video/" term="Video" label="Video" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">滨江公园踏青</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD%E4%B8%80%E6%97%A5%E6%B8%B8/" />
+            <id>https://ztygcs.github.io/posts/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD%E4%B8%80%E6%97%A5%E6%B8%B8/</id>
+            <updated>2019-12-02T14:25:11+08:00</updated>
+            <published>2017-04-29T14:04:06+08:00</published>
+            <author>
+                    <name>天涯共此时</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            
+    
+    <summary type="html"><![CDATA[趁着今天的好天气🌤️ 哥几个又出来浪😎 沿江走着 草坪上绿荫之处 三五成群坐着人 男女老少 烧烤的（之前不是写着这里不让烧烤的吗，难道江边可以？） 聊天的 做游戏的 都忙着自己的事 乐此不彼 浅滩上 一群年轻人在这里嬉戏打闹 我们也过去 脱掉鞋 在水中嬉闹 光脚踩在软绵绵的沙子上 刚开始会觉得挺舒服的 但是如果你不动的话 便会觉得有些烫……]]></summary>
+            
+                <content type="html"><![CDATA[<p>趁着今天的好天气🌤️<br/>
+哥几个又出来浪😎<br/>
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2017/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD1.jpg" alt="" title="图片调了色（不过天气确实好）" />
+沿江走着<br/>
+草坪上绿荫之处<br/>
+三五成群坐着人<br/>
+男女老少<br/>
+烧烤的（之前不是写着这里不让烧烤的吗，难道江边可以？）<br/>
+聊天的<br/>
+做游戏的<br/>
+都忙着自己的事<br/>
+乐此不彼<br/>
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2017/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD2.jpg" alt="" />
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2017/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD3.jpg" alt="" />
+浅滩上<br/>
+一群年轻人在这里嬉戏打闹<br/>
+我们也过去<br/>
+脱掉鞋<br/>
+在水中嬉闹<br/>
+光脚踩在软绵绵的沙子上<br/>
+刚开始会觉得挺舒服的<br/>
+但是如果你不动的话<br/>
+便会觉得有些烫脚<br/>
+伴随着阵阵清风<br/>
+不时会有丝丝凉意<br/>
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2017/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD4.jpg" alt="" />
+夕阳无限好<br/>
+只是...<br/>
+又要回学校了
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2017/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD5.jpg" alt="" title="傍晚时分" /></p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD/" term="滨江公园" label="滨江公园" />
                             
                         
                     
@@ -7604,7 +7708,7 @@ poem
             <title type="text">林中烧烤</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%9E%97%E4%B8%AD%E7%83%A7%E7%83%A4/" />
             <id>https://ztygcs.github.io/posts/%E6%9E%97%E4%B8%AD%E7%83%A7%E7%83%A4/</id>
-            <updated>2019-11-30T22:54:22+08:00</updated>
+            <updated>2019-12-02T12:38:28+08:00</updated>
             <published>2016-12-06T22:22:23+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7654,7 +7758,7 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/barbecue/" term="barbecue" label="barbecue" />
+                                <category scheme="https://ztygcs.github.io/tags/barbecue/" term="Barbecue" label="Barbecue" />
                             
                         
                     
