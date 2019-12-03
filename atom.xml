@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-12-02T16:59:14+08:00</updated>
+    <updated>2019-12-03T11:15:02+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">PHP学习之开发环境的安装</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/php%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85/" />
             <id>https://ztygcs.github.io/posts/php%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85/</id>
-            <updated>2019-12-02T13:49:22+08:00</updated>
+            <updated>2019-12-02T20:05:32+08:00</updated>
             <published>2019-12-02T10:04:41+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -124,6 +124,12 @@
                             
                             
                                 <category scheme="https://ztygcs.github.io/tags/php/" term="Php" label="Php" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/xampp/" term="Xampp" label="Xampp" />
                             
                         
                     
@@ -4899,7 +4905,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
@@ -4914,10 +4920,185 @@ totop:
         </entry>
     
         <entry>
+            <title type="text">浅谈HTTP与HTTPS</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%B5%85%E8%B0%88http%E4%B8%8Ehttps/" />
+            <id>https://ztygcs.github.io/posts/%E6%B5%85%E8%B0%88http%E4%B8%8Ehttps/</id>
+            <updated>2019-12-02T20:43:06+08:00</updated>
+            <published>2019-04-20T20:25:00+08:00</published>
+            <author>
+                    <name>天涯共此时</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            
+    
+    <summary type="html"><![CDATA[概念 HTTP ..HTTP.. （HyperText Transfer Protocol：超文本传输协议）是一种用于分布式、协作式和超媒体信息系统的应用层协议。 简单来说就是一种发布和接收 HTML 页面的方法，被用于在 Web 浏览器和网站服务器之间传递信息。 HTTPS ..HTTPS.. （Hypertext Transfer Protocol Secure：超文本传输安全协议或HTT Pover SSL）是一种透过计算机网络进……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<p><img src="https://upload-images.jianshu.io/upload_images/1674835-5997f6d0bde58e29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="HTTP与HTTPS" /></p>
+
+<h1 id="概念">概念</h1>
+
+<h2 id="http">HTTP</h2>
+
+<p>..HTTP.. （HyperText Transfer Protocol：<strong>超文本传输协议</strong>）是一种用于分布式、协作式和超媒体信息系统的<strong>应用层协议</strong>。
+ 简单来说就是一种发布和接收 HTML 页面的方法，被用于在 Web 浏览器和网站服务器之间传递信息。</p>
+
+<h2 id="https">HTTPS</h2>
+
+<p>..HTTPS.. （Hypertext Transfer Protocol Secure：<strong>超文本传输安全协议</strong>或HTT Pover SSL）是一种透过计算机网络进行安全通信的传输协议。</p>
+
+<h1 id="区别">区别</h1>
+
+<h2 id="http-1">HTTP</h2>
+
+<ul>
+<li>HTTP 默认工作在 TCP 协议 <code>80 端口</code></li>
+<li>用户访问网站 以<code>http://</code>打头</li>
+<li>HTTP 协议以<code>明文</code>方式发送内容，<code>不安全</code></li>
+</ul>
+
+<blockquote>
+<p>注：HTTP 协议不提供任何方式的数据加密，如果攻击者截取了Web浏览器和网站服务器之间的传输报文，就可以直接读懂其中的信息，因此，HTTP协议不适合传输一些敏感信息，比如：信用卡号、密码等支付信息。</p>
+</blockquote>
+
+<h2 id="https-1">HTTPS</h2>
+
+<ul>
+<li>HTTPS 默认工作在 TCP 协议<code>443端口</code></li>
+<li>用户访问网站 以<code>https://</code>打头</li>
+<li>HTTPS 经由 HTTP 进行通信，但利用 SSL（Secure Socket Layer,安全套接字层）/TLS（Transport Layer Security,运输层安全） 来<code>加密</code>数据包。<code>安全</code></li>
+</ul>
+
+<blockquote>
+<p>注：HTTPS 开发的主要目的，是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。</p>
+</blockquote>
+
+<ul>
+<li><strong>你也可以说：HTTPS = HTTP + SSL</strong></li>
+<li><strong>HTTPS 在 HTTP 应用层的基础上使用安全套接字层作为子层。</strong>
+<img src="https://upload-images.jianshu.io/upload_images/1674835-9351b4213664edc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="HTTP与HTTPS的结构" /></li>
+</ul>
+
+<hr />
+
+<p>在讲HTTPS原理之前，先介绍下<strong>两类密码体制</strong></p>
+
+<blockquote>
+<p>当你需要在一个购物网站输入账号以及密码时，含有你的账号与密码信息的数据会被发送到服务器，在发送的过程中，数据会有两种加密形式—— ..共享密钥加密.. 和 ..公开密钥加密..。<br/>
+<strong>共享密钥加密</strong>可以这样理解，服务器为了使数据传输更安全，送给你一把钥匙，这把钥匙可以将数据锁在一个盒子里，当然也可以打开已经锁上的盒子。当数据送至服务器时，服务器会用同样的钥匙打开盒子。这种方法的坏处是，一旦贼人得到钥匙，便可以打开已经锁上的盒子。而公开密钥则避免了这种情况。<br/>
+<strong>公开密钥加密</strong>会使用两把钥匙，服务器会发送给你一把只能锁上盒子却不能打开盒子的钥匙，而服务器自己会留一把可以打开盒子的钥匙，这样就避免了钥匙在中途被其他人抢走风险。当服务器发回响应时会用同样的方式，只不过留有可以打开盒子钥匙的人变成了你。</p>
+</blockquote>
+
+<h1 id="密码体制">密码体制</h1>
+
+<h2 id="密码体制1-对称密钥密码体制">密码体制1——对称密钥密码体制</h2>
+
+<p>对称密钥密码体制又称为..共享秘钥加密..，（<code>加密密钥与解密密钥使用相同的密码</code>）
+<img src="https://upload-images.jianshu.io/upload_images/1674835-4ab791ca5772a693.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="共享秘钥加密" /></p>
+
+<ul>
+<li>客户端与服务器使用相同的密码对内容进行加密与解密</li>
+<li>但这样也必须将密钥也发给对方，造成了另一个问题（<strong>怎样将密钥安全的发给对方？</strong>）</li>
+<li>任何人只要获取了密钥便可解密密文</li>
+<li>一旦第三方攻击者获得了密钥，加密也就毫无意义</li>
+</ul>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/1674835-7a3cf3c6b7e423f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="危害" /></p>
+
+<h2 id="密码体制2-公钥密码体制">密码体制2——公钥密码体制</h2>
+
+<p>公钥密码体制又称为 ..公开秘钥加密..，（<code>加密密钥与解密密钥使用不同的密码（但有关联）</code>）
+<img src="https://upload-images.jianshu.io/upload_images/1674835-9630dc1c844289de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="公开秘钥加密" /></p>
+
+<ul>
+<li>加密密钥也称为<code>公钥</code>（public key），是向公众<strong>公开</strong>的</li>
+<li>解密密钥也称为<code>私钥</code>或<code>秘钥</code>（secret key），是需要<strong>保密</strong>的</li>
+</ul>
+
+<h1 id="简要过程">简要过程</h1>
+
+<h2 id="http-2">HTTP</h2>
+
+<ol>
+<li>浏览器打开一个 TCP 连接</li>
+<li>浏览器发送 HTTP 请求到服务器端</li>
+<li>服务器发送 HTTP 回应信息到浏览器</li>
+<li>TCP 连接关闭</li>
+</ol>
+
+<h2 id="ssl">SSL</h2>
+
+<ol>
+<li>验证服务器端
+2.允许客户端和服务器端选择加密算法和密码，确保双方都支持</li>
+<li>验证客户端(可选)</li>
+<li>使用公钥加密技术来生成共享加密数据</li>
+<li>创建一个加密的 SSL 连接</li>
+<li>基于该 SSL 连接传递 HTTP 请求</li>
+</ol>
+
+<h2 id="https-2">HTTPS</h2>
+
+<ol>
+<li>使用 HTTPS 连接时，服务器要求有公钥和签名的证书。</li>
+<li>当使用 https 连接，服务器响应初始连接，并提供它所支持的加密方法。</li>
+<li>作为回应，客户端选择一个连接方法，并且客户端和服务器端交换证书验证彼此身份。</li>
+<li>完成之后，在确保使用相同密钥的情况下传输加密信息，然后关闭连接。</li>
+<li>为了提供 https 连接支持，服务器必须有一个公钥证书，该证书包含经过证书机构认证的密钥信息，大部分证书都是通过第三方机构授权的，以保证证书是安全的。</li>
+</ol>
+
+<blockquote>
+<p>注：如果某个网站要求你填写信用卡信息，首先你要检查该网页是否使用 https 加密连接，如果没有，那么请 ..不要输入.. 任何敏感信息如信用卡号。</p>
+</blockquote>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" term="计算机网络" label="计算机网络" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/http/" term="Http" label="Http" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/" term="密码体制" label="密码体制" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">《错误教育》</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2/" />
             <id>https://ztygcs.github.io/posts/%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2/</id>
-            <updated>2019-12-02T16:52:23+08:00</updated>
+            <updated>2019-12-02T19:53:45+08:00</updated>
             <published>2019-04-17T15:27:59+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -4926,29 +5107,31 @@ totop:
                     </author>
             
     
-    <summary type="html"><![CDATA[这是一部关于 ..同性.. 的影片。 影片主要讲述的是同性恋少女卡梅伦的一段青春成长历程。 谈到 ..同性恋.. 这个话题，我相信每个人都有自己的立场和思考，但思考终归是思考，脱离实际而发表的言论我们都会侃侃而谈。当我们自己亲身面临它时，问题恐怕没那么简单。 向左还是向右，或许只是一种选择。对于性取向这个问题，可……]]></summary>
+    <summary type="html"><![CDATA[这是一部关于 ..同性.. 的影片。 影片主要讲述的是同性恋少女 ..卡梅伦.. 的一段青春成长历程。 小镇少女卡梅伦从小被寄养在极端保守的阿姨的家中。在高中舞会时，卡梅伦在汽车后座与女同学亲热被逮到，因而出柜。她的阿姨随后将其远送一家信奉宗教疗法的治疗机构，他们声称可以 ..治疗.. 同性恋。治疗院由Lydia M……]]></summary>
             
                 <content type="html"><![CDATA[
 
 <p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2019/%E3%80%8A%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2%E3%80%8B.png" alt="" title="《错误教育》" /></p>
 
 <p>这是一部关于 ..同性.. 的影片。
-影片主要讲述的是同性恋少女卡梅伦的一段青春成长历程。</p>
+影片主要讲述的是同性恋少女 ..卡梅伦.. 的一段青春成长历程。</p>
 
-<p>谈到 ..同性恋.. 这个话题，我相信每个人都有自己的立场和思考，但思考终归是思考，脱离实际而发表的言论我们都会侃侃而谈。当我们自己亲身面临它时，问题恐怕没那么简单。</p>
+<p>小镇少女卡梅伦从小被寄养在极端保守的阿姨的家中。在高中舞会时，卡梅伦在汽车后座与女同学亲热被逮到，因而出柜。她的阿姨随后将其远送一家信奉宗教疗法的治疗机构，他们声称可以 ..治疗.. 同性恋。治疗院由Lydia Mars医生及她的兄弟全权运营，卡梅伦遭到严苛的对待，以矫正她不正确的性倾向。即使在这样严苛的环境下，卡梅伦、珍·方达、亚当仍组建起一个小小的同性社群，他们互相扶持，不断认识自己，获得自我认同，反抗社会对他们的偏见。</p>
 
-<p>向左还是向右，或许只是一种选择。对于性取向这个问题，可能本就没有标准答案。作为大多数的我们，其实很难理解同性之间的爱，可能就像小孩也不会明白为什么男人要爱女人。然而，当传统观念的牢笼囚禁了我们思想的时候，这个问题便有了一个“答案”，不需要人来解释。它已经顺理成章的成为了评判对错的 ..标准.. ，而那些试图打破这个标准的人们，已然被视为 ..异类.. ，只是我们还保留了对他们的一丝尊敬。</p>
+<p>谈到 ..同性恋.. 这个话题，我相信每个人都有自己的立场和思考，但思考终归是思考，脱离实际的时候我们都会侃侃而谈。而当我们自己亲身面临它时，问题恐怕没那么简单。</p>
+
+<p>向左还是向右，或许只是一种选择。对于性取向这个问题，可能本就没有标准答案。作为大多数的我们，其实很难理解同性之间的爱，可能就像小孩也不会明白为什么男人要爱女人。然而，当传统观念的牢笼囚禁了我们思想的时候，这个问题便有了一个 ..答案.. ，不需要人来解释。它已经顺理成章的成为了评判对错的 ..标准.. ，而那些试图打破这个标准的人们，已然被视为 ..异类.. ，只是我们还保留了对他们的一丝尊敬。</p>
 
 <p>甚至在一段时间里，同性恋被视为一种需要治疗的精神疾病</p>
 
 <blockquote>
-<p>“同性恋矫正治疗”听上去像是上世纪的东西，在20世纪最初的数十年里，欧美的许多医生、心理学家等各种专家学者都在发明各种矫正同性恋的方法，包括激素治疗，还有臭名昭著的电击疗法。</p>
+<p>..同性恋矫正治疗.. 听上去像是上世纪的东西，在20世纪最初的数十年里，欧美的许多医生、心理学家等各种专家学者都在发明各种矫正同性恋的方法，包括激素治疗，还有臭名昭著的电击疗法。</p>
 
 <p>在上世纪七八十年代之后，同性恋治疗在欧美渐渐被认为是毫无科学依据并且十分残忍的，而同性恋也不再被认为是一种需要治疗的疾病。</p>
 
-<p>“计算机之父”阿兰•图灵就是一名深受其害的被治疗者，他曾说“我梦到自己已经转变为了异性恋，但现实中我每天都想自杀。”</p>
+<p>“计算机之父”——阿兰·图灵就是一名深受其害的被治疗者，他曾说“我梦到自己已经转变为了异性恋，但现实中我每天都想自杀。”</p>
 
-<p>在中国，虽然早在2001年同性恋就已经实现非病理化，不再被认为是精神疾病，然而不少同性恋者还在不正规的心理治疗诊所被迫接受治疗。这其中有被父母强迫来接受治疗的青少年同性恋，但也有不少是自己主动寻求矫正，目的不外乎为了顺应社会、过“正常”生活、为了父母和家庭。</p>
+<p>在中国，虽然早在2001年同性恋就已经实现非病理化，不再被认为是精神疾病，然而不少同性恋者还在不正规的心理治疗诊所被迫接受治疗。这其中有被父母强迫来接受治疗的青少年同性恋，但也有不少是自己主动寻求矫正，目的不外乎为了顺应社会、过 ..正常.. 生活、为了父母和家庭。</p>
 </blockquote>
 
 <p>然而，导演在这部电影里并没有什么野心来表现议题的沉重性，在片子的结尾也没有给出彻底的悲惨结局或是皆大欢喜的结局，甚至就这样戛然而止了。</p>
@@ -5003,7 +5186,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
