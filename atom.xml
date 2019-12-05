@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-12-04T16:55:56+08:00</updated>
+    <updated>2019-12-05T22:10:24+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -17,10 +17,427 @@
     
     <generator uri="https://gohugo.io/" version="0.59.1">Hugo</generator>
         <entry>
+            <title type="text">水滴按钮效果（html&#43;css）</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%B0%B4%E6%BB%B4%E6%8C%89%E9%92%AE%E6%95%88%E6%9E%9Chtml&#43;css/" />
+            <id>https://ztygcs.github.io/posts/%E6%B0%B4%E6%BB%B4%E6%8C%89%E9%92%AE%E6%95%88%E6%9E%9Chtml&#43;css/</id>
+            <updated>2019-12-05T22:04:44+08:00</updated>
+            <published>2019-12-05T21:24:34+08:00</published>
+            <author>
+                    <name>天涯共此时</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            
+    
+    <summary type="html"><![CDATA[Tweenlite，是webgame开发人员比较常用的一个缓动库。 可以去<a href="https://www.tweenmax.com.cn/start/下载" target="_blank">https://www.tweenmax.com.cn/start/下载</a> TweenMax.min.js 文件并引入 TweenMax使用方法 载入TweenMax.js插件 首先下载TweenMax文件包(greensock-js)，找到TweenMax.min.……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<p><a href="http://www.greensock.com/tweenlite/" target="_blank">Tweenlite</a>，是webgame开发人员比较常用的一个缓动库。</p>
+
+<p>可以去<a href="https://www.tweenmax.com.cn/start/" target="_blank">https://www.tweenmax.com.cn/start/</a>下载 <code>TweenMax.min.js</code> 文件并引入</p>
+
+<h1 id="tweenmax使用方法">TweenMax使用方法</h1>
+
+<h2 id="载入tweenmax-js插件">载入TweenMax.js插件</h2>
+
+<p>首先下载TweenMax文件包(greensock-js)，找到<code>TweenMax.min.js</code>压缩文件。<br/>
+文件位置： <code>greensock-js/src/minified/TweenMax.min.js</code><br/>
+或者使用TweenMax的CDN。</p>
+
+<p><a href="https://www.tweenmax.com.cn/source/" target="_blank"><font class = "colorfulfont"><i><b>下载TweenMax</b></i></font></a></p>
+
+<p><a href="https://www.tweenmax.com.cn/cdn/" target="_blank"><font class = "colorfulfont"><i><b>TweenMax CDN</b></i></font></a></p>
+
+<p>在页面中载入<code>TweenMax.min.js</code>文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/TweenMax.min.js&#34;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>由于TweenMax.min.js集合了所有功能，所以引入TweenMax.js这一个文件即可使用TweenMax的所有功能。
+如果要争取更小的库文件大小,可以使用TweenLite.js(8K)并自由组合其他插件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- 只能用TweenLite --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/TweenLite.min.js&#34;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/plugins/CSSPlugin.min.js&#34;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/easing/EasePack.min.js&#34;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="准备好要执行tweenmax动画的元素">准备好要执行TweenMax动画的元素</h2>
+
+<p>先创建需要进行TweenMax动画的元素</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;obj&#34;</span><span class="p">&gt;</span>box1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>TweenMax不仅仅可以对html元素进行动画，还可以补间任何Javascript物件的任何数字属性</p>
+
+<h2 id="给该元素设置tweenmax动画">给该元素设置TweenMax动画</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span> 
+  <span class="nx">TweenMax</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s2">&#34;#obj&#34;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="p">{</span><span class="nx">left</span><span class="o">:</span><span class="mi">200</span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>TweenMax的第一个参数是你想进行动画的目标，第二是动画持续时间(默认是秒)，最后是要被动画的一个或多个属性。
+<img src="/images/tech/2019/12/tweenmax-started-01.png" alt="" title="设置动画" /></p>
+
+<p>上面例子的作用是，为一个id为&quot;obj&quot;的元素设置动画，在0.5秒的过程中使其移动到left:200px位置处。
+由于这是一个to()方法，所以不论开始时是多少，left属性都会变为200。</p>
+
+<p>EXAMPLE:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">#</span><span class="nn">obj</span><span class="p">{</span>
+      <span class="k">position</span><span class="p">:</span><span class="kc">relative</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span><span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">line-height</span><span class="p">:</span><span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">background</span><span class="p">:</span><span class="mh">#23ac0e</span><span class="p">;</span>
+      <span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;obj&#34;</span><span class="p">&gt;</span>box1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;TweenMax.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="p">&gt;</span>
+  <span class="nx">TweenMax</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s2">&#34;#obj&#34;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="p">{</span><span class="nx">left</span><span class="o">:</span><span class="mi">200</span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>left和top属性动画需要position:reletive的支持且为固定值，因此有时候使用x或y代替(使用的是CSS3的translate属性动画)更为简便</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">TweenMax</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s2">&#34;#obj&#34;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span><span class="mi">200</span><span class="p">});</span><span class="c1">//在原有位置向右移动200px
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>如果你想同时增加其宽度属性&quot;width&quot;为200时，可以这样做：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">TweenMax</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s2">&#34;#obj&#34;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="p">{</span><span class="nx">x</span><span class="o">:</span><span class="mi">200</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">200</span><span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="水滴效果完整代码">水滴效果完整代码</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
+</span><span class="lnt">96
+</span><span class="lnt">97
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;ie=edge&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="nt">body</span><span class="o">,</span>
+        <span class="nt">html</span> <span class="p">{</span>
+            <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nt">body</span> <span class="p">{</span>
+            <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+            <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+            <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="p">.</span><span class="nc">btn</span> <span class="p">{</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">background</span><span class="p">:</span> <span class="mh">#208cf1</span><span class="p">;</span>
+            <span class="k">filter</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;#shadowed-goo&#34;</span><span class="p">);</span>
+            <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+            <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+            <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+            <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+            <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="p">.</span><span class="nc">ball</span> <span class="p">{</span>
+            <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="o">-</span><span class="kc">block</span><span class="p">;</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">background</span><span class="p">:</span> <span class="mh">#208cf1</span><span class="p">;</span>
+            <span class="k">border-radius</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+            <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="p">.</span><span class="nc">text</span> <span class="p">{</span>
+            <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+            <span class="k">z-index</span><span class="p">:</span> <span class="mi">5</span><span class="p">;</span>
+            <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+            <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ball&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ball&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ball&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text&#34;</span><span class="p">&gt;</span>HOVER<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 0; height: 0;&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">defs</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">filter</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;shadowed-goo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feGaussianBlur</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;SourceGraphic&#34;</span> <span class="na">result</span><span class="o">=</span><span class="s">&#34;blur&#34;</span> <span class="na">stdDeviation</span><span class="o">=</span><span class="s">&#34;10&#34;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feColorMatrix</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;blur&#34;</span> <span class="na">mode</span><span class="o">=</span><span class="s">&#34;matrix&#34;</span> <span class="na">values</span><span class="o">=</span><span class="s">&#34;1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7&#34;</span>
+                    <span class="na">result</span><span class="o">=</span><span class="s">&#34;goo&#34;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feGaussianBlur</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;goo&#34;</span> <span class="na">stdDeviation</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="na">result</span><span class="o">=</span><span class="s">&#34;shadow&#34;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feColorMatrix</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;shadow&#34;</span> <span class="na">mode</span><span class="o">=</span><span class="s">&#34;matrix&#34;</span> <span class="na">values</span><span class="o">=</span><span class="s">&#34;0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2&#34;</span>
+                    <span class="na">result</span><span class="o">=</span><span class="s">&#34;shadow&#34;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feOffset</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;shadow&#34;</span> <span class="na">dx</span><span class="o">=</span><span class="s">&#34;1&#34;</span> <span class="na">dy</span><span class="o">=</span><span class="s">&#34;1&#34;</span> <span class="na">result</span><span class="o">=</span><span class="s">&#34;shadow&#34;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feBlend</span> <span class="na">in2</span><span class="o">=</span><span class="s">&#34;shadow&#34;</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;goo&#34;</span> <span class="na">result</span><span class="o">=</span><span class="s">&#34;goo&#34;</span> <span class="p">/&gt;</span>
+                <span class="p">&lt;</span><span class="nt">feBlend</span> <span class="na">in2</span><span class="o">=</span><span class="s">&#34;goo&#34;</span> <span class="na">in</span><span class="o">=</span><span class="s">&#34;SourceGraphic&#34;</span> <span class="na">result</span><span class="o">=</span><span class="s">&#34;mix&#34;</span> <span class="p">/&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">filter</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">defs</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;TweenMax.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">function</span> <span class="nx">initBt4</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">bt</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.btn&#39;</span><span class="p">)</span>
+        <span class="kd">var</span> <span class="nx">blob</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.ball&#39;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">filter</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#shadowed-goo&#39;</span><span class="p">);</span>
+        <span class="nx">bt</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;mousemove&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">pageX</span> <span class="o">-</span> <span class="nx">bt</span><span class="p">.</span><span class="nx">offsetLeft</span> <span class="o">-</span> <span class="nx">bt</span><span class="p">.</span><span class="nx">offsetWidth</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">;</span>
+            <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">pageY</span> <span class="o">-</span> <span class="nx">bt</span><span class="p">.</span><span class="nx">offsetTop</span> <span class="o">-</span> <span class="nx">bt</span><span class="p">.</span><span class="nx">offsetHeight</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">;</span>
+            <span class="nx">TweenLite</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="nx">blob</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">4.2</span><span class="p">,</span> <span class="p">{</span> <span class="nx">x</span><span class="o">:</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">ease</span><span class="o">:</span> <span class="nx">Elastic</span><span class="p">.</span><span class="nx">easeOut</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span> <span class="p">});</span>
+            <span class="nx">TweenLite</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="nx">blob</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">2.8</span><span class="p">,</span> <span class="p">{</span> <span class="nx">x</span><span class="o">:</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="o">-</span><span class="nx">y</span><span class="p">,</span> <span class="nx">ease</span><span class="o">:</span> <span class="nx">Elastic</span><span class="p">.</span><span class="nx">easeOut</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span> <span class="p">});</span>
+            <span class="nx">TweenLite</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="nx">blob</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mf">2.8</span><span class="p">,</span> <span class="p">{</span> <span class="nx">x</span><span class="o">:</span> <span class="o">-</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="o">-</span><span class="nx">y</span><span class="p">,</span> <span class="nx">ease</span><span class="o">:</span> <span class="nx">Elastic</span><span class="p">.</span><span class="nx">easeOut</span><span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span> <span class="p">});</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+    <span class="nx">initBt4</span><span class="p">()</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="/images/tech/2019/12/水滴效果.gif" alt="" title="效果" /></p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/categories/%E5%89%8D%E7%AB%AF/" term="前端" label="前端" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/html/" term="HTML" label="HTML" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/css/" term="CSS" label="CSS" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">PHP学习之开发环境的安装</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/php%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85/" />
             <id>https://ztygcs.github.io/posts/php%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85/</id>
-            <updated>2019-12-02T20:05:32+08:00</updated>
+            <updated>2019-12-05T20:50:48+08:00</updated>
             <published>2019-12-02T10:04:41+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -107,13 +524,13 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/php/" term="Php" label="Php" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%89%8D%E7%AB%AF/" term="前端" label="前端" />
                             
                         
                     
@@ -141,7 +558,7 @@
             <title type="text">《欢迎来到哲学的世界》</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%93%B2%E5%AD%A6%E7%9A%84%E4%B8%96%E7%95%8C/" />
             <id>https://ztygcs.github.io/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%93%B2%E5%AD%A6%E7%9A%84%E4%B8%96%E7%95%8C/</id>
-            <updated>2019-11-30T20:14:38+08:00</updated>
+            <updated>2019-12-05T20:58:24+08:00</updated>
             <published>2019-11-30T15:01:44+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -194,13 +611,13 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/philosophy/" term="Philosophy" label="Philosophy" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%93%B2%E5%AD%A6/" term="哲学" label="哲学" />
                             
                         
                             
@@ -228,7 +645,7 @@
             <title type="text">MemE主题优化</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
             <id>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</id>
-            <updated>2019-12-02T12:39:50+08:00</updated>
+            <updated>2019-12-05T20:55:20+08:00</updated>
             <published>2019-11-27T21:45:38+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2224,7 +2641,7 @@
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -2258,7 +2675,7 @@
             <title type="text">Markdown语法基础</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" />
             <id>https://ztygcs.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/</id>
-            <updated>2019-12-02T16:45:54+08:00</updated>
+            <updated>2019-12-05T21:03:42+08:00</updated>
             <published>2019-11-26T21:32:49+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2759,7 +3176,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                     
@@ -2781,7 +3198,7 @@ Enabled by default. You can disable it from the package settings.</p>
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/hello-world/" />
             <id>https://ztygcs.github.io/posts/hello-world/</id>
-            <updated>2019-12-02T13:07:59+08:00</updated>
+            <updated>2019-12-05T21:24:51+08:00</updated>
             <published>2019-11-26T14:45:13+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -2803,7 +3220,7 @@ Enabled by default. You can disable it from the package settings.</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -2831,7 +3248,7 @@ Enabled by default. You can disable it from the package settings.</p>
             <title type="text">大文件上传导致Github报错</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%AF%BC%E8%87%B4github%E6%8A%A5%E9%94%99/" />
             <id>https://ztygcs.github.io/posts/%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%AF%BC%E8%87%B4github%E6%8A%A5%E9%94%99/</id>
-            <updated>2019-11-28T13:33:28+08:00</updated>
+            <updated>2019-12-05T20:54:40+08:00</updated>
             <published>2019-11-23T23:38:20+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -3009,7 +3426,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -3049,7 +3466,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
             <title type="text">Annie主题&#43;Gitalk评论</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/annie%E4%B8%BB%E9%A2%98-gitalk%E8%AF%84%E8%AE%BA/" />
             <id>https://ztygcs.github.io/posts/annie%E4%B8%BB%E9%A2%98-gitalk%E8%AF%84%E8%AE%BA/</id>
-            <updated>2019-12-04T15:18:47+08:00</updated>
+            <updated>2019-12-05T20:56:20+08:00</updated>
             <published>2019-11-23T13:21:36+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -3244,7 +3661,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -3284,7 +3701,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
             <title type="text">Emoji表情库</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/emoji%E8%A1%A8%E6%83%85%E5%BA%93/" />
             <id>https://ztygcs.github.io/posts/emoji%E8%A1%A8%E6%83%85%E5%BA%93/</id>
-            <updated>2019-11-27T18:08:07+08:00</updated>
+            <updated>2019-12-05T20:59:11+08:00</updated>
             <published>2019-11-22T22:47:32+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -3340,7 +3757,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                     
@@ -3368,7 +3785,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
             <title type="text">Annie主题详细使用说明</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/annie%E4%B8%BB%E9%A2%98%E8%AF%A6%E7%BB%86%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" />
             <id>https://ztygcs.github.io/posts/annie%E4%B8%BB%E9%A2%98%E8%AF%A6%E7%BB%86%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
-            <updated>2019-11-28T13:11:08+08:00</updated>
+            <updated>2019-12-05T20:56:13+08:00</updated>
             <published>2019-11-21T23:16:25+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -4793,7 +5210,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -4824,10 +5241,10 @@ totop:
         </entry>
     
         <entry>
-            <title type="text">《无名之辈》</title>
+            <title type="text">关于《无名之辈》的一点想法</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/" />
             <id>https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/</id>
-            <updated>2019-12-02T14:45:46+08:00</updated>
+            <updated>2019-12-05T20:58:36+08:00</updated>
             <published>2019-11-01T21:40:01+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -4891,13 +5308,13 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/movie/" term="Movie" label="Movie" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%BD%B1%E7%89%87/" term="影片" label="影片" />
                             
                         
                     
@@ -4907,7 +5324,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
@@ -4925,7 +5342,7 @@ totop:
             <title type="text">苔上雪无痕</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%8B%94%E4%B8%8A%E9%9B%AA%E6%97%A0%E7%97%95/" />
             <id>https://ztygcs.github.io/posts/%E8%8B%94%E4%B8%8A%E9%9B%AA%E6%97%A0%E7%97%95/</id>
-            <updated>2019-12-03T13:41:02+08:00</updated>
+            <updated>2019-12-05T20:53:20+08:00</updated>
             <published>2019-08-16T20:42:53+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -5037,7 +5454,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
@@ -5062,10 +5479,10 @@ totop:
         </entry>
     
         <entry>
-            <title type="text">（转）互联网铁王座争夺战：谁能代替李彦宏、与马云马化腾齐名？</title>
+            <title type="text">互联网铁王座争夺战（转）</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E4%BA%92%E8%81%94%E7%BD%91%E9%93%81%E7%8E%8B%E5%BA%A7%E4%BA%89%E5%A4%BA%E6%88%98%E8%B0%81%E8%83%BD%E4%BB%A3%E6%9B%BF%E6%9D%8E%E5%BD%A6%E5%AE%8F%E4%B8%8E%E9%A9%AC%E4%BA%91%E9%A9%AC%E5%8C%96%E8%85%BE%E9%BD%90%E5%90%8D/" />
             <id>https://ztygcs.github.io/posts/%E4%BA%92%E8%81%94%E7%BD%91%E9%93%81%E7%8E%8B%E5%BA%A7%E4%BA%89%E5%A4%BA%E6%88%98%E8%B0%81%E8%83%BD%E4%BB%A3%E6%9B%BF%E6%9D%8E%E5%BD%A6%E5%AE%8F%E4%B8%8E%E9%A9%AC%E4%BA%91%E9%A9%AC%E5%8C%96%E8%85%BE%E9%BD%90%E5%90%8D/</id>
-            <updated>2019-12-04T16:55:17+08:00</updated>
+            <updated>2019-12-05T21:02:14+08:00</updated>
             <published>2019-06-05T15:59:55+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -5074,15 +5491,18 @@ totop:
                     </author>
             
     
-    <summary type="html"><![CDATA[原创 ： 燃财经（ID:rancaijing） 作者 ： 黎明 编辑 ： 魏佳 来源 ： 链接 长期被唱衰的百度，终于到了正式告别BAT的关键时刻。 过去30天，受 ..业绩下滑.. 和 ..高管离职.. 等因素影响，百度的股价跌去30%，市值蒸发200亿美金。 美团趁势赶上，市值一举超越百度，正式取代百度在BAT的位置。 吃瓜群众再一……]]></summary>
+    <summary type="html"><![CDATA[互联网铁王座争夺战：谁能代替李彦宏、与马云马化腾齐名？ 原创 ： 燃财经（ID:rancaijing） 作者 ： 黎明 编辑 ： 魏佳 来源 ： 原文 日期 ： 2019-05-31 长期被唱衰的百度，终于到了正式告别BAT的关键时刻。 过去30天，受 ..业绩下滑.. 和 ..高管离职.. 等因素影响，百度的股价跌去30%，市值蒸发200亿美金。 美团趁势赶……]]></summary>
             
                 <content type="html"><![CDATA[
+
+<p>互联网铁王座争夺战：谁能代替李彦宏、与马云马化腾齐名？</p>
 
 <blockquote>
 <p>原创 ： 燃财经（ID:rancaijing）<br/>
 作者 ： 黎明<br/>
 编辑 ： 魏佳<br/>
-来源 ： <a href="https://mbd.baidu.com/newspage/data/landingshare?context=%7B%22nid%22%3A%22news_9201606662832890539%22%2C%22sourceFrom%22%3A%22bjh%22%2C%22url_data%22%3A%22bjhauthor%22%7D" target="_blank">链接</a></p>
+来源 ： <a href="https://mbd.baidu.com/newspage/data/landingshare?context=%7B%22nid%22%3A%22news_9201606662832890539%22%2C%22sourceFrom%22%3A%22bjh%22%2C%22url_data%22%3A%22bjhauthor%22%7D" target="_blank">原文</a><br/>
+日期 ： 2019-05-31</p>
 </blockquote>
 
 <p><img src="/images/life/2019/06/BAT.jpg" alt="" title="BAT" /></p>
@@ -5267,13 +5687,13 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/article/" term="Article" label="Article" />
+                                <category scheme="https://ztygcs.github.io/categories/%E6%91%98%E5%BD%95/" term="摘录" label="摘录" />
                             
                         
                     
@@ -5295,7 +5715,7 @@ totop:
             <title type="text">浅谈HTTP与HTTPS</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%B5%85%E8%B0%88http%E4%B8%8Ehttps/" />
             <id>https://ztygcs.github.io/posts/%E6%B5%85%E8%B0%88http%E4%B8%8Ehttps/</id>
-            <updated>2019-12-02T20:43:06+08:00</updated>
+            <updated>2019-12-05T20:53:43+08:00</updated>
             <published>2019-04-20T20:25:00+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -5436,7 +5856,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -5467,10 +5887,10 @@ totop:
         </entry>
     
         <entry>
-            <title type="text">《错误教育》</title>
+            <title type="text">卡梅伦的青春《错误教育》</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2/" />
             <id>https://ztygcs.github.io/posts/%E9%94%99%E8%AF%AF%E6%95%99%E8%82%B2/</id>
-            <updated>2019-12-02T19:53:45+08:00</updated>
+            <updated>2019-12-05T20:57:16+08:00</updated>
             <published>2019-04-17T15:27:59+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -5542,13 +5962,13 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/movie/" term="Movie" label="Movie" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%BD%B1%E7%89%87/" term="影片" label="影片" />
                             
                         
                     
@@ -5558,7 +5978,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
@@ -5576,7 +5996,7 @@ totop:
             <title type="text">NavigationView头部监听事件</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/navigationview%E5%A4%B4%E9%83%A8%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6/" />
             <id>https://ztygcs.github.io/posts/navigationview%E5%A4%B4%E9%83%A8%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6/</id>
-            <updated>2019-11-28T13:22:01+08:00</updated>
+            <updated>2019-12-05T21:00:30+08:00</updated>
             <published>2019-01-25T19:53:20+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -5711,13 +6131,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -5745,7 +6165,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">安卓开发之折线图</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E6%8A%98%E7%BA%BF%E5%9B%BE/" />
             <id>https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E6%8A%98%E7%BA%BF%E5%9B%BE/</id>
-            <updated>2019-11-27T21:59:28+08:00</updated>
+            <updated>2019-12-05T21:00:45+08:00</updated>
             <published>2019-01-21T15:38:01+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6076,13 +6496,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -6110,7 +6530,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">冬</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%86%AC/" />
             <id>https://ztygcs.github.io/posts/%E5%86%AC/</id>
-            <updated>2019-11-28T13:37:48+08:00</updated>
+            <updated>2019-12-05T21:01:44+08:00</updated>
             <published>2018-11-07T19:26:17+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6138,13 +6558,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -6166,7 +6586,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">入夜渐微凉</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%85%A5%E5%A4%9C%E6%B8%90%E5%BE%AE%E5%87%89/" />
             <id>https://ztygcs.github.io/posts/%E5%85%A5%E5%A4%9C%E6%B8%90%E5%BE%AE%E5%87%89/</id>
-            <updated>2019-11-28T06:04:31+08:00</updated>
+            <updated>2019-12-05T21:02:43+08:00</updated>
             <published>2018-10-30T19:54:59+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6205,13 +6625,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -6233,7 +6653,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">转（Dialog）</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%BD%ACdialog/" />
             <id>https://ztygcs.github.io/posts/%E8%BD%ACdialog/</id>
-            <updated>2019-11-27T22:00:15+08:00</updated>
+            <updated>2019-12-05T21:03:09+08:00</updated>
             <published>2018-10-28T20:40:52+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6255,13 +6675,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -6289,7 +6709,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">导入工程jar包重复问题解决</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%AF%BC%E5%85%A5%E5%B7%A5%E7%A8%8Bjar%E5%8C%85%E9%87%8D%E5%A4%8D%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" />
             <id>https://ztygcs.github.io/posts/%E5%AF%BC%E5%85%A5%E5%B7%A5%E7%A8%8Bjar%E5%8C%85%E9%87%8D%E5%A4%8D%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</id>
-            <updated>2019-11-28T13:36:02+08:00</updated>
+            <updated>2019-12-05T21:01:29+08:00</updated>
             <published>2018-10-13T20:36:44+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6386,13 +6806,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -6420,7 +6840,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">定制ListView界面</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%AE%9A%E5%88%B6listview%E7%95%8C%E9%9D%A2/" />
             <id>https://ztygcs.github.io/posts/%E5%AE%9A%E5%88%B6listview%E7%95%8C%E9%9D%A2/</id>
-            <updated>2019-11-27T21:59:48+08:00</updated>
+            <updated>2019-12-05T21:01:39+08:00</updated>
             <published>2018-09-29T19:28:19+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -6735,13 +7155,13 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -6769,7 +7189,7 @@ navView.inflateMenu(R.menu.nav_menu);
             <title type="text">安卓开发之四大布局</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E5%9B%9B%E5%A4%A7%E5%B8%83%E5%B1%80/" />
             <id>https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E5%9B%9B%E5%A4%A7%E5%B8%83%E5%B1%80/</id>
-            <updated>2019-11-28T13:30:40+08:00</updated>
+            <updated>2019-12-05T21:00:40+08:00</updated>
             <published>2018-09-19T20:07:12+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7140,13 +7560,13 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -7174,7 +7594,7 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
             <title type="text">安卓开发之七种控件</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E4%B8%83%E7%A7%8D%E6%8E%A7%E4%BB%B6/" />
             <id>https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E4%B8%83%E7%A7%8D%E6%8E%A7%E4%BB%B6/</id>
-            <updated>2019-11-28T13:28:45+08:00</updated>
+            <updated>2019-12-05T21:00:35+08:00</updated>
             <published>2018-09-17T19:07:19+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7443,13 +7863,13 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/android/" term="Android" label="Android" />
+                                <category scheme="https://ztygcs.github.io/categories/%E5%AE%89%E5%8D%93/" term="安卓" label="安卓" />
                             
                         
                     
@@ -7477,7 +7897,7 @@ example：
             <title type="text">研一秋季学期课程表</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E7%A0%94%E4%B8%80%E7%A7%8B%E5%AD%A3%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%A1%A8/" />
             <id>https://ztygcs.github.io/posts/%E7%A0%94%E4%B8%80%E7%A7%8B%E5%AD%A3%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B%E8%A1%A8/</id>
-            <updated>2019-11-27T15:20:16+08:00</updated>
+            <updated>2019-12-05T20:52:57+08:00</updated>
             <published>2018-09-15T20:29:43+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7582,7 +8002,7 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                     
@@ -7604,7 +8024,7 @@ example：
             <title type="text">送别(口琴版)</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E9%80%81%E5%88%AB%E5%8F%A3%E7%90%B4%E7%89%88/" />
             <id>https://ztygcs.github.io/posts/%E9%80%81%E5%88%AB%E5%8F%A3%E7%90%B4%E7%89%88/</id>
-            <updated>2019-11-29T22:09:14+08:00</updated>
+            <updated>2019-12-05T21:02:51+08:00</updated>
             <published>2018-09-12T13:34:26+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7639,13 +8059,13 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/music/" term="Music" label="Music" />
+                                <category scheme="https://ztygcs.github.io/categories/%E9%9F%B3%E4%B9%90/" term="音乐" label="音乐" />
                             
                         
                     
@@ -7673,7 +8093,7 @@ example：
             <title type="text">去动物园</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/life/" />
             <id>https://ztygcs.github.io/posts/life/</id>
-            <updated>2019-11-28T13:15:43+08:00</updated>
+            <updated>2019-12-05T20:59:22+08:00</updated>
             <published>2018-09-12T12:02:11+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -7714,13 +8134,13 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -7742,7 +8162,7 @@ example：
             <title type="text">用Hexo写博客及语法规则</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" />
             <id>https://ztygcs.github.io/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</id>
-            <updated>2019-12-02T13:18:20+08:00</updated>
+            <updated>2019-12-05T20:52:48+08:00</updated>
             <published>2018-09-12T10:15:53+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8031,7 +8451,7 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -8065,7 +8485,7 @@ example：
             <title type="text">草</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%8D%89/" />
             <id>https://ztygcs.github.io/posts/%E8%8D%89/</id>
-            <updated>2019-11-29T20:38:27+08:00</updated>
+            <updated>2019-12-05T21:03:29+08:00</updated>
             <published>2018-09-11T21:19:45+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8120,13 +8540,13 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/philosophy/" term="Philosophy" label="Philosophy" />
+                                <category scheme="https://ztygcs.github.io/categories/%E6%91%98%E5%BD%95/" term="摘录" label="摘录" />
                             
                         
                     
@@ -8148,7 +8568,7 @@ poem
             <title type="text">Hexo&#43;github搭建个人博客</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/hexo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
             <id>https://ztygcs.github.io/posts/hexo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-            <updated>2019-12-04T15:54:58+08:00</updated>
+            <updated>2019-12-05T20:56:00+08:00</updated>
             <published>2018-09-11T15:28:04+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8273,7 +8693,7 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/technology/" term="Technology" label="Technology" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -8307,7 +8727,7 @@ poem
             <title type="text">毕业</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/" />
             <id>https://ztygcs.github.io/posts/%E6%AF%95%E4%B8%9A/</id>
-            <updated>2019-12-02T12:40:35+08:00</updated>
+            <updated>2019-12-05T21:00:51+08:00</updated>
             <published>2018-06-08T09:55:00+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8332,13 +8752,13 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -8360,7 +8780,7 @@ poem
             <title type="text">滨江公园踏青</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD%E4%B8%80%E6%97%A5%E6%B8%B8/" />
             <id>https://ztygcs.github.io/posts/%E6%BB%A8%E6%B1%9F%E5%85%AC%E5%9B%AD%E4%B8%80%E6%97%A5%E6%B8%B8/</id>
-            <updated>2019-12-02T14:31:29+08:00</updated>
+            <updated>2019-12-05T21:00:58+08:00</updated>
             <published>2017-04-29T14:04:06+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8413,13 +8833,13 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -8441,7 +8861,7 @@ poem
             <title type="text">菲穆酒馆小聚</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%8F%B2%E7%A9%86%E9%85%92%E9%A6%86%E5%B0%8F%E8%81%9A/" />
             <id>https://ztygcs.github.io/posts/%E8%8F%B2%E7%A9%86%E9%85%92%E9%A6%86%E5%B0%8F%E8%81%9A/</id>
-            <updated>2019-11-30T23:21:01+08:00</updated>
+            <updated>2019-12-05T21:01:49+08:00</updated>
             <published>2017-01-02T22:58:58+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8499,13 +8919,13 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -8527,7 +8947,7 @@ poem
             <title type="text">林中烧烤</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%9E%97%E4%B8%AD%E7%83%A7%E7%83%A4/" />
             <id>https://ztygcs.github.io/posts/%E6%9E%97%E4%B8%AD%E7%83%A7%E7%83%A4/</id>
-            <updated>2019-12-02T12:38:28+08:00</updated>
+            <updated>2019-12-05T21:02:25+08:00</updated>
             <published>2016-12-06T22:22:23+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8561,13 +8981,13 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
@@ -8589,7 +9009,7 @@ poem
             <title type="text">蜜蜂</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/" />
             <id>https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/</id>
-            <updated>2019-11-30T21:35:00+08:00</updated>
+            <updated>2019-12-05T21:02:34+08:00</updated>
             <published>2016-02-26T20:40:09+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -8624,13 +9044,13 @@ hahaha😁</p>
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/life/" term="Life" label="Life" />
+                                <category scheme="https://ztygcs.github.io/categories/life/" term="LIFE" label="LIFE" />
                             
                         
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/record/" term="Record" label="Record" />
+                                <category scheme="https://ztygcs.github.io/categories/%E8%AE%B0%E5%BD%95/" term="记录" label="记录" />
                             
                         
                     
