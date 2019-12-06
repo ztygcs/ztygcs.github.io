@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Thu, 05 Dec 2019 22:10:24 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 06 Dec 2019 19:47:16 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -5236,23 +5236,19 @@ totop:
 
 <p>最终一切还是归于平静，该丢的尊严还是丢了，因为要继续生活，因为这就是生活。</p>
 
-<p>最后附上网易云的热评：
-<div class="mytag">
-<blockquote class="blockquote-center">
-<p><b>
-活人办了葬礼，死人还剩一口气。<br/>
-痴憨是勇，咒骂是爱。<br/>
-烟花下是破碎的尊严。<br/>
-你我啊，皆是无名之辈，<br/>
-是没剥的鸡蛋，心里柔软；<br/>
-是胸前的铁板，软肋在背；<br/>
-是一把水枪，虚张声势，幼稚淳良。
-</b>
-<footer style="text-align:right;margin-right:20px">——<cite><a href="https://music.163.com/user/home?id=290942889" target=blank>霁色天青</a></cite></footer>
-</p>
-</blockquote></p>
+<p>最后附上网易云的热评：</p>
 
-<p></div></p>
+<div class="mytag" style="background:rgb(157,39,34)">
+
+<p style="text-align: center"><b>
+活人办了葬礼，死人还剩一口气。<br/>痴憨是勇，咒骂是爱。<br/>烟花下是破碎的尊严。<br/>你我啊，皆是无名之辈，<br/>是没剥的鸡蛋，心里柔软；<br/>是胸前的铁板，软肋在背；<br/>是一把水枪，虚张声势，幼稚淳良。</b>
+<footer style="text-align:right;margin-right:40px">——<cite>
+<a href="https://music.163.com/user/home?id=290942889" target=blank>霁色天青</a>
+</cite>
+</footer>
+</p>
+    
+</div>
 ]]></description>
                 
                 
@@ -5281,7 +5277,7 @@ totop:
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/tags/movie/">Movie</category>
+                                    <category domain="https://ztygcs.github.io/tags/movie/">movie</category>
                                 
                             
                                 
@@ -5915,7 +5911,7 @@ totop:
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/tags/movie/">Movie</category>
+                                    <category domain="https://ztygcs.github.io/tags/movie/">movie</category>
                                 
                             
                                 

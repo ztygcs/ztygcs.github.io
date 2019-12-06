@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-12-05T22:10:24+08:00</updated>
+    <updated>2019-12-06T19:47:16+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -5244,7 +5244,7 @@ totop:
             <title type="text">关于《无名之辈》的一点想法</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/" />
             <id>https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/</id>
-            <updated>2019-12-05T20:58:36+08:00</updated>
+            <updated>2019-12-06T18:55:45+08:00</updated>
             <published>2019-11-01T21:40:01+08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -5279,23 +5279,19 @@ totop:
 
 <p>最终一切还是归于平静，该丢的尊严还是丢了，因为要继续生活，因为这就是生活。</p>
 
-<p>最后附上网易云的热评：
-<div class="mytag">
-<blockquote class="blockquote-center">
-<p><b>
-活人办了葬礼，死人还剩一口气。<br/>
-痴憨是勇，咒骂是爱。<br/>
-烟花下是破碎的尊严。<br/>
-你我啊，皆是无名之辈，<br/>
-是没剥的鸡蛋，心里柔软；<br/>
-是胸前的铁板，软肋在背；<br/>
-是一把水枪，虚张声势，幼稚淳良。
-</b>
-<footer style="text-align:right;margin-right:20px">——<cite><a href="https://music.163.com/user/home?id=290942889" target=blank>霁色天青</a></cite></footer>
-</p>
-</blockquote></p>
+<p>最后附上网易云的热评：</p>
 
-<p></div></p>
+<div class="mytag" style="background:rgb(157,39,34)">
+
+<p style="text-align: center"><b>
+活人办了葬礼，死人还剩一口气。<br/>痴憨是勇，咒骂是爱。<br/>烟花下是破碎的尊严。<br/>你我啊，皆是无名之辈，<br/>是没剥的鸡蛋，心里柔软；<br/>是胸前的铁板，软肋在背；<br/>是一把水枪，虚张声势，幼稚淳良。</b>
+<footer style="text-align:right;margin-right:40px">——<cite>
+<a href="https://music.163.com/user/home?id=290942889" target=blank>霁色天青</a>
+</cite>
+</footer>
+</p>
+    
+</div>
 ]]></content>
             
             
@@ -5324,7 +5320,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
                             
                         
                             
@@ -5978,7 +5974,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
                             
                         
                             
