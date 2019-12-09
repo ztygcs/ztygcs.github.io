@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2019-12-06T22:52:46+08:00</updated>
+    <updated>2019-12-09T11:23:53+08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" />
@@ -6646,20 +6646,595 @@ navView.inflateMenu(R.menu.nav_menu);
         </entry>
     
         <entry>
-            <title type="text">转（Dialog）</title>
+            <title type="text">Android Dialog的使用（转）</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E8%BD%ACdialog/" />
             <id>https://ztygcs.github.io/posts/%E8%BD%ACdialog/</id>
-            <updated>2019-12-05T21:03:09+08:00</updated>
+            <updated>2019-12-09T09:58:10+08:00</updated>
             <published>2018-10-28T20:40:52+08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <summary type="html"><![CDATA[Android Dialog使用、自定义带动画的Dialog使用]]></summary>
             
-                <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/REIGE/article/details/69214773?utm_source=blogxgwz2" target="_blank">Android Dialog使用、自定义带动画的Dialog使用</a></p>
-]]></content>
+    
+    <summary type="html"><![CDATA[原文链接 效果图 普通Dialog 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 private void showNormalDialog() { final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this); builder.setIcon(R.mipmap.ic_launcher) .setTitle("普通Dialog") .setMessage("这是一个普通的Dialog") .setPositiveButton("确定", new DialogInterface.OnClickListener() { @Override public void onClick(DialogInterface dialogInterface, int i)……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<p><a href="https://blog.csdn.net/REIGE/article/details/69214773?utm_source=blogxgwz2" target="_blank">原文链接</a></p>
+
+<h1 id="效果图">效果图</h1>
+
+<p><img src="https://img-blog.csdn.net/20170404214217213?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUkVJR0U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="" /></p>
+
+<h1 id="普通dialog">普通Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showNormalDialog</span><span class="p">()</span> <span class="p">{</span>
+  <span class="err">final AlertDialog</span><span class="p">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+  <span class="n">builder</span><span class="p">.</span><span class="na">setIcon</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">mipmap</span><span class="p">.</span><span class="na">ic_launcher</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;普通Dialog&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setMessage</span><span class="p">(</span><span class="s">&#34;这是一个普通的Dialog&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nd">@Override</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">setNegativeButton</span><span class="p">(</span><span class="s">&#34;取消&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nd">@Override</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="c1">//添加中间按钮 就有三个按钮
+</span><span class="c1"></span>    <span class="c1">//normalDialog.setNeutralButton
+</span><span class="c1"></span>    <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="列表dialog">列表Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showListDialog</span><span class="p">()</span> <span class="p">{</span>
+  <span class="err">final String</span><span class="p">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#34;按钮1&#34;</span><span class="p">,</span> <span class="s">&#34;按钮2&#34;</span><span class="p">,</span> <span class="s">&#34;按钮3&#34;</span><span class="p">,</span> <span class="s">&#34;按钮4&#34;</span><span class="p">};</span>
+  <span class="err">AlertDialog.Builder builder </span><span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+  <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;列表Dialog&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="单选dialog">单选Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showSingleChoiceDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">final String</span><span class="p">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#34;按钮1&#34;</span><span class="p">,</span> <span class="s">&#34;按钮2&#34;</span><span class="p">,</span> <span class="s">&#34;按钮3&#34;</span><span class="p">,</span> <span class="s">&#34;按钮4&#34;</span><span class="p">};</span>
+    <span class="err">final AlertDialog</span><span class="p">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span>
+            <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;单选Dialog&#34;</span><span class="p">)</span>
+        <span class="p">.</span><span class="na">setSingleChoiceItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">0</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nd">@Override</span>
+            <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="p">}</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nd">@Override</span>
+            <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="p">}</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="多选dialog">多选Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">final ArrayList</span><span class="o">&lt;</span><span class="err">Integer&gt; choices </span><span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="err">private void </span><span class="n">showMultiChoiceDialog</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="err">final String</span><span class="p">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#34;按钮1&#34;</span><span class="p">,</span> <span class="s">&#34;按钮2&#34;</span><span class="p">,</span> <span class="s">&#34;按钮3&#34;</span><span class="p">,</span> <span class="s">&#34;按钮4&#34;</span><span class="p">};</span>
+    <span class="c1">// 设置默认选中的选项
+</span><span class="c1"></span>    <span class="err">final boolean </span><span class="n">initChoiceSets</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">};</span>
+    <span class="c1">//choices.clear();
+</span><span class="c1"></span>    <span class="err">AlertDialog.Builder builder </span><span class="o">=</span>
+            <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;多选Dialog&#34;</span><span class="p">)</span>
+       <span class="p">.</span><span class="na">setMultiChoiceItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">initChoiceSets</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span>
+               <span class="p">.</span><span class="na">OnMultiChoiceClickListener</span><span class="p">()</span> <span class="p">{</span>
+           <span class="nd">@Override</span>
+      <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialog</span><span class="p">,</span> <span class="err">int which</span><span class="p">,</span> <span class="err">boolean isChecked</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">isChecked</span><span class="p">)</span> <span class="p">{</span>
+              <span class="n">choices</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">which</span><span class="p">);</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+              <span class="c1">//有问题：是把whichButton作为index还是Object？实际上会抛下标溢出异常
+</span><span class="c1"></span>              <span class="c1">//MultiChoiceID.remove(whichButton);
+</span><span class="c1"></span>              <span class="c1">//需强制转换为Object类型，才会以对象的形式删除；否则会作为下标处理
+</span><span class="c1"></span>              <span class="n">choices</span><span class="p">.</span><span class="na">remove</span><span class="p">((</span><span class="n">Integer</span><span class="p">)</span> <span class="n">which</span><span class="p">);</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="p">})</span>
+       <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+           <span class="nd">@Override</span>
+           <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
+
+           <span class="p">}</span>
+       <span class="p">})</span>
+       <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="等待dialog">等待Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showWaitingDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">final ProgressDialog </span><span class="n">progressDialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ProgressDialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;等待Dialog&#34;</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setMessage</span><span class="p">(</span><span class="s">&#34;等待中...&#34;</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setIndeterminate</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setCancelable</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="err">public void </span><span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+          <span class="kd">super</span><span class="p">.</span><span class="na">run</span><span class="p">();</span>
+          <span class="n">SystemClock</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="n">3000</span><span class="p">);</span>
+          <span class="n">progressDialog</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}.</span><span class="na">start</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="进度条dialog">进度条Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showProgressDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">final int </span><span class="n">MAX_PROGRESS</span> <span class="o">=</span> <span class="n">100</span><span class="p">;</span>
+    <span class="err">final ProgressDialog </span><span class="n">progressDialog</span> <span class="o">=</span><span class="k">new</span> <span class="n">ProgressDialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setCancelable</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setProgress</span><span class="p">(</span><span class="n">0</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;进度条Dialog&#34;</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setProgressStyle</span><span class="p">(</span><span class="n">ProgressDialog</span><span class="p">.</span><span class="na">STYLE_HORIZONTAL</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setMax</span><span class="p">(</span><span class="n">MAX_PROGRESS</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nd">@Override</span>
+       <span class="err">public void </span><span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+          <span class="err">int progress </span><span class="o">=</span> <span class="n">0</span><span class="p">;</span>
+          <span class="k">while</span> <span class="p">(</span><span class="n">progress</span> <span class="o">&lt;</span> <span class="n">MAX_PROGRESS</span><span class="p">)</span> <span class="p">{</span>
+             <span class="k">try</span> <span class="p">{</span>
+                <span class="n">Thread</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="n">10</span><span class="p">);</span>
+                <span class="n">progress</span><span class="o">++</span><span class="p">;</span>
+                <span class="c1">//子线程可以更新progressDialog进度
+</span><span class="c1"></span>                <span class="n">progressDialog</span><span class="p">.</span><span class="na">setProgress</span><span class="p">(</span><span class="n">progress</span><span class="p">);</span>
+             <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="err">InterruptedException e</span><span class="p">)</span> <span class="p">{</span>
+                 <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+             <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="n">progressDialog</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span>
+       <span class="p">}</span>
+    <span class="p">}).</span><span class="na">start</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="编辑dialog">编辑Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showEditDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">AlertDialog.Builder builder </span><span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="err">final EditText </span><span class="n">view</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EditText</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;输入dialog&#34;</span><span class="p">)</span>
+       <span class="p">.</span><span class="na">setView</span><span class="p">(</span><span class="n">view</span><span class="p">)</span>
+       <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+           <span class="nd">@Override</span>
+           <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
+               <span class="err">String content </span><span class="o">=</span> <span class="n">view</span><span class="p">.</span><span class="na">getText</span><span class="p">().</span><span class="na">toString</span><span class="p">();</span>
+           <span class="p">}</span>
+       <span class="p">})</span>
+       <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="自定义带动画的dialog">自定义带动画的Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showConsumerDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">Dialog dialog </span><span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog</span><span class="p">);</span>
+    <span class="err">View view </span><span class="o">=</span> <span class="n">LayoutInflater</span><span class="p">.</span><span class="na">from</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="na">inflate</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">dialog</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">setContentView</span><span class="p">(</span><span class="n">view</span><span class="p">);</span>
+    <span class="err">ViewGroup.LayoutParams layoutParams </span><span class="o">=</span> <span class="n">view</span><span class="p">.</span><span class="na">getLayoutParams</span><span class="p">();</span>
+    <span class="n">layoutParams</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">().</span><span class="na">widthPixels</span><span class="p">;</span>
+    <span class="n">view</span><span class="p">.</span><span class="na">setLayoutParams</span><span class="p">(</span><span class="n">layoutParams</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setGravity</span><span class="p">(</span><span class="n">Gravity</span><span class="p">.</span><span class="na">BOTTOM</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setWindowAnimations</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog_Animation</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">setCanceledOnTouchOutside</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="自定义带动画的圆角dialog">自定义带动画的圆角Dialog</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showConsumerDialogCircle</span><span class="p">()</span> <span class="p">{</span>
+   <span class="err">final Dialog </span><span class="n">dialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog</span><span class="p">);</span>
+   <span class="err">View view </span><span class="o">=</span> <span class="n">LayoutInflater</span><span class="p">.</span><span class="na">from</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="na">inflate</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">dialog_circle</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+
+   <span class="n">view</span><span class="p">.</span><span class="na">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">takePhoto</span><span class="p">).</span><span class="na">setOnClickListener</span><span class="p">(</span><span class="k">new</span> <span class="n">View</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nd">@Override</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">View view</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">dialog</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+       <span class="p">}</span>
+   <span class="p">});</span>
+
+   <span class="n">view</span><span class="p">.</span><span class="na">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">selectPhoto</span><span class="p">).</span><span class="na">setOnClickListener</span><span class="p">(</span><span class="k">new</span> <span class="n">View</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nd">@Override</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">View view</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">dialog</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+       <span class="p">}</span>
+   <span class="p">});</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">setContentView</span><span class="p">(</span><span class="n">view</span><span class="p">);</span>
+   <span class="err">ViewGroup.MarginLayoutParams layoutParams </span><span class="o">=</span> <span class="p">(</span><span class="n">ViewGroup</span><span class="p">.</span><span class="na">MarginLayoutParams</span><span class="p">)</span> <span class="n">view</span>
+           <span class="p">.</span><span class="na">getLayoutParams</span><span class="p">();</span>
+   <span class="n">layoutParams</span><span class="p">.</span><span class="na">bottomMargin</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">TypedValue</span><span class="p">.</span><span class="na">applyDimension</span><span class="p">(</span><span class="n">TypedValue</span><span class="p">.</span><span class="na">COMPLEX_UNIT_DIP</span><span class="p">,</span> <span class="n">8</span><span class="p">,</span>
+           <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">());</span>
+   <span class="n">layoutParams</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">().</span><span class="na">widthPixels</span> <span class="o">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">TypedValue</span>
+           <span class="p">.</span><span class="na">applyDimension</span><span class="p">(</span><span class="n">TypedValue</span><span class="p">.</span><span class="na">COMPLEX_UNIT_DIP</span><span class="p">,</span> <span class="n">16</span><span class="p">,</span>
+                   <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">());</span>
+   <span class="n">view</span><span class="p">.</span><span class="na">setLayoutParams</span><span class="p">(</span><span class="n">layoutParams</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setGravity</span><span class="p">(</span><span class="n">Gravity</span><span class="p">.</span><span class="na">BOTTOM</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setWindowAnimations</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog_Animation</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">setCanceledOnTouchOutside</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setSoftInputMode</span><span class="p">(</span><span class="n">WindowManager</span><span class="p">.</span><span class="na">LayoutParams</span><span class="p">.</span><span class="na">SOFT_INPUT_ADJUST_RESIZE</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="自定义dialog布局文件-dialog-circle-xml">自定义dialog布局文件 dialog_circle.xml</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+  <span class="na">android:orientation=</span><span class="s">&#34;vertical&#34;</span>
+  <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
+  <span class="na">android:background=</span><span class="s">&#34;@drawable/shape_dialog&#34;</span>
+  <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;TextView</span>
+  <span class="na">android:id=</span><span class="s">&#34;@+id/takePhoto&#34;</span>
+  <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
+  <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
+  <span class="na">android:background=</span><span class="s">&#34;?android:attr/selectableItemBackground&#34;</span>
+  <span class="na">android:clickable=</span><span class="s">&#34;true&#34;</span>
+  <span class="na">android:padding=</span><span class="s">&#34;16dp&#34;</span>
+  <span class="na">android:textSize=</span><span class="s">&#34;14sp&#34;</span>
+  <span class="na">android:text=</span><span class="s">&#34;拍照&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;TextView</span>
+  <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
+  <span class="na">android:id=</span><span class="s">&#34;@+id/selectPhoto&#34;</span>
+  <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
+  <span class="na">android:background=</span><span class="s">&#34;?android:attr/selectableItemBackground&#34;</span>
+  <span class="na">android:clickable=</span><span class="s">&#34;true&#34;</span>
+  <span class="na">android:padding=</span><span class="s">&#34;16dp&#34;</span>
+  <span class="na">android:textSize=</span><span class="s">&#34;14sp&#34;</span>
+  <span class="na">android:text=</span><span class="s">&#34;从相册选取&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>dialog_circle.xml</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span class="nt">&lt;shape</span> <span class="na">xmlns:android=</span><span class="s">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+       <span class="na">android:shape=</span><span class="s">&#34;rectangle&#34;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;corners</span> <span class="na">android:radius=</span><span class="s">&#34;8dp&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;solid</span> <span class="na">android:color=</span><span class="s">&#34;@android:color/white&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/shape&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>style</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&#34;BottomDialog&#34;</span> <span class="na">parent=</span><span class="s">&#34;@style/Base.V7.Theme.AppCompat.Light.Dialog&#34;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&#34;android:windowNoTitle&#34;</span><span class="nt">&gt;</span>true<span class="nt">&lt;/item&gt;</span>
+  <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&#34;android:windowBackground&#34;</span><span class="nt">&gt;</span>@android:color/transparent<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&#34;BottomDialog.Animation&#34;</span> <span class="na">parent=</span><span class="s">&#34;Animation.AppCompat.Dialog&#34;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&#34;android:windowEnterAnimation&#34;</span><span class="nt">&gt;</span>@anim/translate_dialog_in<span class="nt">&lt;/item&gt;</span>
+   <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&#34;android:windowExitAnimation&#34;</span><span class="nt">&gt;</span>@anim/translate_dialog_out<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Enter Exit 动画</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--translate_dialog_in.xml--&gt;</span>
+<span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span class="nt">&lt;translate</span> <span class="na">xmlns:android=</span><span class="s">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+  <span class="na">android:duration=</span><span class="s">&#34;300&#34;</span>
+  <span class="na">android:fromXDelta=</span><span class="s">&#34;0&#34;</span>
+  <span class="na">android:fromYDelta=</span><span class="s">&#34;100%&#34;</span>
+  <span class="na">android:toXDelta=</span><span class="s">&#34;0&#34;</span>
+  <span class="na">android:toYDelta=</span><span class="s">&#34;0&#34;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/translate&gt;</span>
+
+<span class="c">&lt;!--translate_dialog_out.xml--&gt;</span>
+<span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span class="nt">&lt;translate</span> <span class="na">xmlns:android=</span><span class="s">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+  <span class="na">android:duration=</span><span class="s">&#34;300&#34;</span>
+  <span class="na">android:fromXDelta=</span><span class="s">&#34;0&#34;</span>
+  <span class="na">android:fromYDelta=</span><span class="s">&#34;0&#34;</span>
+  <span class="na">android:toXDelta=</span><span class="s">&#34;0&#34;</span>
+  <span class="na">android:toYDelta=</span><span class="s">&#34;100%&#34;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/translate&gt;</span></code></pre></td></tr></table>
+</div>
+</div>]]></content>
             
             
             
