@@ -93,12 +93,12 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/categories/hugo/</loc>
+    <loc>https://ztygcs.github.io/tags/hugo/</loc>
     <lastmod>2019-12-05T21:24:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/tags/hugo/</loc>
+    <loc>https://ztygcs.github.io/categories/hugo/</loc>
     <lastmod>2019-12-05T21:24:51+08:00</lastmod>
   </url>
   
@@ -125,6 +125,11 @@
   <url>
     <loc>https://ztygcs.github.io/about/</loc>
     <lastmod>2019-12-09T09:35:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/search/</loc>
+    <lastmod>2020-01-06T21:55:02+08:00</lastmod>
   </url>
   
   <url>
