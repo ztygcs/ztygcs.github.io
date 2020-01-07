@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Tue, 07 Jan 2020 16:07:59 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 07 Jan 2020 16:24:14 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -62,9 +62,11 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
+</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-diff" data-lang="diff">     [[menu.main]]
+<pre class="chroma"><code class="language-diff" data-lang="diff"><span class="gd">- 文件位置：Hugo\Sites\blog\config.toml
+</span><span class="gd"></span>     [[menu.main]]
          url = &#34;/about/&#34;
          name = &#34;关于&#34;
          weight = 5
@@ -75,11 +77,12 @@
 </span><span class="gi">+        name = &#34;百度&#34;
 </span><span class="gi">+        weight = 6
 </span><span class="gi">+        pre = &#34;internal&#34;
-</span><span class="gi">+        post = &#34;search&#34;
+</span><span class="gi">+        post = &#34;user-circle&#34;
 </span></code></pre></td></tr></table>
 </div>
 </div>
-<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/%E6%96%B0%E5%A2%9E%E7%99%BE%E5%BA%A6%E8%8F%9C%E5%8D%95%E9%A1%B9.png" alt="" title="新增百度菜单项" /></p>
+<p>下面是效果图
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/%E6%96%B0%E5%A2%9E%E7%99%BE%E5%BA%A6%E8%8F%9C%E5%8D%95%E9%A1%B9.png" alt="" title="新增百度菜单项" /></p>
 
 <p><code>post = &quot;user-circle&quot;</code>定义了菜单图标，这里我们先用<code>关于</code>菜单项的图标，等其他的问题解决了最后再来改图标。</p>
 
@@ -178,7 +181,9 @@
 </span></code></pre></td></tr></table>
 </div>
 </div>
-<h1 id="效果">效果</h1>
+<p>再到<code>config.toml</code>文件中将百度菜单下的 <code>post = &quot;user-circle&quot;</code> 改为 <code>post = &quot;search&quot;</code></p>
+
+<h1 id="最后效果">最后效果</h1>
 
 <p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/search_final.png" alt="" title="最后的效果" /></p>
 ]]></description>
