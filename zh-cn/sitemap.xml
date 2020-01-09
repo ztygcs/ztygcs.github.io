@@ -58,6 +58,11 @@
   </url>
   
   <url>
+    <loc>https://ztygcs.github.io/en/about/</loc>
+    <lastmod>2020-01-07T21:09:08+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ztygcs.github.io/search/</loc>
     <lastmod>2020-01-06T22:57:27+08:00</lastmod>
   </url>
@@ -173,13 +178,13 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/categories/hexo/</loc>
-    <lastmod>2019-12-05T20:56:20+08:00</lastmod>
+    <loc>https://ztygcs.github.io/tags/hexo/</loc>
+    <lastmod>2019-12-05T20:59:11+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/tags/hexo/</loc>
-    <lastmod>2019-12-05T20:59:11+08:00</lastmod>
+    <loc>https://ztygcs.github.io/categories/hexo/</loc>
+    <lastmod>2019-12-05T20:56:20+08:00</lastmod>
   </url>
   
   <url>
@@ -500,6 +505,10 @@
   <url>
     <loc>https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/</loc>
     <lastmod>2019-12-05T21:02:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/en/</loc>
   </url>
   
 </urlset>
