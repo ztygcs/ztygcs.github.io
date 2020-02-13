@@ -13,12 +13,12 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/tags/hugo/</loc>
+    <loc>https://ztygcs.github.io/categories/hugo/</loc>
     <lastmod>2020-01-07T20:36:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/categories/hugo/</loc>
+    <loc>https://ztygcs.github.io/tags/hugo/</loc>
     <lastmod>2020-01-07T20:36:34+08:00</lastmod>
   </url>
   
@@ -55,6 +55,11 @@
   <url>
     <loc>https://ztygcs.github.io/tags/%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%A1%86/</loc>
     <lastmod>2020-01-07T20:36:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/en/about/</loc>
+    <lastmod>2020-01-07T21:09:08+08:00</lastmod>
   </url>
   
   <url>
@@ -149,7 +154,7 @@
   
   <url>
     <loc>https://ztygcs.github.io/about/</loc>
-    <lastmod>2020-02-14T00:56:12+08:00</lastmod>
+    <lastmod>2020-02-14T02:21:38+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -500,6 +505,10 @@
   <url>
     <loc>https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/</loc>
     <lastmod>2019-12-05T21:02:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/en/</loc>
   </url>
   
 </urlset>
