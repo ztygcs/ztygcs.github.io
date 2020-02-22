@@ -36,7 +36,7 @@
 
     <meta name="author" content="天涯共此时" />
     <meta name="description" content="MemE is a powerful and highly customizable GoHugo theme for personal blogs." />
-    <meta name="keywords" content="hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, layout, linechart, listview, markdown, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 滨江公园, 百度搜索框, 铁王座争夺战" />
+    <meta name="keywords" content="hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, latex, layout, linechart, listview, markdown, mathjax, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 数学公式, 滨江公园, 百度搜索框, 铁王座争夺战" />
     
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -65,11 +65,11 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "2019-11-26T20:17:43+00:00",
-        "dateModified": "2020-01-07T20:36:34+08:00",
+        "dateModified": "2020-02-22T12:16:55+08:00",
         "url": "https://ztygcs.github.io/categories/hugo/",
         "name": "Categories: Hugo",
         "description": "MemE is a powerful and highly customizable GoHugo theme for personal blogs.",
-        "keywords": "hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, layout, linechart, listview, markdown, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 滨江公园, 百度搜索框, 铁王座争夺战",
+        "keywords": "hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, latex, layout, linechart, listview, markdown, mathjax, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 数学公式, 滨江公园, 百度搜索框, 铁王座争夺战",
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "publisher": {
             "@type": "Organization",
@@ -113,7 +113,13 @@
         <meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
 
-    
+    .hasJax{
+	font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+} 
 	
 	
 </head>
@@ -257,6 +263,16 @@
                             
                                 
     <li class="list-item">
+        <a href="/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/" class="list-item-title">LaTeX数学符号与数学公式汇总</a>
+        <time datetime="2020-02-21T11:30:55+08:00" class="list-item-time">02 月 21 日</time>
+    </li>
+
+    <li class="list-item">
+        <a href="/posts/hugo&#43;mathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93/" class="list-item-title">Hugo&#43;MathJax实现数学公式的渲染</a>
+        <time datetime="2020-02-20T21:30:12+08:00" class="list-item-time">02 月 20 日</time>
+    </li>
+
+    <li class="list-item">
         <a href="/posts/blog%E4%B8%AD%E5%8A%A0%E5%85%A5%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2/" class="list-item-title">Blog中加入百度搜索</a>
         <time datetime="2020-01-07T14:56:04+08:00" class="list-item-time">01 月 07 日</time>
     </li>
@@ -351,7 +367,22 @@
 
             
 
-            
+            <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         </div>
     </footer>
 

@@ -36,7 +36,7 @@
 
     <meta name="author" content="天涯共此时" />
     <meta name="description" content="MemE is a powerful and highly customizable GoHugo theme for personal blogs." />
-    <meta name="keywords" content="hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, layout, linechart, listview, markdown, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 滨江公园, 百度搜索框, 铁王座争夺战" />
+    <meta name="keywords" content="hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, latex, layout, linechart, listview, markdown, mathjax, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 数学公式, 滨江公园, 百度搜索框, 铁王座争夺战" />
     
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -69,7 +69,7 @@
         "url": "https://ztygcs.github.io/tags/meme/",
         "name": "Tags: MemE",
         "description": "MemE is a powerful and highly customizable GoHugo theme for personal blogs.",
-        "keywords": "hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, layout, linechart, listview, markdown, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 滨江公园, 百度搜索框, 铁王座争夺战",
+        "keywords": "hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, latex, layout, linechart, listview, markdown, mathjax, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 数学公式, 滨江公园, 百度搜索框, 铁王座争夺战",
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "publisher": {
             "@type": "Organization",
@@ -113,7 +113,13 @@
         <meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
 
-    
+    .hasJax{
+	font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+} 
 	
 	
 </head>
@@ -302,7 +308,22 @@
 
             
 
-            
+            <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         </div>
     </footer>
 
