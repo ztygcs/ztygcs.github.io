@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Sat, 22 Feb 2020 12:50:00 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 22 Feb 2020 13:10:31 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -774,8 +774,6 @@ $$</p>
 <th align="center">指令</th>
 <th align="center">符号</th>
 <th align="center">指令</th>
-<th align="center">符号</th>
-<th align="center">指令</th>
 </tr>
 </thead>
 
@@ -785,8 +783,13 @@ $$</p>
 <td align="center"><code>+</code></td>
 <td align="center">$\pm$</td>
 <td align="center"><code>\pm</code></td>
+</tr>
+
+<tr>
 <td align="center">$\ast$</td>
 <td align="center"><code>\ast</code></td>
+<td align="center">$\star$</td>
+<td align="center"><code>\star</code></td>
 </tr>
 
 <tr>
@@ -794,8 +797,6 @@ $$</p>
 <td align="center"><code>-</code></td>
 <td align="center">$\mp$</td>
 <td align="center"><code>\mp</code></td>
-<td align="center">$\star$</td>
-<td align="center"><code>\star</code></td>
 </tr>
 
 <tr>
@@ -803,8 +804,13 @@ $$</p>
 <td align="center"><code>\times</code></td>
 <td align="center">$\triangleleft$</td>
 <td align="center"><code>\triangleleft</code></td>
+</tr>
+
+<tr>
 <td align="center">$\cup$</td>
 <td align="center"><code>\cup</code></td>
+<td align="center">$\sqcup$</td>
+<td align="center"><code>\sqcup</code></td>
 </tr>
 
 <tr>
@@ -812,8 +818,6 @@ $$</p>
 <td align="center"><code>\div</code></td>
 <td align="center">$\triangleright$</td>
 <td align="center"><code>\triangleright</code></td>
-<td align="center">$\sqcup$</td>
-<td align="center"><code>\sqcup</code></td>
 </tr>
 
 <tr>
@@ -821,8 +825,13 @@ $$</p>
 <td align="center"><code>\cdot</code></td>
 <td align="center">$\circ$</td>
 <td align="center"><code>\circ</code></td>
+</tr>
+
+<tr>
 <td align="center">$\cap$</td>
 <td align="center"><code>\cap</code></td>
+<td align="center">$\sqcap$</td>
+<td align="center"><code>\sqcap</code></td>
 </tr>
 
 <tr>
@@ -830,8 +839,6 @@ $$</p>
 <td align="center"><code>\setminus</code></td>
 <td align="center">$\bullet$</td>
 <td align="center"><code>\bullet</code></td>
-<td align="center">$\sqcap$</td>
-<td align="center"><code>\sqcap</code></td>
 </tr>
 
 <tr>
@@ -839,8 +846,13 @@ $$</p>
 <td align="center"><code>\oplus</code></td>
 <td align="center">$\diamond$</td>
 <td align="center"><code>\diamond</code></td>
+</tr>
+
+<tr>
 <td align="center">$\vee$</td>
 <td align="center"><code>\vee</code></td>
+<td align="center">$\wedge $</td>
+<td align="center"><code>\wedge</code></td>
 </tr>
 
 <tr>
@@ -848,8 +860,6 @@ $$</p>
 <td align="center"><code>\ominus</code></td>
 <td align="center">$\otimes$</td>
 <td align="center"><code>\otimes</code></td>
-<td align="center">$\wedge $</td>
-<td align="center"><code>\wedge</code></td>
 </tr>
 
 <tr>
@@ -857,8 +867,13 @@ $$</p>
 <td align="center"><code>\oslash</code></td>
 <td align="center">$\odot$</td>
 <td align="center"><code>\odot</code></td>
+</tr>
+
+<tr>
 <td align="center">$\uplus$</td>
 <td align="center"><code>\uplus</code></td>
+<td align="center">$\amalg$</td>
+<td align="center"><code>\\amalg</code></td>
 </tr>
 
 <tr>
@@ -866,8 +881,6 @@ $$</p>
 <td align="center"><code>\bigtriangleup</code></td>
 <td align="center">$\dagger$</td>
 <td align="center"><code>\dagger</code></td>
-<td align="center">$\amalg$</td>
-<td align="center"><code>\\amalg</code></td>
 </tr>
 
 <tr>
@@ -875,8 +888,6 @@ $$</p>
 <td align="center"><code>\bigtriangledown</code></td>
 <td align="center">$\ddagger$</td>
 <td align="center"><code>\ddagger</code></td>
-<td align="center">$\wr$</td>
-<td align="center"><code>\wr</code></td>
 </tr>
 
 <tr>
@@ -884,8 +895,6 @@ $$</p>
 <td align="center"><code>\lhd</code></td>
 <td align="center">$\unlhd$</td>
 <td align="center"><code>\unlhd</code></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 
 <tr>
@@ -893,6 +902,11 @@ $$</p>
 <td align="center"><code>\rhd</code></td>
 <td align="center">$\unrhd$</td>
 <td align="center"><code>\unrhd</code></td>
+</tr>
+
+<tr>
+<td align="center">$\wr$</td>
+<td align="center"><code>\wr</code></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -908,8 +922,6 @@ $$</p>
 <th align="center">指令</th>
 <th align="center">符号</th>
 <th align="center">指令</th>
-<th align="center">符号</th>
-<th align="center">指令</th>
 </tr>
 </thead>
 
@@ -919,13 +931,16 @@ $$</p>
 <td align="center"><code>\sum</code></td>
 <td align="center">$\bigcup$</td>
 <td align="center"><code>\bigcup</code></td>
-<td align="center">$\bigcap$</td>
-<td align="center"><code>\bigcap</code></td>
 </tr>
 
 <tr>
+<td align="center">$\bigcap$</td>
+<td align="center"><code>\bigcap</code></td>
 <td align="center">$\bigvee$</td>
 <td align="center"><code>\bigvee</code></td>
+</tr>
+
+<tr>
 <td align="center">$\bigoplus$</td>
 <td align="center"><code>\bigoplus</code></td>
 <td align="center">$\prod$</td>
@@ -937,26 +952,20 @@ $$</p>
 <td align="center"><code>\bigwedge</code></td>
 <td align="center">$\bigotimes$</td>
 <td align="center"><code>\bigotimes</code></td>
+</tr>
+
+<tr>
 <td align="center">$\coprod$</td>
 <td align="center"><code>\coprod</code></td>
-</tr>
-
-<tr>
 <td align="center">$\bigsqcup$</td>
 <td align="center"><code>\bigsqcup</code></td>
-<td align="center">$\bigodot$</td>
-<td align="center"><code>\bigodot</code></td>
-<td align="center">$\int$</td>
-<td align="center"><code>\int</code></td>
 </tr>
 
 <tr>
-<td align="center">$\oint$</td>
-<td align="center"><code>\oint</code></td>
+<td align="center">$\bigodot$</td>
+<td align="center"><code>\bigodot</code></td>
 <td align="center">$\biguplus$</td>
 <td align="center"><code>\biguplus</code></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -1273,8 +1282,6 @@ $$</p>
 <th align="center">指令</th>
 <th align="center">符号</th>
 <th align="center">指令</th>
-<th align="center">符号</th>
-<th align="center">指令</th>
 </tr>
 </thead>
 
@@ -1284,13 +1291,16 @@ $$</p>
 <td align="center"><code>\hat{xy}</code></td>
 <td align="center">$\widehat{xyz}$</td>
 <td align="center"><code>\widehat{xyz}</code></td>
-<td align="center">$\tilde{xy}$</td>
-<td align="center"><code>\tilde{xy}</code></td>
 </tr>
 
 <tr>
+<td align="center">$\tilde{xy}$</td>
+<td align="center"><code>\tilde{xy}</code></td>
 <td align="center">$\widetilde{xyz}$</td>
 <td align="center"><code>\widetilde{xyz}</code></td>
+</tr>
+
+<tr>
 <td align="center">$\check{x}$</td>
 <td align="center"><code>\check{x}</code></td>
 <td align="center">$\breve{y}$</td>
@@ -1302,8 +1312,6 @@ $$</p>
 <td align="center"><code>\grave{x}</code></td>
 <td align="center">$\acute{y}$</td>
 <td align="center"><code>\acute{y}</code></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -1395,8 +1403,6 @@ $$</p>
 <th align="center">指令</th>
 <th align="center">符号</th>
 <th align="center">指令</th>
-<th align="center">符号</th>
-<th align="center">指令</th>
 </tr>
 </thead>
 
@@ -1406,13 +1412,16 @@ $$</p>
 <td align="center"><code>\gets</code> or <code>\leftarrow</code></td>
 <td align="center">$\longleftarrow$</td>
 <td align="center"><code>\longleftarrow</code></td>
-<td align="center">$\uparrow$</td>
-<td align="center"><code>\uparrow</code></td>
 </tr>
 
 <tr>
+<td align="center">$\uparrow$</td>
+<td align="center"><code>\uparrow</code></td>
 <td align="center">$\to$</td>
 <td align="center"><code>\to</code> or <code>\rightarrow</code></td>
+</tr>
+
+<tr>
 <td align="center">$\longrightarrow$</td>
 <td align="center"><code>\longrightarrow</code></td>
 <td align="center">$\downarrow$</td>
@@ -1424,13 +1433,16 @@ $$</p>
 <td align="center"><code>\leftrightarrow</code></td>
 <td align="center">$\longleftrightarrow$</td>
 <td align="center"><code>\longleftrightarrow</code></td>
-<td align="center">$\updownarrow$</td>
-<td align="center"><code>\updownarrow</code></td>
 </tr>
 
 <tr>
+<td align="center">$\updownarrow$</td>
+<td align="center"><code>\updownarrow</code></td>
 <td align="center">$\Leftarrow$</td>
 <td align="center"><code>\Leftarrow</code></td>
+</tr>
+
+<tr>
 <td align="center">$\Longleftarrow$</td>
 <td align="center"><code>\Longleftarrow</code></td>
 <td align="center">$\Uparrow$</td>
@@ -1442,13 +1454,16 @@ $$</p>
 <td align="center"><code>\Rightarrow</code></td>
 <td align="center">$\Longrightarrow$</td>
 <td align="center"><code>\Longrightarrow</code></td>
-<td align="center">$\Downarrow$</td>
-<td align="center"><code>\Downarrow</code></td>
 </tr>
 
 <tr>
+<td align="center">$\Downarrow$</td>
+<td align="center"><code>\Downarrow</code></td>
 <td align="center">$\Leftrightarrow$</td>
 <td align="center"><code>\Leftrightarrow</code></td>
+</tr>
+
+<tr>
 <td align="center">$\Longleftrightarrow$</td>
 <td align="center"><code>\Longleftrightarrow</code></td>
 <td align="center">$\Updownarrow$</td>
@@ -1460,13 +1475,16 @@ $$</p>
 <td align="center"><code>\mapsto</code></td>
 <td align="center">$\longmapsto$</td>
 <td align="center"><code>\longmapsto</code></td>
-<td align="center">$\nearrow$</td>
-<td align="center"><code>\nearrow</code></td>
 </tr>
 
 <tr>
+<td align="center">$\nearrow$</td>
+<td align="center"><code>\nearrow</code></td>
 <td align="center">$\hookleftarrow$</td>
 <td align="center"><code>\hookleftarrow</code></td>
+</tr>
+
+<tr>
 <td align="center">$\hookrightarrow$</td>
 <td align="center"><code>\hookrightarrow</code></td>
 <td align="center">$\searrow$</td>
@@ -1478,13 +1496,16 @@ $$</p>
 <td align="center"><code>\leftharpoonup</code></td>
 <td align="center">$\rightharpoonup$</td>
 <td align="center"><code>\rightharpoonup</code></td>
-<td align="center">$\swarrow$</td>
-<td align="center"><code>\swarrow</code></td>
 </tr>
 
 <tr>
+<td align="center">$\swarrow$</td>
+<td align="center"><code>\swarrow</code></td>
 <td align="center">$\leftharpoondown$</td>
 <td align="center"><code>\leftharpoondown</code></td>
+</tr>
+
+<tr>
 <td align="center">$\rightharpoondown$</td>
 <td align="center"><code>\rightharpoondown</code></td>
 <td align="center">$\nwarrow$</td>
@@ -1496,8 +1517,13 @@ $$</p>
 <td align="center"><code>\rightleftharpoons</code></td>
 <td align="center">$\iff$</td>
 <td align="center"><code>\iff</code></td>
+</tr>
+
+<tr>
 <td align="center">$\leadsto$</td>
 <td align="center"><code>\leadsto</code></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -1573,8 +1599,6 @@ $$</p>
 <th align="center">指令</th>
 <th align="center">符号</th>
 <th align="center">指令</th>
-<th align="center">符号</th>
-<th align="center">指令</th>
 </tr>
 </thead>
 
@@ -1584,13 +1608,16 @@ $$</p>
 <td align="center"><code>\dots</code></td>
 <td align="center">$\cdots$</td>
 <td align="center"><code>\cdots</code></td>
-<td align="center">$\vdots$</td>
-<td align="center"><code>\vdots</code></td>
 </tr>
 
 <tr>
+<td align="center">$\vdots$</td>
+<td align="center"><code>\vdots</code></td>
 <td align="center">$\ddots$</td>
 <td align="center"><code>\ddots</code></td>
+</tr>
+
+<tr>
 <td align="center">$\hbar$</td>
 <td align="center"><code>\hbar</code></td>
 <td align="center">$\imath$</td>
@@ -1602,13 +1629,16 @@ $$</p>
 <td align="center"><code>\jmath</code></td>
 <td align="center">$\ell$</td>
 <td align="center"><code>\ell</code></td>
-<td align="center">$\Re$</td>
-<td align="center"><code>\Re</code></td>
 </tr>
 
 <tr>
+<td align="center">$\Re$</td>
+<td align="center"><code>\Re</code></td>
 <td align="center">$\Im$</td>
 <td align="center"><code>\Im</code></td>
+</tr>
+
+<tr>
 <td align="center">$\aleph$</td>
 <td align="center"><code>\aleph</code></td>
 <td align="center">$\wp$</td>
@@ -1620,13 +1650,16 @@ $$</p>
 <td align="center"><code>\partial</code></td>
 <td align="center">$'$</td>
 <td align="center"><code>'</code></td>
-<td align="center">$\emptyset$</td>
-<td align="center"><code>\emptyset</code></td>
 </tr>
 
 <tr>
+<td align="center">$\emptyset$</td>
+<td align="center"><code>\emptyset</code></td>
 <td align="center">$\triangle$</td>
 <td align="center"><code>\triangle</code></td>
+</tr>
+
+<tr>
 <td align="center">$\Box$</td>
 <td align="center"><code>\Box</code></td>
 <td align="center">$\Diamond$</td>
@@ -1638,13 +1671,16 @@ $$</p>
 <td align="center"><code>\bot</code></td>
 <td align="center">$\top$</td>
 <td align="center"><code>\top</code></td>
-<td align="center">$\angle$</td>
-<td align="center"><code>\angle</code></td>
 </tr>
 
 <tr>
+<td align="center">$\angle$</td>
+<td align="center"><code>\angle</code></td>
 <td align="center">$\surd$</td>
 <td align="center"><code>\surd</code></td>
+</tr>
+
+<tr>
 <td align="center">$\diamondsuit$</td>
 <td align="center"><code>\diamondsuit</code></td>
 <td align="center">$\heartsuit$</td>
@@ -1656,13 +1692,16 @@ $$</p>
 <td align="center"><code>\clubsuit</code></td>
 <td align="center">$\spadesuit$</td>
 <td align="center"><code>\spadesuit</code></td>
-<td align="center">$\neg $</td>
-<td align="center"><code>\neg</code> or <code>\lnot</code></td>
 </tr>
 
 <tr>
+<td align="center">$\neg $</td>
+<td align="center"><code>\neg</code> or <code>\lnot</code></td>
 <td align="center">$\flat$</td>
 <td align="center"><code>\flat</code></td>
+</tr>
+
+<tr>
 <td align="center">$\natural$</td>
 <td align="center"><code>\natural</code></td>
 <td align="center">$\sharp$</td>
@@ -1672,8 +1711,6 @@ $$</p>
 <tr>
 <td align="center">$\mho$</td>
 <td align="center"><code>\mho</code></td>
-<td align="center"></td>
-<td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -1691,7 +1728,7 @@ $$</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -1733,29 +1770,6 @@ $$</p>
                 
                     <description><![CDATA[
 
-<h1 id="header-html添加样式">header.html添加样式</h1>
-
-<p>在主题文件夹（\themes\meme\layouts\partials\custom）下的header.html中，添加如下样式</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">    .hasJax{
-    font: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    /*color: #515151;*/
-} </pre></td></tr></table>
-</div>
-</div>
 <h1 id="footer-html添加代码">footer.html添加代码</h1>
 
 <p>在主题文件夹（\themes\meme\layouts\partials\custom）下的footer.html中，添加下面代码</p>
@@ -1797,8 +1811,6 @@ $$</p>
 &lt;script type=&#34;text/javascript&#34; async src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML&#34;&gt;&lt;/script&gt;</pre></td></tr></table>
 </div>
 </div>
-<p>书写完markdown文件后，将无法正常显示的公式放到<code>&lt;div class='hasJax'&gt;&lt;/div&gt;</code>中:解决mathjax多行公式换行、下角标符号与markdown的冲突问题。</p>
-
 <p>这样自己的博客就已经可以插入数学公式了，在下篇文章《LaTeX数学符号与数学公式汇总》中了解如何使用各种数学符号与数学公式。
 <div class="mytag">
 <p style="text-align:center"><b>参考地址</b></p>
@@ -1821,7 +1833,7 @@ $$</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -2017,7 +2029,7 @@ $$</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -2525,7 +2537,7 @@ $$</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -2641,7 +2653,7 @@ $$</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -4748,7 +4760,7 @@ $$</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -5278,7 +5290,7 @@ Enabled by default. You can disable it from the package settings.</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                         
@@ -5319,7 +5331,7 @@ Enabled by default. You can disable it from the package settings.</p>
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -5520,7 +5532,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -5750,7 +5762,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -5841,7 +5853,7 @@ remote: error: File statics/file.mp4 is <span class="m">271</span>.90 MB<span cl
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                         
@@ -7289,7 +7301,7 @@ totop:
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -7911,7 +7923,7 @@ totop:
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -8176,7 +8188,7 @@ navView.inflateMenu(R.menu.nav_menu);
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -8536,7 +8548,7 @@ navView.inflateMenu(R.menu.nav_menu);
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -9279,7 +9291,7 @@ navView.inflateMenu(R.menu.nav_menu);
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -9405,7 +9417,7 @@ navView.inflateMenu(R.menu.nav_menu);
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -9739,7 +9751,7 @@ navView.inflateMenu(R.menu.nav_menu);
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -10139,7 +10151,7 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -10437,7 +10449,7 @@ example：
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -11009,7 +11021,7 @@ example：
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
@@ -11241,7 +11253,7 @@ poem
                                 
                                 
                                 
-                                    <category domain="https://ztygcs.github.io/categories/tech/">Tech</category>
+                                    <category domain="https://ztygcs.github.io/categories/tech/">TECH</category>
                                 
                             
                                 
