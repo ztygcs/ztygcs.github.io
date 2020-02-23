@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Sun, 23 Feb 2020 10:46:02 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 23 Feb 2020 22:34:59 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -37,6 +37,8 @@
                 
                 
                     <description><![CDATA[
+
+<p>这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完善的，后续如果有需要更改或添加的地方，我会进行修改的。</p>
 
 <h1 id="1-插入公式">1.插入公式</h1>
 
@@ -1852,7 +1854,9 @@ $$</p>
                 
                     <description><![CDATA[
 
-<h1 id="footer-html添加代码">footer.html添加代码</h1>
+<p>今天被一个博友咨询如何往博客中添加数学公式，（在这篇文章没写之前，我的博客还是不支持数学公式的），由于还没有支持数学公式的需求，所以我也一直没有折腾过这个。不过之前有看到过相关的文章，于是在网上找找资料便自己试了试，下面的内容是从网上摘录下来的部分笔记，完整的内容我已贴在了文章的最下面，欢迎访问原文。（本文只作自己的修改记录）</p>
+
+<h1 id="在footer-html文件中添加代码">在footer.html文件中添加代码</h1>
 
 <p>在主题文件夹（\themes\meme\layouts\partials\custom）下的footer.html中，添加下面代码</p>
 <div class="highlight"><div class="chroma">
@@ -1893,16 +1897,19 @@ $$</p>
 &lt;script type=&#34;text/javascript&#34; async src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML&#34;&gt;&lt;/script&gt;</pre></td></tr></table>
 </div>
 </div>
-<p>这样自己的博客就已经可以插入数学公式了，在下篇文章《LaTeX数学符号与数学公式汇总》中了解如何使用各种数学符号与数学公式。
+<p>这样自己的博客就已经可以插入数学公式了。</p>
+
+<p>在下篇文章《LaTeX数学符号与数学公式汇总》中进一步了解如何使用各种数学符号与数学公式。</p>
+
 <div class="mytag">
 <p style="text-align:center"><b>参考地址</b></p>
 <p style="margin:10px">
 作者：一念一觉一圣人</br>
-链接：<a href="https://www.jianshu.com/p/5fd2c9b3b638" target="_blank">https://www.jianshu.com/p/5fd2c9b3b638</a></br>
+链接：https://www.jianshu.com/p/5fd2c9b3b638</br>
 来源：简书</br>
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 </p>
-</div></p>
+</div>
 ]]></description>
                 
                 
@@ -7877,7 +7884,7 @@ totop:
                 
                     <description><![CDATA[
 
-<p><img src="https://upload-images.jianshu.io/upload_images/1674835-5997f6d0bde58e29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="HTTP与HTTPS" /></p>
+<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/04/HttpAndHttps.png" alt="图片.png" title="HTTP与HTTPS" /></p>
 
 <h1 id="概念">概念</h1>
 
@@ -7919,7 +7926,7 @@ totop:
 <ul>
 <li><strong>你也可以说：HTTPS = HTTP + SSL</strong></li>
 <li><strong>HTTPS 在 HTTP 应用层的基础上使用安全套接字层作为子层。</strong>
-<img src="https://upload-images.jianshu.io/upload_images/1674835-9351b4213664edc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="HTTP与HTTPS的结构" /></li>
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/04/HttpAndHttps2.png" alt="图片.png" title="HTTP与HTTPS的结构" /></li>
 </ul>
 
 <hr />
@@ -7927,9 +7934,11 @@ totop:
 <p>在讲HTTPS原理之前，先介绍下<strong>两类密码体制</strong></p>
 
 <blockquote>
-<p>当你需要在一个购物网站输入账号以及密码时，含有你的账号与密码信息的数据会被发送到服务器，在发送的过程中，数据会有两种加密形式—— ..共享密钥加密.. 和 ..公开密钥加密..。<br/>
-<strong>共享密钥加密</strong>可以这样理解，服务器为了使数据传输更安全，送给你一把钥匙，这把钥匙可以将数据锁在一个盒子里，当然也可以打开已经锁上的盒子。当数据送至服务器时，服务器会用同样的钥匙打开盒子。这种方法的坏处是，一旦贼人得到钥匙，便可以打开已经锁上的盒子。而公开密钥则避免了这种情况。<br/>
-<strong>公开密钥加密</strong>会使用两把钥匙，服务器会发送给你一把只能锁上盒子却不能打开盒子的钥匙，而服务器自己会留一把可以打开盒子的钥匙，这样就避免了钥匙在中途被其他人抢走风险。当服务器发回响应时会用同样的方式，只不过留有可以打开盒子钥匙的人变成了你。</p>
+<p>当你需要在一个购物网站输入账号以及密码时，含有你的账号与密码信息的数据会被发送到服务器，在发送的过程中，数据会有两种加密形式—— ..共享密钥加密.. 和 ..公开密钥加密..。</p>
+
+<p><strong>共享密钥加密</strong>可以这样理解，服务器为了使数据传输更安全，送给你一把钥匙，这把钥匙可以将数据锁在一个盒子里，当然也可以打开已经锁上的盒子。当数据送至服务器时，服务器会用同样的钥匙打开盒子。这种方法的坏处是，一旦贼人得到钥匙，便可以打开已经锁上的盒子。而公开密钥则避免了这种情况。</p>
+
+<p><strong>公开密钥加密</strong>会使用两把钥匙，服务器会发送给你一把只能锁上盒子却不能打开盒子的钥匙，而服务器自己会留一把可以打开盒子的钥匙，这样就避免了钥匙在中途被其他人抢走风险。当服务器发回响应时会用同样的方式，只不过留有可以打开盒子钥匙的人变成了你。</p>
 </blockquote>
 
 <h1 id="密码体制">密码体制</h1>
@@ -7937,7 +7946,7 @@ totop:
 <h2 id="密码体制1-对称密钥密码体制">密码体制1——对称密钥密码体制</h2>
 
 <p>对称密钥密码体制又称为..共享秘钥加密..，（<code>加密密钥与解密密钥使用相同的密码</code>）
-<img src="https://upload-images.jianshu.io/upload_images/1674835-4ab791ca5772a693.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="共享秘钥加密" /></p>
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/04/HttpAndHttps3.png" alt="图片.png" title="共享秘钥加密" /></p>
 
 <ul>
 <li>客户端与服务器使用相同的密码对内容进行加密与解密</li>
@@ -7946,12 +7955,12 @@ totop:
 <li>一旦第三方攻击者获得了密钥，加密也就毫无意义</li>
 </ul>
 
-<p><img src="https://upload-images.jianshu.io/upload_images/1674835-7a3cf3c6b7e423f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="危害" /></p>
+<p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/04/HttpAndHttps4.png" alt="图片.png" title="危害" /></p>
 
 <h2 id="密码体制2-公钥密码体制">密码体制2——公钥密码体制</h2>
 
 <p>公钥密码体制又称为 ..公开秘钥加密..，（<code>加密密钥与解密密钥使用不同的密码（但有关联）</code>）
-<img src="https://upload-images.jianshu.io/upload_images/1674835-9630dc1c844289de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片.png" title="公开秘钥加密" /></p>
+<img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/04/HttpAndHttps5.png" alt="图片.png" title="公开秘钥加密" /></p>
 
 <ul>
 <li>加密密钥也称为<code>公钥</code>（public key），是向公众<strong>公开</strong>的</li>
@@ -7972,8 +7981,8 @@ totop:
 <h2 id="ssl">SSL</h2>
 
 <ol>
-<li>验证服务器端
-2.允许客户端和服务器端选择加密算法和密码，确保双方都支持</li>
+<li>验证服务器端</li>
+<li>允许客户端和服务器端选择加密算法和密码，确保双方都支持</li>
 <li>验证客户端(可选)</li>
 <li>使用公钥加密技术来生成共享加密数据</li>
 <li>创建一个加密的 SSL 连接</li>
