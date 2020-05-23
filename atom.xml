@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-23T23:09:11&#43;08:00</updated>
+    <updated>2020-05-23T23:11:27&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -1807,7 +1807,7 @@ $$&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -1922,7 +1922,7 @@ $$&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -2123,7 +2123,7 @@ $$&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -2639,7 +2639,7 @@ $$&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -2760,7 +2760,7 @@ $$&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -4889,7 +4889,7 @@ $$&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -5424,7 +5424,7 @@ Enabled by default. You can disable it from the package settings.&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                     
@@ -5468,7 +5468,7 @@ Enabled by default. You can disable it from the package settings.&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -5674,7 +5674,7 @@ remote: error: File statics/file.mp4 is &lt;span class=&#34;m&#34;&gt;271&lt;/sp
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -5909,7 +5909,7 @@ remote: error: File statics/file.mp4 is &lt;span class=&#34;m&#34;&gt;271&lt;/sp
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -6005,7 +6005,7 @@ remote: error: File statics/file.mp4 is &lt;span class=&#34;m&#34;&gt;271&lt;/sp
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                     
@@ -7458,7 +7458,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -8102,7 +8102,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -8377,7 +8377,7 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -8740,7 +8740,7 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -9494,7 +9494,7 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -9625,7 +9625,7 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -9964,7 +9964,7 @@ navView.inflateMenu(R.menu.nav_menu);
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -10367,7 +10367,7 @@ compile &amp;#39;com.android.support:appcompat-v7:24.2.1&amp;#39;
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -10668,7 +10668,7 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -11256,7 +11256,7 @@ example：
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
@@ -11498,7 +11498,7 @@ poem
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/categories/tech/" term="Tech" label="Tech" />
+                                <category scheme="https://ztygcs.github.io/categories/tech/" term="TECH" label="TECH" />
                             
                         
                             
