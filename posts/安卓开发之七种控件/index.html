@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
         <script>
             const userPrefers = localStorage.getItem('theme');
             if (userPrefers === 'dark') {
@@ -68,7 +68,7 @@
         "description": "基本控件",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1138 ,
+        "wordCount":  1164 ,
         "image": ["https://ztygcs.github.io/images/tech/2018/09/17/TextView.png","https://ztygcs.github.io/images/tech/2018/09/17/Button.png","https://ztygcs.github.io/images/tech/2018/09/17/EditText.png","https://ztygcs.github.io/images/tech/2018/09/17/ImageView.png","https://ztygcs.github.io/images/tech/2018/09/17/ProgressBar.png","https://ztygcs.github.io/images/tech/2018/09/17/AlertDialog.png","https://ztygcs.github.io/images/tech/2018/09/17/ProgressDialog.png"],
         "author": {
             "@type": "Person",
@@ -264,7 +264,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1138</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1164</span>
     
     
     
@@ -274,23 +274,34 @@
             
 
             <nav class="contents">
-  <h2 id="contents" class="contents-title"></h2><ul class="toc">
-    <li><a id="contents:在布局文件中定义一个按钮控件" href="#在布局文件中定义一个按钮控件">在布局文件中定义一个按钮控件</a></li>
-    <li><a id="contents:在活动中为button的点击事件注册一个监听器" href="#在活动中为button的点击事件注册一个监听器">在活动中为Button的点击事件注册一个监听器</a></li>
-  </ul>
+<ul>
+<li><a id="contents:一-textview" href="#一-textview">一、TextView</a></li>
+<li><a id="contents:二-button" href="#二-button">二、Button</a>
+<ul>
+<li><a id="contents:在布局文件中定义一个按钮控件" href="#在布局文件中定义一个按钮控件">在布局文件中定义一个按钮控件</a></li>
+<li><a id="contents:在活动中为button的点击事件注册一个监听器" href="#在活动中为button的点击事件注册一个监听器">在活动中为Button的点击事件注册一个监听器</a></li>
+</ul></li>
+<li><a id="contents:三-edittext" href="#三-edittext">三、EditText</a></li>
+<li><a id="contents:四-imageview" href="#四-imageview">四、ImageVIew</a></li>
+<li><a id="contents:五-progressbar" href="#五-progressbar">五、ProgressBar</a></li>
+<li><a id="contents:六-alertdialog" href="#六-alertdialog">六、AlertDialog</a></li>
+<li><a id="contents:七-progressdialog" href="#七-progressdialog">七、ProgressDialog</a></li>
+</ul>
 </nav><div class="post-body">
-              <h1 id="一textview"><a href="#一textview" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:一textview" class="headings">一、TextView</a></h1>
-<p>作用：用于在界面上显示一段文本信息<!-- raw HTML omitted -->
+              
+
+<h1 id="一-textview"><a href="#一-textview" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:一-textview" class="headings">一、TextView</a></h1>
+
+<p>作用：用于在界面上显示一段文本信息<br/>
 用法：在布局文件中加入TextView控件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;TextView</span>
@@ -298,33 +309,38 @@
 <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
 <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
 <span class="na">android:text=</span><span class="s">&#34;This is TextView&#34;</span>
-<span class="na">android:gravity=</span><span class="s">&#34;center&#34;</span><span class="nt">/&gt;</span>
-
-</code></pre></td></tr></table>
+<span class="na">android:gravity=</span><span class="s">&#34;center&#34;</span><span class="nt">/&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p><code>android:id</code>给当前控件定义一个唯一标识符<!-- raw HTML omitted -->
-<code>android:layout_width</code>和<code>android:layout_height</code>指定了控件的宽度和高度<!-- raw HTML omitted -->
-其可选值有3种：<code>match_parent</code>,<code> fill_parent</code>和 <code>warp_content</code>，其中：<!-- raw HTML omitted -->
+</div>
+<p><code>android:id</code>给当前控件定义一个唯一标识符<br/>
+<code>android:layout_width</code>和<code>android:layout_height</code>指定了控件的宽度和高度<br/>
+其可选值有3种：<code>match_parent</code>,<code>fill_parent</code>和 <code>warp_content</code>，其中：<br/>
 <code>match_parent</code>和<code>fill_parent</code>意义相同，让当前的控件和父布局的大小一样
 <code>warp_content</code>表示让控件的大小刚好包含住里面的内容</p>
-<!-- raw HTML omitted -->
+
+<blockquote class="colorquote info"><p>注：也可指定控件的宽和高，但对于不同的手机屏幕会产生适配的问题</p></blockquote>
+
 <p><code>android:text</code>=”This is TextView”指定显示的内容
 <code>android:gravity</code>用来指定文字对齐方式</p>
-<p>另外还有<code>android:textColor</code> =&rdquo;#ff0000&quot;和<code>android:textSize</code> =&quot;24sp&quot;用来指定文字的颜色和大小</p>
-<p>example：<img src="/images/tech/2018/09/17/TextView.png" alt=""><span class="caption">◎ example</span></p>
-<h1 id="二button"><a href="#二button" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二button" class="headings">二、Button</a></h1>
-<p>作用：程序与用户进行交互<!-- raw HTML omitted -->
-用法：<!-- raw HTML omitted --></p>
+
+<p>另外还有<code>android:textColor</code> =&quot;#ff0000&quot;和<code>android:textSize</code> =&quot;24sp&quot;用来指定文字的颜色和大小</p>
+
+<p>example：<img src="/images/tech/2018/09/17/TextView.png" alt="" /><span class="caption">◎ example</span></p>
+
+<h1 id="二-button"><a href="#二-button" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二-button" class="headings">二、Button</a></h1>
+
+<p>作用：程序与用户进行交互<br/>
+用法：<br/></p>
+
 <h2 id="在布局文件中定义一个按钮控件"><a href="#在布局文件中定义一个按钮控件" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:在布局文件中定义一个按钮控件" class="headings">在布局文件中定义一个按钮控件</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;Button</span>
@@ -332,44 +348,45 @@
 <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
 <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
 <span class="na">android:text=</span><span class="s">&#34;Button&#34;</span>
-<span class="na">android:textAllCaps=</span><span class="s">&#34;false&#34;</span><span class="nt">/&gt;</span>
-
-</code></pre></td></tr></table>
+<span class="na">android:textAllCaps=</span><span class="s">&#34;false&#34;</span><span class="nt">/&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p><code>android:text</code> =&quot;Button&quot;用来指定按钮上面显示的内容，系统会将Button自动进行大写转换，若不想转换，加入<code>android:textAllCaps</code> =&quot;false&quot;即可。</p>
+</div>
+<p><code>android:text</code> =&quot;Button&quot;用来指定按钮上面显示的内容，系统会将Button自动进行大写转换，若不想转换，加入<code>android:textAllCaps</code> =&quot;false&quot;即可。</p>
+
 <h2 id="在活动中为button的点击事件注册一个监听器"><a href="#在活动中为button的点击事件注册一个监听器" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:在活动中为button的点击事件注册一个监听器" class="headings">在活动中为Button的点击事件注册一个监听器</a></h2>
+
 <p>在<code>onCreate()</code>方法中加入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Button</span> <span class="n">button</span><span class="o">=(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">);</span>
-<span class="n">button</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">(){</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">Button button</span><span class="o">=</span><span class="p">(</span><span class="n">Button</span><span class="p">)</span> <span class="n">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">button</span><span class="p">);</span>
+<span class="n">button</span><span class="p">.</span><span class="na">setOnClickListener</span><span class="p">(</span><span class="k">new</span> <span class="n">View</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">(){</span>
     <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">){</span>
+    <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">View v</span><span class="p">){</span>
         <span class="c1">//添加按钮点击响应事件
-</span><span class="c1"></span>    <span class="o">}</span>
-<span class="o">});</span>
-
-</code></pre></td></tr></table>
+</span><span class="c1"></span>    <span class="p">}</span>
+<span class="p">});</span></code></pre></td></tr></table>
 </div>
-</div><p>当按钮被点击时，执行监听器中<code>onClick()</code>方法。
+</div>
+<p>当按钮被点击时，执行监听器中<code>onClick()</code>方法。
 example：
-<img src="/images/tech/2018/09/17/Button.png" alt=""><span class="caption">◎ example</span></p>
-<h1 id="三edittext"><a href="#三edittext" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三edittext" class="headings">三、EditText</a></h1>
-<p>作用：程序与用户进行交互<!-- raw HTML omitted -->
+<img src="/images/tech/2018/09/17/Button.png" alt="" /><span class="caption">◎ example</span></p>
+
+<h1 id="三-edittext"><a href="#三-edittext" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三-edittext" class="headings">三、EditText</a></h1>
+
+<p>作用：程序与用户进行交互<br/>
 用法：在布局文件中加入EditText控件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -382,18 +399,21 @@ example：
 <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
 <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
 <span class="na">android:hint=</span><span class="s">&#34;Type something here&#34;</span>
-<span class="na">android:maxLines=</span><span class="s">&#34;2&#34;</span><span class="nt">/&gt;</span>
-</code></pre></td></tr></table>
+<span class="na">android:maxLines=</span><span class="s">&#34;2&#34;</span><span class="nt">/&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p><code>android:hint</code> 用来指定编辑框中一段提示性的文本
+</div>
+<p><code>android:hint</code> 用来指定编辑框中一段提示性的文本
 <code>android:maxLines</code> 用来指定EditText的最大行数，防止输入文本过多时，输入框被拉长。</p>
-<p>example：<img src="/images/tech/2018/09/17/EditText.png" alt=""></p>
-<h1 id="四imageview"><a href="#四imageview" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:四imageview" class="headings">四、ImageVIew</a></h1>
-<p>作用：显示图片<!-- raw HTML omitted -->
+
+<p>example：<img src="/images/tech/2018/09/17/EditText.png" alt="" /></p>
+
+<h1 id="四-imageview"><a href="#四-imageview" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:四-imageview" class="headings">四、ImageVIew</a></h1>
+
+<p>作用：显示图片<br/>
 用法：在布局文件中加入ImageView控件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -404,16 +424,18 @@ example：
 <span class="na">android:id=</span><span class="s">&#34;@+id/image_view&#34;</span>
 <span class="na">android:layout_width=</span><span class="s">&#34;wrap_content&#34;</span>
 <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
-<span class="na">android:src=</span><span class="s">&#34;@drawable/img_1&#34;</span><span class="nt">/&gt;</span>
-</code></pre></td></tr></table>
+<span class="na">android:src=</span><span class="s">&#34;@drawable/img_1&#34;</span><span class="nt">/&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p>example：<img src="/images/tech/2018/09/17/ImageView.png" alt=""><span class="caption">◎ example</span></p>
-<h1 id="五progressbar"><a href="#五progressbar" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:五progressbar" class="headings">五、ProgressBar</a></h1>
-<p>作用：显示进度条<!-- raw HTML omitted -->
+</div>
+<p>example：<img src="/images/tech/2018/09/17/ImageView.png" alt="" /><span class="caption">◎ example</span></p>
+
+<h1 id="五-progressbar"><a href="#五-progressbar" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:五-progressbar" class="headings">五、ProgressBar</a></h1>
+
+<p>作用：显示进度条<br/>
 用法：在布局文件中加入一个ProgressBar控件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -422,16 +444,18 @@ example：
 <pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;ProgressBar</span>
 <span class="na">android:id=</span><span class="s">&#34;@+id/progress_bar&#34;</span>
 <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
-<span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span> <span class="nt">/&gt;</span>
-</code></pre></td></tr></table>
+<span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span> <span class="nt">/&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p>example：<img src="/images/tech/2018/09/17/ProgressBar.png" alt=""><span class="caption">◎ example</span></p>
-<h1 id="六alertdialog"><a href="#六alertdialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:六alertdialog" class="headings">六、AlertDialog</a></h1>
-<p>作用：在当前界面弹出一个对话框<!-- raw HTML omitted -->
+</div>
+<p>example：<img src="/images/tech/2018/09/17/ProgressBar.png" alt="" /><span class="caption">◎ example</span></p>
+
+<h1 id="六-alertdialog"><a href="#六-alertdialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:六-alertdialog" class="headings">六、AlertDialog</a></h1>
+
+<p>作用：在当前界面弹出一个对话框<br/>
 用法：在活动onClick()函数中加入按钮点击响应事件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -452,40 +476,40 @@ example：
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span><span class="lnt">21
-</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">switch</span> <span class="o">(</span><span class="n">v</span><span class="o">.</span><span class="na">getId</span><span class="o">()){</span>
-	<span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">:</span>
-		<span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">dialog</span><span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-		<span class="n">dialog</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;This is Dialog&#34;</span><span class="o">);</span>
-		<span class="n">dialog</span><span class="o">.</span><span class="na">setMessage</span><span class="o">(</span><span class="s">&#34;something important.&#34;</span><span class="o">);</span>
-		<span class="n">dialog</span><span class="o">.</span><span class="na">setCancelable</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
-		<span class="n">dialog</span><span class="o">.</span><span class="na">setPositiveButton</span><span class="o">(</span><span class="s">&#34;OK&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">switch</span> <span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="na">getId</span><span class="p">()){</span>
+	<span class="k">case</span> <span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">button</span><span class="o">:</span>
+		<span class="err">AlertDialog.Builder dialog</span><span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+		<span class="n">dialog</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;This is Dialog&#34;</span><span class="p">);</span>
+		<span class="n">dialog</span><span class="p">.</span><span class="na">setMessage</span><span class="p">(</span><span class="s">&#34;something important.&#34;</span><span class="p">);</span>
+		<span class="n">dialog</span><span class="p">.</span><span class="na">setCancelable</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+		<span class="n">dialog</span><span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;OK&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
 			<span class="nd">@Override</span>
-			<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialog</span><span class="o">,</span> <span class="kt">int</span> <span class="n">which</span><span class="o">)</span> <span class="o">{</span>
-			<span class="o">}</span>
-		<span class="o">});</span>
-		<span class="n">dialog</span><span class="o">.</span><span class="na">setNegativeButton</span><span class="o">(</span><span class="s">&#34;Cancel&#34;</span><span class="o">,</span><span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">(){</span>
+			<span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialog</span><span class="p">,</span> <span class="err">int which</span><span class="p">)</span> <span class="p">{</span>
+			<span class="p">}</span>
+		<span class="p">});</span>
+		<span class="n">dialog</span><span class="p">.</span><span class="na">setNegativeButton</span><span class="p">(</span><span class="s">&#34;Cancel&#34;</span><span class="p">,</span><span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">(){</span>
 			<span class="nd">@Override</span>
-			<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialog</span><span class="o">,</span><span class="kt">int</span> <span class="n">which</span><span class="o">){</span>
-			<span class="o">}</span>
-		<span class="o">});</span>
-		<span class="n">dialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
-		<span class="k">break</span><span class="o">;</span>	
+			<span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialog</span><span class="p">,</span><span class="err">int which</span><span class="p">){</span>
+			<span class="p">}</span>
+		<span class="p">});</span>
+		<span class="n">dialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+		<span class="k">break</span><span class="p">;</span>	
 	<span class="k">default</span><span class="o">:</span>       
-		<span class="k">break</span><span class="o">;</span>   
-<span class="o">}</span>
-
-</code></pre></td></tr></table>
+		<span class="k">break</span><span class="p">;</span>   
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><p>example：<img src="/images/tech/2018/09/17/AlertDialog.png" alt=""><span class="caption">◎ example</span></p>
-<h1 id="七progressdialog"><a href="#七progressdialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:七progressdialog" class="headings">七、ProgressDialog</a></h1>
-<p>作用：在当前界面显示进度对话框<!-- raw HTML omitted -->
+</div>
+<p>example：<img src="/images/tech/2018/09/17/AlertDialog.png" alt="" /><span class="caption">◎ example</span></p>
+
+<h1 id="七-progressdialog"><a href="#七-progressdialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:七-progressdialog" class="headings">七、ProgressDialog</a></h1>
+
+<p>作用：在当前界面显示进度对话框<br/>
 用法：在活动onClick()函数中加入按钮点击响应事件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -497,19 +521,19 @@ example：
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">switch</span> <span class="o">(</span><span class="n">v</span><span class="o">.</span><span class="na">getId</span><span class="o">()){</span>
-	<span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">:</span>
-		<span class="n">ProgressDialog</span> <span class="n">progressDialog</span><span class="o">=</span><span class="k">new</span> <span class="n">ProgressDialog</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-		<span class="n">progressDialog</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;This is ProgressDialog&#34;</span><span class="o">);</span>
-		<span class="n">progressDialog</span><span class="o">.</span><span class="na">setMessage</span><span class="o">(</span><span class="s">&#34;Loading...&#34;</span><span class="o">);</span>
-		<span class="n">progressDialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
-		<span class="k">break</span><span class="o">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">switch</span> <span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="na">getId</span><span class="p">()){</span>
+	<span class="k">case</span> <span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">button</span><span class="o">:</span>
+		<span class="err">ProgressDialog progressDialog</span><span class="o">=</span><span class="k">new</span> <span class="n">ProgressDialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+		<span class="n">progressDialog</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;This is ProgressDialog&#34;</span><span class="p">);</span>
+		<span class="n">progressDialog</span><span class="p">.</span><span class="na">setMessage</span><span class="p">(</span><span class="s">&#34;Loading...&#34;</span><span class="p">);</span>
+		<span class="n">progressDialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+		<span class="k">break</span><span class="p">;</span>
 	<span class="k">default</span><span class="o">:</span>       
-		<span class="k">break</span><span class="o">;</span>   
-<span class="o">}</span>
-</code></pre></td></tr></table>
+		<span class="k">break</span><span class="p">;</span>   
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><p>example：<img src="/images/tech/2018/09/17/ProgressDialog.png" alt=""><span class="caption">◎ example</span></p>
+</div>
+<p>example：<img src="/images/tech/2018/09/17/ProgressDialog.png" alt="" /><span class="caption">◎ example</span></p>
 
             </div>
 
@@ -653,7 +677,7 @@ example：
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a></div><div class="site-copyright"></div>
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
 
             
 

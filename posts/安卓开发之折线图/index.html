@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
         <script>
             const userPrefers = localStorage.getItem('theme');
             if (userPrefers === 'dark') {
@@ -68,7 +68,7 @@
         "description": "折线图",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1727 ,
+        "wordCount":  1747 ,
         "image": ["https://ztygcs.github.io/images/tech/2019/01/21/%E6%B7%BB%E5%8A%A0jar%E5%8C%85.png","https://ztygcs.github.io/images/tech/2019/01/21/%E7%BB%93%E6%9E%9C.png"],
         "author": {
             "@type": "Person",
@@ -264,7 +264,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1727</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1747</span>
     
     
     
@@ -273,17 +273,33 @@
 
             
 
-            <nav class="contents"></nav><div class="post-body">
-              <h1 id="一新建工程line_chart"><a href="#一新建工程line_chart" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:一新建工程line_chart" class="headings">一、新建工程Line_chart</a></h1>
+            <nav class="contents">
+<ul>
+<li><a id="contents:一-新建工程line-chart" href="#一-新建工程line-chart">一、新建工程Line_chart</a></li>
+<li><a id="contents:二-添加jar包" href="#二-添加jar包">二、添加jar包</a></li>
+<li><a id="contents:三-添加依赖" href="#三-添加依赖">三、添加依赖</a></li>
+<li><a id="contents:四-修改mainactivity" href="#四-修改mainactivity">四、修改MainActivity</a></li>
+<li><a id="contents:五-修改activity-main-xml" href="#五-修改activity-main-xml">五、修改activity_main.xml</a></li>
+<li><a id="contents:六-运行结果" href="#六-运行结果">六、运行结果</a></li>
+</ul>
+</nav><div class="post-body">
+              
+
+<h1 id="一-新建工程line-chart"><a href="#一-新建工程line-chart" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:一-新建工程line-chart" class="headings">一、新建工程Line_chart</a></h1>
+
 <p>勾选自动生成<code>activity_layout.xml</code>文件</p>
-<h1 id="二添加jar包"><a href="#二添加jar包" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二添加jar包" class="headings">二、添加jar包</a></h1>
+
+<h1 id="二-添加jar包"><a href="#二-添加jar包" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二-添加jar包" class="headings">二、添加jar包</a></h1>
+
 <p><code>app/src/main</code>目录下新建<code>libs</code>文件夹，加入包<code>hellocharts-library-1.5.8.jar</code>
-<img src="/images/tech/2019/01/21/%E6%B7%BB%E5%8A%A0jar%E5%8C%85.png" alt=""></p>
-<h1 id="三添加依赖"><a href="#三添加依赖" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三添加依赖" class="headings">三、添加依赖</a></h1>
+<img src="/images/tech/2019/01/21/添加jar包.png" alt="" /></p>
+
+<h1 id="三-添加依赖"><a href="#三-添加依赖" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三-添加依赖" class="headings">三、添加依赖</a></h1>
+
 <p>打开<code>build.gradle（app）</code>文件，在<code>dependencies{}</code>中添加依赖</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-diff" data-lang="diff"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -291,7 +307,6 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-diff" data-lang="diff">    compile fileTree(dir: &#39;libs&#39;, include: [&#39;*.jar&#39;])
@@ -302,14 +317,15 @@
     testCompile &#39;junit:junit:4.12&#39;
 
     + compile files(&#39;src/main/libs/hellocharts-library-1.5.8.jar&#39;)
-
 </code></pre></td></tr></table>
 </div>
-</div><!-- raw HTML omitted -->
-<h1 id="四修改mainactivity"><a href="#四修改mainactivity" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:四修改mainactivity" class="headings">四、修改MainActivity</a></h1>
+</div>
+<blockquote class="colorquote warning"><p>添加完依赖之后记得点击Sync Now同步一下</p></blockquote>
+
+<h1 id="四-修改mainactivity"><a href="#四-修改mainactivity" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:四-修改mainactivity" class="headings">四、修改MainActivity</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -417,124 +433,122 @@
 </span><span class="lnt">106
 </span><span class="lnt">107
 </span><span class="lnt">108
-</span><span class="lnt">109
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">com.example.line_chart</span><span class="o">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">package com</span><span class="p">.</span><span class="na">example</span><span class="p">.</span><span class="na">line_chart</span><span class="p">;</span>
 
-<span class="kn">import</span> <span class="nn">android.graphics.Color</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.support.v7.app.AppCompatActivity</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">graphics</span><span class="p">.</span><span class="na">Color</span><span class="p">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">support</span><span class="p">.</span><span class="na">v7</span><span class="p">.</span><span class="na">app</span><span class="p">.</span><span class="na">AppCompatActivity</span><span class="p">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">os</span><span class="p">.</span><span class="na">Bundle</span><span class="p">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">view</span><span class="p">.</span><span class="na">View</span><span class="p">;</span>
 
-<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+<span class="err">import java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayList</span><span class="p">;</span>
+<span class="err">import java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">List</span><span class="p">;</span>
 
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.gesture.ContainerScrollType</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.gesture.ZoomType</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.Axis</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.AxisValue</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.Line</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.LineChartData</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.PointValue</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.ValueShape</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.model.Viewport</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">lecho.lib.hellocharts.view.LineChartView</span><span class="o">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">gesture</span><span class="p">.</span><span class="na">ContainerScrollType</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">gesture</span><span class="p">.</span><span class="na">ZoomType</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">Axis</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">AxisValue</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">Line</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">LineChartData</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">PointValue</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">ValueShape</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">model</span><span class="p">.</span><span class="na">Viewport</span><span class="p">;</span>
+<span class="err">import lecho</span><span class="p">.</span><span class="na">lib</span><span class="p">.</span><span class="na">hellocharts</span><span class="p">.</span><span class="na">view</span><span class="p">.</span><span class="na">LineChartView</span><span class="p">;</span>
 
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+<span class="err">public class MainActivity extends </span><span class="n">AppCompatActivity</span> <span class="p">{</span>
 
-    <span class="kd">public</span> <span class="n">LineChartView</span> <span class="n">lineChart</span><span class="o">;</span>
-    <span class="n">String</span><span class="o">[]</span> <span class="n">date</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;10-22&#34;</span><span class="o">,</span><span class="s">&#34;11-22&#34;</span><span class="o">,</span><span class="s">&#34;12-22&#34;</span><span class="o">,</span><span class="s">&#34;1-22&#34;</span><span class="o">,</span><span class="s">&#34;6-22&#34;</span><span class="o">,</span><span class="s">&#34;5-23&#34;</span><span class="o">,</span><span class="s">&#34;5-22&#34;</span><span class="o">,</span><span class="s">&#34;6-22&#34;</span><span class="o">,</span><span class="s">&#34;5-23&#34;</span><span class="o">,</span><span class="s">&#34;5-20&#34;</span><span class="o">};</span><span class="c1">//X轴的标注
-</span><span class="c1"></span>    <span class="kt">int</span><span class="o">[]</span> <span class="n">score</span><span class="o">=</span> <span class="o">{</span><span class="n">50</span><span class="o">,</span><span class="n">42</span><span class="o">,</span><span class="n">90</span><span class="o">,</span><span class="n">33</span><span class="o">,</span><span class="n">10</span><span class="o">,</span><span class="n">74</span><span class="o">,</span><span class="n">22</span><span class="o">,</span><span class="n">18</span><span class="o">,</span><span class="n">79</span><span class="o">,</span><span class="n">20</span><span class="o">};</span><span class="c1">//图表的数据点
+    <span class="err">public LineChartView </span><span class="n">lineChart</span><span class="p">;</span>
+    <span class="err">String[] date </span><span class="o">=</span> <span class="p">{</span><span class="s">&#34;10-22&#34;</span><span class="p">,</span><span class="s">&#34;11-22&#34;</span><span class="p">,</span><span class="s">&#34;12-22&#34;</span><span class="p">,</span><span class="s">&#34;1-22&#34;</span><span class="p">,</span><span class="s">&#34;6-22&#34;</span><span class="p">,</span><span class="s">&#34;5-23&#34;</span><span class="p">,</span><span class="s">&#34;5-22&#34;</span><span class="p">,</span><span class="s">&#34;6-22&#34;</span><span class="p">,</span><span class="s">&#34;5-23&#34;</span><span class="p">,</span><span class="s">&#34;5-20&#34;</span><span class="p">};</span><span class="c1">//X轴的标注
+</span><span class="c1"></span>    <span class="err">int[] score</span><span class="o">=</span> <span class="p">{</span><span class="n">50</span><span class="p">,</span><span class="n">42</span><span class="p">,</span><span class="n">90</span><span class="p">,</span><span class="n">33</span><span class="p">,</span><span class="n">10</span><span class="p">,</span><span class="n">74</span><span class="p">,</span><span class="n">22</span><span class="p">,</span><span class="n">18</span><span class="p">,</span><span class="n">79</span><span class="p">,</span><span class="n">20</span><span class="p">};</span><span class="c1">//图表的数据点
 </span><span class="c1"></span>    <span class="c1">//int[] score= {0,0,0,0,0,0,0,0,0,0};
-</span><span class="c1"></span>    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">PointValue</span><span class="o">&gt;</span> <span class="n">mPointValues</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">PointValue</span><span class="o">&gt;();</span>
-    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">AxisValue</span><span class="o">&gt;</span> <span class="n">mAxisXValues</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">AxisValue</span><span class="o">&gt;();</span>
+</span><span class="c1"></span>    <span class="err">public List</span><span class="o">&lt;</span><span class="err">PointValue&gt; mPointValues </span><span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">PointValue</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="err">public List</span><span class="o">&lt;</span><span class="err">AxisValue&gt; mAxisXValues </span><span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">AxisValue</span><span class="o">&gt;</span><span class="p">();</span>
 
 
     <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+    <span class="err">protected void </span><span class="n">onCreate</span><span class="p">(</span><span class="err">Bundle savedInstanceState</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">);</span>
+        <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">activity_main</span><span class="p">);</span>
 
-        <span class="n">lineChart</span> <span class="o">=</span> <span class="o">(</span><span class="n">LineChartView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">line_chart</span><span class="o">);</span>
+        <span class="n">lineChart</span> <span class="o">=</span> <span class="p">(</span><span class="n">LineChartView</span><span class="p">)</span> <span class="n">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">line_chart</span><span class="p">);</span>
 
-        <span class="n">getAxisXLables</span><span class="o">();</span><span class="c1">//获取x轴的标注
-</span><span class="c1"></span>        <span class="n">getAxisPoints</span><span class="o">();</span><span class="c1">//获取坐标点
-</span><span class="c1"></span>        <span class="n">initLineChart</span><span class="o">();</span><span class="c1">//初始化
+        <span class="n">getAxisXLables</span><span class="p">();</span><span class="c1">//获取x轴的标注
+</span><span class="c1"></span>        <span class="n">getAxisPoints</span><span class="p">();</span><span class="c1">//获取坐标点
+</span><span class="c1"></span>        <span class="n">initLineChart</span><span class="p">();</span><span class="c1">//初始化
 </span><span class="c1"></span>
-    <span class="o">}</span>
+    <span class="p">}</span>
 
     <span class="cm">/**
 </span><span class="cm">     * 设置X 轴的显示
 </span><span class="cm">     */</span>
-    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">getAxisXLables</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">date</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-            <span class="n">mAxisXValues</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">AxisValue</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">setLabel</span><span class="o">(</span><span class="n">date</span><span class="o">[</span><span class="n">i</span><span class="o">]));</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
+    <span class="err">private void </span><span class="n">getAxisXLables</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="err">int i </span><span class="o">=</span> <span class="n">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">date</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">mAxisXValues</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">AxisValue</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="na">setLabel</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="n">i</span><span class="p">]));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
     <span class="cm">/**
 </span><span class="cm">     * 图表的每个点的显示
 </span><span class="cm">     */</span>
-    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">getAxisPoints</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">score</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-            <span class="n">mPointValues</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">PointValue</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="n">score</span><span class="o">[</span><span class="n">i</span><span class="o">]));</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
+    <span class="err">private void </span><span class="n">getAxisPoints</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="err">int i </span><span class="o">=</span> <span class="n">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">score</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">mPointValues</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">PointValue</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">]));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">initLineChart</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">Line</span> <span class="n">line</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Line</span><span class="o">(</span><span class="n">mPointValues</span><span class="o">).</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">parseColor</span><span class="o">(</span><span class="s">&#34;#FFCD41&#34;</span><span class="o">));</span>  <span class="c1">//折线的颜色（橙色）
-</span><span class="c1"></span>        <span class="n">List</span><span class="o">&lt;</span><span class="n">Line</span><span class="o">&gt;</span> <span class="n">lines</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Line</span><span class="o">&gt;();</span>
-        <span class="n">line</span><span class="o">.</span><span class="na">setShape</span><span class="o">(</span><span class="n">ValueShape</span><span class="o">.</span><span class="na">CIRCLE</span><span class="o">);</span><span class="c1">//折线图上每个数据点的形状  这里是圆形 （有三种 ：ValueShape.SQUARE  ValueShape.CIRCLE  ValueShape.DIAMOND）
-</span><span class="c1"></span>        <span class="n">line</span><span class="o">.</span><span class="na">setCubic</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="c1">//曲线是否平滑，即是曲线还是折线
-</span><span class="c1"></span>        <span class="n">line</span><span class="o">.</span><span class="na">setFilled</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="c1">//是否填充曲线的面积
-</span><span class="c1"></span>        <span class="n">line</span><span class="o">.</span><span class="na">setHasLabels</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="c1">//曲线的数据坐标是否加上备注
+    <span class="err">private void </span><span class="n">initLineChart</span><span class="p">()</span> <span class="p">{</span>
+        <span class="err">Line line </span><span class="o">=</span> <span class="k">new</span> <span class="n">Line</span><span class="p">(</span><span class="n">mPointValues</span><span class="p">).</span><span class="na">setColor</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">parseColor</span><span class="p">(</span><span class="s">&#34;#FFCD41&#34;</span><span class="p">));</span>  <span class="c1">//折线的颜色（橙色）
+</span><span class="c1"></span>        <span class="err">List&lt;Line&gt; lines </span><span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Line</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="n">line</span><span class="p">.</span><span class="na">setShape</span><span class="p">(</span><span class="n">ValueShape</span><span class="p">.</span><span class="na">CIRCLE</span><span class="p">);</span><span class="c1">//折线图上每个数据点的形状  这里是圆形 （有三种 ：ValueShape.SQUARE  ValueShape.CIRCLE  ValueShape.DIAMOND）
+</span><span class="c1"></span>        <span class="n">line</span><span class="p">.</span><span class="na">setCubic</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="c1">//曲线是否平滑，即是曲线还是折线
+</span><span class="c1"></span>        <span class="n">line</span><span class="p">.</span><span class="na">setFilled</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="c1">//是否填充曲线的面积
+</span><span class="c1"></span>        <span class="n">line</span><span class="p">.</span><span class="na">setHasLabels</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="c1">//曲线的数据坐标是否加上备注
 </span><span class="c1"></span>        <span class="c1">//      line.setHasLabelsOnlyForSelected(true);//点击数据坐标提示数据（设置了这个line.setHasLabels(true);就无效）
-</span><span class="c1"></span>        <span class="n">line</span><span class="o">.</span><span class="na">setHasLines</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="c1">//是否用线显示。如果为false 则没有曲线只有点显示
-</span><span class="c1"></span>        <span class="n">line</span><span class="o">.</span><span class="na">setHasPoints</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="c1">//是否显示圆点 如果为false 则没有原点只有点显示（每个数据点都是个大的圆点）
-</span><span class="c1"></span>        <span class="n">lines</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">line</span><span class="o">);</span>
-        <span class="n">LineChartData</span> <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LineChartData</span><span class="o">();</span>
-        <span class="n">data</span><span class="o">.</span><span class="na">setLines</span><span class="o">(</span><span class="n">lines</span><span class="o">);</span>
+</span><span class="c1"></span>        <span class="n">line</span><span class="p">.</span><span class="na">setHasLines</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="c1">//是否用线显示。如果为false 则没有曲线只有点显示
+</span><span class="c1"></span>        <span class="n">line</span><span class="p">.</span><span class="na">setHasPoints</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="c1">//是否显示圆点 如果为false 则没有原点只有点显示（每个数据点都是个大的圆点）
+</span><span class="c1"></span>        <span class="n">lines</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+        <span class="err">LineChartData data </span><span class="o">=</span> <span class="k">new</span> <span class="n">LineChartData</span><span class="p">();</span>
+        <span class="n">data</span><span class="p">.</span><span class="na">setLines</span><span class="p">(</span><span class="n">lines</span><span class="p">);</span>
         <span class="c1">//坐标轴
-</span><span class="c1"></span>        <span class="n">Axis</span> <span class="n">axisX</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Axis</span><span class="o">();</span> <span class="c1">//X轴
-</span><span class="c1"></span>        <span class="n">axisX</span><span class="o">.</span><span class="na">setHasTiltedLabels</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>  <span class="c1">//X坐标轴字体是斜的显示还是直的，true是斜的显示
-</span><span class="c1"></span>        <span class="n">axisX</span><span class="o">.</span><span class="na">setTextColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">GRAY</span><span class="o">);</span>  <span class="c1">//设置字体颜色
+</span><span class="c1"></span>        <span class="err">Axis axisX </span><span class="o">=</span> <span class="k">new</span> <span class="n">Axis</span><span class="p">();</span> <span class="c1">//X轴
+</span><span class="c1"></span>        <span class="n">axisX</span><span class="p">.</span><span class="na">setHasTiltedLabels</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>  <span class="c1">//X坐标轴字体是斜的显示还是直的，true是斜的显示
+</span><span class="c1"></span>        <span class="n">axisX</span><span class="p">.</span><span class="na">setTextColor</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">GRAY</span><span class="p">);</span>  <span class="c1">//设置字体颜色
 </span><span class="c1"></span>        <span class="c1">//axisX.setName(&#34;date&#34;);  //表格名称
-</span><span class="c1"></span>        <span class="n">axisX</span><span class="o">.</span><span class="na">setTextSize</span><span class="o">(</span><span class="n">10</span><span class="o">);</span><span class="c1">//设置字体大小
-</span><span class="c1"></span>        <span class="n">axisX</span><span class="o">.</span><span class="na">setMaxLabelChars</span><span class="o">(</span><span class="n">8</span><span class="o">);</span> <span class="c1">//最多几个X轴坐标，意思就是你的缩放让X轴上数据的个数7&lt;=x&lt;=mAxisXValues.length
-</span><span class="c1"></span>        <span class="n">axisX</span><span class="o">.</span><span class="na">setValues</span><span class="o">(</span><span class="n">mAxisXValues</span><span class="o">);</span>  <span class="c1">//填充X轴的坐标名称
-</span><span class="c1"></span>        <span class="n">data</span><span class="o">.</span><span class="na">setAxisXBottom</span><span class="o">(</span><span class="n">axisX</span><span class="o">);</span> <span class="c1">//x 轴在底部
+</span><span class="c1"></span>        <span class="n">axisX</span><span class="p">.</span><span class="na">setTextSize</span><span class="p">(</span><span class="n">10</span><span class="p">);</span><span class="c1">//设置字体大小
+</span><span class="c1"></span>        <span class="n">axisX</span><span class="p">.</span><span class="na">setMaxLabelChars</span><span class="p">(</span><span class="n">8</span><span class="p">);</span> <span class="c1">//最多几个X轴坐标，意思就是你的缩放让X轴上数据的个数7&lt;=x&lt;=mAxisXValues.length
+</span><span class="c1"></span>        <span class="n">axisX</span><span class="p">.</span><span class="na">setValues</span><span class="p">(</span><span class="n">mAxisXValues</span><span class="p">);</span>  <span class="c1">//填充X轴的坐标名称
+</span><span class="c1"></span>        <span class="n">data</span><span class="p">.</span><span class="na">setAxisXBottom</span><span class="p">(</span><span class="n">axisX</span><span class="p">);</span> <span class="c1">//x 轴在底部
 </span><span class="c1"></span>        <span class="c1">//data.setAxisXTop(axisX);  //x 轴在顶部
-</span><span class="c1"></span>        <span class="n">axisX</span><span class="o">.</span><span class="na">setHasLines</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span> <span class="c1">//x 轴分割线
+</span><span class="c1"></span>        <span class="n">axisX</span><span class="p">.</span><span class="na">setHasLines</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">//x 轴分割线
 </span><span class="c1"></span>        <span class="c1">// Y轴是根据数据的大小自动设置Y轴上限(在下面我会给出固定Y轴数据个数的解决方案)
-</span><span class="c1"></span>        <span class="n">Axis</span> <span class="n">axisY</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Axis</span><span class="o">();</span>  <span class="c1">//Y轴
-</span><span class="c1"></span>        <span class="n">axisY</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;&#34;</span><span class="o">);</span><span class="c1">//y轴标注
-</span><span class="c1"></span>        <span class="n">axisY</span><span class="o">.</span><span class="na">setTextSize</span><span class="o">(</span><span class="n">10</span><span class="o">);</span><span class="c1">//设置字体大小
-</span><span class="c1"></span>        <span class="n">data</span><span class="o">.</span><span class="na">setAxisYLeft</span><span class="o">(</span><span class="n">axisY</span><span class="o">);</span>  <span class="c1">//Y轴设置在左边
+</span><span class="c1"></span>        <span class="err">Axis axisY </span><span class="o">=</span> <span class="k">new</span> <span class="n">Axis</span><span class="p">();</span>  <span class="c1">//Y轴
+</span><span class="c1"></span>        <span class="n">axisY</span><span class="p">.</span><span class="na">setName</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">);</span><span class="c1">//y轴标注
+</span><span class="c1"></span>        <span class="n">axisY</span><span class="p">.</span><span class="na">setTextSize</span><span class="p">(</span><span class="n">10</span><span class="p">);</span><span class="c1">//设置字体大小
+</span><span class="c1"></span>        <span class="n">data</span><span class="p">.</span><span class="na">setAxisYLeft</span><span class="p">(</span><span class="n">axisY</span><span class="p">);</span>  <span class="c1">//Y轴设置在左边
 </span><span class="c1"></span>        <span class="c1">//data.setAxisYRight(axisY);  //y轴设置在右边
 </span><span class="c1"></span>        <span class="c1">//设置行为属性，支持缩放、滑动以及平移
-</span><span class="c1"></span>        <span class="n">lineChart</span><span class="o">.</span><span class="na">setInteractive</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
-        <span class="n">lineChart</span><span class="o">.</span><span class="na">setZoomType</span><span class="o">(</span><span class="n">ZoomType</span><span class="o">.</span><span class="na">HORIZONTAL</span><span class="o">);</span>
-        <span class="n">lineChart</span><span class="o">.</span><span class="na">setMaxZoom</span><span class="o">((</span><span class="kt">float</span><span class="o">)</span> <span class="n">2</span><span class="o">);</span><span class="c1">//最大方法比例
-</span><span class="c1"></span>        <span class="n">lineChart</span><span class="o">.</span><span class="na">setContainerScrollEnabled</span><span class="o">(</span><span class="kc">true</span><span class="o">,</span> <span class="n">ContainerScrollType</span><span class="o">.</span><span class="na">HORIZONTAL</span><span class="o">);</span>
-        <span class="n">lineChart</span><span class="o">.</span><span class="na">setLineChartData</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
-        <span class="n">lineChart</span><span class="o">.</span><span class="na">setVisibility</span><span class="o">(</span><span class="n">View</span><span class="o">.</span><span class="na">VISIBLE</span><span class="o">);</span>
+</span><span class="c1"></span>        <span class="n">lineChart</span><span class="p">.</span><span class="na">setInteractive</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+        <span class="n">lineChart</span><span class="p">.</span><span class="na">setZoomType</span><span class="p">(</span><span class="n">ZoomType</span><span class="p">.</span><span class="na">HORIZONTAL</span><span class="p">);</span>
+        <span class="n">lineChart</span><span class="p">.</span><span class="na">setMaxZoom</span><span class="p">((</span><span class="kt">float</span><span class="p">)</span> <span class="n">2</span><span class="p">);</span><span class="c1">//最大方法比例
+</span><span class="c1"></span>        <span class="n">lineChart</span><span class="p">.</span><span class="na">setContainerScrollEnabled</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="n">ContainerScrollType</span><span class="p">.</span><span class="na">HORIZONTAL</span><span class="p">);</span>
+        <span class="n">lineChart</span><span class="p">.</span><span class="na">setLineChartData</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+        <span class="n">lineChart</span><span class="p">.</span><span class="na">setVisibility</span><span class="p">(</span><span class="n">View</span><span class="p">.</span><span class="na">VISIBLE</span><span class="p">);</span>
         <span class="cm">/**注：下面的7，10只是代表一个数字去类比而已
 </span><span class="cm">         * 当时是为了解决X轴固定数据个数。见（http://forum.xda-developers.com/tools/programming/library-hellocharts-charting-library-t2904456/page2）;
 </span><span class="cm">         */</span>
-        <span class="n">Viewport</span> <span class="n">v</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Viewport</span><span class="o">(</span><span class="n">lineChart</span><span class="o">.</span><span class="na">getMaximumViewport</span><span class="o">());</span>
-        <span class="n">v</span><span class="o">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
-        <span class="n">v</span><span class="o">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span>
-        <span class="n">lineChart</span><span class="o">.</span><span class="na">setCurrentViewport</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-</code></pre></td></tr></table>
+        <span class="err">Viewport v </span><span class="o">=</span> <span class="k">new</span> <span class="n">Viewport</span><span class="p">(</span><span class="n">lineChart</span><span class="p">.</span><span class="na">getMaximumViewport</span><span class="p">());</span>
+        <span class="n">v</span><span class="p">.</span><span class="na">left</span> <span class="o">=</span> <span class="n">0</span><span class="p">;</span>
+        <span class="n">v</span><span class="p">.</span><span class="na">right</span> <span class="o">=</span> <span class="n">10</span><span class="p">;</span>
+        <span class="n">lineChart</span><span class="p">.</span><span class="na">setCurrentViewport</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="五修改activity_mainxml"><a href="#五修改activity_mainxml" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:五修改activity_mainxml" class="headings">五、修改activity_main.xml</a></h1>
+</div>
+<h1 id="五-修改activity-main-xml"><a href="#五-修改activity-main-xml" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:五-修改activity-main-xml" class="headings">五、修改activity_main.xml</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -571,11 +585,12 @@
          <span class="na">android:layout_width=</span><span class="s">&#34;fill_parent&#34;</span>
          <span class="na">android:layout_height=</span><span class="s">&#34;300dp&#34;</span><span class="nt">/&gt;</span>
 
-<span class="nt">&lt;/RelativeLayout&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="六运行结果"><a href="#六运行结果" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:六运行结果" class="headings">六、运行结果</a></h1>
-<p><img src="/images/tech/2019/01/21/%E7%BB%93%E6%9E%9C.png" alt=""></p>
+</div>
+<h1 id="六-运行结果"><a href="#六-运行结果" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:六-运行结果" class="headings">六、运行结果</a></h1>
+
+<p><img src="/images/tech/2019/01/21/结果.png" alt="" /></p>
 
             </div>
 
@@ -719,7 +734,7 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a></div><div class="site-copyright"></div>
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
 
             
 

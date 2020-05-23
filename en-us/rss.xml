@@ -10,7 +10,7 @@
         <title>微动态</title>
         <link>https://ztygcs.github.io/en-us/</link>
         <description>Blog of ztygcs in English.</description>
-        <generator>Hugo 0.71.0 https://gohugo.io/</generator>
+        <generator>Hugo 0.59.1 https://gohugo.io/</generator>
         
             <language>en-US</language>
         
@@ -21,7 +21,7 @@
             <webMaster>zccon1996@163.com (天涯共此时)</webMaster>
         
         
-        <lastBuildDate>Sun, 24 May 2020 01:03:48 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 24 May 2020 01:58:16 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ztygcs.github.io/en-us/rss.xml" />
         

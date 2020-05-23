@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
         <script>
             const userPrefers = localStorage.getItem('theme');
             if (userPrefers === 'dark') {
@@ -277,23 +277,35 @@
             
 
             <nav class="contents">
-  <h2 id="contents" class="contents-title"></h2><ul class="toc">
-    <li><a id="contents:21新建项目" href="#21新建项目">2.1新建项目</a></li>
-    <li><a id="contents:22新建实体类" href="#22新建实体类">2.2新建实体类</a></li>
-    <li><a id="contents:23指定item布局" href="#23指定item布局">2.3指定item布局</a></li>
-    <li><a id="contents:24自定适配器" href="#24自定适配器">2.4自定适配器</a></li>
-    <li><a id="contents:25修改mainactivity" href="#25修改mainactivity">2.5修改MainActivity</a></li>
-  </ul>
+<ul>
+<li><a id="contents:一-作用" href="#一-作用">一、作用</a></li>
+<li><a id="contents:二-用法" href="#二-用法">二、用法</a>
+<ul>
+<li><a id="contents:2-1新建项目" href="#2-1新建项目">2.1新建项目</a></li>
+<li><a id="contents:2-2新建实体类" href="#2-2新建实体类">2.2新建实体类</a></li>
+<li><a id="contents:2-3指定item布局" href="#2-3指定item布局">2.3指定item布局</a></li>
+<li><a id="contents:2-4自定适配器" href="#2-4自定适配器">2.4自定适配器</a></li>
+<li><a id="contents:2-5修改mainactivity" href="#2-5修改mainactivity">2.5修改MainActivity</a></li>
+</ul></li>
+<li><a id="contents:三-运行结果" href="#三-运行结果">三、运行结果</a></li>
+</ul>
 </nav><div class="post-body">
-              <p><strong>ListView</strong></p>
-<h1 id="一作用"><a href="#一作用" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:一作用" class="headings">一、作用</a></h1>
+              
+
+<p><strong>ListView</strong></p>
+
+<h1 id="一-作用"><a href="#一-作用" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:一-作用" class="headings">一、作用</a></h1>
+
 <p>当手机屏幕空间有限而不能一次将内容显示完时，需要借助ListView允许用户通过手指上下滑动的方式将屏幕外的数据滚动到屏幕内，同时屏幕上原有的数据滚动出屏幕。例如查看QQ消息等。</p>
-<h1 id="二用法"><a href="#二用法" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二用法" class="headings">二、用法</a></h1>
-<h2 id="21新建项目"><a href="#21新建项目" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:21新建项目" class="headings">2.1新建项目</a></h2>
+
+<h1 id="二-用法"><a href="#二-用法" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二-用法" class="headings">二、用法</a></h1>
+
+<h2 id="2-1新建项目"><a href="#2-1新建项目" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2-1新建项目" class="headings">2.1新建项目</a></h2>
+
 <p>新建一个<code>ListView</code>项目，修改<code>activity_main.xml</code>中的代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -310,15 +322,17 @@
   <span class="na">android:id=</span><span class="s">&#34;@+id/list_view&#34;</span>
     <span class="na">android:layout_width=</span><span class="s">&#34;match_parent&#34;</span>
     <span class="na">android:layout_height=</span><span class="s">&#34;match_parent&#34;</span><span class="nt">/&gt;</span>	
-<span class="nt">&lt;/LinearLayout&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p><code>activity_main.xml</code>布局中加入<code>ListView</code>控件，并指定控件的<code>id</code>为list_view，<code>width</code>和<code>height</code>与父布局相同，即布满手机屏幕</p>
-<h2 id="22新建实体类"><a href="#22新建实体类" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:22新建实体类" class="headings">2.2新建实体类</a></h2>
+</div>
+<p><code>activity_main.xml</code>布局中加入<code>ListView</code>控件，并指定控件的<code>id</code>为list_view，<code>width</code>和<code>height</code>与父布局相同，即布满手机屏幕</p>
+
+<h2 id="2-2新建实体类"><a href="#2-2新建实体类" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2-2新建实体类" class="headings">2.2新建实体类</a></h2>
+
 <p>定义一个水果实体类<code>Fruit</code>，作为ListView适配器的的适配类型</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -334,28 +348,30 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Fruit</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">imageId</span><span class="o">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">public class </span><span class="n">Fruit</span> <span class="p">{</span>
+    <span class="err">private String </span><span class="n">name</span><span class="p">;</span>
+    <span class="err">private int </span><span class="n">imageId</span><span class="p">;</span>
 
-    <span class="kd">public</span> <span class="nf">Fruit</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span><span class="kt">int</span> <span class="n">imageId</span><span class="o">){</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">=</span><span class="n">name</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">imageId</span><span class="o">=</span><span class="n">imageId</span><span class="o">;</span>    <span class="o">}</span>
+    <span class="err">public Fruit</span><span class="p">(</span><span class="err">String name</span><span class="p">,</span><span class="err">int imageId</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="o">=</span><span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">imageId</span><span class="o">=</span><span class="n">imageId</span><span class="p">;</span>    <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">(){</span>
-        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>    <span class="o">}</span>
+    <span class="err">public String </span><span class="n">getName</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>    <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getImageId</span><span class="o">(){</span>
-        <span class="k">return</span> <span class="n">imageId</span><span class="o">;</span>    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+    <span class="err">public int </span><span class="n">getImageId</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">imageId</span><span class="p">;</span>    <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><p>该类中定义了水果类的名称的图片id</p>
-<h2 id="23指定item布局"><a href="#23指定item布局" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:23指定item布局" class="headings">2.3指定item布局</a></h2>
+</div>
+<p>该类中定义了水果类的名称的图片id</p>
+
+<h2 id="2-3指定item布局"><a href="#2-3指定item布局" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2-3指定item布局" class="headings">2.3指定item布局</a></h2>
+
 <p>为ListView的子项指定一个自定义的布局，在layout目录下新建<code>fruit_item.xml</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -390,15 +406,17 @@
         <span class="na">android:layout_gravity=</span><span class="s">&#34;center_vertical&#34;</span>
         <span class="na">android:layout_marginLeft=</span><span class="s">&#34;10dp&#34;</span><span class="nt">/&gt;</span>
 
-<span class="nt">&lt;/LinearLayout&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p>这个布局定义了一个<code>ImageView</code>用于显示水果图片，一个<code>TextView</code>用于显示水果名称，并让<code>TextView</code>垂直居中显示</p>
-<h2 id="24自定适配器"><a href="#24自定适配器" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:24自定适配器" class="headings">2.4自定适配器</a></h2>
+</div>
+<p>这个布局定义了一个<code>ImageView</code>用于显示水果图片，一个<code>TextView</code>用于显示水果名称，并让<code>TextView</code>垂直居中显示</p>
+
+<h2 id="2-4自定适配器"><a href="#2-4自定适配器" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2-4自定适配器" class="headings">2.4自定适配器</a></h2>
+
 <p>接下来创建一个自定义的适配器<code>FruitAdapter</code>（继承自ArrayAdapter），泛型指定为<code>Fruit</code>类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -418,32 +436,34 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FruitAdapter</span> <span class="kd">extends</span> <span class="n">ArrayAdapter</span><span class="o">&lt;</span><span class="n">Fruit</span><span class="o">&gt;</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">resourceId</span><span class="o">;</span>
-    <span class="kd">public</span> <span class="nf">FruitAdapter</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">,</span> <span class="kt">int</span> <span class="n">textViewResourceId</span><span class="o">,</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Fruit</span><span class="o">&gt;</span> <span class="n">objects</span><span class="o">){</span>
-        <span class="kd">super</span><span class="o">(</span><span class="n">context</span><span class="o">,</span><span class="n">textViewResourceId</span><span class="o">,</span><span class="n">objects</span><span class="o">);</span>
-        <span class="n">resourceId</span><span class="o">=</span><span class="n">textViewResourceId</span><span class="o">;</span>
-    <span class="o">}</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">public class FruitAdapter extends </span><span class="n">ArrayAdapter</span><span class="o">&lt;</span><span class="n">Fruit</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="err">private int </span><span class="n">resourceId</span><span class="p">;</span>
+    <span class="err">public FruitAdapter</span><span class="p">(</span><span class="err">Context context</span><span class="p">,</span> <span class="err">int textViewResourceId</span><span class="p">,</span> <span class="err">List&lt;Fruit&gt; objects</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">textViewResourceId</span><span class="p">,</span><span class="n">objects</span><span class="p">);</span>
+        <span class="n">resourceId</span><span class="o">=</span><span class="n">textViewResourceId</span><span class="p">;</span>
+    <span class="p">}</span>
 
     <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">View</span> <span class="nf">getView</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">,</span> <span class="n">View</span> <span class="n">convertView</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">parent</span><span class="o">){</span>
-        <span class="n">Fruit</span> <span class="n">fruit</span><span class="o">=</span><span class="n">getItem</span><span class="o">(</span><span class="n">position</span><span class="o">);</span><span class="c1">//获得当前项的Fruit实例
-</span><span class="c1"></span>        <span class="n">View</span> <span class="n">view</span><span class="o">=</span> <span class="n">LayoutInflater</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">getContext</span><span class="o">()).</span><span class="na">inflate</span><span class="o">(</span><span class="n">resourceId</span><span class="o">,</span><span class="n">parent</span><span class="o">,</span><span class="kc">false</span><span class="o">);</span>
-        <span class="n">ImageView</span> <span class="n">fruitImage</span><span class="o">=(</span><span class="n">ImageView</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">fruit_image</span><span class="o">);</span>
-        <span class="n">TextView</span> <span class="n">fruitname</span><span class="o">=(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">fruit_name</span><span class="o">);</span>
-        <span class="n">fruitImage</span><span class="o">.</span><span class="na">setImageResource</span><span class="o">(</span><span class="n">fruit</span><span class="o">.</span><span class="na">getImageId</span><span class="o">());</span>
-        <span class="n">fruitname</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">fruit</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
-        <span class="k">return</span> <span class="n">view</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+    <span class="err">public View </span><span class="n">getView</span><span class="p">(</span><span class="err">int position</span><span class="p">,</span> <span class="err">View convertView</span><span class="p">,</span> <span class="err">ViewGroup parent</span><span class="p">){</span>
+        <span class="err">Fruit fruit</span><span class="o">=</span><span class="n">getItem</span><span class="p">(</span><span class="n">position</span><span class="p">);</span><span class="c1">//获得当前项的Fruit实例
+</span><span class="c1"></span>        <span class="err">View view</span><span class="o">=</span> <span class="n">LayoutInflater</span><span class="p">.</span><span class="na">from</span><span class="p">(</span><span class="n">getContext</span><span class="p">()).</span><span class="na">inflate</span><span class="p">(</span><span class="n">resourceId</span><span class="p">,</span><span class="n">parent</span><span class="p">,</span><span class="kc">false</span><span class="p">);</span>
+        <span class="err">ImageView fruitImage</span><span class="o">=</span><span class="p">(</span><span class="n">ImageView</span><span class="p">)</span> <span class="n">view</span><span class="p">.</span><span class="na">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">fruit_image</span><span class="p">);</span>
+        <span class="err">TextView fruitname</span><span class="o">=</span><span class="p">(</span><span class="n">TextView</span><span class="p">)</span> <span class="n">view</span><span class="p">.</span><span class="na">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">fruit_name</span><span class="p">);</span>
+        <span class="n">fruitImage</span><span class="p">.</span><span class="na">setImageResource</span><span class="p">(</span><span class="n">fruit</span><span class="p">.</span><span class="na">getImageId</span><span class="p">());</span>
+        <span class="n">fruitname</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">fruit</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span>
+        <span class="k">return</span> <span class="n">view</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><p><code>FruitAdapter</code>重写父类的一组构造函数，用于将<code>上下文</code>，<code>ListView子项布局id</code>，和<code>水果数据</code>传递进来，另外重写<code>getview()</code>方法，这个方法在每个子项被滚到屏幕内时会被调用。通过<code>getItem()</code>得到当前项Fruit实例，然后使用<code>LayoutInflater</code>为子项加载我们传入的布局。</p>
-<h2 id="25修改mainactivity"><a href="#25修改mainactivity" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:25修改mainactivity" class="headings">2.5修改MainActivity</a></h2>
+</div>
+<p><code>FruitAdapter</code>重写父类的一组构造函数，用于将<code>上下文</code>，<code>ListView子项布局id</code>，和<code>水果数据</code>传递进来，另外重写<code>getview()</code>方法，这个方法在每个子项被滚到屏幕内时会被调用。通过<code>getItem()</code>得到当前项Fruit实例，然后使用<code>LayoutInflater</code>为子项加载我们传入的布局。</p>
+
+<h2 id="2-5修改mainactivity"><a href="#2-5修改mainactivity" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2-5修改mainactivity" class="headings">2.5修改MainActivity</a></h2>
+
 <p>最后修改MainActivity</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -495,61 +515,63 @@
 </span><span class="lnt">50
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">com.example.listviewtest</span><span class="o">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">package com</span><span class="p">.</span><span class="na">example</span><span class="p">.</span><span class="na">listviewtest</span><span class="p">;</span>
 
-<span class="kn">import</span> <span class="nn">android.support.v7.app.AppCompatActivity</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.widget.ArrayAdapter</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.widget.ListView</span><span class="o">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">support</span><span class="p">.</span><span class="na">v7</span><span class="p">.</span><span class="na">app</span><span class="p">.</span><span class="na">AppCompatActivity</span><span class="p">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">os</span><span class="p">.</span><span class="na">Bundle</span><span class="p">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">widget</span><span class="p">.</span><span class="na">ArrayAdapter</span><span class="p">;</span>
+<span class="err">import android</span><span class="p">.</span><span class="na">widget</span><span class="p">.</span><span class="na">ListView</span><span class="p">;</span>
 
-<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+<span class="err">import java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayList</span><span class="p">;</span>
+<span class="err">import java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">List</span><span class="p">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+<span class="err">public class MainActivity extends </span><span class="n">AppCompatActivity</span> <span class="p">{</span>
 
-    <span class="kd">private</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Fruit</span><span class="o">&gt;</span> <span class="n">fruitList</span><span class="o">=</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="err">private List</span><span class="o">&lt;</span><span class="err">Fruit&gt; fruitList</span><span class="o">=</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 
     <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+    <span class="err">protected void </span><span class="n">onCreate</span><span class="p">(</span><span class="err">Bundle savedInstanceState</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">);</span>
+        <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">activity_main</span><span class="p">);</span>
 
-        <span class="n">initFruits</span><span class="o">();</span>
-        <span class="n">FruitAdapter</span> <span class="n">adapter</span><span class="o">=</span><span class="k">new</span> <span class="n">FruitAdapter</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fruit_item</span><span class="o">,</span><span class="n">fruitList</span><span class="o">);</span>
-        <span class="n">ListView</span> <span class="n">listView</span><span class="o">=(</span><span class="n">ListView</span><span class="o">)</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">list_view</span><span class="o">);</span>
-        <span class="n">listView</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="n">adapter</span> <span class="o">);</span>
-    <span class="o">}</span>
+        <span class="n">initFruits</span><span class="p">();</span>
+        <span class="err">FruitAdapter adapter</span><span class="o">=</span><span class="k">new</span> <span class="n">FruitAdapter</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">fruit_item</span><span class="p">,</span><span class="n">fruitList</span><span class="p">);</span>
+        <span class="err">ListView listView</span><span class="o">=</span><span class="p">(</span><span class="n">ListView</span><span class="p">)</span><span class="n">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">list_view</span><span class="p">);</span>
+        <span class="n">listView</span><span class="p">.</span><span class="na">setAdapter</span><span class="p">(</span><span class="n">adapter</span> <span class="p">);</span>
+    <span class="p">}</span>
 
-    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">initFruits</span><span class="o">(){</span>
-        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">2</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
-            <span class="n">Fruit</span> <span class="n">apple</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Apple&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">apple_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">apple</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">banana</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Banana&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">banana_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">banana</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">orange</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Orange&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">orange_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">orange</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">watermelon</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Watermelon&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">watermelon_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">watermelon</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">pear</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Pear&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">pear_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">pear</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">grape</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Grape&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">grape_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">grape</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">pineapple</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Pineapple&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">pineapple_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">pineapple</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">strawberry</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Strawberry&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">strawberry_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">strawberry</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">cherry</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Cherry&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">cherry_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">cherry</span><span class="o">);</span>
-            <span class="n">Fruit</span> <span class="n">mango</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="o">(</span><span class="s">&#34;Mango&#34;</span><span class="o">,</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">mango_pic</span><span class="o">);</span>
-            <span class="n">fruitList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">mango</span><span class="o">);</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+    <span class="err">private void </span><span class="n">initFruits</span><span class="p">(){</span>
+        <span class="k">for</span> <span class="p">(</span><span class="err">int i</span><span class="o">=</span><span class="n">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">2</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="err">Fruit apple</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Apple&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">apple_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">apple</span><span class="p">);</span>
+            <span class="err">Fruit banana</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Banana&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">banana_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">banana</span><span class="p">);</span>
+            <span class="err">Fruit orange</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Orange&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">orange_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">orange</span><span class="p">);</span>
+            <span class="err">Fruit watermelon</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Watermelon&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">watermelon_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">watermelon</span><span class="p">);</span>
+            <span class="err">Fruit pear</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Pear&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">pear_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">pear</span><span class="p">);</span>
+            <span class="err">Fruit grape</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Grape&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">grape_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">grape</span><span class="p">);</span>
+            <span class="err">Fruit pineapple</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Pineapple&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">pineapple_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">pineapple</span><span class="p">);</span>
+            <span class="err">Fruit strawberry</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Strawberry&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">strawberry_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">strawberry</span><span class="p">);</span>
+            <span class="err">Fruit cherry</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Cherry&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">cherry_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">cherry</span><span class="p">);</span>
+            <span class="err">Fruit mango</span><span class="o">=</span><span class="k">new</span> <span class="n">Fruit</span><span class="p">(</span><span class="s">&#34;Mango&#34;</span><span class="p">,</span><span class="n">R</span><span class="p">.</span><span class="na">drawable</span><span class="p">.</span><span class="na">mango_pic</span><span class="p">);</span>
+            <span class="n">fruitList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">mango</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><p>这里的<code>initFruits()</code>方法用来初始化水果数据，然后在onCreate()方法中创建<code>FruitAdapter</code>对象，并将FruitAdapter作为适配器传递给<code>ListView</code></p>
-<h1 id="三运行结果"><a href="#三运行结果" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三运行结果" class="headings">三、运行结果</a></h1>
-<p><img src="https://upload-images.jianshu.io/upload_images/1674835-7650cc72e9f6f7bb.gif?imageMogr2/auto-orient/strip" alt=""></p>
+</div>
+<p>这里的<code>initFruits()</code>方法用来初始化水果数据，然后在onCreate()方法中创建<code>FruitAdapter</code>对象，并将FruitAdapter作为适配器传递给<code>ListView</code></p>
+
+<h1 id="三-运行结果"><a href="#三-运行结果" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三-运行结果" class="headings">三、运行结果</a></h1>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/1674835-7650cc72e9f6f7bb.gif?imageMogr2/auto-orient/strip" alt="" /></p>
 
             </div>
 
@@ -693,7 +715,7 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a></div><div class="site-copyright"></div>
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
 
             
 

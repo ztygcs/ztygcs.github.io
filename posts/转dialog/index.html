@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
         <script>
             const userPrefers = localStorage.getItem('theme');
             if (userPrefers === 'dark') {
@@ -277,17 +277,34 @@
             
 
             <nav class="contents">
-  <h2 id="contents" class="contents-title"></h2><ul class="toc">
-    <li><a id="contents:自定义dialog布局文件-dialog_circlexml" href="#自定义dialog布局文件-dialog_circlexml">自定义dialog布局文件 dialog_circle.xml</a></li>
-  </ul>
+<ul>
+<li><a id="contents:效果图" href="#效果图">效果图</a></li>
+<li><a id="contents:普通dialog" href="#普通dialog">普通Dialog</a></li>
+<li><a id="contents:列表dialog" href="#列表dialog">列表Dialog</a></li>
+<li><a id="contents:单选dialog" href="#单选dialog">单选Dialog</a></li>
+<li><a id="contents:多选dialog" href="#多选dialog">多选Dialog</a></li>
+<li><a id="contents:等待dialog" href="#等待dialog">等待Dialog</a></li>
+<li><a id="contents:进度条dialog" href="#进度条dialog">进度条Dialog</a></li>
+<li><a id="contents:编辑dialog" href="#编辑dialog">编辑Dialog</a></li>
+<li><a id="contents:自定义带动画的dialog" href="#自定义带动画的dialog">自定义带动画的Dialog</a></li>
+<li><a id="contents:自定义带动画的圆角dialog" href="#自定义带动画的圆角dialog">自定义带动画的圆角Dialog</a>
+<ul>
+<li><a id="contents:自定义dialog布局文件-dialog-circle-xml" href="#自定义dialog布局文件-dialog-circle-xml">自定义dialog布局文件 dialog_circle.xml</a></li>
+</ul></li>
+</ul>
 </nav><div class="post-body">
-              <p><a href="https://blog.csdn.net/REIGE/article/details/69214773?utm_source=blogxgwz2">原文链接</a></p>
+              
+
+<p><a href="https://blog.csdn.net/REIGE/article/details/69214773?utm_source=blogxgwz2" target="_blank">原文链接</a></p>
+
 <h1 id="效果图"><a href="#效果图" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:效果图" class="headings">效果图</a></h1>
-<p><img src="https://img-blog.csdn.net/20170404214217213?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUkVJR0U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+
+<p><img src="https://img-blog.csdn.net/20170404214217213?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUkVJR0U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="" /></p>
+
 <h1 id="普通dialog"><a href="#普通dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:普通dialog" class="headings">普通Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -306,29 +323,29 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showNormalDialog</span><span class="o">()</span> <span class="o">{</span>
-  <span class="kd">final</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-  <span class="n">builder</span><span class="o">.</span><span class="na">setIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">mipmap</span><span class="o">.</span><span class="na">ic_launcher</span><span class="o">)</span>
-    <span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;普通Dialog&#34;</span><span class="o">)</span>
-    <span class="o">.</span><span class="na">setMessage</span><span class="o">(</span><span class="s">&#34;这是一个普通的Dialog&#34;</span><span class="o">)</span>
-    <span class="o">.</span><span class="na">setPositiveButton</span><span class="o">(</span><span class="s">&#34;确定&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showNormalDialog</span><span class="p">()</span> <span class="p">{</span>
+  <span class="err">final AlertDialog</span><span class="p">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+  <span class="n">builder</span><span class="p">.</span><span class="na">setIcon</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">mipmap</span><span class="p">.</span><span class="na">ic_launcher</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;普通Dialog&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setMessage</span><span class="p">(</span><span class="s">&#34;这是一个普通的Dialog&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
        <span class="nd">@Override</span>
-       <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{}</span>
-    <span class="o">})</span>
-    <span class="o">.</span><span class="na">setNegativeButton</span><span class="o">(</span><span class="s">&#34;取消&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">setNegativeButton</span><span class="p">(</span><span class="s">&#34;取消&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
        <span class="nd">@Override</span>
-       <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{}</span>
-    <span class="o">})</span>
-    <span class="o">.</span><span class="na">show</span><span class="o">();</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">show</span><span class="p">();</span>
     <span class="c1">//添加中间按钮 就有三个按钮
 </span><span class="c1"></span>    <span class="c1">//normalDialog.setNeutralButton
-</span><span class="c1"></span>    <span class="o">}</span>
-</code></pre></td></tr></table>
+</span><span class="c1"></span>    <span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="列表dialog"><a href="#列表dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:列表dialog" class="headings">列表Dialog</a></h1>
+</div>
+<h1 id="列表dialog"><a href="#列表dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:列表dialog" class="headings">列表Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -340,22 +357,22 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showListDialog</span><span class="o">()</span> <span class="o">{</span>
-  <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;按钮1&#34;</span><span class="o">,</span> <span class="s">&#34;按钮2&#34;</span><span class="o">,</span> <span class="s">&#34;按钮3&#34;</span><span class="o">,</span> <span class="s">&#34;按钮4&#34;</span><span class="o">};</span>
-  <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-  <span class="n">builder</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;列表Dialog&#34;</span><span class="o">)</span>
-    <span class="o">.</span><span class="na">setItems</span><span class="o">(</span><span class="n">items</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showListDialog</span><span class="p">()</span> <span class="p">{</span>
+  <span class="err">final String</span><span class="p">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#34;按钮1&#34;</span><span class="p">,</span> <span class="s">&#34;按钮2&#34;</span><span class="p">,</span> <span class="s">&#34;按钮3&#34;</span><span class="p">,</span> <span class="s">&#34;按钮4&#34;</span><span class="p">};</span>
+  <span class="err">AlertDialog.Builder builder </span><span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+  <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;列表Dialog&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
     <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{}</span>
-    <span class="o">})</span>
-    <span class="o">.</span><span class="na">show</span><span class="o">();</span>
-    <span class="o">}</span>
-</code></pre></td></tr></table>
+    <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="单选dialog"><a href="#单选dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:单选dialog" class="headings">单选Dialog</a></h1>
+</div>
+<h1 id="单选dialog"><a href="#单选dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:单选dialog" class="headings">单选Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -376,31 +393,31 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showSingleChoiceDialog</span><span class="o">()</span> <span class="o">{</span>
-    <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;按钮1&#34;</span><span class="o">,</span> <span class="s">&#34;按钮2&#34;</span><span class="o">,</span> <span class="s">&#34;按钮3&#34;</span><span class="o">,</span> <span class="s">&#34;按钮4&#34;</span><span class="o">};</span>
-    <span class="kd">final</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span>
-            <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-    <span class="n">builder</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;单选Dialog&#34;</span><span class="o">)</span>
-        <span class="o">.</span><span class="na">setSingleChoiceItems</span><span class="o">(</span><span class="n">items</span><span class="o">,</span> <span class="n">0</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showSingleChoiceDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">final String</span><span class="p">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#34;按钮1&#34;</span><span class="p">,</span> <span class="s">&#34;按钮2&#34;</span><span class="p">,</span> <span class="s">&#34;按钮3&#34;</span><span class="p">,</span> <span class="s">&#34;按钮4&#34;</span><span class="p">};</span>
+    <span class="err">final AlertDialog</span><span class="p">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span>
+            <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;单选Dialog&#34;</span><span class="p">)</span>
+        <span class="p">.</span><span class="na">setSingleChoiceItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">0</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
             <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+            <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
 
-            <span class="o">}</span>
-        <span class="o">})</span>
-        <span class="o">.</span><span class="na">setPositiveButton</span><span class="o">(</span><span class="s">&#34;确定&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="p">}</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
             <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+            <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
 
-            <span class="o">}</span>
-        <span class="o">})</span>
-        <span class="o">.</span><span class="na">show</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+            <span class="p">}</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="多选dialog"><a href="#多选dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:多选dialog" class="headings">多选Dialog</a></h1>
+</div>
+<h1 id="多选dialog"><a href="#多选dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:多选dialog" class="headings">多选Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -435,45 +452,45 @@
 </span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">choices</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">final ArrayList</span><span class="o">&lt;</span><span class="err">Integer&gt; choices </span><span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 
-<span class="kd">private</span> <span class="kt">void</span> <span class="nf">showMultiChoiceDialog</span><span class="o">()</span> <span class="o">{</span>
+<span class="err">private void </span><span class="n">showMultiChoiceDialog</span><span class="p">()</span> <span class="p">{</span>
 
-    <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;按钮1&#34;</span><span class="o">,</span> <span class="s">&#34;按钮2&#34;</span><span class="o">,</span> <span class="s">&#34;按钮3&#34;</span><span class="o">,</span> <span class="s">&#34;按钮4&#34;</span><span class="o">};</span>
+    <span class="err">final String</span><span class="p">[]</span> <span class="n">items</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#34;按钮1&#34;</span><span class="p">,</span> <span class="s">&#34;按钮2&#34;</span><span class="p">,</span> <span class="s">&#34;按钮3&#34;</span><span class="p">,</span> <span class="s">&#34;按钮4&#34;</span><span class="p">};</span>
     <span class="c1">// 设置默认选中的选项
-</span><span class="c1"></span>    <span class="kd">final</span> <span class="kt">boolean</span> <span class="n">initChoiceSets</span><span class="o">[]</span> <span class="o">=</span> <span class="o">{</span><span class="kc">false</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">false</span><span class="o">};</span>
+</span><span class="c1"></span>    <span class="err">final boolean </span><span class="n">initChoiceSets</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">};</span>
     <span class="c1">//choices.clear();
-</span><span class="c1"></span>    <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span>
-            <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-    <span class="n">builder</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;多选Dialog&#34;</span><span class="o">)</span>
-       <span class="o">.</span><span class="na">setMultiChoiceItems</span><span class="o">(</span><span class="n">items</span><span class="o">,</span> <span class="n">initChoiceSets</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span>
-               <span class="o">.</span><span class="na">OnMultiChoiceClickListener</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="c1"></span>    <span class="err">AlertDialog.Builder builder </span><span class="o">=</span>
+            <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;多选Dialog&#34;</span><span class="p">)</span>
+       <span class="p">.</span><span class="na">setMultiChoiceItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">initChoiceSets</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span>
+               <span class="p">.</span><span class="na">OnMultiChoiceClickListener</span><span class="p">()</span> <span class="p">{</span>
            <span class="nd">@Override</span>
-      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialog</span><span class="o">,</span> <span class="kt">int</span> <span class="n">which</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">isChecked</span><span class="o">)</span> <span class="o">{</span>
-          <span class="k">if</span> <span class="o">(</span><span class="n">isChecked</span><span class="o">)</span> <span class="o">{</span>
-              <span class="n">choices</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">which</span><span class="o">);</span>
-          <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialog</span><span class="p">,</span> <span class="err">int which</span><span class="p">,</span> <span class="err">boolean isChecked</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">isChecked</span><span class="p">)</span> <span class="p">{</span>
+              <span class="n">choices</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">which</span><span class="p">);</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
               <span class="c1">//有问题：是把whichButton作为index还是Object？实际上会抛下标溢出异常
 </span><span class="c1"></span>              <span class="c1">//MultiChoiceID.remove(whichButton);
 </span><span class="c1"></span>              <span class="c1">//需强制转换为Object类型，才会以对象的形式删除；否则会作为下标处理
-</span><span class="c1"></span>              <span class="n">choices</span><span class="o">.</span><span class="na">remove</span><span class="o">((</span><span class="n">Integer</span><span class="o">)</span> <span class="n">which</span><span class="o">);</span>
-          <span class="o">}</span>
-      <span class="o">}</span>
-      <span class="o">})</span>
-       <span class="o">.</span><span class="na">setPositiveButton</span><span class="o">(</span><span class="s">&#34;确定&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="c1"></span>              <span class="n">choices</span><span class="p">.</span><span class="na">remove</span><span class="p">((</span><span class="n">Integer</span><span class="p">)</span> <span class="n">which</span><span class="p">);</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="p">})</span>
+       <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
            <span class="nd">@Override</span>
-           <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+           <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
 
-           <span class="o">}</span>
-       <span class="o">})</span>
-       <span class="o">.</span><span class="na">show</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+           <span class="p">}</span>
+       <span class="p">})</span>
+       <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="等待dialog"><a href="#等待dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:等待dialog" class="headings">等待Dialog</a></h1>
+</div>
+<h1 id="等待dialog"><a href="#等待dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:等待dialog" class="headings">等待Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -491,28 +508,28 @@
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showWaitingDialog</span><span class="o">()</span> <span class="o">{</span>
-    <span class="kd">final</span> <span class="n">ProgressDialog</span> <span class="n">progressDialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ProgressDialog</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;等待Dialog&#34;</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setMessage</span><span class="o">(</span><span class="s">&#34;等待中...&#34;</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setIndeterminate</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setCancelable</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
-    <span class="k">new</span> <span class="n">Thread</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showWaitingDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">final ProgressDialog </span><span class="n">progressDialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ProgressDialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;等待Dialog&#34;</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setMessage</span><span class="p">(</span><span class="s">&#34;等待中...&#34;</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setIndeterminate</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setCancelable</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">()</span> <span class="p">{</span>
         <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-          <span class="kd">super</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
-          <span class="n">SystemClock</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">3000</span><span class="o">);</span>
-          <span class="n">progressDialog</span><span class="o">.</span><span class="na">dismiss</span><span class="o">();</span>
-        <span class="o">}</span>
-    <span class="o">}.</span><span class="na">start</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+        <span class="err">public void </span><span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+          <span class="kd">super</span><span class="p">.</span><span class="na">run</span><span class="p">();</span>
+          <span class="n">SystemClock</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="n">3000</span><span class="p">);</span>
+          <span class="n">progressDialog</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}.</span><span class="na">start</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="进度条dialog"><a href="#进度条dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:进度条dialog" class="headings">进度条Dialog</a></h1>
+</div>
+<h1 id="进度条dialog"><a href="#进度条dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:进度条dialog" class="headings">进度条Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -541,39 +558,39 @@
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showProgressDialog</span><span class="o">()</span> <span class="o">{</span>
-    <span class="kd">final</span> <span class="kt">int</span> <span class="n">MAX_PROGRESS</span> <span class="o">=</span> <span class="n">100</span><span class="o">;</span>
-    <span class="kd">final</span> <span class="n">ProgressDialog</span> <span class="n">progressDialog</span> <span class="o">=</span><span class="k">new</span> <span class="n">ProgressDialog</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setCancelable</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setProgress</span><span class="o">(</span><span class="n">0</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;进度条Dialog&#34;</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setProgressStyle</span><span class="o">(</span><span class="n">ProgressDialog</span><span class="o">.</span><span class="na">STYLE_HORIZONTAL</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">setMax</span><span class="o">(</span><span class="n">MAX_PROGRESS</span><span class="o">);</span>
-    <span class="n">progressDialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
-    <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showProgressDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">final int </span><span class="n">MAX_PROGRESS</span> <span class="o">=</span> <span class="n">100</span><span class="p">;</span>
+    <span class="err">final ProgressDialog </span><span class="n">progressDialog</span> <span class="o">=</span><span class="k">new</span> <span class="n">ProgressDialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setCancelable</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setProgress</span><span class="p">(</span><span class="n">0</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;进度条Dialog&#34;</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setProgressStyle</span><span class="p">(</span><span class="n">ProgressDialog</span><span class="p">.</span><span class="na">STYLE_HORIZONTAL</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">setMax</span><span class="p">(</span><span class="n">MAX_PROGRESS</span><span class="p">);</span>
+    <span class="n">progressDialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="k">new</span> <span class="n">Thread</span><span class="p">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="p">()</span> <span class="p">{</span>
        <span class="nd">@Override</span>
-       <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-          <span class="kt">int</span> <span class="n">progress</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
-          <span class="k">while</span> <span class="o">(</span><span class="n">progress</span> <span class="o">&lt;</span> <span class="n">MAX_PROGRESS</span><span class="o">)</span> <span class="o">{</span>
-             <span class="k">try</span> <span class="o">{</span>
-                <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">10</span><span class="o">);</span>
-                <span class="n">progress</span><span class="o">++;</span>
+       <span class="err">public void </span><span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+          <span class="err">int progress </span><span class="o">=</span> <span class="n">0</span><span class="p">;</span>
+          <span class="k">while</span> <span class="p">(</span><span class="n">progress</span> <span class="o">&lt;</span> <span class="n">MAX_PROGRESS</span><span class="p">)</span> <span class="p">{</span>
+             <span class="k">try</span> <span class="p">{</span>
+                <span class="n">Thread</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="n">10</span><span class="p">);</span>
+                <span class="n">progress</span><span class="o">++</span><span class="p">;</span>
                 <span class="c1">//子线程可以更新progressDialog进度
-</span><span class="c1"></span>                <span class="n">progressDialog</span><span class="o">.</span><span class="na">setProgress</span><span class="o">(</span><span class="n">progress</span><span class="o">);</span>
-             <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-                 <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-             <span class="o">}</span>
-          <span class="o">}</span>
-          <span class="n">progressDialog</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
-       <span class="o">}</span>
-    <span class="o">}).</span><span class="na">start</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+</span><span class="c1"></span>                <span class="n">progressDialog</span><span class="p">.</span><span class="na">setProgress</span><span class="p">(</span><span class="n">progress</span><span class="p">);</span>
+             <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="err">InterruptedException e</span><span class="p">)</span> <span class="p">{</span>
+                 <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+             <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="n">progressDialog</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span>
+       <span class="p">}</span>
+    <span class="p">}).</span><span class="na">start</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="编辑dialog"><a href="#编辑dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:编辑dialog" class="headings">编辑Dialog</a></h1>
+</div>
+<h1 id="编辑dialog"><a href="#编辑dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:编辑dialog" class="headings">编辑Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -588,25 +605,25 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showEditDialog</span><span class="o">()</span> <span class="o">{</span>
-    <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-    <span class="kd">final</span> <span class="n">EditText</span> <span class="n">view</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EditText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-    <span class="n">builder</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;输入dialog&#34;</span><span class="o">)</span>
-       <span class="o">.</span><span class="na">setView</span><span class="o">(</span><span class="n">view</span><span class="o">)</span>
-       <span class="o">.</span><span class="na">setPositiveButton</span><span class="o">(</span><span class="s">&#34;确定&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showEditDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">AlertDialog.Builder builder </span><span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="err">final EditText </span><span class="n">view</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EditText</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">);</span>
+    <span class="n">builder</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">&#34;输入dialog&#34;</span><span class="p">)</span>
+       <span class="p">.</span><span class="na">setView</span><span class="p">(</span><span class="n">view</span><span class="p">)</span>
+       <span class="p">.</span><span class="na">setPositiveButton</span><span class="p">(</span><span class="s">&#34;确定&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">DialogInterface</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
            <span class="nd">@Override</span>
-           <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">DialogInterface</span> <span class="n">dialogInterface</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
-               <span class="n">String</span> <span class="n">content</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
-           <span class="o">}</span>
-       <span class="o">})</span>
-       <span class="o">.</span><span class="na">show</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+           <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">DialogInterface dialogInterface</span><span class="p">,</span> <span class="err">int i</span><span class="p">)</span> <span class="p">{</span>
+               <span class="err">String content </span><span class="o">=</span> <span class="n">view</span><span class="p">.</span><span class="na">getText</span><span class="p">().</span><span class="na">toString</span><span class="p">();</span>
+           <span class="p">}</span>
+       <span class="p">})</span>
+       <span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="自定义带动画的dialog"><a href="#自定义带动画的dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:自定义带动画的dialog" class="headings">自定义带动画的Dialog</a></h1>
+</div>
+<h1 id="自定义带动画的dialog"><a href="#自定义带动画的dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:自定义带动画的dialog" class="headings">自定义带动画的Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -620,24 +637,24 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showConsumerDialog</span><span class="o">()</span> <span class="o">{</span>
-    <span class="n">Dialog</span> <span class="n">dialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">R</span><span class="o">.</span><span class="na">style</span><span class="o">.</span><span class="na">BottomDialog</span><span class="o">);</span>
-    <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">LayoutInflater</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="k">this</span><span class="o">).</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">dialog</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
-    <span class="n">dialog</span><span class="o">.</span><span class="na">setContentView</span><span class="o">(</span><span class="n">view</span><span class="o">);</span>
-    <span class="n">ViewGroup</span><span class="o">.</span><span class="na">LayoutParams</span> <span class="n">layoutParams</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="na">getLayoutParams</span><span class="o">();</span>
-    <span class="n">layoutParams</span><span class="o">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getDisplayMetrics</span><span class="o">().</span><span class="na">widthPixels</span><span class="o">;</span>
-    <span class="n">view</span><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="n">layoutParams</span><span class="o">);</span>
-    <span class="n">dialog</span><span class="o">.</span><span class="na">getWindow</span><span class="o">().</span><span class="na">setGravity</span><span class="o">(</span><span class="n">Gravity</span><span class="o">.</span><span class="na">BOTTOM</span><span class="o">);</span>
-    <span class="n">dialog</span><span class="o">.</span><span class="na">getWindow</span><span class="o">().</span><span class="na">setWindowAnimations</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">style</span><span class="o">.</span><span class="na">BottomDialog_Animation</span><span class="o">);</span>
-    <span class="n">dialog</span><span class="o">.</span><span class="na">setCanceledOnTouchOutside</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
-    <span class="n">dialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showConsumerDialog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">Dialog dialog </span><span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog</span><span class="p">);</span>
+    <span class="err">View view </span><span class="o">=</span> <span class="n">LayoutInflater</span><span class="p">.</span><span class="na">from</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="na">inflate</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">dialog</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">setContentView</span><span class="p">(</span><span class="n">view</span><span class="p">);</span>
+    <span class="err">ViewGroup.LayoutParams layoutParams </span><span class="o">=</span> <span class="n">view</span><span class="p">.</span><span class="na">getLayoutParams</span><span class="p">();</span>
+    <span class="n">layoutParams</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">().</span><span class="na">widthPixels</span><span class="p">;</span>
+    <span class="n">view</span><span class="p">.</span><span class="na">setLayoutParams</span><span class="p">(</span><span class="n">layoutParams</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setGravity</span><span class="p">(</span><span class="n">Gravity</span><span class="p">.</span><span class="na">BOTTOM</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setWindowAnimations</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog_Animation</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">setCanceledOnTouchOutside</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="n">dialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="自定义带动画的圆角dialog"><a href="#自定义带动画的圆角dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:自定义带动画的圆角dialog" class="headings">自定义带动画的圆角Dialog</a></h1>
+</div>
+<h1 id="自定义带动画的圆角dialog"><a href="#自定义带动画的圆角dialog" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:自定义带动画的圆角dialog" class="headings">自定义带动画的圆角Dialog</a></h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -671,44 +688,44 @@
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">showConsumerDialogCircle</span><span class="o">()</span> <span class="o">{</span>
-   <span class="kd">final</span> <span class="n">Dialog</span> <span class="n">dialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">R</span><span class="o">.</span><span class="na">style</span><span class="o">.</span><span class="na">BottomDialog</span><span class="o">);</span>
-   <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">LayoutInflater</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="k">this</span><span class="o">).</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">dialog_circle</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="err">private void </span><span class="n">showConsumerDialogCircle</span><span class="p">()</span> <span class="p">{</span>
+   <span class="err">final Dialog </span><span class="n">dialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="p">(</span><span class="n">MainActivity</span><span class="p">.</span><span class="na">this</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog</span><span class="p">);</span>
+   <span class="err">View view </span><span class="o">=</span> <span class="n">LayoutInflater</span><span class="p">.</span><span class="na">from</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="na">inflate</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">dialog_circle</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
 
-   <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">takePhoto</span><span class="o">).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+   <span class="n">view</span><span class="p">.</span><span class="na">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">takePhoto</span><span class="p">).</span><span class="na">setOnClickListener</span><span class="p">(</span><span class="k">new</span> <span class="n">View</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
        <span class="nd">@Override</span>
-       <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
-           <span class="n">dialog</span><span class="o">.</span><span class="na">dismiss</span><span class="o">();</span>
-       <span class="o">}</span>
-   <span class="o">});</span>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">View view</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">dialog</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+       <span class="p">}</span>
+   <span class="p">});</span>
 
-   <span class="n">view</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">selectPhoto</span><span class="o">).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+   <span class="n">view</span><span class="p">.</span><span class="na">findViewById</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">id</span><span class="p">.</span><span class="na">selectPhoto</span><span class="p">).</span><span class="na">setOnClickListener</span><span class="p">(</span><span class="k">new</span> <span class="n">View</span><span class="p">.</span><span class="na">OnClickListener</span><span class="p">()</span> <span class="p">{</span>
        <span class="nd">@Override</span>
-       <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
-           <span class="n">dialog</span><span class="o">.</span><span class="na">dismiss</span><span class="o">();</span>
-       <span class="o">}</span>
-   <span class="o">});</span>
-   <span class="n">dialog</span><span class="o">.</span><span class="na">setContentView</span><span class="o">(</span><span class="n">view</span><span class="o">);</span>
-   <span class="n">ViewGroup</span><span class="o">.</span><span class="na">MarginLayoutParams</span> <span class="n">layoutParams</span> <span class="o">=</span> <span class="o">(</span><span class="n">ViewGroup</span><span class="o">.</span><span class="na">MarginLayoutParams</span><span class="o">)</span> <span class="n">view</span>
-           <span class="o">.</span><span class="na">getLayoutParams</span><span class="o">();</span>
-   <span class="n">layoutParams</span><span class="o">.</span><span class="na">bottomMargin</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">TypedValue</span><span class="o">.</span><span class="na">applyDimension</span><span class="o">(</span><span class="n">TypedValue</span><span class="o">.</span><span class="na">COMPLEX_UNIT_DIP</span><span class="o">,</span> <span class="n">8</span><span class="o">,</span>
-           <span class="n">getResources</span><span class="o">().</span><span class="na">getDisplayMetrics</span><span class="o">());</span>
-   <span class="n">layoutParams</span><span class="o">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getDisplayMetrics</span><span class="o">().</span><span class="na">widthPixels</span> <span class="o">-</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">TypedValue</span>
-           <span class="o">.</span><span class="na">applyDimension</span><span class="o">(</span><span class="n">TypedValue</span><span class="o">.</span><span class="na">COMPLEX_UNIT_DIP</span><span class="o">,</span> <span class="n">16</span><span class="o">,</span>
-                   <span class="n">getResources</span><span class="o">().</span><span class="na">getDisplayMetrics</span><span class="o">());</span>
-   <span class="n">view</span><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="n">layoutParams</span><span class="o">);</span>
-   <span class="n">dialog</span><span class="o">.</span><span class="na">getWindow</span><span class="o">().</span><span class="na">setGravity</span><span class="o">(</span><span class="n">Gravity</span><span class="o">.</span><span class="na">BOTTOM</span><span class="o">);</span>
-   <span class="n">dialog</span><span class="o">.</span><span class="na">getWindow</span><span class="o">().</span><span class="na">setWindowAnimations</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">style</span><span class="o">.</span><span class="na">BottomDialog_Animation</span><span class="o">);</span>
-   <span class="n">dialog</span><span class="o">.</span><span class="na">setCanceledOnTouchOutside</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
-   <span class="n">dialog</span><span class="o">.</span><span class="na">getWindow</span><span class="o">().</span><span class="na">setSoftInputMode</span><span class="o">(</span><span class="n">WindowManager</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">.</span><span class="na">SOFT_INPUT_ADJUST_RESIZE</span><span class="o">);</span>
-   <span class="n">dialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
-    <span class="o">}</span>
-</code></pre></td></tr></table>
+       <span class="err">public void </span><span class="n">onClick</span><span class="p">(</span><span class="err">View view</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">dialog</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+       <span class="p">}</span>
+   <span class="p">});</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">setContentView</span><span class="p">(</span><span class="n">view</span><span class="p">);</span>
+   <span class="err">ViewGroup.MarginLayoutParams layoutParams </span><span class="o">=</span> <span class="p">(</span><span class="n">ViewGroup</span><span class="p">.</span><span class="na">MarginLayoutParams</span><span class="p">)</span> <span class="n">view</span>
+           <span class="p">.</span><span class="na">getLayoutParams</span><span class="p">();</span>
+   <span class="n">layoutParams</span><span class="p">.</span><span class="na">bottomMargin</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">TypedValue</span><span class="p">.</span><span class="na">applyDimension</span><span class="p">(</span><span class="n">TypedValue</span><span class="p">.</span><span class="na">COMPLEX_UNIT_DIP</span><span class="p">,</span> <span class="n">8</span><span class="p">,</span>
+           <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">());</span>
+   <span class="n">layoutParams</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">().</span><span class="na">widthPixels</span> <span class="o">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">TypedValue</span>
+           <span class="p">.</span><span class="na">applyDimension</span><span class="p">(</span><span class="n">TypedValue</span><span class="p">.</span><span class="na">COMPLEX_UNIT_DIP</span><span class="p">,</span> <span class="n">16</span><span class="p">,</span>
+                   <span class="n">getResources</span><span class="p">().</span><span class="na">getDisplayMetrics</span><span class="p">());</span>
+   <span class="n">view</span><span class="p">.</span><span class="na">setLayoutParams</span><span class="p">(</span><span class="n">layoutParams</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setGravity</span><span class="p">(</span><span class="n">Gravity</span><span class="p">.</span><span class="na">BOTTOM</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setWindowAnimations</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">style</span><span class="p">.</span><span class="na">BottomDialog_Animation</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">setCanceledOnTouchOutside</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">getWindow</span><span class="p">().</span><span class="na">setSoftInputMode</span><span class="p">(</span><span class="n">WindowManager</span><span class="p">.</span><span class="na">LayoutParams</span><span class="p">.</span><span class="na">SOFT_INPUT_ADJUST_RESIZE</span><span class="p">);</span>
+   <span class="n">dialog</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
+    <span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div><h2 id="自定义dialog布局文件-dialog_circlexml"><a href="#自定义dialog布局文件-dialog_circlexml" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:自定义dialog布局文件-dialog_circlexml" class="headings">自定义dialog布局文件 dialog_circle.xml</a></h2>
+</div>
+<h2 id="自定义dialog布局文件-dialog-circle-xml"><a href="#自定义dialog布局文件-dialog-circle-xml" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:自定义dialog布局文件-dialog-circle-xml" class="headings">自定义dialog布局文件 dialog_circle.xml</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -759,13 +776,13 @@
   <span class="na">android:padding=</span><span class="s">&#34;16dp&#34;</span>
   <span class="na">android:textSize=</span><span class="s">&#34;14sp&#34;</span>
   <span class="na">android:text=</span><span class="s">&#34;从相册选取&#34;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/LinearLayout&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p>dialog_circle.xml</p>
+</div>
+<p>dialog_circle.xml</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -780,13 +797,13 @@
 
 <span class="nt">&lt;corners</span> <span class="na">android:radius=</span><span class="s">&#34;8dp&#34;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;solid</span> <span class="na">android:color=</span><span class="s">&#34;@android:color/white&#34;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/shape&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/shape&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p>style</p>
+</div>
+<p>style</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -803,13 +820,13 @@
 <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&#34;BottomDialog.Animation&#34;</span> <span class="na">parent=</span><span class="s">&#34;Animation.AppCompat.Dialog&#34;</span><span class="nt">&gt;</span>
    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&#34;android:windowEnterAnimation&#34;</span><span class="nt">&gt;</span>@anim/translate_dialog_in<span class="nt">&lt;/item&gt;</span>
    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&#34;android:windowExitAnimation&#34;</span><span class="nt">&gt;</span>@anim/translate_dialog_out<span class="nt">&lt;/item&gt;</span>
-<span class="nt">&lt;/style&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/style&gt;</span></code></pre></td></tr></table>
 </div>
-</div><p>Enter Exit 动画</p>
+</div>
+<p>Enter Exit 动画</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -848,8 +865,7 @@
   <span class="na">android:fromYDelta=</span><span class="s">&#34;0&#34;</span>
   <span class="na">android:toXDelta=</span><span class="s">&#34;0&#34;</span>
   <span class="na">android:toYDelta=</span><span class="s">&#34;100%&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/translate&gt;</span>
-</code></pre></td></tr></table>
+<span class="nt">&lt;/translate&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
             </div>
@@ -994,7 +1010,7 @@
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a></div><div class="site-copyright"></div>
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
 
             
 
