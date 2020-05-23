@@ -18,12 +18,8 @@
   </url>
   
   <url>
-    <loc>https://ztygcs.github.io/en-us/moment/</loc>
-    <lastmod>2020-02-17T13:38:33+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ztygcs.github.io/en-us/</loc>
+    <lastmod>2020-02-17T13:38:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -34,6 +30,11 @@
                 hreflang="en-us"
                 href="https://ztygcs.github.io/en-us/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/en-us/moment/</loc>
+    <lastmod>2020-02-17T13:38:33+08:00</lastmod>
   </url>
   
 </urlset>
