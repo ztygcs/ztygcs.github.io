@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
+<html lang="zh-CN">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
         <script>
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+            const userPrefers = localStorage.getItem('theme');
+            if (userPrefers === 'dark') {
+                changeModeMeta('dark');
+            } else if (userPrefers === 'light') {
+                changeModeMeta('light');
+            }
+            function changeModeMeta(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
             }
         </script>
 
-    <meta charset="UTF-8" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     
     <meta http-equiv="Cache-Control" content="no-transform" />
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    
-    <meta name="renderer" content="webkit" />
-
-    <meta name="generator" content="Hugo 0.59.1" />
 
     <title>MemE主题优化 | 天涯共此时</title>
 
-    <link rel="stylesheet" href="/css/meme.min.909faebd0d7949f29ef3bc3a7bf18394c89c8671748978b26d3381a8c411f407.css" integrity="sha256-kJ+uvQ15SfKe87w6e/GDlMichnF0iXiybTOBqMQR9Ac=" data-instant-track /><style data-instant-track>.post p {text-align:justify;text-justify:distribute}</style>
+    <link rel="stylesheet" href="/css/meme.min.56f50398f4e3175ad735ea207bcc4f6a9b7614abd83f898347849378885cc825.css" integrity="sha256-VvUDmPTjF1rXNeoge8xPapt2FKvYP4mDR4STeIhcyCU=" />
 
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&display=swap&subset=chinese-simplified" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta name="author" content="天涯共此时" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
+
+    <meta name="author" content="天涯共此时" /><meta name="description" content="前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次
     
-    
-    <meta name="description" content="前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次……" />
-    <meta name="keywords" content="tech, hugo, meme, hugo" />
-    
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    " />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,15 +52,12 @@
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
-    
+
     
     
 
     
     <link rel="canonical" href="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
-
-
-
 
 <script type="application/ld+json">
     {
@@ -70,8 +67,7 @@
         "dateModified": "2020-05-23T22:58:48+08:00",
         "url": "https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/",
         "headline": "MemE主题优化",
-        "description": "前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次……",
-        "keywords": "tech, hugo, meme, hugo",
+        "description": "前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次\r\n    \r\n    ",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
         "wordCount":  9703 ,
@@ -102,8 +98,6 @@
 
     
 
-
-
 <meta name="twitter:card" content="summary_large_image" />
 
 
@@ -113,106 +107,136 @@
 
 
 
-
-
-
 <meta property="og:title" content="MemE主题优化" />
-<meta property="og:description" content="前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次……" />
+<meta property="og:description" content="前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次
+    
+    " />
 <meta property="og:url" content="https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" />
 <meta property="og:site_name" content="天涯共此时" />
-<meta property="og:locale" content="zh-CN" />
-            <meta property="og:locale:alternate" content="en-US" />
-        
-            <meta property="og:locale:alternate" content="en-US" />
-        <meta property="og:image" content="https://ztygcs.github.io/images/tech/2019/11/MenuBar.png" />
+<meta property="og:locale" content="zh-cn" /><meta property="og:image" content="https://ztygcs.github.io/images/tech/2019/11/MenuBar.png" />
 <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2019-11-27T21:45:38+08:00" />
-    <meta property="article:modified_time" content="2020-05-23T22:58:48+08:00" />
+    <meta property="article:published_time" content="2019-11-27T21:45:38&#43;08:00" />
+    <meta property="article:modified_time" content="2020-05-23T22:58:48&#43;08:00" />
     
     <meta property="article:section" content="posts" />
-    <meta property="article:tag" content="tech, hugo, meme, hugo" />
+
 
 
     
-	
-	
 </head>
-
 
     <body>
         <div class="container">
             
     <header class="header">
-        <div class="site-brand">
-            
-            <a href="/" class="brand">天涯共此时</a>
-            
-        </div>
-		
-    </header>
-
-
-            
-    <nav class="nav">
-        <ul class="menu" id="menu">
-            
-                
-            
-            
-            
-                <li class="menu-item active"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">归档</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/search/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><span class="menu-item-name">百度</span></a>
-                </li>
-            
-			
-        </ul>
-		
-    </nav>
-		
-
-            
-    <div class="lang-toggle" onmouseover="langSwitcherOver()" onmouseout="langSwitcherOut()">🇨🇳
         
-            
-                <ul id="langs">
+            <div class="header-wrapper">
+                <div class="header-inner single">
                     
-                        
-                    
-                        
-                            <li><a rel="alternate" href="/en-us" hreflang="en-us" lang="en-us">🇺🇸</a></li>
-                        
-                    
-                </ul>
-            
+    <div class="site-brand">
+        
+            <a href="/" class="brand">天涯共此时</a>
         
     </div>
 
-            
-    
+                    <nav class="nav">
+    <ul class="menu" id="menu">
         
             
         
         
-        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
-    
+        
+        
+            
+                <li class="menu-item active"><a href="/posts/"><span class="menu-item-name">归档</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><span class="menu-item-name">分类</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><span class="menu-item-name">标签</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/search/"><span class="menu-item-name">百度</span></a>
+                </li>
+            
+        
+            
+                
+                    
+                        
+                        
+                            <li class="menu-item">
+                                <div id="lang-switcher">
+            <span>简体中文</span>
+            
+                
+                    <ul id="langs">
+                        
+                            
+                        
+                            
+                                <li><a rel="alternate" href="/en-us" hreflang="en-us" lang="en-us">English</a></li>
+                            
+                        
+                    </ul>
+                
+            
+        </div>
+                            </li>
+                        
+                    
+                
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
 
 
 
+
+            
             
     <main class="main single" id="main">
     <div class="main-inner">
-        <article class="content post">
+
+        
+
+        <article class="content post" data-align="justify" data-type="posts">
 
             <h1 class="post-title">MemE主题优化</h1>
 
@@ -223,83 +247,84 @@
             
 
             
-                <div class="post-meta">
-    
-        
-        <time datetime="2019-11-27T21:45:38+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2019.11.27</time>
-    
-    
-    
-    
-        
-        
-        
-            
                 
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg><a href="/categories/tech/" class="category-link">TECH</a>/<a href="/categories/hugo/" class="category-link">Hugo</a></span>
+
+<div class="post-meta">
+    
+        
+        <time datetime="2019-11-27T21:45:38&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2019.11.27</time>
+    
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/tech/" class="category-link">Tech</a>/<a href="/categories/hugo/" class="category-link">Hugo</a></span>
             
         
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>9703</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;9703</span>
+    
+    
     
     
 </div>
-            
 
             
 
-
-                <nav class="contents">
-<h2 id="contents" class="contents-title">目录</h2><ol class="toc">
+            <nav class="contents">
+<ul>
 <li><a id="contents:前言" href="#前言">前言</a></li>
 <li><a id="contents:博客目录结构" href="#博客目录结构">博客目录结构</a></li>
 <li><a id="contents:每一分页文章数" href="#每一分页文章数">每一分页文章数</a></li>
 <li><a id="contents:代码高亮" href="#代码高亮">代码高亮</a></li>
 <li><a id="contents:作者信息" href="#作者信息">作者信息</a></li>
 <li><a id="contents:菜单栏" href="#菜单栏">菜单栏</a>
-<ol>
+<ul>
 <li><a id="contents:菜单开关项" href="#菜单开关项">菜单开关项</a></li>
 <li><a id="contents:菜单配置项" href="#菜单配置项">菜单配置项</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:顶栏" href="#顶栏">顶栏</a>
-<ol>
+<ul>
 <li><a id="contents:品牌栏-在顶栏内" href="#品牌栏-在顶栏内">品牌栏（在顶栏内）</a>
-<ol>
+<ul>
 <li><a id="contents:品牌栏内容" href="#品牌栏内容">品牌栏内容</a></li>
 <li><a id="contents:品牌栏背景色" href="#品牌栏背景色">品牌栏背景色</a></li>
-</ol></li>
-</ol></li>
+</ul></li>
+</ul></li>
 <li><a id="contents:首页布局" href="#首页布局">首页布局</a></li>
 <li><a id="contents:分类页面" href="#分类页面">分类页面</a>
-<ol>
+<ul>
 <li><a id="contents:分类方式" href="#分类方式">分类方式</a></li>
 <li><a id="contents:分类设置" href="#分类设置">分类设置</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:文章分区范围" href="#文章分区范围">文章分区范围</a>
-<ol>
+<ul>
 <li><a id="contents:文章首页摘要字数限制" href="#文章首页摘要字数限制">文章首页摘要字数限制</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:标签页面" href="#标签页面">标签页面</a></li>
 <li><a id="contents:归档列表页面" href="#归档列表页面">归档列表页面</a></li>
 <li><a id="contents:深色模式" href="#深色模式">深色模式</a>
-<ol>
+<ul>
 <li><a id="contents:模式设置" href="#模式设置">模式设置</a></li>
 <li><a id="contents:模式颜色" href="#模式颜色">模式颜色</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:文章设置" href="#文章设置">文章设置</a>
-<ol>
+<ul>
 <li><a id="contents:文章元信息" href="#文章元信息">文章元信息</a></li>
 <li><a id="contents:文章目录" href="#文章目录">文章目录</a></li>
 <li><a id="contents:文章分节标题锚点" href="#文章分节标题锚点">文章分节标题锚点</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:说明文字" href="#说明文字">说明文字</a></li>
 <li><a id="contents:图片外链" href="#图片外链">图片外链</a></li>
 <li><a id="contents:视频外链" href="#视频外链">视频外链</a></li>
 <li><a id="contents:脚注" href="#脚注">脚注</a></li>
 <li><a id="contents:字体排版" href="#字体排版">字体排版</a>
-<ol>
+<ul>
 <li><a id="contents:品牌栏" href="#品牌栏">品牌栏</a></li>
 <li><a id="contents:菜单栏-1" href="#菜单栏-1">菜单栏</a></li>
 <li><a id="contents:各类标题" href="#各类标题">各类标题</a></li>
@@ -311,11 +336,11 @@
 <li><a id="contents:页脚" href="#页脚">页脚</a></li>
 <li><a id="contents:主体" href="#主体">主体</a></li>
 <li><a id="contents:网络字体链接" href="#网络字体链接">网络字体链接</a>
-<ol>
+<ul>
 <li><a id="contents:具体设置方式" href="#具体设置方式">具体设置方式</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:字号-单位-px" href="#字号-单位-px">字号（单位：px）</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:行间距" href="#行间距">行间距</a></li>
 <li><a id="contents:段首缩排" href="#段首缩排">段首缩排</a></li>
 <li><a id="contents:两端对齐" href="#两端对齐">两端对齐</a></li>
@@ -325,10 +350,10 @@
 <li><a id="contents:文章版权" href="#文章版权">文章版权</a></li>
 <li><a id="contents:文章更新徽章" href="#文章更新徽章">文章更新徽章</a></li>
 <li><a id="contents:相关文章" href="#相关文章">相关文章</a>
-<ol>
+<ul>
 <li><a id="contents:文章标签" href="#文章标签">文章标签</a></li>
 <li><a id="contents:文章上下篇" href="#文章上下篇">文章上下篇</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:页脚-1" href="#页脚-1">页脚</a></li>
 <li><a id="contents:极简页脚" href="#极简页脚">极简页脚</a></li>
 <li><a id="contents:返回顶部按钮" href="#返回顶部按钮">返回顶部按钮</a></li>
@@ -337,40 +362,41 @@
 <li><a id="contents:文字渐变色" href="#文字渐变色">文字渐变色</a></li>
 <li><a id="contents:back-to-top样式" href="#back-to-top样式">back-to-top样式</a></li>
 <li><a id="contents:归档-分类及标签页样式" href="#归档-分类及标签页样式">归档、分类及标签页样式</a>
-<ol>
+<ul>
 <li><a id="contents:归档样式代码" href="#归档样式代码">归档样式代码：</a></li>
 <li><a id="contents:分类样式代码" href="#分类样式代码">分类样式代码：</a></li>
 <li><a id="contents:标签样式代码" href="#标签样式代码">标签样式代码：</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:插入音频" href="#插入音频">插入音频</a>
-<ol>
+<ul>
 <li><a id="contents:audio标签" href="#audio标签">audio标签</a></li>
 <li><a id="contents:video标签" href="#video标签">video标签</a></li>
 <li><a id="contents:通过网易云外链添加" href="#通过网易云外链添加">通过网易云外链添加</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:卡片风格" href="#卡片风格">卡片风格</a></li>
-</ol>
+</ul>
 </nav><div class="post-body">
+              
 
 <h1 id="前言"><a href="#前言" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:前言" class="headings">前言</a></h1>
 
 <p>折腾了两天，总算是把这个博客给搭建起来了😉😉!</p>
 
-<p>在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看<strong class="emphasis-point">正文</strong>的同学就<strong class="emphasis-point">跳过</strong>这段直接到第一节吧！</p>
+<p>在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看<em class="emphasis-point">正文</em>的同学就<em class="emphasis-point">跳过</em>这段直接到第一节吧！</p>
 
-<p>首先要感谢👏几个博主，第一次看到这个 <strong class="emphasis-point">博客主题</strong>  <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a> 是从 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（<code>之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了</code>）。说实话，我感觉 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博主讲得实在太<strong class="emphasis-point">详细</strong>了，所以感觉自己只是在<strong class="emphasis-point">照葫芦画瓢</strong>🙃🙃🙃 。</p>
+<p>首先要感谢👏几个博主，第一次看到这个 <em class="emphasis-point">博客主题</em>  <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a> 是从 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（<code>之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了</code>）。说实话，我感觉 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博主讲得实在太<em class="emphasis-point">详细</em>了，所以感觉自己只是在<em class="emphasis-point">照葫芦画瓢</em>🙃🙃🙃 。</p>
 
 <p>搭建博客的过程很简单，一般都不会有什么问题，所以这里我就写写关于<code>MemE</code>主题的各个细节的配置问题:<br/>
-<strong class="emphasis-point">一来</strong>是自己想要更改博客主题样式的时候知道去哪个地方改？怎么改？🖊️<br/>
-<strong class="emphasis-point">二来</strong>可以提供给需要的朋友一些参考，让更多的人加入这个主题中来！❤️<br/></p>
+<em class="emphasis-point">一来</em>是自己想要更改博客主题样式的时候知道去哪个地方改？怎么改？🖊️<br/>
+<em class="emphasis-point">二来</em>可以提供给需要的朋友一些参考，让更多的人加入这个主题中来！❤️<br/></p>
 
-<p>虽然之前有看过 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博主的详细 <a href="https://github.com/reuixiy/hugo-theme-meme/blob/master/config-examples/en-us/config.toml" target="_blank">站点配置文件</a> ，不过都是英文的，看得实在有点累（我的英文太水了😐）。虽然基本上都是<strong class="emphasis-point">见名知义</strong>的，可我觉得还是一份中文的文档📄比较适合我。</p>
+<p>虽然之前有看过 <a href="https://io-oi.me/" target="_blank">reuixiy</a> 博主的详细 <a href="https://github.com/reuixiy/hugo-theme-meme/blob/master/config-examples/en-us/config.toml" target="_blank">站点配置文件</a> ，不过都是英文的，看得实在有点累（我的英文太水了😐）。虽然基本上都是<em class="emphasis-point">见名知义</em>的，可我觉得还是一份中文的文档📄比较适合我。</p>
 
 <p>在更改各个配置的时候我所参考的大部分内容是来自 <a href="https://blog.guanqr.com/" target="_blank">Guanqr</a> 博主提交到github中的<code>config.toml</code>文件，里面所有的注释都是中文的，对我来说简直太爽了😁😁😁！！！。然后有一些博客的写作格式也是从该博主的 <a href="https://github.com/guanqr/blog/commits/master" target="_blank">commit</a> 中找到的，自己也尝试着动手改改看，效果还不错！</p>
 
 <p>所以，这里就先谢谢这两位博主了🎉🎉🎉，当然中途出现了一些问题都是从网上找到方法解决的，所以也要感谢那么多给我提供过帮助的博主们！！！🎉🎉🎉</p>
 
-<p>好了，不多说了，步入<strong class="emphasis-point">正题</strong>，首先给大家看看我的<strong class="emphasis-point">博客结构目录</strong>：</p>
+<p>好了，不多说了，步入<em class="emphasis-point">正题</em>，首先给大家看看我的<em class="emphasis-point">博客结构目录</em>：</p>
 
 <h1 id="博客目录结构"><a href="#博客目录结构" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:博客目录结构" class="headings">博客目录结构</a></h1>
 <div class="highlight"><div class="chroma">
@@ -401,7 +427,7 @@
 └── config.toml</pre></td></tr></table>
 </div>
 </div>
-<p>然后我们按照<code>config.toml</code>文件的大致内容依次梳理(会有部分内容与原文上下位置<strong class="emphasis-point">不一致</strong>)，其实大部分设置只需要<strong class="emphasis-point">更改参数</strong>就可以了，这里我就只把对应的<strong class="emphasis-point">关键字</strong>给出来，你们去自己的<code>config.toml</code>中查找关键字然后自己<strong class="emphasis-point">更改参数</strong>试试。这里附上我的<a href="https://github.com/ztygcs/config.toml/blob/master/config.toml" target="_blank">config.toml</a>文件。</p>
+<p>然后我们按照<code>config.toml</code>文件的大致内容依次梳理(会有部分内容与原文上下位置<em class="emphasis-point">不一致</em>)，其实大部分设置只需要<em class="emphasis-point">更改参数</em>就可以了，这里我就只把对应的<em class="emphasis-point">关键字</em>给出来，你们去自己的<code>config.toml</code>中查找关键字然后自己<em class="emphasis-point">更改参数</em>试试。这里附上我的<a href="https://github.com/ztygcs/config.toml/blob/master/config.toml" target="_blank">config.toml</a>文件。</p>
 
 <h1 id="每一分页文章数"><a href="#每一分页文章数" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:每一分页文章数" class="headings">每一分页文章数</a></h1>
 <div class="highlight"><div class="chroma">
@@ -620,13 +646,13 @@
 <li><code>siteBrandSVG = true</code> :显示SVG图片（请将你的 SVG 放到 <code>SVG.toml</code> 文件内，并配置以下项。单位：px）
 
 <ul>
-<li>siteBrandSVGWidth:设置SVG<strong class="emphasis-point">宽度</strong></li>
-<li>siteBrandSVGHeight:设置SVG<strong class="emphasis-point">高度</strong></li>
+<li>siteBrandSVGWidth:设置SVG<em class="emphasis-point">宽度</em></li>
+<li>siteBrandSVGHeight:设置SVG<em class="emphasis-point">高度</em></li>
 </ul></li>
 </ul>
 
 <blockquote>
-<p>（SVG图片<strong class="emphasis-point">文件位置</strong>：<code>\themes\meme\data\SVG.toml</code>）</p>
+<p>（SVG图片<em class="emphasis-point">文件位置</em>：<code>\themes\meme\data\SVG.toml</code>）</p>
 </blockquote>
 
 <ul>
@@ -664,11 +690,11 @@
 <h3 id="品牌栏背景色"><a href="#品牌栏背景色" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:品牌栏背景色" class="headings">品牌栏背景色</a></h3>
 
 <ul>
-<li><code>siteBrandBackgroundColor</code>用来设置背景色（<strong class="emphasis-point">hsl格式</strong>）</li>
+<li><code>siteBrandBackgroundColor</code>用来设置背景色（<em class="emphasis-point">hsl格式</em>）</li>
 
 <li><p><code>siteBrandBackgroundImage</code>用来设置背景图片</p></li>
 
-<li><p>注意：背景色和背景图片只能<strong class="emphasis-point">二选一</strong></p>
+<li><p>注意：背景色和背景图片只能<em class="emphasis-point">二选一</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-toml" data-lang="toml"><span class="lnt">1
@@ -686,11 +712,11 @@
 <p>MemE 主题有以下四种首页布局：</p>
 
 <ol>
-<li><code>poetry</code>   <strong class="emphasis-point">诗意人生</strong></li>
-<li><code>footage</code>  <strong class="emphasis-point">视频片段</strong></li>
-<li><code>posts</code>    <strong class="emphasis-point">文章摘要</strong></li>
+<li><code>poetry</code>   <em class="emphasis-point">诗意人生</em></li>
+<li><code>footage</code>  <em class="emphasis-point">视频片段</em></li>
+<li><code>posts</code>    <em class="emphasis-point">文章摘要</em></li>
 
-<li><p><code>page</code>     <strong class="emphasis-point">普通页面</strong></p>
+<li><p><code>page</code>     <em class="emphasis-point">普通页面</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-toml" data-lang="toml"><span class="lnt"> 1
@@ -746,8 +772,8 @@
 <p>MemE 主题支持以下两种分类方式：</p>
 
 <ol>
-<li><code>sections</code>       <strong class="emphasis-point">分区</strong></li>
-<li><code>categories</code>   <strong class="emphasis-point">部类</strong></li>
+<li><code>sections</code>       <em class="emphasis-point">分区</em></li>
+<li><code>categories</code>   <em class="emphasis-point">部类</em></li>
 </ol>
 
 <blockquote>
@@ -967,7 +993,7 @@
 </ul>
 
 <blockquote>
-<p>注意：只支持 <strong class="emphasis-point">HSL</strong> 颜色值</p>
+<p>注意：只支持 <em class="emphasis-point">HSL</em> 颜色值</p>
 </blockquote>
 
 <h1 id="文章设置"><a href="#文章设置" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:文章设置" class="headings">文章设置</a></h1>
@@ -1783,7 +1809,7 @@
 
 <h1 id="实现诗歌引用格式"><a href="#实现诗歌引用格式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:实现诗歌引用格式" class="headings">实现诗歌引用格式</a></h1>
 
-<p>在<code>\static\images</code>文件夹中<strong class="emphasis-point">新建</strong><code>左引号</code>文件<code>quote-l.svg</code>与<code>右引号</code>文件<code>quote-r.svg</code>:</p>
+<p>在<code>\static\images</code>文件夹中<em class="emphasis-point">新建</em><code>左引号</code>文件<code>quote-l.svg</code>与<code>右引号</code>文件<code>quote-r.svg</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
@@ -1945,7 +1971,7 @@
 
 <h1 id="文字渐变色"><a href="#文字渐变色" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:文字渐变色" class="headings">文字渐变色</a></h1>
 
-<p>在文件<code>custom.scss</code>中添加<strong class="emphasis-point">渐变</strong>样式：</p>
+<p>在文件<code>custom.scss</code>中添加<em class="emphasis-point">渐变</em>样式：</p>
 
 <p>~~文件位置：<code>\themes\meme\assets\scss\\_custom\custom.scss~~</code></p>
 
@@ -2235,7 +2261,7 @@
 </div>
 <h2 id="通过网易云外链添加"><a href="#通过网易云外链添加" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:通过网易云外链添加" class="headings">通过网易云外链添加</a></h2>
 
-<p>在网页版<a href="https://www.baidu.com/link?url=rMp-eLGywbp55zR56zgyg3mbCHH4-y1cFGrhdaBOeJi&amp;wd=&amp;eqid=885cca3900008090000000065de22b10" target="_blank">网易云音乐</a>中搜索需要的歌（不支持 <strong class="emphasis-point">无版权</strong> 或 <strong class="emphasis-point">会员</strong> 歌曲）</p>
+<p>在网页版<a href="https://www.baidu.com/link?url=rMp-eLGywbp55zR56zgyg3mbCHH4-y1cFGrhdaBOeJi&amp;wd=&amp;eqid=885cca3900008090000000065de22b10" target="_blank">网易云音乐</a>中搜索需要的歌（不支持 <em class="emphasis-point">无版权</em> 或 <em class="emphasis-point">会员</em> 歌曲）</p>
 
 <p><img src="/images/tech/2019/11/towers.png" alt="" /><span class="caption">◎ 搜索需要的歌</span></p>
 
@@ -2337,7 +2363,8 @@
 </p>
 <div style="text-align:right;margin:15px" ><footer>——<cite>杨绛</cite></footer></div>
 </div></p>
-</div>
+
+            </div>
 
         </article>
 
@@ -2345,19 +2372,27 @@
 
         
 
-        
-    <div class="updated-badge-container"><div title="Updated @ 2020-05-23 22:58:48 CST" style="cursor:help;display:inline-block">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-05-23</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-05-23</text></g></svg></div></div>
-
 
         
+    <div class="updated-badge-container">
+        <span title="Updated @ 2020-05-23 22:58:48 CST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-05-23</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-05-23</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        
+
 
         
     
     
         <div class="related-posts">
-            <h2 class="related-title">相关文章：<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
+            <h2 class="related-title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
             <ul class="related-list">
                 
                     <li class="related-item">
@@ -2385,6 +2420,7 @@
     
 
 
+
         
     
         <div class="post-tags">
@@ -2409,25 +2445,26 @@
     
 
 
+
         
     <footer class="minimal-footer">
         
-            
-            <div class="post-tag"><a href="/tags/meme/" rel="tag" class="post-tag-link">#meme</a>&nbsp;<a href="/tags/hugo/" rel="tag" class="post-tag-link">#hugo</a></div>
+            <div class="post-tag"><a href="/tags/meme/" rel="tag" class="post-tag-link">#meme</a> <a href="/tags/hugo/" rel="tag" class="post-tag-link">#hugo</a></div>
         
         
         
             
                 <div class="post-category">
-                    
-                        <a href="/categories/tech/" class="post-category-link">tech</a>/<a href="/categories/hugo/" class="post-category-link">hugo</a>
+                    <a href="/categories/tech/" class="post-category-link">tech</a>/<a href="/categories/hugo/" class="post-category-link">hugo</a>
                 </div>
             
         
     </footer>
 
 
+
         
+
 
         
     
@@ -2440,55 +2477,39 @@
         <ul class="post-nav">
             
                 <li class="post-nav-prev">
-                    <a href="/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%93%B2%E5%AD%A6%E7%9A%84%E4%B8%96%E7%95%8C/" rel="prev">< 欢迎来到哲学的世界</a>
+                    <a href="/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%93%B2%E5%AD%A6%E7%9A%84%E4%B8%96%E7%95%8C/" rel="prev">&lt; 欢迎来到哲学的世界</a>
                 </li>
             
             
                 <li class="post-nav-next">
-                    <a href="/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" rel="next">Markdown语法基础 ></a>
+                    <a href="/posts/markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" rel="next">Markdown语法基础 &gt;</a>
                 </li>
             
         </ul>
     
 
 
+
         
+
 
     </div>
 </main>
 
+
             
-    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
 
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            
-                
-            
-            
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
 
             
-                
-            
-            
 
-            
-                
-            
-            
-
-            <div class="site-info">©&nbsp;2019–2020<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>天涯共此时</div>
-
-            
-                <div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div>
-            
-
-            
-                <div class="site-copyright"></div>
-            
-
-            
 
             
 <script type="text/x-mathjax-config">
@@ -2510,41 +2531,30 @@
         </div>
     </footer>
 
+
         </div>
-        <script src="/js/meme.min.d90e9b4ede7f94aaadb4b02291d69338c19b2c441b65d2c2e16fc1d7c9193201.js" integrity="sha256-2Q6bTt5/lKqttLAikdaTOMGbLEQbZdLC4W/B18kZMgE=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
-
-
-    <script data-no-instant>
-        InstantClick.on('change', function () {
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-                document.getElementById("theme-toggle").innerHTML = "🌙";
-
-                var els = [].slice.apply(document.getElementsByClassName("chroma"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
-                }
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
-                document.getElementById("theme-toggle").innerHTML = "🌞";
-
-                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
-                }
-            }
-        });
-    </script>
-
-    
+        
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/meme.min.ec6633e9b9378794d649772e89d16659503dbcb0abd92ad36a8ffd0002d29f5b.js" integrity="sha256-7GYz6bk3h5TWSXcuidFmWVA9vLCr2SrTao/9AALSn1s="></script>
 
     </body>
 </html>

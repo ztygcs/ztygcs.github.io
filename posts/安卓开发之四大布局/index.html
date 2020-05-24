@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
+<html lang="zh-CN">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
         <script>
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+            const userPrefers = localStorage.getItem('theme');
+            if (userPrefers === 'dark') {
+                changeModeMeta('dark');
+            } else if (userPrefers === 'light') {
+                changeModeMeta('light');
+            }
+            function changeModeMeta(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
             }
         </script>
 
-    <meta charset="UTF-8" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     
     <meta http-equiv="Cache-Control" content="no-transform" />
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    
-    <meta name="renderer" content="webkit" />
-
-    <meta name="generator" content="Hugo 0.59.1" />
 
     <title>安卓开发之四大布局 | 天涯共此时</title>
 
-    <link rel="stylesheet" href="/css/meme.min.909faebd0d7949f29ef3bc3a7bf18394c89c8671748978b26d3381a8c411f407.css" integrity="sha256-kJ+uvQ15SfKe87w6e/GDlMichnF0iXiybTOBqMQR9Ac=" data-instant-track /><style data-instant-track>.post p {text-align:justify;text-justify:distribute}</style>
+    <link rel="stylesheet" href="/css/meme.min.56f50398f4e3175ad735ea207bcc4f6a9b7614abd83f898347849378885cc825.css" integrity="sha256-VvUDmPTjF1rXNeoge8xPapt2FKvYP4mDR4STeIhcyCU=" />
 
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&display=swap&subset=chinese-simplified" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta name="author" content="天涯共此时" />
-    
-    
-    <meta name="description" content="四大布局" />
-    <meta name="keywords" content="tech, 安卓, android, layout" />
-    
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
+
+    <meta name="author" content="天涯共此时" /><meta name="description" content="四大布局" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,15 +50,12 @@
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
-    
+
     
     
 
     
     <link rel="canonical" href="https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E5%9B%9B%E5%A4%A7%E5%B8%83%E5%B1%80/" />
-
-
-
 
 <script type="application/ld+json">
     {
@@ -71,7 +66,6 @@
         "url": "https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E5%9B%9B%E5%A4%A7%E5%B8%83%E5%B1%80/",
         "headline": "安卓开发之四大布局",
         "description": "四大布局",
-        "keywords": "tech, 安卓, android, layout",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
         "wordCount":  1134 ,
@@ -102,8 +96,6 @@
 
     
 
-
-
 <meta name="twitter:card" content="summary_large_image" />
 
 
@@ -113,158 +105,187 @@
 
 
 
-
-
-
 <meta property="og:title" content="安卓开发之四大布局" />
 <meta property="og:description" content="四大布局" />
 <meta property="og:url" content="https://ztygcs.github.io/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E5%9B%9B%E5%A4%A7%E5%B8%83%E5%B1%80/" />
 <meta property="og:site_name" content="天涯共此时" />
-<meta property="og:locale" content="zh-CN" />
-            <meta property="og:locale:alternate" content="en-US" />
-        
-            <meta property="og:locale:alternate" content="en-US" />
-        <meta property="og:image" content="https://ztygcs.github.io/images/tech/2018/09/19/UI.png" />
+<meta property="og:locale" content="zh-cn" /><meta property="og:image" content="https://ztygcs.github.io/images/tech/2018/09/19/UI.png" />
 <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2018-09-19T20:07:12+08:00" />
-    <meta property="article:modified_time" content="2019-12-05T21:00:40+08:00" />
+    <meta property="article:published_time" content="2018-09-19T20:07:12&#43;08:00" />
+    <meta property="article:modified_time" content="2019-12-05T21:00:40&#43;08:00" />
     
     <meta property="article:section" content="posts" />
-    <meta property="article:tag" content="tech, 安卓, android, layout" />
+
 
 
     
-	
-	
 </head>
-
 
     <body>
         <div class="container">
             
     <header class="header">
-        <div class="site-brand">
-            
-            <a href="/" class="brand">天涯共此时</a>
-            
-        </div>
-		
-    </header>
-
-
-            
-    <nav class="nav">
-        <ul class="menu" id="menu">
-            
-                
-            
-            
-            
-                <li class="menu-item active"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">归档</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/search/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><span class="menu-item-name">百度</span></a>
-                </li>
-            
-			
-        </ul>
-		
-    </nav>
-		
-
-            
-    <div class="lang-toggle" onmouseover="langSwitcherOver()" onmouseout="langSwitcherOut()">🇨🇳
         
-            
-                <ul id="langs">
+            <div class="header-wrapper">
+                <div class="header-inner single">
                     
-                        
-                    
-                        
-                            <li><a rel="alternate" href="/en-us" hreflang="en-us" lang="en-us">🇺🇸</a></li>
-                        
-                    
-                </ul>
-            
+    <div class="site-brand">
+        
+            <a href="/" class="brand">天涯共此时</a>
         
     </div>
 
-            
-    
+                    <nav class="nav">
+    <ul class="menu" id="menu">
         
             
         
         
-        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
-    
+        
+        
+            
+                <li class="menu-item active"><a href="/posts/"><span class="menu-item-name">归档</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><span class="menu-item-name">分类</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><span class="menu-item-name">标签</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/search/"><span class="menu-item-name">百度</span></a>
+                </li>
+            
+        
+            
+                
+                    
+                        
+                        
+                            <li class="menu-item">
+                                <div id="lang-switcher">
+            <span>简体中文</span>
+            
+                
+                    <ul id="langs">
+                        
+                            
+                        
+                            
+                                <li><a rel="alternate" href="/en-us" hreflang="en-us" lang="en-us">English</a></li>
+                            
+                        
+                    </ul>
+                
+            
+        </div>
+                            </li>
+                        
+                    
+                
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
 
 
 
+
+            
             
     <main class="main single" id="main">
     <div class="main-inner">
-        <article class="content post">
+
+        
+
+        <article class="content post" data-align="justify" data-type="posts">
 
             <h1 class="post-title">安卓开发之四大布局</h1>
 
             
 
             
-                
-                    <div class="post-description">四大布局</div>
+                <div class="post-description">四大布局</div>
                 
             
 
             
-                <div class="post-meta">
-    
-        
-        <time datetime="2018-09-19T20:07:12+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2018.9.19</time>
-    
-    
-    
-    
-        
-        
-        
-            
                 
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg><a href="/categories/tech/" class="category-link">TECH</a>/<a href="/categories/%E5%AE%89%E5%8D%93/" class="category-link">安卓</a></span>
+
+<div class="post-meta">
+    
+        
+        <time datetime="2018-09-19T20:07:12&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2018.9.19</time>
+    
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/tech/" class="category-link">Tech</a>/<a href="/categories/%E5%AE%89%E5%8D%93/" class="category-link">安卓</a></span>
             
         
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>1134</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1134</span>
+    
+    
     
     
 </div>
-            
 
             
 
-
-                <nav class="contents">
-<h2 id="contents" class="contents-title">目录</h2><ol class="toc">
+            <nav class="contents">
+<ul>
 <li><a id="contents:一-线性布局-linearlayout" href="#一-线性布局-linearlayout">一、线性布局（LinearLayout）</a></li>
 <li><a id="contents:二-相对布局-relativelayout" href="#二-相对布局-relativelayout">二、相对布局（RelativeLayout）</a>
-<ol>
+<ul>
 <li><a id="contents:1-相对于父布局进行定位" href="#1-相对于父布局进行定位">1. 相对于父布局进行定位</a></li>
 <li><a id="contents:2-相对于控件进行定位" href="#2-相对于控件进行定位">2. 相对于控件进行定位</a></li>
-</ol></li>
+</ul></li>
 <li><a id="contents:三-帧布局-framelayout" href="#三-帧布局-framelayout">三、帧布局（FrameLayout）</a></li>
 <li><a id="contents:四-百分比布局" href="#四-百分比布局">四、百分比布局</a></li>
-</ol>
+</ul>
 </nav><div class="post-body">
+              
 
 <p><img src="/images/tech/2018/09/19/UI.png" alt="" /><span class="caption">◎ 布局与控件的关系</span></p>
 
@@ -612,7 +633,8 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
 </ol>
 
 <p><img src="/images/tech/2018/09/19/Precent.png" alt="" /></p>
-</div>
+
+            </div>
 
         </article>
 
@@ -620,19 +642,27 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
 
         
 
-        
-    <div class="updated-badge-container"><div title="Updated @ 2019-12-05 21:00:40 CST" style="cursor:help;display:inline-block">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2019-12-05</text><text x="915" y="140" textLength="650" transform="scale(.1)">2019-12-05</text></g></svg></div></div>
-
 
         
+    <div class="updated-badge-container">
+        <span title="Updated @ 2019-12-05 21:00:40 CST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2019-12-05</text><text x="915" y="140" textLength="650" transform="scale(.1)">2019-12-05</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        
+
 
         
     
     
         <div class="related-posts">
-            <h2 class="related-title">相关文章：<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
+            <h2 class="related-title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
             <ul class="related-list">
                 
                     <li class="related-item">
@@ -660,6 +690,7 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
     
 
 
+
         
     
         <div class="post-tags">
@@ -684,25 +715,26 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
     
 
 
+
         
     <footer class="minimal-footer">
         
-            
-            <div class="post-tag"><a href="/tags/android/" rel="tag" class="post-tag-link">#android</a>&nbsp;<a href="/tags/layout/" rel="tag" class="post-tag-link">#layout</a></div>
+            <div class="post-tag"><a href="/tags/android/" rel="tag" class="post-tag-link">#android</a> <a href="/tags/layout/" rel="tag" class="post-tag-link">#layout</a></div>
         
         
         
             
                 <div class="post-category">
-                    
-                        <a href="/categories/tech/" class="post-category-link">tech</a>/<a href="/categories/%E5%AE%89%E5%8D%93/" class="post-category-link">安卓</a>
+                    <a href="/categories/tech/" class="post-category-link">tech</a>/<a href="/categories/%E5%AE%89%E5%8D%93/" class="post-category-link">安卓</a>
                 </div>
             
         
     </footer>
 
 
+
         
+
 
         
     
@@ -715,55 +747,39 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
         <ul class="post-nav">
             
                 <li class="post-nav-prev">
-                    <a href="/posts/%E5%AE%9A%E5%88%B6listview%E7%95%8C%E9%9D%A2/" rel="prev">< 定制ListView界面</a>
+                    <a href="/posts/%E5%AE%9A%E5%88%B6listview%E7%95%8C%E9%9D%A2/" rel="prev">&lt; 定制ListView界面</a>
                 </li>
             
             
                 <li class="post-nav-next">
-                    <a href="/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E4%B8%83%E7%A7%8D%E6%8E%A7%E4%BB%B6/" rel="next">安卓开发之七种控件 ></a>
+                    <a href="/posts/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B9%8B%E4%B8%83%E7%A7%8D%E6%8E%A7%E4%BB%B6/" rel="next">安卓开发之七种控件 &gt;</a>
                 </li>
             
         </ul>
     
 
 
+
         
+
 
     </div>
 </main>
 
+
             
-    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
 
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            
-                
-            
-            
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
 
             
-                
-            
-            
 
-            
-                
-            
-            
-
-            <div class="site-info">©&nbsp;2019–2020<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>天涯共此时</div>
-
-            
-                <div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div>
-            
-
-            
-                <div class="site-copyright"></div>
-            
-
-            
 
             
 <script type="text/x-mathjax-config">
@@ -785,41 +801,30 @@ compile &#39;com.android.support:appcompat-v7:24.2.1&#39;
         </div>
     </footer>
 
+
         </div>
-        <script src="/js/meme.min.d90e9b4ede7f94aaadb4b02291d69338c19b2c441b65d2c2e16fc1d7c9193201.js" integrity="sha256-2Q6bTt5/lKqttLAikdaTOMGbLEQbZdLC4W/B18kZMgE=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
-
-
-    <script data-no-instant>
-        InstantClick.on('change', function () {
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-                document.getElementById("theme-toggle").innerHTML = "🌙";
-
-                var els = [].slice.apply(document.getElementsByClassName("chroma"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
-                }
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
-                document.getElementById("theme-toggle").innerHTML = "🌞";
-
-                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
-                }
-            }
-        });
-    </script>
-
-    
+        
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/meme.min.ec6633e9b9378794d649772e89d16659503dbcb0abd92ad36a8ffd0002d29f5b.js" integrity="sha256-7GYz6bk3h5TWSXcuidFmWVA9vLCr2SrTao/9AALSn1s="></script>
 
     </body>
 </html>
