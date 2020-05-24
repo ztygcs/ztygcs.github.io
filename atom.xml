@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-24T01:58:15&#43;08:00</updated>
+    <updated>2020-05-24T15:55:14&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -7568,7 +7568,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
@@ -8224,7 +8224,7 @@ totop:
                             
                             
                             
-                                <category scheme="https://ztygcs.github.io/tags/movie/" term="movie" label="movie" />
+                                <category scheme="https://ztygcs.github.io/tags/movie/" term="Movie" label="Movie" />
                             
                         
                             
