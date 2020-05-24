@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-    <meta charset="UTF-8" />
-
-    <meta name="generator" content="Hugo 0.59.1" /><meta name="theme-color" content="#fff" />
+<html lang="en-US" data-theme="light">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
         <script>
-            const userPrefers = localStorage.getItem('theme');
-            if (userPrefers === 'dark') {
-                changeModeMeta('dark');
-            } else if (userPrefers === 'light') {
-                changeModeMeta('light');
-            }
-            function changeModeMeta(theme) {
-                document.documentElement.setAttribute('data-theme', theme);
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
             }
         </script>
 
+    <meta charset="UTF-8" />
     
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     
     <meta http-equiv="Cache-Control" content="no-transform" />
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
+    
+    <meta name="renderer" content="webkit" />
+
+    <meta name="generator" content="Hugo 0.59.1" />
 
     <title>moment | 微动态</title>
 
-    <link rel="stylesheet" href="/en-us/css/meme.min.ddfc473ec90bb871899e7433a7183d005a738b69e53719b19e17f3c9a970e487.css" integrity="sha256-3fxHPskLuHGJnnQzpxg9AFpzi2nlNxmxnhfzyalw5Ic=" />
+    <link rel="stylesheet" href="/en-us/css/meme.min.4b262ff3558cca49023e4692066c9dc0cc6e48b1a369c4abcf4833a2b17bd15c.css" integrity="sha256-SyYv81WMykkCPkaSBmydwMxuSLGjacSrz0gzorF70Vw=" data-instant-track />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&display=swap&subset=chinese-simplified" rel="stylesheet" />
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
-
-    <meta name="author" content="天涯共此时" /><meta name="description" content="I think, therefore I am." />
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="author" content="天涯共此时" />
+    <meta name="description" content="I think, therefore I am." />
+    <meta name="keywords" content="" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,15 @@
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
-
+    
     
     
 
     
     <link rel="canonical" href="https://ztygcs.github.io/en-us/moment/" />
+
+
+
 
 <script type="application/ld+json">
     {
@@ -66,6 +69,7 @@
         "url": "https://ztygcs.github.io/en-us/moment/",
         "name": "moment",
         "description": "I think, therefore I am.",
+        "keywords": "",
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "publisher": {
             "@type": "Organization",
@@ -85,6 +89,8 @@
 
     
 
+
+
 <meta name="twitter:card" content="summary" />
 
 <meta name="twitter:site" content="@reuixiy" />
@@ -93,134 +99,106 @@
 
 
 
+
+
+
 <meta property="og:title" content="moment" />
 <meta property="og:description" content="I think, therefore I am." />
 <meta property="og:url" content="https://ztygcs.github.io/en-us/moment/" />
 <meta property="og:site_name" content="微动态" />
-<meta property="og:locale" content="en-us" /><meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
+<meta property="og:locale" content="en-US" />
+            <meta property="og:locale:alternate" content="zh-CN" />
+        <meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
 
-
     
+	
+	
 </head>
+
 
     <body>
         <div class="container">
             
     <header class="header">
-        
-            <div class="header-wrapper">
-                <div class="header-inner single">
-                    
-    <div class="site-brand">
-        
+        <div class="site-brand">
+            
             <a href="/en-us/" class="brand">微动态</a>
-        
-    </div>
-
-                    <nav class="nav">
-    <ul class="menu" id="menu">
-        
-            
-        
-        
-        
-        
-            
-                <li class="menu-item"><a href="/en-us/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon home"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg><span class="menu-item-name">HOME</span></a>
-                </li>
-            
-        
-            
-                <li class="menu-item"><a href="/en-us/moment"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon grav"><path d="M301.1 212c4.4 4.4 4.4 11.9 0 16.3l-9.7 9.7c-4.4 4.7-11.9 4.7-16.6 0l-10.5-10.5c-4.4-4.7-4.4-11.9 0-16.6l9.7-9.7c4.4-4.4 11.9-4.4 16.6 0l10.5 10.8zm-30.2-19.7c3-3 3-7.8 0-10.5-2.8-3-7.5-3-10.5 0-2.8 2.8-2.8 7.5 0 10.5 3.1 2.8 7.8 2.8 10.5 0zm-26 5.3c-3 2.8-3 7.5 0 10.2 2.8 3 7.5 3 10.5 0 2.8-2.8 2.8-7.5 0-10.2-3-3-7.7-3-10.5 0zm72.5-13.3c-19.9-14.4-33.8-43.2-11.9-68.1 21.6-24.9 40.7-17.2 59.8.8 11.9 11.3 29.3 24.9 17.2 48.2-12.5 23.5-45.1 33.2-65.1 19.1zm47.7-44.5c-8.9-10-23.3 6.9-15.5 16.1 7.4 9 32.1 2.4 15.5-16.1zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-66.2 42.6c2.5-16.1-20.2-16.6-25.2-25.7-13.6-24.1-27.7-36.8-54.5-30.4 11.6-8 23.5-6.1 23.5-6.1.3-6.4 0-13-9.4-24.9 3.9-12.5.3-22.4.3-22.4 15.5-8.6 26.8-24.4 29.1-43.2 3.6-31-18.8-59.2-49.8-62.8-22.1-2.5-43.7 7.7-54.3 25.7-23.2 40.1 1.4 70.9 22.4 81.4-14.4-1.4-34.3-11.9-40.1-34.3-6.6-25.7 2.8-49.8 8.9-61.4 0 0-4.4-5.8-8-8.9 0 0-13.8 0-24.6 5.3 11.9-15.2 25.2-14.4 25.2-14.4 0-6.4-.6-14.9-3.6-21.6-5.4-11-23.8-12.9-31.7 2.8.1-.2.3-.4.4-.5-5 11.9-1.1 55.9 16.9 87.2-2.5 1.4-9.1 6.1-13 10-21.6 9.7-56.2 60.3-56.2 60.3-28.2 10.8-77.2 50.9-70.6 79.7.3 3 1.4 5.5 3 7.5-2.8 2.2-5.5 5-8.3 8.3-11.9 13.8-5.3 35.2 17.7 24.4 15.8-7.2 29.6-20.2 36.3-30.4 0 0-5.5-5-16.3-4.4 27.7-6.6 34.3-9.4 46.2-9.1 8 3.9 8-34.3 8-34.3 0-14.7-2.2-31-11.1-41.5 12.5 12.2 29.1 32.7 28 60.6-.8 18.3-15.2 23-15.2 23-9.1 16.6-43.2 65.9-30.4 106 0 0-9.7-14.9-10.2-22.1-17.4 19.4-46.5 52.3-24.6 64.5 26.6 14.7 108.8-88.6 126.2-142.3 34.6-20.8 55.4-47.3 63.9-65 22 43.5 95.3 94.5 101.1 59z"/></svg><span class="menu-item-name">MOMENT</span></a>
-                </li>
-            
-        
-            
-                <li class="menu-item"><a href="/en-us/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon about"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">ABOUT</span></a>
-                </li>
-            
-        
-            
-                
-                    
-                        
-                        
-                            <li class="menu-item">
-                                <div id="lang-switcher">
-            <span>English</span>
-            
-                
-                    <ul id="langs">
-                        
-                            
-                                <li><a rel="alternate" href="/zh-cn" hreflang="zh-cn" lang="zh-cn">简体中文</a></li>
-                            
-                        
-                            
-                        
-                    </ul>
-                
             
         </div>
-                            </li>
-                        
-                    
-                
-            
-        
-            
-                
-                    
-                    
-                        <li class="menu-item">
-                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
-                        </li>
-                    
-                
-            
-        
-    </ul>
-</nav>
-
-                    
-                </div>
-            </div>
-            
-    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
-    <label for="nav-toggle" class="nav-toggle"></label>
-    <label for="nav-toggle" class="nav-curtain"></label>
-
-
-        
+		
     </header>
 
 
-
+            
+    <nav class="nav">
+        <ul class="menu" id="menu">
+            
+                
+            
+            
+            
+                <li class="menu-item"><a href="/en-us/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon menu-item-icon"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg><span class="menu-item-name">HOME</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/en-us/moment"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M301.1 212c4.4 4.4 4.4 11.9 0 16.3l-9.7 9.7c-4.4 4.7-11.9 4.7-16.6 0l-10.5-10.5c-4.4-4.7-4.4-11.9 0-16.6l9.7-9.7c4.4-4.4 11.9-4.4 16.6 0l10.5 10.8zm-30.2-19.7c3-3 3-7.8 0-10.5-2.8-3-7.5-3-10.5 0-2.8 2.8-2.8 7.5 0 10.5 3.1 2.8 7.8 2.8 10.5 0zm-26 5.3c-3 2.8-3 7.5 0 10.2 2.8 3 7.5 3 10.5 0 2.8-2.8 2.8-7.5 0-10.2-3-3-7.7-3-10.5 0zm72.5-13.3c-19.9-14.4-33.8-43.2-11.9-68.1 21.6-24.9 40.7-17.2 59.8.8 11.9 11.3 29.3 24.9 17.2 48.2-12.5 23.5-45.1 33.2-65.1 19.1zm47.7-44.5c-8.9-10-23.3 6.9-15.5 16.1 7.4 9 32.1 2.4 15.5-16.1zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-66.2 42.6c2.5-16.1-20.2-16.6-25.2-25.7-13.6-24.1-27.7-36.8-54.5-30.4 11.6-8 23.5-6.1 23.5-6.1.3-6.4 0-13-9.4-24.9 3.9-12.5.3-22.4.3-22.4 15.5-8.6 26.8-24.4 29.1-43.2 3.6-31-18.8-59.2-49.8-62.8-22.1-2.5-43.7 7.7-54.3 25.7-23.2 40.1 1.4 70.9 22.4 81.4-14.4-1.4-34.3-11.9-40.1-34.3-6.6-25.7 2.8-49.8 8.9-61.4 0 0-4.4-5.8-8-8.9 0 0-13.8 0-24.6 5.3 11.9-15.2 25.2-14.4 25.2-14.4 0-6.4-.6-14.9-3.6-21.6-5.4-11-23.8-12.9-31.7 2.8.1-.2.3-.4.4-.5-5 11.9-1.1 55.9 16.9 87.2-2.5 1.4-9.1 6.1-13 10-21.6 9.7-56.2 60.3-56.2 60.3-28.2 10.8-77.2 50.9-70.6 79.7.3 3 1.4 5.5 3 7.5-2.8 2.2-5.5 5-8.3 8.3-11.9 13.8-5.3 35.2 17.7 24.4 15.8-7.2 29.6-20.2 36.3-30.4 0 0-5.5-5-16.3-4.4 27.7-6.6 34.3-9.4 46.2-9.1 8 3.9 8-34.3 8-34.3 0-14.7-2.2-31-11.1-41.5 12.5 12.2 29.1 32.7 28 60.6-.8 18.3-15.2 23-15.2 23-9.1 16.6-43.2 65.9-30.4 106 0 0-9.7-14.9-10.2-22.1-17.4 19.4-46.5 52.3-24.6 64.5 26.6 14.7 108.8-88.6 126.2-142.3 34.6-20.8 55.4-47.3 63.9-65 22 43.5 95.3 94.5 101.1 59z"/></svg><span class="menu-item-name">MOMENT</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/en-us/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">ABOUT</span></a>
+                </li>
+            
+			
+        </ul>
+		
+    </nav>
+		
 
             
+    <div class="lang-toggle" onmouseover="langSwitcherOver()" onmouseout="langSwitcherOut()">🇺🇸
+        
+            
+                <ul id="langs">
+                    
+                        
+                            <li><a rel="alternate" href="/zh-cn" hreflang="zh-cn" lang="zh-cn">🇨🇳</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            
+        
+    </div>
+
+            
+    
+        
+            
+        
+        
+        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
+    
+
+
+
             
     
         <main class="main single" id="main">
     <div class="main-inner">
-
-        
-
-        <article class="content post" data-align="default" data-type="moment">
+        <article class="content post">
 
             <h1 class="post-title">moment</h1>
 
             
 
             
-                <div class="post-description">I think, therefore I am.</div>
+                
+                    <div class="post-description">I think, therefore I am.</div>
                 
             
 
             
-                
-
-<div class="post-meta">
+                <div class="post-meta">
     
     
     
@@ -233,26 +211,26 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;300</span>
-    
-    
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>300</span>
     
     
 </div>
+            
 
             
 
-            <nav class="contents">
-<ul>
+
+                <nav class="contents">
+<h2 id="contents" class="contents-title">Contents</h2><ol class="toc">
 <li><a id="contents:2020年" href="#2020年">2020年</a>
-<ul>
+<ol>
 <li><a id="contents:01月19号" href="#01月19号">01月19号</a></li>
 <li><a id="contents:01月17号" href="#01月17号">01月17号</a></li>
 <li><a id="contents:01月10号" href="#01月10号">01月10号</a></li>
 <li><a id="contents:01月07号" href="#01月07号">01月07号</a></li>
-</ul></li>
+</ol></li>
 <li><a id="contents:2019年" href="#2019年">2019年</a>
-<ul>
+<ol>
 <li><a id="contents:12月11号" href="#12月11号">12月11号</a></li>
 <li><a id="contents:12月07号" href="#12月07号">12月07号</a></li>
 <li><a id="contents:11月24号" href="#11月24号">11月24号</a></li>
@@ -282,9 +260,9 @@
 <li><a id="contents:02月08号" href="#02月08号">02月08号</a></li>
 <li><a id="contents:01月12号" href="#01月12号">01月12号</a></li>
 <li><a id="contents:01月06号" href="#01月06号">01月06号</a></li>
-</ul></li>
+</ol></li>
 <li><a id="contents:2018年" href="#2018年">2018年</a>
-<ul>
+<ol>
 <li><a id="contents:12月31号" href="#12月31号">12月31号</a></li>
 <li><a id="contents:12月29号" href="#12月29号">12月29号</a></li>
 <li><a id="contents:12月09号" href="#12月09号">12月09号</a></li>
@@ -311,9 +289,9 @@
 <li><a id="contents:01月22号" href="#01月22号">01月22号</a></li>
 <li><a id="contents:01月13号-1" href="#01月13号-1">01月13号</a></li>
 <li><a id="contents:01月04号" href="#01月04号">01月04号</a></li>
-</ul></li>
+</ol></li>
 <li><a id="contents:2017年" href="#2017年">2017年</a>
-<ul>
+<ol>
 <li><a id="contents:11月25号" href="#11月25号">11月25号</a></li>
 <li><a id="contents:10月05号" href="#10月05号">10月05号</a></li>
 <li><a id="contents:09月15号" href="#09月15号">09月15号</a></li>
@@ -326,19 +304,18 @@
 <li><a id="contents:03月02号" href="#03月02号">03月02号</a></li>
 <li><a id="contents:02月26号" href="#02月26号">02月26号</a></li>
 <li><a id="contents:01月01号" href="#01月01号">01月01号</a></li>
-</ul></li>
+</ol></li>
 <li><a id="contents:2016年" href="#2016年">2016年</a>
-<ul>
+<ol>
 <li><a id="contents:08月30号" href="#08月30号">08月30号</a></li>
 <li><a id="contents:08月14号" href="#08月14号">08月14号</a></li>
 <li><a id="contents:04月28号" href="#04月28号">04月28号</a></li>
 <li><a id="contents:03月19号" href="#03月19号">03月19号</a></li>
 <li><a id="contents:03月06号" href="#03月06号">03月06号</a></li>
 <li><a id="contents:02月25号" href="#02月25号">02月25号</a></li>
-</ul></li>
-</ul>
+</ol></li>
+</ol>
 </nav><div class="post-body">
-              
 
 <h1 id="2020年"><a href="#2020年" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:2020年" class="headings">2020年</a></h1>
 
@@ -1126,8 +1103,7 @@
     data-theme="#FAC61E">
 </div>
 <script src="https://unpkg.com/meting@1.2/dist/Meting.min.js"></script></p>
-
-            </div>
+</div>
 
         </article>
 
@@ -1135,57 +1111,63 @@
 
         
 
-
         
 
-
         
-
-
-        
-
 
         
     
     
 
 
-
         
     
 
 
+        
 
         
 
-
         
 
-
         
-
-
-        
-
 
     </div>
 </main>
-
     
 
             
-    <div id="back-to-top" class="back-to-top">
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
-    </div>
-
+    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
 
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div><div class="site-copyright"></div>
-
+            
+                
+            
             
 
+            
+                
+            
+            
+
+            
+                
+            
+            
+
+            <div class="site-info">©&nbsp;2019–2020<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>天涯共此时</div>
+
+            
+                <div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div>
+            
+
+            
+                <div class="site-copyright"></div>
+            
+
+            
 
             
 <script type="text/x-mathjax-config">
@@ -1207,30 +1189,41 @@
         </div>
     </footer>
 
-
         </div>
-        
+        <script src="/en-us/js/meme.min.d90e9b4ede7f94aaadb4b02291d69338c19b2c441b65d2c2e16fc1d7c9193201.js" integrity="sha256-2Q6bTt5/lKqttLAikdaTOMGbLEQbZdLC4W/B18kZMgE=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
+
+
+    <script data-no-instant>
+        InstantClick.on('change', function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
+                document.getElementById("theme-toggle").innerHTML = "🌙";
+
+                var els = [].slice.apply(document.getElementsByClassName("chroma"));
+                for (var i = 0; i < els.length; i++) {
+                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
+                }
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+                document.getElementById("theme-toggle").innerHTML = "🌞";
+
+                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
+                for (var i = 0; i < els.length; i++) {
+                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
+                }
+            }
+        });
+    </script>
+
+    
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/en-us/js/meme.min.ec6633e9b9378794d649772e89d16659503dbcb0abd92ad36a8ffd0002d29f5b.js" integrity="sha256-7GYz6bk3h5TWSXcuidFmWVA9vLCr2SrTao/9AALSn1s="></script>
 
     </body>
 </html>
