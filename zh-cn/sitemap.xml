@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://ztygcs.github.io/categories/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/categories/hugo/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
@@ -24,22 +24,22 @@
   
   <url>
     <loc>https://ztygcs.github.io/posts/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/tags/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/categories/tech/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -74,12 +74,17 @@
   
   <url>
     <loc>https://ztygcs.github.io/tags/hugo/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/tags/%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%A1%86/</loc>
     <lastmod>2020-01-07T20:36:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/en/about/</loc>
+    <lastmod>2020-01-07T21:09:08+08:00</lastmod>
   </url>
   
   <url>
@@ -89,7 +94,7 @@
   
   <url>
     <loc>https://ztygcs.github.io/categories/life/</loc>
-    <lastmod>2020-01-07T20:32:45+08:00</lastmod>
+    <lastmod>2020-05-25T18:54:53+08:00</lastmod>
   </url>
   
   <url>
@@ -154,12 +159,12 @@
   
   <url>
     <loc>https://ztygcs.github.io/tags/meme/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2020-05-23T22:58:48+08:00</lastmod>
+    <lastmod>2020-05-25T20:48:30+08:00</lastmod>
   </url>
   
   <url>
@@ -254,22 +259,22 @@
   
   <url>
     <loc>https://ztygcs.github.io/tags/movie/</loc>
-    <lastmod>2020-01-07T20:07:23+08:00</lastmod>
+    <lastmod>2020-05-25T18:54:53+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/posts/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/</loc>
-    <lastmod>2019-12-06T18:55:45+08:00</lastmod>
+    <lastmod>2020-05-25T18:54:53+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/tags/%E5%B0%8A%E4%B8%A5/</loc>
-    <lastmod>2019-12-06T18:55:45+08:00</lastmod>
+    <lastmod>2020-05-25T18:54:53+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ztygcs.github.io/categories/%E5%BD%B1%E7%89%87/</loc>
-    <lastmod>2020-01-07T20:07:23+08:00</lastmod>
+    <lastmod>2020-05-25T18:54:53+08:00</lastmod>
   </url>
   
   <url>
@@ -530,6 +535,10 @@
   <url>
     <loc>https://ztygcs.github.io/posts/%E8%9C%9C%E8%9C%82/</loc>
     <lastmod>2019-12-05T21:02:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/en/</loc>
   </url>
   
 </urlset>
