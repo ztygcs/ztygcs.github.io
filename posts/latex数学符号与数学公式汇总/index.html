@@ -1,46 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
-        <script>
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
-            }
-        </script>
-
+<html lang="zh-CN">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     
     <meta http-equiv="Cache-Control" content="no-transform" />
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    
-    <meta name="renderer" content="webkit" />
-
-    <meta name="generator" content="Hugo 0.59.1" />
 
     <title>LaTeX数学符号与数学公式汇总 | 天涯共此时</title>
 
-    <link rel="stylesheet" href="/css/meme.min.f8287203e2f29590bcfa56811307f0869305cb0f625cb5175bfe445c5a3123e2.css" integrity="sha256-+ChyA+LylZC8+laBEwfwhpMFyw9iXLUXW/5EXFoxI+I=" data-instant-track /><style data-instant-track>.post p {text-align:justify;text-justify:distribute}</style>
+    <link rel="stylesheet" href="/css/meme.min.cc2b39728f95e3beb6c35e63c005510dfc7f596a8d687016dca0248582237b53.css" integrity="sha256-zCs5co&#43;V4762w15jwAVRDfx/WWqNaHAW3KAkhYIje1M=" />
 
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&display=swap&subset=chinese-simplified" rel="stylesheet" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.c2f1200d40dd6f48af0511126999fb04d8eb2d1937ef19175772d00e124e14b0.js" integrity="sha256-wvEgDUDdb0ivBRESaZn7BNjrLRk37xkXV3LQDhJOFLA="></script>
 
-    <meta name="author" content="天涯共此时" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
+
+    <meta name="author" content="天涯共此时" /><meta name="description" content="这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完……
     
-    
-    <meta name="description" content="这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完……" />
-    <meta name="keywords" content="tech, hugo, latex, 数学公式" />
-    
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    " />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,15 +41,13 @@
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
-    
+
     
     
 
     
     <link rel="canonical" href="https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/" />
-
-
-
+    
 
 <script type="application/ld+json">
     {
@@ -70,20 +57,20 @@
         "dateModified": "2020-02-23T22:25:20+08:00",
         "url": "https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/",
         "headline": "LaTeX数学符号与数学公式汇总",
-        "description": "这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完……",
-        "keywords": "tech, hugo, latex, 数学公式",
+        "description": "这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完……\r\n    \r\n    ",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1873 ,
+        "wordCount":  1792 ,
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
-            "description": "海上生明月",
+            "description": "Viva La Vida",
             "email": "zccon1996@163.com",
             "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
             "url": "https://ztygcs.github.io",
             "name": "天涯共此时"
         },
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
         "publisher": {
             "@type": "Organization",
             "name": "天涯共此时",
@@ -102,116 +89,164 @@
 
     
 
-
-
 <meta name="twitter:card" content="summary" />
 
-<meta name="twitter:site" content="@reuixiy" />
 
     
-
-
-
 
 
 
 <meta property="og:title" content="LaTeX数学符号与数学公式汇总" />
-<meta property="og:description" content="这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完……" />
+<meta property="og:description" content="这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完……
+    
+    " />
 <meta property="og:url" content="https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/" />
 <meta property="og:site_name" content="天涯共此时" />
-<meta property="og:locale" content="zh-CN" />
-            <meta property="og:locale:alternate" content="en-US" />
-        
-            <meta property="og:locale:alternate" content="en-US" />
-        <meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
+<meta property="og:locale" content="zh" /><meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2020-02-21T11:30:55+08:00" />
-    <meta property="article:modified_time" content="2020-02-23T22:25:20+08:00" />
+    <meta property="article:published_time" content="2020-02-21T11:30:55&#43;08:00" />
+    <meta property="article:modified_time" content="2020-02-23T22:25:20&#43;08:00" />
     
     <meta property="article:section" content="posts" />
-    <meta property="article:tag" content="tech, hugo, latex, 数学公式" />
+
 
 
     
-	
-	
 </head>
-
 
     <body>
         <div class="container">
             
-    <header class="header">
-        <div class="site-brand">
-            
-            <a href="/" class="brand">天涯共此时</a>
-            
-        </div>
-		
-    </header>
-
-
-            
-    <nav class="nav">
-        <ul class="menu" id="menu">
-            
-                
-            
-            
-            
-                <li class="menu-item active"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">归档</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/search/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><span class="menu-item-name">百度</span></a>
-                </li>
-            
-			
-        </ul>
-		
-    </nav>
-		
-
-            
-    <div class="lang-toggle" onmouseover="langSwitcherOver()" onmouseout="langSwitcherOut()">🇨🇳
+    <header class="header" data-scroll-header>
         
-            
-                <ul id="langs">
+            <div class="header-wrapper">
+                <div class="header-inner single">
                     
-                        
-                    
-                        
-                            <li><a rel="alternate" href="/en-us" hreflang="en-us" lang="en-us">🇺🇸</a></li>
-                        
-                    
-                </ul>
-            
+    <div class="site-brand">
+        
+            <a href="/" class="brand">天涯共此时</a>
         
     </div>
 
-            
-    
+                    <nav class="nav">
+    <ul class="menu" id="menu">
         
             
         
         
-        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
-    
+        
+        
+            
+                <li class="menu-item"><a href="/posts/"><span class="menu-item-name">归档</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><span class="menu-item-name">分类</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><span class="menu-item-name">标签</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/baidu/"><span class="menu-item-name">百度</span></a>
+                </li>
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        
+                        
+                            <li class="menu-item">
+                                <div id="lang-switcher">
+            <span>简体中文</span>
+            
+                
+                    <ul id="langs">
+                        
+                            
+                        
+                            
+                                <li><a rel="alternate" href="/en-us" hreflang="en-us" lang="en-us">English</a></li>
+                            
+                        
+                    </ul>
+                
+            
+        </div>
+                            </li>
+                        
+                    
+                
+            
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">阅读更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
 
 
 
+
+            
             
     <main class="main single" id="main">
     <div class="main-inner">
-        <article class="content post">
+
+        
+
+        <article class="content post" data-align="justify" data-type="posts" data-toc-num="true">
 
             <h1 class="post-title">LaTeX数学符号与数学公式汇总</h1>
 
@@ -222,128 +257,106 @@
             
 
             
-                <div class="post-meta">
-    
-        
-        <time datetime="2020-02-21T11:30:55+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2020.2.21</time>
-    
-    
-    
-    
-        
-        
-        
-            
                 
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg><a href="/categories/tech/" class="category-link">TECH</a>/<a href="/categories/hugo/" class="category-link">Hugo</a></span>
+
+<div class="post-meta">
+    
+        
+        <time datetime="2020-02-21T11:30:55&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2020.2.21</time>
+    
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/tech/" class="category-link">TECH</a>/<a href="/categories/hugo/" class="category-link">Hugo</a></span>
             
         
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>1873</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1792</span>
+    
+    
     
     
 </div>
-            
 
             
 
+            <nav class="contents">
+  <h2 id="contents" class="contents-title">目录</h2><ol class="toc">
+    <li><a id="contents:11行中公式" href="#11行中公式">1.1行中公式</a></li>
+    <li><a id="contents:12独立公式" href="#12独立公式">1.2独立公式</a></li>
+  </ol>
 
-                <nav class="contents">
-<h2 id="contents" class="contents-title">目录</h2><ol class="toc">
-<li><a id="contents:1-插入公式" href="#1-插入公式">1.插入公式</a>
-<ol>
-<li><a id="contents:1-1行中公式" href="#1-1行中公式">1.1行中公式</a></li>
-<li><a id="contents:1-2独立公式" href="#1-2独立公式">1.2独立公式</a></li>
-</ol></li>
-<li><a id="contents:上下标" href="#上下标">上下标</a></li>
-<li><a id="contents:括号的使用" href="#括号的使用">括号的使用</a></li>
-<li><a id="contents:运算表达式" href="#运算表达式">运算表达式</a></li>
-<li><a id="contents:矩阵" href="#矩阵">矩阵</a>
-<ol>
-<li><a id="contents:圆括号型" href="#圆括号型">圆括号型</a>
-<ol>
-<li><a id="contents:方法1" href="#方法1">方法1</a></li>
-<li><a id="contents:方法2" href="#方法2">方法2</a></li>
-</ol></li>
-<li><a id="contents:方括号型" href="#方括号型">方括号型</a>
-<ol>
-<li><a id="contents:方法1-1" href="#方法1-1">方法1</a></li>
-<li><a id="contents:方法2-1" href="#方法2-1">方法2</a></li>
-</ol></li>
-<li><a id="contents:花括号型" href="#花括号型">花括号型</a>
-<ol>
-<li><a id="contents:方法1-2" href="#方法1-2">方法1</a></li>
-<li><a id="contents:方法2-2" href="#方法2-2">方法2</a></li>
-</ol></li>
-</ol></li>
-<li><a id="contents:行列式" href="#行列式">行列式</a>
-<ol>
-<li><a id="contents:方法1-3" href="#方法1-3">方法1</a></li>
-<li><a id="contents:方法2-3" href="#方法2-3">方法2</a></li>
-</ol></li>
-<li><a id="contents:分段函数" href="#分段函数">分段函数</a></li>
-<li><a id="contents:方程组" href="#方程组">方程组</a></li>
-<li><a id="contents:数学常用符号" href="#数学常用符号">数学常用符号</a>
-<ol>
-<li><a id="contents:希腊字母" href="#希腊字母">希腊字母</a>
-<ol>
-<li><a id="contents:小写希腊字母" href="#小写希腊字母">小写希腊字母</a></li>
-<li><a id="contents:大写希腊字母" href="#大写希腊字母">大写希腊字母</a></li>
-</ol></li>
-<li><a id="contents:运算符" href="#运算符">运算符</a>
-<ol>
-<li><a id="contents:二元运算符" href="#二元运算符">二元运算符</a></li>
-<li><a id="contents:大尺寸运算符" href="#大尺寸运算符">大尺寸运算符</a></li>
-<li><a id="contents:对数运算符" href="#对数运算符">对数运算符</a></li>
-<li><a id="contents:三角运算符" href="#三角运算符">三角运算符</a></li>
-<li><a id="contents:微积分运算符" href="#微积分运算符">微积分运算符</a></li>
-<li><a id="contents:逻辑运算符" href="#逻辑运算符">逻辑运算符</a></li>
-</ol></li>
-<li><a id="contents:关系符" href="#关系符">关系符</a>
-<ol>
-<li><a id="contents:二元关系符" href="#二元关系符">二元关系符</a></li>
-</ol></li>
-<li><a id="contents:戴帽符号" href="#戴帽符号">戴帽符号</a></li>
-<li><a id="contents:连线符号" href="#连线符号">连线符号</a></li>
-<li><a id="contents:箭头" href="#箭头">箭头</a></li>
-<li><a id="contents:定界符" href="#定界符">定界符</a></li>
-<li><a id="contents:其他符号" href="#其他符号">其他符号</a></li>
-</ol></li>
-</ol>
+  <ol>
+    <li><a id="contents:圆括号型" href="#圆括号型">圆括号型</a>
+      <ol>
+        <li><a id="contents:方法1" href="#方法1">方法1</a></li>
+        <li><a id="contents:方法2" href="#方法2">方法2</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:方括号型" href="#方括号型">方括号型</a>
+      <ol>
+        <li><a id="contents:方法1-1" href="#方法1-1">方法1</a></li>
+        <li><a id="contents:方法2-1" href="#方法2-1">方法2</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:花括号型" href="#花括号型">花括号型</a>
+      <ol>
+        <li><a id="contents:方法1-2" href="#方法1-2">方法1</a></li>
+        <li><a id="contents:方法2-2" href="#方法2-2">方法2</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a id="contents:方法1-3" href="#方法1-3">方法1</a></li>
+    <li><a id="contents:方法2-3" href="#方法2-3">方法2</a></li>
+  </ol>
+
+  <ol>
+    <li><a id="contents:希腊字母" href="#希腊字母">希腊字母</a>
+      <ol>
+        <li><a id="contents:小写希腊字母" href="#小写希腊字母">小写希腊字母</a></li>
+        <li><a id="contents:大写希腊字母" href="#大写希腊字母">大写希腊字母</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:运算符" href="#运算符">运算符</a>
+      <ol>
+        <li><a id="contents:二元运算符" href="#二元运算符">二元运算符</a></li>
+        <li><a id="contents:大尺寸运算符" href="#大尺寸运算符">大尺寸运算符</a></li>
+        <li><a id="contents:对数运算符" href="#对数运算符">对数运算符</a></li>
+        <li><a id="contents:三角运算符" href="#三角运算符">三角运算符</a></li>
+        <li><a id="contents:微积分运算符" href="#微积分运算符">微积分运算符</a></li>
+        <li><a id="contents:逻辑运算符" href="#逻辑运算符">逻辑运算符</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:关系符" href="#关系符">关系符</a>
+      <ol>
+        <li><a id="contents:二元关系符" href="#二元关系符">二元关系符</a></li>
+      </ol>
+    </li>
+    <li><a id="contents:戴帽符号" href="#戴帽符号">戴帽符号</a></li>
+    <li><a id="contents:连线符号" href="#连线符号">连线符号</a></li>
+    <li><a id="contents:箭头" href="#箭头">箭头</a></li>
+    <li><a id="contents:定界符" href="#定界符">定界符</a></li>
+    <li><a id="contents:其他符号" href="#其他符号">其他符号</a></li>
+  </ol>
 </nav><div class="post-body">
-
-<p>这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完善的，后续如果有需要更改或添加的地方，我会进行修改的。</p>
-
-<h1 id="1-插入公式"><a href="#1-插入公式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:1-插入公式" class="headings">1.插入公式</a></h1>
-
-<h2 id="1-1行中公式"><a href="#1-1行中公式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:1-1行中公式" class="headings">1.1行中公式</a></h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$y=x+1$</pre></td></tr></table>
-</div>
-</div>
-<p>$y=x+1$</p>
-
-<h2 id="1-2独立公式"><a href="#1-2独立公式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:1-2独立公式" class="headings">1.2独立公式</a></h2>
-
+              <p>这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完善的，后续如果有需要更改或添加的地方，我会进行修改的。</p>
+<h1 id="1插入公式"><a href="#1插入公式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:1插入公式" class="headings">1.插入公式</a></h1>
+<h2 id="11行中公式"><a href="#11行中公式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:11行中公式" class="headings">1.1行中公式</a></h2>
+<pre><code>$y=x+1$
+</code></pre><p>$y=x+1$</p>
+<h2 id="12独立公式"><a href="#12独立公式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:12独立公式" class="headings">1.2独立公式</a></h2>
 <p>公式会另起一行居中显示</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$y=x+1$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$y=x+1$$</p>
-
+<pre><code>$$y=x+1$$
+</code></pre><p>$$y=x+1$$</p>
 <h1 id="上下标"><a href="#上下标" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:上下标" class="headings">上下标</a></h1>
-
 <table>
 <thead>
 <tr>
@@ -351,47 +364,26 @@
 <th align="center">说明</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center"><code>^</code></td>
 <td align="center">上标</td>
 </tr>
-
 <tr>
 <td align="center"><code>_</code></td>
 <td align="center">下标</td>
 </tr>
 </tbody>
 </table>
-
-<p>如果上下标的内容多于一个字符，需要用<code>{}</code>将这些内容括成一个整体。上下标<strong class="emphasis-point">可以嵌套</strong>，也可以<strong class="emphasis-point">同时使用</strong>。</p>
-
+<p>如果上下标的内容多于一个字符，需要用<code>{}</code>将这些内容括成一个整体。上下标<em class="emphasis-point">可以嵌套</em>，也可以<em class="emphasis-point">同时使用</em>。</p>
 <p>例：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$ x^{y^z}=(1+e_1)^{xy^w} $$</pre></td></tr></table>
-</div>
-</div>
-<p>$$ x^{y^z}=(1+e_1)^{xy^w} $$
+<pre><code>$$ x^{y^z}=(1+e_1)^{xy^w} $$
+</code></pre><p>$$ x^{y^z}=(1+e_1)^{xy^w} $$
 另外，如果要在左右两边都有上下标，可以用 <code>\sideset</code> 命令。</p>
-
 <p>例：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$ \sideset{^1_2}{^3_4}x $$</pre></td></tr></table>
-</div>
-</div>
-<p>$$ \sideset{^1_2}{^3_4}x $$</p>
-
+<pre><code>$$ \sideset{^1_2}{^3_4}x $$
+</code></pre><p>$$ \sideset{^1_2}{^3_4}x $$</p>
 <h1 id="括号的使用"><a href="#括号的使用" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:括号的使用" class="headings">括号的使用</a></h1>
-
 <table>
 <thead>
 <tr>
@@ -400,38 +392,32 @@
 <th align="center">预览</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center"><code>(</code></td>
 <td align="center"><strong>圆括号（左）</strong></td>
 <td align="center">$($</td>
 </tr>
-
 <tr>
 <td align="center"><code>)</code></td>
 <td align="center"><strong>圆括号（右）</strong></td>
 <td align="center">$)$</td>
 </tr>
-
 <tr>
 <td align="center"><code>[</code></td>
 <td align="center"><strong>方括号（左）</strong></td>
 <td align="center">$[$</td>
 </tr>
-
 <tr>
 <td align="center"><code>]</code></td>
 <td align="center"><strong>方括号（右）</strong></td>
 <td align="center">$]$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\\{</code></td>
 <td align="center"><strong>花括号（左）</strong></td>
 <td align="center">$\{$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\\}</code></td>
 <td align="center"><strong>花括号（右）</strong></td>
@@ -439,40 +425,15 @@
 </tr>
 </tbody>
 </table>
-
 <p><code>(</code>、<code>)</code>、<code>[</code>、<code>]</code> 和 <code>|</code> 表示符号本身，使用 <code>\\{</code>来表示 <code>{</code>，<code>\\}</code> 来表示 <code>}</code></p>
-
 <p>通过将 <code>\left</code>与<code>(</code> ,<code>\right</code>与<code>)</code> 结合使用，可以将括号大小随着其内容变化。其他括号同理。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$ {f}&#39;(x) = ( \frac{df}{dx} ) $$</pre></td></tr></table>
-</div>
-</div>
-<p>$$ {f}'(x) = ( \frac{df}{dx} ) $$</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$ {f}&#39;(x) = \left( \frac{df}{dx} \right) $$</pre></td></tr></table>
-</div>
-</div>
-<p>$$ {f}'(x) = \left( \frac{df}{dx} \right) $$</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$ {f}&#39;(0) =  \left. \frac{df}{dx} \right|_{x=0} $$</pre></td></tr></table>
-</div>
-</div>
-<p>$$ {f}'(0) =  \left. \frac{df}{dx} \right|_{x=0} $$</p>
-
+<pre><code>$$ {f}'(x) = ( \frac{df}{dx} ) $$
+</code></pre><p>$$ {f}'(x) = ( \frac{df}{dx} ) $$</p>
+<pre><code>$$ {f}'(x) = \left( \frac{df}{dx} \right) $$
+</code></pre><p>$$ {f}'(x) = \left( \frac{df}{dx} \right) $$</p>
+<pre><code>$$ {f}'(0) =  \left. \frac{df}{dx} \right|_{x=0} $$
+</code></pre><p>$$ {f}'(0) =  \left. \frac{df}{dx} \right|_{x=0} $$</p>
 <h1 id="运算表达式"><a href="#运算表达式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:运算表达式" class="headings">运算表达式</a></h1>
-
 <table>
 <thead>
 <tr>
@@ -481,80 +442,67 @@
 <th align="center">预览</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center"><code>\frac{a}{b}</code></td>
 <td align="center"><strong>分数</strong></td>
 <td align="center">$\frac{a}{b}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\sqrt</code>[<code>a</code>]<code>{b}</code></td>
 <td align="center"><strong>开方</strong>（a为2时可省略）</td>
 <td align="center">$\sqrt[a]{b}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\sum_{a}^{b}</code></td>
 <td align="center"><strong>求和</strong></td>
 <td align="center">$\sum_{a}^{b}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\prod_{a}^{b}</code></td>
 <td align="center"><strong>连乘</strong></td>
 <td align="center">$\prod_{a}^{b}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>{a+}\ldots{+b}</code></td>
 <td align="center"><strong>省略号</strong>（与文本底线对齐）</td>
 <td align="center">${a+}\ldots{+b}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>{a+}\cdots{+b}</code></td>
 <td align="center"><strong>省略号</strong>（与文本中线对齐）</td>
 <td align="center">${a+}\cdots{+b}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\vec{a}</code></td>
 <td align="center"><strong>矢量</strong></td>
 <td align="center">$\vec{a}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>lim_{{a} \to {\infty}}</code></td>
 <td align="center"><strong>极限</strong></td>
 <td align="center">$lim_{{a} \to {\infty}}$</td>
 </tr>
-
 <tr>
 <td align="center"><code>{f}'(x)</code></td>
 <td align="center"><strong>导数</strong></td>
 <td align="center">${f}'(x)$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\int_{a}^{b}{x}\,dx</code></td>
 <td align="center"><strong>积分</strong></td>
-<td align="center">$\int_{a}^{b}{x}\,dx$</td>
+<td align="center">$\int_{a}^{b}{x},dx$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\int</code></td>
 <td align="center"><strong>积分号</strong></td>
 <td align="center">$\int$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\iint</code></td>
 <td align="center"><strong>二重积分号</strong></td>
 <td align="center">$\iint$</td>
 </tr>
-
 <tr>
 <td align="center"><code>\iiint</code></td>
 <td align="center"><strong>三重积分号</strong></td>
@@ -562,52 +510,23 @@
 </tr>
 </tbody>
 </table>
-
 <h1 id="矩阵"><a href="#矩阵" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:矩阵" class="headings">矩阵</a></h1>
-
 <h2 id="圆括号型"><a href="#圆括号型" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:圆括号型" class="headings">圆括号型</a></h2>
-
 <h3 id="方法1"><a href="#方法1" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法1" class="headings">方法1</a></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \begin{pmatrix}
 1 &amp; 2 &amp; 3\\\\
 4 &amp; 5 &amp; 6
 \end{pmatrix}
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \begin{pmatrix}
-1 &amp; 2 &amp; 3\\
+1 &amp; 2 &amp; 3\\<br>
 4 &amp; 5 &amp; 6
 \end{pmatrix}
 $$</p>
-
 <h3 id="方法2"><a href="#方法2" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法2" class="headings">方法2</a></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \left(
 \begin{matrix}
 	1 &amp; 2 &amp; 3 \\\\
@@ -615,185 +534,96 @@ $$</p>
 	7 &amp; 8 &amp; 9 \\\\
 \end{matrix}
 \right)
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \left(
 \begin{matrix}
-    1 &amp; 2 &amp; 3 \\
-    4 &amp; 5 &amp; 6 \\
-    7 &amp; 8 &amp; 9 \\
+1 &amp; 2 &amp; 3 \\<br>
+4 &amp; 5 &amp; 6 \\<br>
+7 &amp; 8 &amp; 9 \\<br>
 \end{matrix}
 \right)
 $$</p>
-
 <h2 id="方括号型"><a href="#方括号型" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方括号型" class="headings">方括号型</a></h2>
-
 <h3 id="方法1-1"><a href="#方法1-1" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法1-1" class="headings">方法1</a></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \begin{bmatrix}
 	1 &amp; 2 &amp; 3\\\\
 	4 &amp; 5 &amp; 6
 \end{bmatrix}
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \begin{bmatrix}
-    1 &amp; 2 &amp; 3\\
-    4 &amp; 5 &amp; 6
+1 &amp; 2 &amp; 3\\<br>
+4 &amp; 5 &amp; 6
 \end{bmatrix}
 $$</p>
-
 <h3 id="方法2-1"><a href="#方法2-1" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法2-1" class="headings">方法2</a></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \left[
 	\begin{matrix}
 	1 &amp; 2 &amp; 3\\\\
 	4 &amp; 5 &amp; 6
 	\end{matrix}
 \right]
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \left[
-    \begin{matrix}
-    1 &amp; 2 &amp; 3\\
-    4 &amp; 5 &amp; 6
-    \end{matrix}
+\begin{matrix}
+1 &amp; 2 &amp; 3\\<br>
+4 &amp; 5 &amp; 6
+\end{matrix}
 \right]
 $$</p>
-
 <h2 id="花括号型"><a href="#花括号型" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:花括号型" class="headings">花括号型</a></h2>
-
 <h3 id="方法1-2"><a href="#方法1-2" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法1-2" class="headings">方法1</a></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \begin{Bmatrix}
 1 &amp; 2 &amp; 3\\\\
 4 &amp; 5 &amp; 6
 \end{Bmatrix}
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \begin{Bmatrix}
-1 &amp; 2 &amp; 3\\
+1 &amp; 2 &amp; 3\\<br>
 4 &amp; 5 &amp; 6
 \end{Bmatrix}
 $$</p>
-
 <h3 id="方法2-2"><a href="#方法2-2" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法2-2" class="headings">方法2</a></h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \left\\{
 	\begin{matrix}
 	1 &amp; 2 &amp; 3\\\\
 	4 &amp; 5 &amp; 6
 	\end{matrix}
 \right\\}
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \left\{
-    \begin{matrix}
-    1 &amp; 2 &amp; 3\\
-    4 &amp; 5 &amp; 6
-    \end{matrix}
+\begin{matrix}
+1 &amp; 2 &amp; 3\\<br>
+4 &amp; 5 &amp; 6
+\end{matrix}
 \right\}
 $$</p>
-
 <h1 id="行列式"><a href="#行列式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:行列式" class="headings">行列式</a></h1>
-
 <h2 id="方法1-3"><a href="#方法1-3" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法1-3" class="headings">方法1</a></h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-X=" data-lang="X="><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-X=" data-lang="X=">\begin{vmatrix}
+<pre><code class="language-X=" data-lang="X=">\begin{vmatrix}
 	x &amp; x &amp; \cdots &amp; x\\\\
 	x &amp; x &amp; \cdots &amp; x\\\\
 	\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\\\
 	x &amp; x &amp; \cdots &amp; x\\\\
-\end{vmatrix}</code></pre></td></tr></table>
-</div>
-</div>
-<p>$$X=
+\end{vmatrix}
+</code></pre><p>$$X=
 \begin{vmatrix}
-    x &amp; x &amp; \cdots &amp; x\\
-    x &amp; x &amp; \cdots &amp; x\\
-    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
-    x &amp; x &amp; \cdots &amp; x\\
+x &amp; x &amp; \cdots &amp; x\\<br>
+x &amp; x &amp; \cdots &amp; x\\<br>
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\<br>
+x &amp; x &amp; \cdots &amp; x\\<br>
 \end{vmatrix}
 $$</p>
-
 <h2 id="方法2-3"><a href="#方法2-3" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方法2-3" class="headings">方法2</a></h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$X=
+<pre><code>$$X=
 \left|
 \begin{matrix}
 	x &amp; x &amp; \cdots &amp; x\\\\
@@ -802,61 +632,32 @@ $$</p>
 	x &amp; x &amp; \cdots &amp; x\\\\
 \end{matrix}
 \right|
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$X=
+$$
+</code></pre><p>$$X=
 \left|
 \begin{matrix}
-    x &amp; x &amp; \cdots &amp; x\\
-    x &amp; x &amp; \cdots &amp; x\\
-    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
-    x &amp; x &amp; \cdots &amp; x\\
+x &amp; x &amp; \cdots &amp; x\\<br>
+x &amp; x &amp; \cdots &amp; x\\<br>
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\<br>
+x &amp; x &amp; \cdots &amp; x\\<br>
 \end{matrix}
 \right|
 $$</p>
-
 <h1 id="分段函数"><a href="#分段函数" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:分段函数" class="headings">分段函数</a></h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$f(n) =
+<pre><code>$$f(n) =
 \begin{cases}
 	2n,  &amp; \text{if $n$ is even} \\\\
 	3n, &amp; \text{if $n$ is odd}
 \end{cases}
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$f(n) =
+$$
+</code></pre><p>$$f(n) =
 \begin{cases}
-    2n,  &amp; \text{if $n$ is even} \\
-    3n, &amp; \text{if $n$ is odd}
+2n,  &amp; \text{if $n$ is even} \\<br>
+3n, &amp; \text{if $n$ is odd}
 \end{cases}
 $$</p>
-
 <h1 id="方程组"><a href="#方程组" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:方程组" class="headings">方程组</a></h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">$$
+<pre><code>$$
 \left\\{ 
 \begin{array}{c}
     a_1x+b_1y+c_1z=d_1 \\\\ 
@@ -864,25 +665,19 @@ $$</p>
     a_3x+b_3y+c_3z=d_3
 \end{array}
 \right. 
-$$</pre></td></tr></table>
-</div>
-</div>
-<p>$$
+$$
+</code></pre><p>$$
 \left\{
 \begin{array}{c}
-    a_1x+b_1y+c_1z=d_1 \\
-    a_2x+b_2y+c_2z=d_2 \\
-    a_3x+b_3y+c_3z=d_3
+a_1x+b_1y+c_1z=d_1 \\
+a_2x+b_2y+c_2z=d_2 \\<br>
+a_3x+b_3y+c_3z=d_3
 \end{array}
 \right.
 $$</p>
-
 <h1 id="数学常用符号"><a href="#数学常用符号" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:数学常用符号" class="headings">数学常用符号</a></h1>
-
 <h2 id="希腊字母"><a href="#希腊字母" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:希腊字母" class="headings">希腊字母</a></h2>
-
 <h3 id="小写希腊字母"><a href="#小写希腊字母" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:小写希腊字母" class="headings">小写希腊字母</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -894,7 +689,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\alpha$</td>
@@ -904,7 +698,6 @@ $$</p>
 <td align="center">$o$</td>
 <td align="center"><code>o</code></td>
 </tr>
-
 <tr>
 <td align="center">$\beta$</td>
 <td align="center"><code>\beta</code></td>
@@ -913,7 +706,6 @@ $$</p>
 <td align="center">$\pi$</td>
 <td align="center"><code>\pi</code></td>
 </tr>
-
 <tr>
 <td align="center">$\gamma$</td>
 <td align="center"><code>\gamma</code></td>
@@ -922,7 +714,6 @@ $$</p>
 <td align="center">$\varpi$</td>
 <td align="center"><code>\varpi</code></td>
 </tr>
-
 <tr>
 <td align="center">$\delta$</td>
 <td align="center"><code>\delta</code></td>
@@ -931,7 +722,6 @@ $$</p>
 <td align="center">$\rho$</td>
 <td align="center"><code>\rho</code></td>
 </tr>
-
 <tr>
 <td align="center">$\epsilon$</td>
 <td align="center"><code>\epsilon</code></td>
@@ -940,7 +730,6 @@ $$</p>
 <td align="center">$\varrho$</td>
 <td align="center"><code>\varrho</code></td>
 </tr>
-
 <tr>
 <td align="center">$\varepsilon$</td>
 <td align="center"><code>\varepsilon</code></td>
@@ -949,7 +738,6 @@ $$</p>
 <td align="center">$\sigma$</td>
 <td align="center"><code>\sigma</code></td>
 </tr>
-
 <tr>
 <td align="center">$\zeta$</td>
 <td align="center"><code>\zeta</code></td>
@@ -958,7 +746,6 @@ $$</p>
 <td align="center">$\varsigma$</td>
 <td align="center"><code>\varsigma</code></td>
 </tr>
-
 <tr>
 <td align="center">$\eta$</td>
 <td align="center"><code>\eta</code></td>
@@ -967,7 +754,6 @@ $$</p>
 <td align="center">$\tau$</td>
 <td align="center"><code>\tau</code></td>
 </tr>
-
 <tr>
 <td align="center">$\upsilon$</td>
 <td align="center"><code>\upsilon</code></td>
@@ -976,7 +762,6 @@ $$</p>
 <td align="center">$\varphi$</td>
 <td align="center"><code>\varphi</code></td>
 </tr>
-
 <tr>
 <td align="center">$\chi$</td>
 <td align="center"><code>\chi</code></td>
@@ -987,9 +772,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="大写希腊字母"><a href="#大写希腊字母" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:大写希腊字母" class="headings">大写希腊字母</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1001,7 +784,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\Gamma$</td>
@@ -1011,7 +793,6 @@ $$</p>
 <td align="center">$\Sigma$</td>
 <td align="center"><code>\Sigma</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Delta$</td>
 <td align="center"><code>\Delta</code></td>
@@ -1020,7 +801,6 @@ $$</p>
 <td align="center">$\Upsilon$</td>
 <td align="center"><code>\Upsilon</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Theta$</td>
 <td align="center"><code>\Theta</code></td>
@@ -1029,22 +809,18 @@ $$</p>
 <td align="center">$\Phi$</td>
 <td align="center"><code>\Phi</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Psi$</td>
 <td align="center"><code>\Psi</code></td>
 <td align="center">$\Omega$</td>
 <td align="center"><code>\Omega</code></td>
 <td align="center"></td>
-<td align="center"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="运算符"><a href="#运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:运算符" class="headings">运算符</a></h2>
-
 <h3 id="二元运算符"><a href="#二元运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二元运算符" class="headings">二元运算符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1054,7 +830,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$+$</td>
@@ -1062,137 +837,117 @@ $$</p>
 <td align="center">$\pm$</td>
 <td align="center"><code>\pm</code></td>
 </tr>
-
 <tr>
 <td align="center">$\ast$</td>
 <td align="center"><code>\ast</code></td>
 <td align="center">$\star$</td>
 <td align="center"><code>\star</code></td>
 </tr>
-
 <tr>
 <td align="center">$-$</td>
 <td align="center"><code>-</code></td>
 <td align="center">$\mp$</td>
 <td align="center"><code>\mp</code></td>
 </tr>
-
 <tr>
 <td align="center">$\times$</td>
 <td align="center"><code>\times</code></td>
 <td align="center">$\triangleleft$</td>
 <td align="center"><code>\triangleleft</code></td>
 </tr>
-
 <tr>
 <td align="center">$\cup$</td>
 <td align="center"><code>\cup</code></td>
 <td align="center">$\sqcup$</td>
 <td align="center"><code>\sqcup</code></td>
 </tr>
-
 <tr>
 <td align="center">$\div$</td>
 <td align="center"><code>\div</code></td>
 <td align="center">$\triangleright$</td>
 <td align="center"><code>\triangleright</code></td>
 </tr>
-
 <tr>
 <td align="center">$\cdot$</td>
 <td align="center"><code>\cdot</code></td>
 <td align="center">$\circ$</td>
 <td align="center"><code>\circ</code></td>
 </tr>
-
 <tr>
 <td align="center">$\cap$</td>
 <td align="center"><code>\cap</code></td>
 <td align="center">$\sqcap$</td>
 <td align="center"><code>\sqcap</code></td>
 </tr>
-
 <tr>
 <td align="center">$\setminus$</td>
 <td align="center"><code>\setminus</code></td>
 <td align="center">$\bullet$</td>
 <td align="center"><code>\bullet</code></td>
 </tr>
-
 <tr>
 <td align="center">$\oplus$</td>
 <td align="center"><code>\oplus</code></td>
 <td align="center">$\diamond$</td>
 <td align="center"><code>\diamond</code></td>
 </tr>
-
 <tr>
 <td align="center">$\vee$</td>
 <td align="center"><code>\vee</code></td>
 <td align="center">$\wedge $</td>
 <td align="center"><code>\wedge</code></td>
 </tr>
-
 <tr>
 <td align="center">$\ominus$</td>
 <td align="center"><code>\ominus</code></td>
 <td align="center">$\otimes$</td>
 <td align="center"><code>\otimes</code></td>
 </tr>
-
 <tr>
 <td align="center">$\oslash$</td>
 <td align="center"><code>\oslash</code></td>
 <td align="center">$\odot$</td>
 <td align="center"><code>\odot</code></td>
 </tr>
-
 <tr>
 <td align="center">$\uplus$</td>
 <td align="center"><code>\uplus</code></td>
 <td align="center">$\amalg$</td>
 <td align="center"><code>\\amalg</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bigtriangleup$</td>
 <td align="center"><code>\bigtriangleup</code></td>
 <td align="center">$\dagger$</td>
 <td align="center"><code>\dagger</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bigtriangledown$</td>
 <td align="center"><code>\bigtriangledown</code></td>
 <td align="center">$\ddagger$</td>
 <td align="center"><code>\ddagger</code></td>
 </tr>
-
 <tr>
 <td align="center">$\lhd$</td>
 <td align="center"><code>\lhd</code></td>
 <td align="center">$\unlhd$</td>
 <td align="center"><code>\unlhd</code></td>
 </tr>
-
 <tr>
 <td align="center">$\rhd$</td>
 <td align="center"><code>\rhd</code></td>
 <td align="center">$\unrhd$</td>
 <td align="center"><code>\unrhd</code></td>
 </tr>
-
 <tr>
 <td align="center">$\wr$</td>
 <td align="center"><code>\wr</code></td>
 <td align="center"></td>
-<td align="center"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="大尺寸运算符"><a href="#大尺寸运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:大尺寸运算符" class="headings">大尺寸运算符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1202,7 +957,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\sum$</td>
@@ -1210,35 +964,30 @@ $$</p>
 <td align="center">$\bigcup$</td>
 <td align="center"><code>\bigcup</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bigcap$</td>
 <td align="center"><code>\bigcap</code></td>
 <td align="center">$\bigvee$</td>
 <td align="center"><code>\bigvee</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bigoplus$</td>
 <td align="center"><code>\bigoplus</code></td>
 <td align="center">$\prod$</td>
 <td align="center"><code>\prod</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bigwedge$</td>
 <td align="center"><code>\bigwedge</code></td>
 <td align="center">$\bigotimes$</td>
 <td align="center"><code>\bigotimes</code></td>
 </tr>
-
 <tr>
 <td align="center">$\coprod$</td>
 <td align="center"><code>\coprod</code></td>
 <td align="center">$\bigsqcup$</td>
 <td align="center"><code>\bigsqcup</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bigodot$</td>
 <td align="center"><code>\bigodot</code></td>
@@ -1247,9 +996,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="对数运算符"><a href="#对数运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:对数运算符" class="headings">对数运算符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1261,7 +1008,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\log$</td>
@@ -1273,9 +1019,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="三角运算符"><a href="#三角运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:三角运算符" class="headings">三角运算符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1287,7 +1031,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$30^\circ$</td>
@@ -1297,7 +1040,6 @@ $$</p>
 <td align="center">$\angle A$</td>
 <td align="center">\angle A</td>
 </tr>
-
 <tr>
 <td align="center">$\sin$</td>
 <td align="center">\sin</td>
@@ -1306,7 +1048,6 @@ $$</p>
 <td align="center">$\tan$</td>
 <td align="center">\tan</td>
 </tr>
-
 <tr>
 <td align="center">$\csc$</td>
 <td align="center">\csc</td>
@@ -1317,9 +1058,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="微积分运算符"><a href="#微积分运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:微积分运算符" class="headings">微积分运算符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1331,7 +1070,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\int$</td>
@@ -1341,7 +1079,6 @@ $$</p>
 <td align="center">$\iiint$</td>
 <td align="center">\iiint</td>
 </tr>
-
 <tr>
 <td align="center">$\iiiint$</td>
 <td align="center">\iiiint</td>
@@ -1350,7 +1087,6 @@ $$</p>
 <td align="center">$\prime$</td>
 <td align="center">\prime</td>
 </tr>
-
 <tr>
 <td align="center">$\lim$</td>
 <td align="center">\lim</td>
@@ -1361,9 +1097,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="逻辑运算符"><a href="#逻辑运算符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:逻辑运算符" class="headings">逻辑运算符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1375,7 +1109,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\because$</td>
@@ -1385,22 +1118,18 @@ $$</p>
 <td align="center">$\not\subset$</td>
 <td align="center">\not\subset</td>
 </tr>
-
 <tr>
 <td align="center">$\forall$</td>
 <td align="center">\forall</td>
 <td align="center">$\exists$</td>
 <td align="center">\exists</td>
 <td align="center"></td>
-<td align="center"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="关系符"><a href="#关系符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:关系符" class="headings">关系符</a></h2>
-
 <h3 id="二元关系符"><a href="#二元关系符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:二元关系符" class="headings">二元关系符</a></h3>
-
 <table>
 <thead>
 <tr>
@@ -1412,7 +1141,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$&gt;$</td>
@@ -1422,7 +1150,6 @@ $$</p>
 <td align="center">$=$</td>
 <td align="center"><code>=</code></td>
 </tr>
-
 <tr>
 <td align="center">$\not&gt;$</td>
 <td align="center">\not&gt;</td>
@@ -1431,7 +1158,6 @@ $$</p>
 <td align="center">$\ne$</td>
 <td align="center"><code>\ne</code> or <code>\not=</code></td>
 </tr>
-
 <tr>
 <td align="center">$\le$</td>
 <td align="center"><code>\le</code></td>
@@ -1440,7 +1166,6 @@ $$</p>
 <td align="center">$\equiv$</td>
 <td align="center"><code>\equiv</code></td>
 </tr>
-
 <tr>
 <td align="center">$\ll$</td>
 <td align="center"><code>\ll</code></td>
@@ -1449,7 +1174,6 @@ $$</p>
 <td align="center">$\doteq$</td>
 <td align="center"><code>\doteq</code></td>
 </tr>
-
 <tr>
 <td align="center">$\prec$</td>
 <td align="center"><code>\prec</code></td>
@@ -1458,7 +1182,6 @@ $$</p>
 <td align="center">$\sim$</td>
 <td align="center"><code>\sim</code></td>
 </tr>
-
 <tr>
 <td align="center">$\preceq$</td>
 <td align="center"><code>\preceq</code></td>
@@ -1467,7 +1190,6 @@ $$</p>
 <td align="center">$\simeq$</td>
 <td align="center"><code>\simeq</code></td>
 </tr>
-
 <tr>
 <td align="center">$\subset$</td>
 <td align="center"><code>\subset</code></td>
@@ -1476,7 +1198,6 @@ $$</p>
 <td align="center">$\approx$</td>
 <td align="center"><code>\approx</code></td>
 </tr>
-
 <tr>
 <td align="center">$\subseteq$</td>
 <td align="center"><code>\subseteq</code></td>
@@ -1485,7 +1206,6 @@ $$</p>
 <td align="center">$\cong$</td>
 <td align="center"><code>\cong</code></td>
 </tr>
-
 <tr>
 <td align="center">$\sqsubset$</td>
 <td align="center"><code>\sqsubset</code></td>
@@ -1494,7 +1214,6 @@ $$</p>
 <td align="center">$\Join$</td>
 <td align="center"><code>\Join</code></td>
 </tr>
-
 <tr>
 <td align="center">$\sqsubseteq$</td>
 <td align="center"><code>\sqsubseteq</code></td>
@@ -1503,7 +1222,6 @@ $$</p>
 <td align="center">$\bowtie$</td>
 <td align="center"><code>\bowtie</code></td>
 </tr>
-
 <tr>
 <td align="center">$\in$</td>
 <td align="center"><code>\in</code></td>
@@ -1512,7 +1230,6 @@ $$</p>
 <td align="center">$\propto$</td>
 <td align="center"><code>\propto</code></td>
 </tr>
-
 <tr>
 <td align="center">$\vdash$</td>
 <td align="center"><code>\vdash</code></td>
@@ -1521,7 +1238,6 @@ $$</p>
 <td align="center">$\models$</td>
 <td align="center"><code>\models</code></td>
 </tr>
-
 <tr>
 <td align="center">$\mid$</td>
 <td align="center"><code>\mid</code></td>
@@ -1530,7 +1246,6 @@ $$</p>
 <td align="center">$\perp$</td>
 <td align="center"><code>\perp</code></td>
 </tr>
-
 <tr>
 <td align="center">$\smile$</td>
 <td align="center"><code>\smile</code></td>
@@ -1539,20 +1254,17 @@ $$</p>
 <td align="center">$\asymp$</td>
 <td align="center"><code>\asymp</code></td>
 </tr>
-
 <tr>
 <td align="center">$\notin$</td>
 <td align="center"><code>\notin</code></td>
 <td align="center">$:$</td>
 <td align="center"><code>:</code></td>
 <td align="center"></td>
-<td align="center"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="戴帽符号"><a href="#戴帽符号" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:戴帽符号" class="headings">戴帽符号</a></h2>
-
 <table>
 <thead>
 <tr>
@@ -1562,7 +1274,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\hat{xy}$</td>
@@ -1570,21 +1281,18 @@ $$</p>
 <td align="center">$\widehat{xyz}$</td>
 <td align="center"><code>\widehat{xyz}</code></td>
 </tr>
-
 <tr>
 <td align="center">$\tilde{xy}$</td>
 <td align="center"><code>\tilde{xy}</code></td>
 <td align="center">$\widetilde{xyz}$</td>
 <td align="center"><code>\widetilde{xyz}</code></td>
 </tr>
-
 <tr>
 <td align="center">$\check{x}$</td>
-<td align="center"><code>\check{x}</code></td>
+<td align="center"><code>\check{x} </code></td>
 <td align="center">$\breve{y}$</td>
 <td align="center"><code>\breve{y}</code></td>
 </tr>
-
 <tr>
 <td align="center">$\grave{x}$</td>
 <td align="center"><code>\grave{x}</code></td>
@@ -1593,125 +1301,95 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h2 id="连线符号"><a href="#连线符号" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:连线符号" class="headings">连线符号</a></h2>
-
 <table>
 <thead>
 <tr>
 <th align="center">连线符号</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">\fbox{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\fbox{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\overleftarrow{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\overleftarrow{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\overrightarrow{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\overrightarrow{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\overleftrightarrow{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\overleftrightarrow{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\underleftarrow{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\underleftarrow{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\underrightarrow{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\underrightarrow{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\underleftrightarrow{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\underleftrightarrow{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\overline{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\overline{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\underline{a+b+c+d}</td>
 </tr>
-
 <tr>
 <td align="center">$\underline{a+b+c+d}$</td>
 </tr>
-
 <tr>
 <td align="center">\overbrace{a+b+c+d}^{Sample}</td>
 </tr>
-
 <tr>
 <td align="center">$\overbrace{a+b+c+d}^{Sample}$</td>
 </tr>
-
 <tr>
 <td align="center">\underbrace{a+b+c+d}_{Sample}</td>
 </tr>
-
 <tr>
 <td align="center">$\underbrace{a+b+c+d}_{Sample}$</td>
 </tr>
-
 <tr>
 <td align="center">\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}</td>
 </tr>
-
 <tr>
 <td align="center">$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$</td>
 </tr>
-
 <tr>
 <td align="center">\underbrace{a\cdot a\cdots a}_{b\text{ times}}</td>
 </tr>
-
 <tr>
 <td align="center">$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="箭头"><a href="#箭头" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:箭头" class="headings">箭头</a></h2>
-
 <table>
 <thead>
 <tr>
@@ -1719,177 +1397,142 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\uparrow$</td>
 <td align="center"><code>\uparrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\downarrow$</td>
 <td align="center"><code>\downarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\gets$</td>
 <td align="center"><code>\gets</code> or <code>\leftarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\longleftarrow$</td>
 <td align="center"><code>\longleftarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\to$</td>
 <td align="center"><code>\to</code> or <code>\rightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\longrightarrow$</td>
 <td align="center"><code>\longrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\leftrightarrow$</td>
 <td align="center"><code>\leftrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\longleftrightarrow$</td>
 <td align="center"><code>\longleftrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\updownarrow$</td>
 <td align="center"><code>\updownarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Leftarrow$</td>
 <td align="center"><code>\Leftarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Longleftarrow$</td>
 <td align="center"><code>\Longleftarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Uparrow$</td>
 <td align="center"><code>\Uparrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Rightarrow$</td>
 <td align="center"><code>\Rightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Longrightarrow$</td>
 <td align="center"><code>\Longrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Downarrow$</td>
 <td align="center"><code>\Downarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Leftrightarrow$</td>
 <td align="center"><code>\Leftrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Longleftrightarrow$</td>
 <td align="center"><code>\Longleftrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Updownarrow$</td>
 <td align="center"><code>\Updownarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\mapsto$</td>
 <td align="center"><code>\mapsto</code></td>
 </tr>
-
 <tr>
 <td align="center">$\longmapsto$</td>
 <td align="center"><code>\longmapsto</code></td>
 </tr>
-
 <tr>
 <td align="center">$\nearrow$</td>
 <td align="center"><code>\nearrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\hookleftarrow$</td>
 <td align="center"><code>\hookleftarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\hookrightarrow$</td>
 <td align="center"><code>\hookrightarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\searrow$</td>
 <td align="center"><code>\searrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\leftharpoonup$</td>
 <td align="center"><code>\leftharpoonup</code></td>
 </tr>
-
 <tr>
 <td align="center">$\rightharpoonup$</td>
 <td align="center"><code>\rightharpoonup</code></td>
 </tr>
-
 <tr>
 <td align="center">$\swarrow$</td>
 <td align="center"><code>\swarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\leftharpoondown$</td>
 <td align="center"><code>\leftharpoondown</code></td>
 </tr>
-
 <tr>
 <td align="center">$\rightharpoondown$</td>
 <td align="center"><code>\rightharpoondown</code></td>
 </tr>
-
 <tr>
 <td align="center">$\nwarrow$</td>
 <td align="center"><code>\nwarrow</code></td>
 </tr>
-
 <tr>
 <td align="center">$\rightleftharpoons$</td>
 <td align="center"><code>\rightleftharpoons</code></td>
 </tr>
-
 <tr>
 <td align="center">$\iff$</td>
 <td align="center"><code>\iff</code></td>
 </tr>
-
 <tr>
 <td align="center">$\leadsto$</td>
 <td align="center"><code>\leadsto</code></td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="定界符"><a href="#定界符" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:定界符" class="headings">定界符</a></h2>
-
 <table>
 <thead>
 <tr>
@@ -1901,7 +1544,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$($</td>
@@ -1911,7 +1553,6 @@ $$</p>
 <td align="center">$\langle$</td>
 <td align="center"><code>\langle</code></td>
 </tr>
-
 <tr>
 <td align="center">$[$</td>
 <td align="center"><code>[</code></td>
@@ -1920,7 +1561,6 @@ $$</p>
 <td align="center">$\rangle$</td>
 <td align="center"><code>\rangle</code></td>
 </tr>
-
 <tr>
 <td align="center">$\{$</td>
 <td align="center"><code>\\{</code></td>
@@ -1929,7 +1569,6 @@ $$</p>
 <td align="center">$\vert$</td>
 <td align="center"><code>\vert</code></td>
 </tr>
-
 <tr>
 <td align="center">$\lfloor$</td>
 <td align="center"><code>\lfloor</code></td>
@@ -1938,7 +1577,6 @@ $$</p>
 <td align="center">$\Vert$</td>
 <td align="center"><code>\Vert</code></td>
 </tr>
-
 <tr>
 <td align="center">$\lceil$</td>
 <td align="center"><code>\lceil</code></td>
@@ -1949,9 +1587,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-
 <h2 id="其他符号"><a href="#其他符号" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:其他符号" class="headings">其他符号</a></h2>
-
 <table>
 <thead>
 <tr>
@@ -1961,7 +1597,6 @@ $$</p>
 <th align="center">指令</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">$\dots$</td>
@@ -1969,128 +1604,224 @@ $$</p>
 <td align="center">$\cdots$</td>
 <td align="center"><code>\cdots</code></td>
 </tr>
-
 <tr>
 <td align="center">$\vdots$</td>
 <td align="center"><code>\vdots</code></td>
 <td align="center">$\ddots$</td>
 <td align="center"><code>\ddots</code></td>
 </tr>
-
 <tr>
 <td align="center">$\hbar$</td>
 <td align="center"><code>\hbar</code></td>
 <td align="center">$\imath$</td>
 <td align="center"><code>\imath</code></td>
 </tr>
-
 <tr>
 <td align="center">$\jmath$</td>
 <td align="center"><code>\jmath</code></td>
 <td align="center">$\ell$</td>
 <td align="center"><code>\ell</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Re$</td>
 <td align="center"><code>\Re</code></td>
 <td align="center">$\Im$</td>
 <td align="center"><code>\Im</code></td>
 </tr>
-
 <tr>
 <td align="center">$\aleph$</td>
 <td align="center"><code>\aleph</code></td>
 <td align="center">$\wp$</td>
 <td align="center"><code>\wp</code></td>
 </tr>
-
 <tr>
 <td align="center">$\partial$</td>
 <td align="center"><code>\partial</code></td>
 <td align="center">$'$</td>
 <td align="center"><code>'</code></td>
 </tr>
-
 <tr>
 <td align="center">$\emptyset$</td>
 <td align="center"><code>\emptyset</code></td>
 <td align="center">$\triangle$</td>
 <td align="center"><code>\triangle</code></td>
 </tr>
-
 <tr>
 <td align="center">$\Box$</td>
 <td align="center"><code>\Box</code></td>
 <td align="center">$\Diamond$</td>
 <td align="center"><code>\Diamond</code></td>
 </tr>
-
 <tr>
 <td align="center">$\bot$</td>
 <td align="center"><code>\bot</code></td>
 <td align="center">$\top$</td>
 <td align="center"><code>\top</code></td>
 </tr>
-
 <tr>
 <td align="center">$\angle$</td>
 <td align="center"><code>\angle</code></td>
 <td align="center">$\surd$</td>
 <td align="center"><code>\surd</code></td>
 </tr>
-
 <tr>
 <td align="center">$\diamondsuit$</td>
 <td align="center"><code>\diamondsuit</code></td>
 <td align="center">$\heartsuit$</td>
 <td align="center"><code>\heartsuit</code></td>
 </tr>
-
 <tr>
 <td align="center">$\clubsuit$</td>
 <td align="center"><code>\clubsuit</code></td>
 <td align="center">$\spadesuit$</td>
 <td align="center"><code>\spadesuit</code></td>
 </tr>
-
 <tr>
 <td align="center">$\neg $</td>
 <td align="center"><code>\neg</code> or <code>\lnot</code></td>
 <td align="center">$\flat$</td>
 <td align="center"><code>\flat</code></td>
 </tr>
-
 <tr>
 <td align="center">$\natural$</td>
 <td align="center"><code>\natural</code></td>
 <td align="center">$\sharp$</td>
 <td align="center"><code>\sharp</code></td>
 </tr>
-
 <tr>
 <td align="center">$\mho$</td>
 <td align="center"><code>\mho</code></td>
 <td align="center"></td>
-<td align="center"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-</div>
+
+            </div>
 
         </article>
 
         
 
         
+    
+    
+        <ul class="post-copyright">
+            <li class="copyright-item author"><span class="copyright-item-text">作者</span>：<a href="https://ztygcs.github.io" target="_blank" rel="noopener">天涯共此时</a></li>
+            
+                
+                
+                
+                
+                <li class="copyright-item link"><span class="copyright-item-text">链接</span>：<a href="/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/" target="_blank" rel="noopener">https://ztygcs.github.io/posts/latex数学符号与数学公式汇总/</a></li>
+            
+            <li class="copyright-item license"><span class="copyright-item-text">许可</span>：<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
+            
+        </ul>
+    
+
+
 
         
-    <div class="updated-badge-container"><div title="Updated @ 2020-02-23 22:25:20 CST" style="cursor:help;display:inline-block">
+    <div class="updated-badge-container">
+        <span title="Updated @ 2020-02-23 22:25:20 CST" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-02-23</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-02-23</text></g></svg></div></div>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-02-23</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-02-23</text></g></svg>
+        </span></div>
+
 
 
         
+
+
+        <div class="post-share">
+
+        
+            <div class="share-text">分享：</div>
+        
+
+        <div class="share-items">
+
+            
+                <div class="share-item twitter">
+                    
+                    <a href="https://twitter.com/share?url=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;text=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb&amp;hashtags=LaTeX,%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f,&amp;via=%25!s%28%3cnil%3e%29" title="分享到「Twitter」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon twitter-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item facebook">
+                    
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;hashtag=%23LaTeX" title="分享到「Facebook」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon facebook-icon"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item linkedin">
+                    
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;title=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb&amp;summary=%e8%bf%99%e7%af%87%e6%96%87%e7%ab%a0%e4%b8%bb%e8%a6%81%e6%98%af%e4%b8%ba%e4%ba%86%e6%8a%8a%e5%a4%a7%e9%83%a8%e5%88%86%e5%b8%b8%e7%94%a8%e7%9a%84LaTex%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e5%92%8c%e5%85%ac%e5%bc%8f%e6%95%b4%e7%90%86%e5%88%b0%e4%b8%80%e8%b5%b7%ef%bc%8c%e6%96%b9%e4%be%bf%e8%87%aa%e5%b7%b1%e5%92%8c%e5%a4%a7%e5%ae%b6%e4%bb%a5%e5%90%8e%e6%9f%a5%e9%98%85%e4%bd%bf%e7%94%a8%ef%bc%8c%e8%99%bd%e7%84%b6%e7%bd%91%e4%b8%8a%e7%9a%84%e7%9b%b8%e5%85%b3%e6%96%87%e7%ab%a0%e5%be%88%e5%a4%9a%ef%bc%8c%e4%bd%86%e6%88%91%e8%bf%98%e6%98%af%e8%8a%b1%e4%ba%86%e7%82%b9%e6%97%b6%e9%97%b4%e8%87%aa%e5%b7%b1%e6%95%b4%e7%90%86%e4%ba%86%e4%b8%80%e4%b8%8b%ef%bc%8c%e5%9f%ba%e6%9c%ac%e4%b8%8a%e9%83%bd%e6%98%af%e7%bd%91%e5%8f%8b%e4%bb%ac%e6%95%b4%e7%90%86%e8%bf%87%e7%9a%84%e7%9b%b8%e5%85%b3%e5%86%85%e5%ae%b9%e3%80%82%e4%bb%8e%e5%85%ac%e5%bc%8f%e7%9a%84%e4%bd%bf%e7%94%a8%e5%88%b0%e5%85%ac%e5%bc%8f%e7%9a%84%e5%90%84%e7%a7%8d%e5%b8%b8%e7%94%a8%e8%bf%90%e7%ae%97%e7%ac%a6%e5%86%8d%e5%88%b0%e4%b8%80%e4%ba%9b%e6%95%b0%e5%ad%a6%e5%b8%b8%e7%94%a8%e7%ac%a6%e5%8f%b7%e5%92%8c%e7%89%b9%e5%ae%9a%e7%9a%84%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e5%bd%a2%e5%bc%8f%e4%bb%a5%e5%8f%8a%e5%85%b6%e4%bb%96%e7%9b%b8%e5%85%b3%e7%ac%a6%e5%8f%b7%e7%9a%84%e6%95%b4%e7%90%86%e3%80%82%e5%86%85%e5%ae%b9%e8%82%af%e5%ae%9a%e6%98%af%e4%b8%8d%e5%ae%8c%e2%80%a6%e2%80%a6%0d%0a%20%20%20%20%0d%0a%20%20%20%20&amp;source=%e5%a4%a9%e6%b6%af%e5%85%b1%e6%ad%a4%e6%97%b6" title="分享到「LinkedIn」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon linkedin-icon"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item telegram">
+                    
+                    <a href="https://t.me/share/url?url=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;text=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb" title="分享到「Telegram」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon telegram-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item weibo">
+                    
+                    <a href="https://service.weibo.com/share/share.php?&amp;url=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;title=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb&amp;pic=https://ztygcs.github.io/icons/apple-touch-icon.png&amp;searchPic=false" title="分享到「新浪微博」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon weibo-icon"><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item douban">
+                    
+                    <a href="https://www.douban.com/share/service?href=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;name=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb&amp;text=%e8%bf%99%e7%af%87%e6%96%87%e7%ab%a0%e4%b8%bb%e8%a6%81%e6%98%af%e4%b8%ba%e4%ba%86%e6%8a%8a%e5%a4%a7%e9%83%a8%e5%88%86%e5%b8%b8%e7%94%a8%e7%9a%84LaTex%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e5%92%8c%e5%85%ac%e5%bc%8f%e6%95%b4%e7%90%86%e5%88%b0%e4%b8%80%e8%b5%b7%ef%bc%8c%e6%96%b9%e4%be%bf%e8%87%aa%e5%b7%b1%e5%92%8c%e5%a4%a7%e5%ae%b6%e4%bb%a5%e5%90%8e%e6%9f%a5%e9%98%85%e4%bd%bf%e7%94%a8%ef%bc%8c%e8%99%bd%e7%84%b6%e7%bd%91%e4%b8%8a%e7%9a%84%e7%9b%b8%e5%85%b3%e6%96%87%e7%ab%a0%e5%be%88%e5%a4%9a%ef%bc%8c%e4%bd%86%e6%88%91%e8%bf%98%e6%98%af%e8%8a%b1%e4%ba%86%e7%82%b9%e6%97%b6%e9%97%b4%e8%87%aa%e5%b7%b1%e6%95%b4%e7%90%86%e4%ba%86%e4%b8%80%e4%b8%8b%ef%bc%8c%e5%9f%ba%e6%9c%ac%e4%b8%8a%e9%83%bd%e6%98%af%e7%bd%91%e5%8f%8b%e4%bb%ac%e6%95%b4%e7%90%86%e8%bf%87%e7%9a%84%e7%9b%b8%e5%85%b3%e5%86%85%e5%ae%b9%e3%80%82%e4%bb%8e%e5%85%ac%e5%bc%8f%e7%9a%84%e4%bd%bf%e7%94%a8%e5%88%b0%e5%85%ac%e5%bc%8f%e7%9a%84%e5%90%84%e7%a7%8d%e5%b8%b8%e7%94%a8%e8%bf%90%e7%ae%97%e7%ac%a6%e5%86%8d%e5%88%b0%e4%b8%80%e4%ba%9b%e6%95%b0%e5%ad%a6%e5%b8%b8%e7%94%a8%e7%ac%a6%e5%8f%b7%e5%92%8c%e7%89%b9%e5%ae%9a%e7%9a%84%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e5%bd%a2%e5%bc%8f%e4%bb%a5%e5%8f%8a%e5%85%b6%e4%bb%96%e7%9b%b8%e5%85%b3%e7%ac%a6%e5%8f%b7%e7%9a%84%e6%95%b4%e7%90%86%e3%80%82%e5%86%85%e5%ae%b9%e8%82%af%e5%ae%9a%e6%98%af%e4%b8%8d%e5%ae%8c%e2%80%a6%e2%80%a6%0d%0a%20%20%20%20%0d%0a%20%20%20%20" title="分享到「豆瓣」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon douban-icon"><path d="M.643.92v2.412h22.714V.92H.643zm1.974 4.926v9.42h18.764v-9.42H2.617zm2.72 2.408H18.69v4.605H5.338V8.254zm1.657 7.412l-2.512.938c1.037 1.461 1.87 2.825 2.512 4.091H0v2.385h24v-2.385h-6.678c.818-1.176 1.589-2.543 2.303-4.091l-2.73-.938a29.952 29.952 0 01-2.479 5.03h-4.75c-.786-1.962-1.677-3.641-2.672-5.03Z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item qq">
+                    
+                    <a href="https://connect.qq.com/widget/shareqq/index.html?url=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;title=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb&amp;summary=%e8%bf%99%e7%af%87%e6%96%87%e7%ab%a0%e4%b8%bb%e8%a6%81%e6%98%af%e4%b8%ba%e4%ba%86%e6%8a%8a%e5%a4%a7%e9%83%a8%e5%88%86%e5%b8%b8%e7%94%a8%e7%9a%84LaTex%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e5%92%8c%e5%85%ac%e5%bc%8f%e6%95%b4%e7%90%86%e5%88%b0%e4%b8%80%e8%b5%b7%ef%bc%8c%e6%96%b9%e4%be%bf%e8%87%aa%e5%b7%b1%e5%92%8c%e5%a4%a7%e5%ae%b6%e4%bb%a5%e5%90%8e%e6%9f%a5%e9%98%85%e4%bd%bf%e7%94%a8%ef%bc%8c%e8%99%bd%e7%84%b6%e7%bd%91%e4%b8%8a%e7%9a%84%e7%9b%b8%e5%85%b3%e6%96%87%e7%ab%a0%e5%be%88%e5%a4%9a%ef%bc%8c%e4%bd%86%e6%88%91%e8%bf%98%e6%98%af%e8%8a%b1%e4%ba%86%e7%82%b9%e6%97%b6%e9%97%b4%e8%87%aa%e5%b7%b1%e6%95%b4%e7%90%86%e4%ba%86%e4%b8%80%e4%b8%8b%ef%bc%8c%e5%9f%ba%e6%9c%ac%e4%b8%8a%e9%83%bd%e6%98%af%e7%bd%91%e5%8f%8b%e4%bb%ac%e6%95%b4%e7%90%86%e8%bf%87%e7%9a%84%e7%9b%b8%e5%85%b3%e5%86%85%e5%ae%b9%e3%80%82%e4%bb%8e%e5%85%ac%e5%bc%8f%e7%9a%84%e4%bd%bf%e7%94%a8%e5%88%b0%e5%85%ac%e5%bc%8f%e7%9a%84%e5%90%84%e7%a7%8d%e5%b8%b8%e7%94%a8%e8%bf%90%e7%ae%97%e7%ac%a6%e5%86%8d%e5%88%b0%e4%b8%80%e4%ba%9b%e6%95%b0%e5%ad%a6%e5%b8%b8%e7%94%a8%e7%ac%a6%e5%8f%b7%e5%92%8c%e7%89%b9%e5%ae%9a%e7%9a%84%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e5%bd%a2%e5%bc%8f%e4%bb%a5%e5%8f%8a%e5%85%b6%e4%bb%96%e7%9b%b8%e5%85%b3%e7%ac%a6%e5%8f%b7%e7%9a%84%e6%95%b4%e7%90%86%e3%80%82%e5%86%85%e5%ae%b9%e8%82%af%e5%ae%9a%e6%98%af%e4%b8%8d%e5%ae%8c%e2%80%a6%e2%80%a6%0d%0a%20%20%20%20%0d%0a%20%20%20%20&amp;pics=https://ztygcs.github.io/icons/apple-touch-icon.png&amp;site=%e5%a4%a9%e6%b6%af%e5%85%b1%e6%ad%a4%e6%97%b6" title="分享到「QQ」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon qq-icon"><path d="M433.754 420.445c-11.526 1.393-44.86-52.741-44.86-52.741 0 31.345-16.136 72.247-51.051 101.786 16.842 5.192 54.843 19.167 45.803 34.421-7.316 12.343-125.51 7.881-159.632 4.037-34.122 3.844-152.316 8.306-159.632-4.037-9.045-15.25 28.918-29.214 45.783-34.415-34.92-29.539-51.059-70.445-51.059-101.792 0 0-33.334 54.134-44.859 52.741-5.37-.65-12.424-29.644 9.347-99.704 10.261-33.024 21.995-60.478 40.144-105.779C60.683 98.063 108.982.006 224 0c113.737.006 163.156 96.133 160.264 214.963 18.118 45.223 29.912 72.85 40.144 105.778 21.768 70.06 14.716 99.053 9.346 99.704z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item qzone">
+                    
+                    <a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/&amp;title=LaTeX%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e6%b1%87%e6%80%bb&amp;summary=%e8%bf%99%e7%af%87%e6%96%87%e7%ab%a0%e4%b8%bb%e8%a6%81%e6%98%af%e4%b8%ba%e4%ba%86%e6%8a%8a%e5%a4%a7%e9%83%a8%e5%88%86%e5%b8%b8%e7%94%a8%e7%9a%84LaTex%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7%e5%92%8c%e5%85%ac%e5%bc%8f%e6%95%b4%e7%90%86%e5%88%b0%e4%b8%80%e8%b5%b7%ef%bc%8c%e6%96%b9%e4%be%bf%e8%87%aa%e5%b7%b1%e5%92%8c%e5%a4%a7%e5%ae%b6%e4%bb%a5%e5%90%8e%e6%9f%a5%e9%98%85%e4%bd%bf%e7%94%a8%ef%bc%8c%e8%99%bd%e7%84%b6%e7%bd%91%e4%b8%8a%e7%9a%84%e7%9b%b8%e5%85%b3%e6%96%87%e7%ab%a0%e5%be%88%e5%a4%9a%ef%bc%8c%e4%bd%86%e6%88%91%e8%bf%98%e6%98%af%e8%8a%b1%e4%ba%86%e7%82%b9%e6%97%b6%e9%97%b4%e8%87%aa%e5%b7%b1%e6%95%b4%e7%90%86%e4%ba%86%e4%b8%80%e4%b8%8b%ef%bc%8c%e5%9f%ba%e6%9c%ac%e4%b8%8a%e9%83%bd%e6%98%af%e7%bd%91%e5%8f%8b%e4%bb%ac%e6%95%b4%e7%90%86%e8%bf%87%e7%9a%84%e7%9b%b8%e5%85%b3%e5%86%85%e5%ae%b9%e3%80%82%e4%bb%8e%e5%85%ac%e5%bc%8f%e7%9a%84%e4%bd%bf%e7%94%a8%e5%88%b0%e5%85%ac%e5%bc%8f%e7%9a%84%e5%90%84%e7%a7%8d%e5%b8%b8%e7%94%a8%e8%bf%90%e7%ae%97%e7%ac%a6%e5%86%8d%e5%88%b0%e4%b8%80%e4%ba%9b%e6%95%b0%e5%ad%a6%e5%b8%b8%e7%94%a8%e7%ac%a6%e5%8f%b7%e5%92%8c%e7%89%b9%e5%ae%9a%e7%9a%84%e6%95%b0%e5%ad%a6%e5%85%ac%e5%bc%8f%e5%bd%a2%e5%bc%8f%e4%bb%a5%e5%8f%8a%e5%85%b6%e4%bb%96%e7%9b%b8%e5%85%b3%e7%ac%a6%e5%8f%b7%e7%9a%84%e6%95%b4%e7%90%86%e3%80%82%e5%86%85%e5%ae%b9%e8%82%af%e5%ae%9a%e6%98%af%e4%b8%8d%e5%ae%8c%e2%80%a6%e2%80%a6%0d%0a%20%20%20%20%0d%0a%20%20%20%20&amp;pics=https://ztygcs.github.io/icons/apple-touch-icon.png&amp;site=%e5%a4%a9%e6%b6%af%e5%85%b1%e6%ad%a4%e6%97%b6" title="分享到「QQ 空间」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon qzone-icon"><path d="M23.985 9.202c-.032-.099-.127-.223-.334-.258-.207-.036-7.351-1.406-7.351-1.406s-.105-.022-.198-.07c-.092-.047-.127-.167-.127-.167S12.447.956 12.349.77C12.25.583 12.104.532 12 .532c-.104 0-.251.051-.349.238-.098.186-3.626 6.531-3.626 6.531s-.035.12-.128.167c-.092.047-.197.07-.197.07S.556 8.908.348 8.943c-.208.036-.302.16-.333.258a.477.477 0 0 0 .125.449l5.362 5.49s.072.08.119.172c.016.104.005.21.005.21s-1.189 7.242-1.22 7.45.075.369.159.43c.083.062.233.106.421.013.189-.093 6.812-3.261 6.812-3.261s.098-.044.201-.061c.103-.017.201.061.201.061s6.623 3.168 6.812 3.261c.188.094.338.049.421-.013a.463.463 0 0 0 .159-.43c-.021-.14-.93-5.677-.93-5.677.876-.54 1.425-1.039 1.849-1.747-2.594.969-6.006 1.717-9.415 1.866-.915.041-2.41.097-3.473-.015-.678-.071-1.17-.144-1.243-.438-.053-.215.054-.46.545-.831a2640.5 2640.5 0 0 1 2.861-2.155c1.285-.968 3.559-2.47 3.559-2.731 0-.285-2.144-.781-4.037-.781-1.945 0-2.275.132-2.811.168-.488.034-.769.005-.804-.138-.06-.248.183-.389.588-.568.709-.314 1.86-.594 1.984-.626.194-.052 3.082-.805 5.618-.535 1.318.14 3.244.668 3.244 1.276 0 .342-1.721 1.494-3.225 2.597-1.149.843-2.217 1.561-2.217 1.688 0 .342 3.533 1.241 6.689 1.01l.003-.022c.048-.092.119-.172.119-.172l5.362-5.49a.477.477 0 0 0 .127-.449z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item qrcode">
+                    <div class="qrcode-container" title="通过「二维码」"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon qrcode-icon"><path d="M0 224h192V32H0v192zM64 96h64v64H64V96zm192-64v192h192V32H256zm128 128h-64V96h64v64zM0 480h192V288H0v192zm64-128h64v64H64v-64zm352-64h32v128h-96v-32h-32v96h-64V288h96v32h64v-32zm0 160h32v32h-32v-32zm-64 0h32v32h-32v-32z"/></svg><div id="qrcode-img"></div>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+
+<script>
+    var typeNumber = 0;
+    var errorCorrectionLevel = 'L';
+    var qr = qrcode(typeNumber, errorCorrectionLevel);
+    qr.addData('https:\/\/ztygcs.github.io\/posts\/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB\/');
+    qr.make();
+    document.getElementById('qrcode-img').innerHTML = qr.createImgTag();
+</script>
+
+                </div>
+            
+
+        </div>
+
+    </div>
+
+
+
 
         
     
@@ -2124,6 +1855,7 @@ $$</p>
     
 
 
+
         
     
         <div class="post-tags">
@@ -2148,25 +1880,26 @@ $$</p>
     
 
 
+
         
     <footer class="minimal-footer">
         
-            
-            <div class="post-tag"><a href="/tags/latex/" rel="tag" class="post-tag-link">#latex</a>&nbsp;<a href="/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" rel="tag" class="post-tag-link">#数学公式</a></div>
+            <div class="post-tag"><a href="/tags/latex/" rel="tag" class="post-tag-link">#latex</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" rel="tag" class="post-tag-link">#数学公式</a></div>
         
         
         
             
                 <div class="post-category">
-                    
-                        <a href="/categories/tech/" class="post-category-link">tech</a>/<a href="/categories/hugo/" class="post-category-link">hugo</a>
+                    <a href="/categories/tech/" class="post-category-link">tech</a>/<a href="/categories/hugo/" class="post-category-link">hugo</a>
                 </div>
             
         
     </footer>
 
 
+
         
+
 
         
     
@@ -2180,101 +1913,78 @@ $$</p>
             
             
                 <li class="post-nav-next">
-                    <a href="/posts/hugo&#43;mathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93/" rel="next">Hugo+MathJax实现数学公式的渲染 ></a>
+                    <a href="/posts/hugo&#43;mathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93/" rel="next">Hugo&#43;MathJax实现数学公式的渲染 &gt;</a>
                 </li>
             
         </ul>
     
 
 
+
         
+
 
     </div>
 </main>
 
+
             
-    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
 
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            
-                
-            
-            
-
-            
-                
-            
-            
-
-            
-                
-            
-            
-
-            <div class="site-info">©&nbsp;2019–2020<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>天涯共此时</div>
-
-            
-                <div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div>
-            
-
-            
-                <div class="site-copyright"></div>
-            
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div>
 
             
 
+
             
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [['$','$'], ['\\(','\\)']],
-            displayMath: [['$$','$$'], ['\[','\]']],
-            processEscapes: true,
-            processEnvironments: true,
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            TeX: {
-                equationNumbers: { autoNumber: "AMS" },
-                extensions: ["AMSmath.js", "AMSsymbols.js"]
-            }
-        }
-    });
-</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         </div>
     </footer>
 
+
         </div>
-        <script src="/js/meme.min.d90e9b4ede7f94aaadb4b02291d69338c19b2c441b65d2c2e16fc1d7c9193201.js" integrity="sha256-2Q6bTt5/lKqttLAikdaTOMGbLEQbZdLC4W/B18kZMgE=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
+        
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speedAsDuration: true,
+        header: '[data-scroll-header]'
+    });
+</script>
 
 
-    <script data-no-instant>
-        InstantClick.on('change', function () {
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-                document.getElementById("theme-toggle").innerHTML = "🌙";
 
-                var els = [].slice.apply(document.getElementsByClassName("chroma"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
-                }
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
-                document.getElementById("theme-toggle").innerHTML = "🌞";
 
-                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
-                }
-            }
-        });
-    </script>
 
-    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
 
 
 

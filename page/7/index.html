@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
-        <script>
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
-            }
-        </script>
-
+<html lang="zh-CN">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     
     <meta http-equiv="Cache-Control" content="no-transform" />
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    
-    <meta name="renderer" content="webkit" />
-
-    <meta name="generator" content="Hugo 0.59.1" />
 
     <title>天涯共此时</title>
 
-    <link rel="stylesheet" href="/css/meme.min.f8287203e2f29590bcfa56811307f0869305cb0f625cb5175bfe445c5a3123e2.css" integrity="sha256-+ChyA+LylZC8+laBEwfwhpMFyw9iXLUXW/5EXFoxI+I=" data-instant-track /><style data-instant-track>.post p {text-align:justify;text-justify:distribute}</style>
+    <link rel="stylesheet" href="/css/meme.min.cc2b39728f95e3beb6c35e63c005510dfc7f596a8d687016dca0248582237b53.css" integrity="sha256-zCs5co&#43;V4762w15jwAVRDfx/WWqNaHAW3KAkhYIje1M=" />
 
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&display=swap&subset=chinese-simplified" rel="stylesheet" />
-
-    <meta name="author" content="天涯共此时" />
-    <meta name="description" content="MemE is a powerful and highly customizable GoHugo theme for personal blogs." />
-    <meta name="keywords" content="hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, latex, layout, linechart, listview, markdown, mathjax, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 数学公式, 滨江公园, 百度搜索框, 铁王座争夺战" />
     
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.c2f1200d40dd6f48af0511126999fb04d8eb2d1937ef19175772d00e124e14b0.js" integrity="sha256-wvEgDUDdb0ivBRESaZn7BNjrLRk37xkXV3LQDhJOFLA="></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
+
+    <meta name="author" content="天涯共此时" /><meta name="description" content="MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -46,140 +35,184 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="application-name" content="天涯共此时" />
-    <meta name="msapplication-starturl" content="./" />
+    <meta name="msapplication-starturl" content="" />
     <meta name="msapplication-TileColor" content="#fff" />
-    <meta name="msapplication-TileImage" content="./icons/mstile-150x150.png" />
+    <meta name="msapplication-TileImage" content="icons/mstile-150x150.png" />
     <link rel="manifest" href="/manifest.json" />
+
     
-    
-    <link rel="alternate" type="application/atom+xml" href="https://ztygcs.github.io/atom.xml" title="天涯共此时" />
-    <link rel="alternate" type="application/rss+xml" href="https://ztygcs.github.io/rss.xml" title="天涯共此时" />
+    <link rel="alternate" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" title="天涯共此时" />
+    <link rel="alternate" type="application/rss&#43;xml" href="https://ztygcs.github.io/rss.xml" title="天涯共此时" />
     
 
     
     <link rel="canonical" href="https://ztygcs.github.io/" />
-
-
-
+    
 
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "datePublished": "2019-11-26T20:17:43+00:00",
-        "dateModified": "2020-05-25T20:48:30+08:00",
+        "dateModified": "2020-05-28T02:12:33+08:00",
         "url": "https://ztygcs.github.io/",
-        "description": "MemE is a powerful and highly customizable GoHugo theme for personal blogs.",
-        "keywords": "hexo, hugo, life, tech, 前端, 哲学, 哲学与人生, 安卓, 影片, 摘录, 计算机网络, 记录, 随笔, 音乐, android, annie, barbecue, bee, control, css, dialog, emoji, files, git, gitalk, github, hexo, html, http, hugo, latex, layout, linechart, listview, markdown, mathjax, meme, movie, music, navigationview, php, poem, trouble, video, write, xampp, 南山忆, 哲学是什么, 密码体制, 尊严, 小酒馆, 性, 数学公式, 滨江公园, 百度搜索框, 铁王座争夺战",
+        "description": "MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。",
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
-            "description": "海上生明月",
+            "description": "Viva La Vida",
             "email": "zccon1996@163.com",
             "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
             "url": "https://ztygcs.github.io",
             "name": "天涯共此时"
         },
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
         "name": "天涯共此时"
     }
 </script>
 
     
 
-
-
 <meta name="twitter:card" content="summary" />
 
-<meta name="twitter:site" content="@reuixiy" />
 
     
-
-
-
 
 
 
 <meta property="og:title" content="天涯共此时" />
-<meta property="og:description" content="MemE is a powerful and highly customizable GoHugo theme for personal blogs." />
+<meta property="og:description" content="MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。" />
 <meta property="og:url" content="https://ztygcs.github.io/" />
 <meta property="og:site_name" content="天涯共此时" />
-<meta property="og:locale" content="zh-CN" />
-            <meta property="og:locale:alternate" content="en-US" />
-        
-            <meta property="og:locale:alternate" content="en-US" />
+<meta property="og:locale" content="zh" />
+            <meta property="og:locale:alternate" content="en-us" />
         <meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
 
-    
-	
-	
-</head>
 
+    
+</head>
 
     <body>
         <div class="container">
             
-    <header class="header">
-        <div class="site-brand">
-            
-            <a href="/" class="brand">天涯共此时</a>
-            
-        </div>
-		
-    </header>
-
-
-            
-    <nav class="nav">
-        <ul class="menu" id="menu">
-            
-                
-            
-            
-            
-                <li class="menu-item"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">归档</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/search/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><span class="menu-item-name">百度</span></a>
-                </li>
-            
-			
-        </ul>
-		
-    </nav>
-		
-
-            
-    <div class="lang-toggle" onmouseover="langSwitcherOver()" onmouseout="langSwitcherOut()">🇨🇳
+    <header class="header" data-scroll-header>
         
-            <ul id="langs">
-                
-                    <li><a rel="alternate" href="/en-us/" hreflang="en-us" lang="en-us">🇺🇸</a></li>
-                
-            </ul>
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">天涯共此时</a>
         
     </div>
 
-            
-    
+                    <nav class="nav">
+    <ul class="menu" id="menu">
         
             
         
         
-        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
-    
+        
+        
+            
+                <li class="menu-item"><a href="/posts/"><span class="menu-item-name">归档</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><span class="menu-item-name">分类</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><span class="menu-item-name">标签</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/baidu/"><span class="menu-item-name">百度</span></a>
+                </li>
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        
+                        
+                            <li class="menu-item">
+                                <div id="lang-switcher">
+            <span>简体中文</span>
+            
+                <ul id="langs">
+                    
+                        <li><a rel="alternate" href="/en-us/" hreflang="en-us" lang="en-us">English</a></li>
+                    
+                </ul>
+            
+        </div>
+                            </li>
+                        
+                    
+                
+            
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">阅读更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
 
 
 
+
+            
             
     
     
@@ -188,18 +221,20 @@
     
     
         <main class="main single" id="main">
-            <div class="main-inner">
+    <div class="main-inner">
+        
+        
+            <article class="content post home">
+                <h2 class="post-title">
+                    <a href="/posts/life/" class="summary-title-link">去动物园</a>
+                </h2>
                 
-                
-                    <article class="content post home">
-                        <h2 class="post-title">
-                            <a href="/posts/%E8%8F%B2%E7%A9%86%E9%85%92%E9%A6%86%E5%B0%8F%E8%81%9A/" class="summary-title-link">菲穆酒馆小聚</a>
-                        </h2>
-                        
-                            <div class="post-meta">
+                    
+
+<div class="post-meta">
     
         
-        <time datetime="2017-01-02T22:58:58+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2017.1.2</time>
+        <time datetime="2018-09-12T12:02:11&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2018.9.12</time>
     
     
     
@@ -208,41 +243,37 @@
         
         
             
-                
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg><a href="/categories/life/" class="category-link">LIFE</a>/<a href="/categories/%E8%AE%B0%E5%BD%95/" class="category-link">记录</a></span>
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/life/" class="category-link">LIFE</a>/<a href="/categories/%E8%AE%B0%E5%BD%95/" class="category-link">记录</a></span>
             
         
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>354</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;118</span>
+    
+    
     
     
 </div>
-                        
-                        <summary class="summary">
-                            
-    
-    
-                            
-                            昨天元旦 今天好友几个到这来聚聚 吃吃饭（这个小酒馆特别神奇） （我，阿军，烨总，炉炉，Tjx） 点的那个鸡肉挺好吃的 可惜没拍照片（哈哈哈） 还有一盘菜叫“蓝瘦香菇” 啥啊（就是西兰花🥦炒香菇） 过了一个时间点（就是八点钟🕗） 菲穆餐厅变成了一个酒吧 就不提供餐饮 只提供酒了 摇身一变就是一个bar(有点意思) 我们吃完饭……
-                        </summary>
-                        
-                            <div class="read-more-container">
-                                <a href="/posts/%E8%8F%B2%E7%A9%86%E9%85%92%E9%A6%86%E5%B0%8F%E8%81%9A/" class="read-more-link">阅读全文 »</a>
-                            </div>
-                        
-                    </article>
+
                 
-                    <article class="content post home">
-                        <h2 class="post-title">
-                            <a href="/posts/%E6%9E%97%E4%B8%AD%E7%83%A7%E7%83%A4/" class="summary-title-link">林中烧烤</a>
-                        </h2>
-                        
-                            <div class="post-meta">
+                <summary class="summary">
+                    天气好 不冷不热 阿军到学校来找我玩 学校可没啥好玩的 无聊 不如去外面转转吧 我们来到了动物园 开学周 这里没啥人 可小家伙们也懒 不知躲在哪睡觉 动物是没看到多少 出来散散步却也是极舒服的 晃晃悠悠 漫无目的地走 在黄昏时 坐在躺椅上 清风吹来 便用手机定格眼前的画面
+                </summary>
+                
+            </article>
+        
+            <article class="content post home">
+                <h2 class="post-title">
+                    <a href="/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" class="summary-title-link">用Hexo写博客及语法规则</a>
+                </h2>
+                
+                    
+
+<div class="post-meta">
     
         
-        <time datetime="2016-12-06T22:22:23+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2016.12.6</time>
+        <time datetime="2018-09-12T10:15:53&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2018.9.12</time>
     
     
     
@@ -251,41 +282,43 @@
         
         
             
-                
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg><a href="/categories/life/" class="category-link">LIFE</a>/<a href="/categories/%E8%AE%B0%E5%BD%95/" class="category-link">记录</a></span>
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/tech/" class="category-link">TECH</a>/<a href="/categories/hexo/" class="category-link">Hexo</a></span>
             
         
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>430</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1041</span>
+    
+    
     
     
 </div>
-                        
-                        <summary class="summary">
-                            
-    
-    
-                            
-                            很幸运拿了个二等奖学金3000(开心😆)，今天便独家赞助哥几个来了一次野外烧烤。上午一起去附近菜场买了些食材佐料啥的，然后买了一些烧烤用的工具，之后到超市买了些水。午觉过后，开始出发。 刚开始准备到滨江公园去的，看到那边明示禁止烧烤，便辗转来到路边的一片稀疏的树林里，在辗转的路上停留了一会，随手拍了张……
-                        </summary>
-                        
-                            <div class="read-more-container">
-                                <a href="/posts/%E6%9E%97%E4%B8%AD%E7%83%A7%E7%83%A4/" class="read-more-link">阅读全文 »</a>
-                            </div>
-                        
-                    </article>
+
                 
-                    <article class="content post home">
-                        <h2 class="post-title">
-                            <a href="/posts/%E8%9C%9C%E8%9C%82/" class="summary-title-link">蜜蜂</a>
-                        </h2>
-                        
-                            <div class="post-meta">
+                <summary class="summary">
+                    新建一篇文章 命令： $ hexo new &quot;文章标题&quot; 例如，执行命令：hexo new &quot;Helloworld&quot;,\source\_posts文件夹下会出现对应的文件Helloworld.md,打开即可编辑。 为文章设置标签 在新建的文章头部tags:标签后输入标签名（冒号与标签名之间有空……
+    
+    
+                </summary>
+                
+                    <div class="read-more-container">
+                        <a href="/posts/%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%8A%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/" class="read-more-link">阅读更多 »</a>
+                    </div>
+                
+            </article>
+        
+            <article class="content post home">
+                <h2 class="post-title">
+                    <a href="/posts/%E8%8D%89/" class="summary-title-link">草</a>
+                </h2>
+                
+                    
+
+<div class="post-meta">
     
         
-        <time datetime="2016-02-26T20:40:09+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2016.2.26</time>
+        <time datetime="2018-09-11T21:19:45&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2018.9.11</time>
     
     
     
@@ -294,125 +327,194 @@
         
         
             
-                
-                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg><a href="/categories/life/" class="category-link">LIFE</a>/<a href="/categories/%E8%AE%B0%E5%BD%95/" class="category-link">记录</a></span>
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/life/" class="category-link">LIFE</a>/<a href="/categories/%E6%91%98%E5%BD%95/" class="category-link">摘录</a></span>
             
         
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>100</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;174</span>
+    
+    
     
     
 </div>
-                        
-                        <summary class="summary">
-                            
-                            
-                            今天天气🌤️真好 下午的阳光好暖和 一个人到门口的油菜地里玩 (感受下春天的气息) 油菜花开了 很香很漂亮 冬天的痕迹慢慢消失了 小蜜蜂🐝都跑出来了 大家东跑西跑忙着采蜜 乐此不疲 我就偷偷的给你们拍个照把 hahaha😁
-                        </summary>
-                        
-                    </article>
+
+                
+                <summary class="summary">
+                    poem 用撼动一座岩石的力量 生长 春雨和冰霜同样 只能带来一段故事 沉睡的是这个世界的爱意 如果不能睁开眼睛 就用每一只手触摸你 前世冰冷 来世温暖 只在此生纠缠不清 谁也无法把两种根连在一起 这是我们的命运 哪怕是死后 或者被山羊连根拔起 我的梦在云云俗口中碎成渣 也依然享有最温暖的光阴 在下一个春季 我确信 我的草籽 只需一点山风的沐浴……
+    
+    
+                </summary>
+                
+                    <div class="read-more-container">
+                        <a href="/posts/%E8%8D%89/" class="read-more-link">阅读更多 »</a>
+                    </div>
+                
+            </article>
+        
+            <article class="content post home">
+                <h2 class="post-title">
+                    <a href="/posts/hexo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="summary-title-link">Hexo&#43;github搭建个人博客</a>
+                </h2>
+                
+                    
+
+<div class="post-meta">
+    
+        
+        <time datetime="2018-09-11T15:28:04&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2018.9.11</time>
+    
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/tech/" class="category-link">TECH</a>/<a href="/categories/hexo/" class="category-link">Hexo</a></span>
+            
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1242</span>
+    
+    
+    
+    
+</div>
+
+                
+                <summary class="summary">
+                    搭建环境 在搭建个人博客之前，首先我们配置下所需的一些环境，下载并安装以下两个工具 node.js git 安装过程比较简单，直接下一步即可。 注意记住它们的安装路径。 安装好之后，打开命令窗口（按住Win+R后输入CMD） 分别输入 node -v 、npm -v及git --version 查看刚才我们安装的软件的版本 能看到上面红色框中的版本号就说明我们已经将……
+    
+    
+                </summary>
+                
+                    <div class="read-more-container">
+                        <a href="/posts/hexo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="read-more-link">阅读更多 »</a>
+                    </div>
+                
+            </article>
+        
+            <article class="content post home">
+                <h2 class="post-title">
+                    <a href="/posts/%E6%AF%95%E4%B8%9A/" class="summary-title-link">毕业</a>
+                </h2>
+                
+                    
+
+<div class="post-meta">
+    
+        
+        <time datetime="2018-06-08T09:55:00&#43;08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2018.6.8</time>
+    
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/life/" class="category-link">LIFE</a>/<a href="/categories/%E8%AE%B0%E5%BD%95/" class="category-link">记录</a></span>
+            
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;3</span>
+    
+    
+    
+    
+</div>
+
+                
+                <summary class="summary">
+                    ◎ Yangtze University
+                </summary>
+                
+            </article>
+        
+        
+            <ul class="pagination">
+                
+                    <li class="pagination-prev">
+                        <a href="/page/6/" rel="prev">&lt; 上一页</a>
+                    </li>
                 
                 
-                    <ul class="pagination">
-                        
-                            <li class="pagination-prev">
-                                <a href="/page/6/" rel="prev">< 上一页</a>
-                            </li>
-                        
-                        
-                    </ul>
+                    <li class="pagination-next">
+                        <a href="/page/8/" rel="next">下一页 &gt;</a>
+                    </li>
                 
-            </div>
-        </main>
+            </ul>
+        
+    </div>
+</main>
+
     
     
     
 
             
-    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
 
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            
-                
-            
-            
-
-            
-                
-            
-            
-
-            
-                
-            
-            
-
-            <div class="site-info">©&nbsp;2019–2020<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>天涯共此时</div>
-
-            
-                <div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div>
-            
-
-            
-                <div class="site-copyright"></div>
-            
+            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;天涯共此时</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div>
 
             
 
+
             
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [['$','$'], ['\\(','\\)']],
-            displayMath: [['$$','$$'], ['\[','\]']],
-            processEscapes: true,
-            processEnvironments: true,
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            TeX: {
-                equationNumbers: { autoNumber: "AMS" },
-                extensions: ["AMSmath.js", "AMSsymbols.js"]
-            }
-        }
-    });
-</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         </div>
     </footer>
 
+
         </div>
-        <script src="/js/meme.min.d90e9b4ede7f94aaadb4b02291d69338c19b2c441b65d2c2e16fc1d7c9193201.js" integrity="sha256-2Q6bTt5/lKqttLAikdaTOMGbLEQbZdLC4W/B18kZMgE=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
+        
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speedAsDuration: true,
+        header: '[data-scroll-header]'
+    });
+</script>
 
 
-    <script data-no-instant>
-        InstantClick.on('change', function () {
-            const theme = localStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
-                document.getElementById("theme-toggle").innerHTML = "🌙";
 
-                var els = [].slice.apply(document.getElementsByClassName("chroma"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
-                }
-            } else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
-                document.getElementById("theme-toggle").innerHTML = "🌞";
 
-                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
-                for (var i = 0; i < els.length; i++) {
-                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
-                }
-            }
-        });
-    </script>
 
-    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
 
 
 
