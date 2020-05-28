@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Thu, 28 May 2020 23:00:54 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 29 May 2020 00:53:32 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -39,15 +39,15 @@
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
                     <description>&lt;p&gt;这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完善的，后续如果有需要更改或添加的地方，我会进行修改的。&lt;/p&gt;
-&lt;h1 id=&#34;1插入公式&#34;&gt;1.插入公式&lt;/h1&gt;
-&lt;h2 id=&#34;11行中公式&#34;&gt;1.1行中公式&lt;/h2&gt;
+&lt;h2 id=&#34;1插入公式&#34;&gt;1.插入公式&lt;/h2&gt;
+&lt;h3 id=&#34;11行中公式&#34;&gt;1.1行中公式&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$y=x+1$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$y=x+1$&lt;/p&gt;
-&lt;h2 id=&#34;12独立公式&#34;&gt;1.2独立公式&lt;/h2&gt;
+&lt;h3 id=&#34;12独立公式&#34;&gt;1.2独立公式&lt;/h3&gt;
 &lt;p&gt;公式会另起一行居中显示&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$$y=x+1$$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$$y=x+1$$&lt;/p&gt;
-&lt;h1 id=&#34;上下标&#34;&gt;上下标&lt;/h1&gt;
+&lt;h2 id=&#34;上下标&#34;&gt;上下标&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -74,7 +74,7 @@
 &lt;p&gt;例：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$$ \sideset{^1_2}{^3_4}x $$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$$ \sideset{^1_2}{^3_4}x $$&lt;/p&gt;
-&lt;h1 id=&#34;括号的使用&#34;&gt;括号的使用&lt;/h1&gt;
+&lt;h2 id=&#34;括号的使用&#34;&gt;括号的使用&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -124,7 +124,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$$ {f}&#39;(x) = \left( \frac{df}{dx} \right) $$&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$$ {f}&#39;(0) =  \left. \frac{df}{dx} \right|_{x=0} $$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$$ {f}&#39;(0) =  \left. \frac{df}{dx} \right|_{x=0} $$&lt;/p&gt;
-&lt;h1 id=&#34;运算表达式&#34;&gt;运算表达式&lt;/h1&gt;
+&lt;h2 id=&#34;运算表达式&#34;&gt;运算表达式&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -201,9 +201,9 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;矩阵&#34;&gt;矩阵&lt;/h1&gt;
-&lt;h2 id=&#34;圆括号型&#34;&gt;圆括号型&lt;/h2&gt;
-&lt;h3 id=&#34;方法1&#34;&gt;方法1&lt;/h3&gt;
+&lt;h2 id=&#34;矩阵&#34;&gt;矩阵&lt;/h2&gt;
+&lt;h3 id=&#34;圆括号型&#34;&gt;圆括号型&lt;/h3&gt;
+&lt;h4 id=&#34;方法1&#34;&gt;方法1&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \begin{pmatrix}
 1 &amp;amp; 2 &amp;amp; 3\\\\
@@ -216,7 +216,7 @@ $$
 4 &amp;amp; 5 &amp;amp; 6
 \end{pmatrix}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;方法2&#34;&gt;方法2&lt;/h3&gt;
+&lt;h4 id=&#34;方法2&#34;&gt;方法2&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \left(
 \begin{matrix}
@@ -235,8 +235,8 @@ $$
 \end{matrix}
 \right)
 $$&lt;/p&gt;
-&lt;h2 id=&#34;方括号型&#34;&gt;方括号型&lt;/h2&gt;
-&lt;h3 id=&#34;方法1-1&#34;&gt;方法1&lt;/h3&gt;
+&lt;h3 id=&#34;方括号型&#34;&gt;方括号型&lt;/h3&gt;
+&lt;h4 id=&#34;方法1-1&#34;&gt;方法1&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \begin{bmatrix}
 	1 &amp;amp; 2 &amp;amp; 3\\\\
@@ -249,7 +249,7 @@ $$
 4 &amp;amp; 5 &amp;amp; 6
 \end{bmatrix}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;方法2-1&#34;&gt;方法2&lt;/h3&gt;
+&lt;h4 id=&#34;方法2-1&#34;&gt;方法2&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \left[
 	\begin{matrix}
@@ -266,8 +266,8 @@ $$
 \end{matrix}
 \right]
 $$&lt;/p&gt;
-&lt;h2 id=&#34;花括号型&#34;&gt;花括号型&lt;/h2&gt;
-&lt;h3 id=&#34;方法1-2&#34;&gt;方法1&lt;/h3&gt;
+&lt;h3 id=&#34;花括号型&#34;&gt;花括号型&lt;/h3&gt;
+&lt;h4 id=&#34;方法1-2&#34;&gt;方法1&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \begin{Bmatrix}
 1 &amp;amp; 2 &amp;amp; 3\\\\
@@ -280,7 +280,7 @@ $$
 4 &amp;amp; 5 &amp;amp; 6
 \end{Bmatrix}
 $$&lt;/p&gt;
-&lt;h3 id=&#34;方法2-2&#34;&gt;方法2&lt;/h3&gt;
+&lt;h4 id=&#34;方法2-2&#34;&gt;方法2&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \left\\{
 	\begin{matrix}
@@ -297,8 +297,8 @@ $$
 \end{matrix}
 \right\}
 $$&lt;/p&gt;
-&lt;h1 id=&#34;行列式&#34;&gt;行列式&lt;/h1&gt;
-&lt;h2 id=&#34;方法1-3&#34;&gt;方法1&lt;/h2&gt;
+&lt;h2 id=&#34;行列式&#34;&gt;行列式&lt;/h2&gt;
+&lt;h3 id=&#34;方法1-3&#34;&gt;方法1&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-X=&#34; data-lang=&#34;X=&#34;&gt;\begin{vmatrix}
 	x &amp;amp; x &amp;amp; \cdots &amp;amp; x\\\\
 	x &amp;amp; x &amp;amp; \cdots &amp;amp; x\\\\
@@ -313,7 +313,7 @@ x &amp;amp; x &amp;amp; \cdots &amp;amp; x\\&lt;br&gt;
 x &amp;amp; x &amp;amp; \cdots &amp;amp; x\\&lt;br&gt;
 \end{vmatrix}
 $$&lt;/p&gt;
-&lt;h2 id=&#34;方法2-3&#34;&gt;方法2&lt;/h2&gt;
+&lt;h3 id=&#34;方法2-3&#34;&gt;方法2&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$$X=
 \left|
 \begin{matrix}
@@ -334,7 +334,7 @@ x &amp;amp; x &amp;amp; \cdots &amp;amp; x\\&lt;br&gt;
 \end{matrix}
 \right|
 $$&lt;/p&gt;
-&lt;h1 id=&#34;分段函数&#34;&gt;分段函数&lt;/h1&gt;
+&lt;h2 id=&#34;分段函数&#34;&gt;分段函数&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;$$f(n) =
 \begin{cases}
 	2n,  &amp;amp; \text{if $n$ is even} \\\\
@@ -347,7 +347,7 @@ $$
 3n, &amp;amp; \text{if $n$ is odd}
 \end{cases}
 $$&lt;/p&gt;
-&lt;h1 id=&#34;方程组&#34;&gt;方程组&lt;/h1&gt;
+&lt;h2 id=&#34;方程组&#34;&gt;方程组&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;$$
 \left\\{ 
 \begin{array}{c}
@@ -366,9 +366,9 @@ a_3x+b_3y+c_3z=d_3
 \end{array}
 \right.
 $$&lt;/p&gt;
-&lt;h1 id=&#34;数学常用符号&#34;&gt;数学常用符号&lt;/h1&gt;
-&lt;h2 id=&#34;希腊字母&#34;&gt;希腊字母&lt;/h2&gt;
-&lt;h3 id=&#34;小写希腊字母&#34;&gt;小写希腊字母&lt;/h3&gt;
+&lt;h2 id=&#34;数学常用符号&#34;&gt;数学常用符号&lt;/h2&gt;
+&lt;h3 id=&#34;希腊字母&#34;&gt;希腊字母&lt;/h3&gt;
+&lt;h4 id=&#34;小写希腊字母&#34;&gt;小写希腊字母&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -463,7 +463,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;大写希腊字母&#34;&gt;大写希腊字母&lt;/h3&gt;
+&lt;h4 id=&#34;大写希腊字母&#34;&gt;大写希腊字母&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -510,8 +510,8 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;运算符&#34;&gt;运算符&lt;/h2&gt;
-&lt;h3 id=&#34;二元运算符&#34;&gt;二元运算符&lt;/h3&gt;
+&lt;h3 id=&#34;运算符&#34;&gt;运算符&lt;/h3&gt;
+&lt;h4 id=&#34;二元运算符&#34;&gt;二元运算符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -638,7 +638,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;大尺寸运算符&#34;&gt;大尺寸运算符&lt;/h3&gt;
+&lt;h4 id=&#34;大尺寸运算符&#34;&gt;大尺寸运算符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -687,7 +687,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;对数运算符&#34;&gt;对数运算符&lt;/h3&gt;
+&lt;h4 id=&#34;对数运算符&#34;&gt;对数运算符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -710,7 +710,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;三角运算符&#34;&gt;三角运算符&lt;/h3&gt;
+&lt;h4 id=&#34;三角运算符&#34;&gt;三角运算符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -749,7 +749,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;微积分运算符&#34;&gt;微积分运算符&lt;/h3&gt;
+&lt;h4 id=&#34;微积分运算符&#34;&gt;微积分运算符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -788,7 +788,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;逻辑运算符&#34;&gt;逻辑运算符&lt;/h3&gt;
+&lt;h4 id=&#34;逻辑运算符&#34;&gt;逻辑运算符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -819,8 +819,8 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;关系符&#34;&gt;关系符&lt;/h2&gt;
-&lt;h3 id=&#34;二元关系符&#34;&gt;二元关系符&lt;/h3&gt;
+&lt;h3 id=&#34;关系符&#34;&gt;关系符&lt;/h3&gt;
+&lt;h4 id=&#34;二元关系符&#34;&gt;二元关系符&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -955,7 +955,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;戴帽符号&#34;&gt;戴帽符号&lt;/h2&gt;
+&lt;h3 id=&#34;戴帽符号&#34;&gt;戴帽符号&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -992,7 +992,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;连线符号&#34;&gt;连线符号&lt;/h2&gt;
+&lt;h3 id=&#34;连线符号&#34;&gt;连线符号&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1080,7 +1080,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;箭头&#34;&gt;箭头&lt;/h2&gt;
+&lt;h3 id=&#34;箭头&#34;&gt;箭头&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1223,7 +1223,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;定界符&#34;&gt;定界符&lt;/h2&gt;
+&lt;h3 id=&#34;定界符&#34;&gt;定界符&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1278,7 +1278,7 @@ $$&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;其他符号&#34;&gt;其他符号&lt;/h2&gt;
+&lt;h3 id=&#34;其他符号&#34;&gt;其他符号&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1788,8 +1788,8 @@ $$&lt;/p&gt;
                 
                     <description>&lt;p&gt;&lt;a href=&#34;http://www.greensock.com/tweenlite/&#34;&gt;Tweenlite&lt;/a&gt;，是webgame开发人员比较常用的一个缓动库。&lt;/p&gt;
 &lt;p&gt;可以去&lt;a href=&#34;https://www.tweenmax.com.cn/start/&#34;&gt;https://www.tweenmax.com.cn/start/&lt;/a&gt;下载 &lt;code&gt;TweenMax.min.js&lt;/code&gt; 文件并引入&lt;/p&gt;
-&lt;h1 id=&#34;tweenmax使用方法&#34;&gt;TweenMax使用方法&lt;/h1&gt;
-&lt;h2 id=&#34;载入tweenmaxjs插件&#34;&gt;载入TweenMax.js插件&lt;/h2&gt;
+&lt;h2 id=&#34;tweenmax使用方法&#34;&gt;TweenMax使用方法&lt;/h2&gt;
+&lt;h3 id=&#34;载入tweenmaxjs插件&#34;&gt;载入TweenMax.js插件&lt;/h3&gt;
 &lt;p&gt;首先下载TweenMax文件包(greensock-js)，找到&lt;code&gt;TweenMax.min.js&lt;/code&gt;压缩文件。&lt;br/&gt;
 文件位置： &lt;code&gt;greensock-js/src/minified/TweenMax.min.js&lt;/code&gt;&lt;br/&gt;
 或者使用TweenMax的CDN。&lt;/p&gt;
@@ -1820,7 +1820,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;js/easing/EasePack.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;准备好要执行tweenmax动画的元素&#34;&gt;准备好要执行TweenMax动画的元素&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;准备好要执行tweenmax动画的元素&#34;&gt;准备好要执行TweenMax动画的元素&lt;/h3&gt;
 &lt;p&gt;先创建需要进行TweenMax动画的元素&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1831,7 +1831,7 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;TweenMax不仅仅可以对html元素进行动画，还可以补间任何Javascript物件的任何数字属性&lt;/p&gt;
-&lt;h2 id=&#34;给该元素设置tweenmax动画&#34;&gt;给该元素设置TweenMax动画&lt;/h2&gt;
+&lt;h3 id=&#34;给该元素设置tweenmax动画&#34;&gt;给该元素设置TweenMax动画&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1929,7 +1929,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;nx&#34;&gt;TweenMax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;#obj&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;水滴效果完整代码&#34;&gt;水滴效果完整代码&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;水滴效果完整代码&#34;&gt;水滴效果完整代码&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2187,17 +2187,17 @@ $$&lt;/p&gt;
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h1 id=&#34;开发环境&#34;&gt;开发环境&lt;/h1&gt;
+                    <description>&lt;h2 id=&#34;开发环境&#34;&gt;开发环境&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;win10(64位)&lt;/code&gt; + &lt;code&gt;Google Chorme&lt;/code&gt; + &lt;code&gt;sublime text3&lt;/code&gt; + &lt;code&gt;xampp&lt;/code&gt; + &lt;code&gt;Navicat&lt;/code&gt;&lt;/p&gt;
-&lt;h1 id=&#34;文件夹的设置&#34;&gt;文件夹的设置&lt;/h1&gt;
+&lt;h2 id=&#34;文件夹的设置&#34;&gt;文件夹的设置&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;目的&lt;/code&gt;：显示文件的后缀&lt;br/&gt;
 任意打开一个文件夹，点击 &lt;code&gt;查看&lt;/code&gt; ，勾选上 &lt;code&gt;文件扩展名&lt;/code&gt; 。
 &lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D.png&#34; alt=&#34;&#34; title=&#34;勾选上文件扩展名&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装编辑器-sublime-text3&#34;&gt;安装编辑器 sublime text3&lt;/h1&gt;
+&lt;h2 id=&#34;安装编辑器-sublime-text3&#34;&gt;安装编辑器 sublime text3&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.sublimetext.com/3&#34;&gt;sublime text3 下载地址&lt;/a&gt;&lt;br/&gt;
 安装过程就不用说了，直接下一步就好了。
 &lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/sublime%20text3.png&#34; alt=&#34;&#34; title=&#34;sublime text3&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装-xampp&#34;&gt;安装 xampp&lt;/h1&gt;
+&lt;h2 id=&#34;安装-xampp&#34;&gt;安装 xampp&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.apachefriends.org/zh_cn/download.html&#34;&gt;XAMPP 官方下载地址&lt;/a&gt;&lt;br/&gt;
 下载好之后点击 &lt;code&gt;.exe&lt;/code&gt; 后缀文件，进行安装&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/xampp%E8%A7%A3%E5%8E%8B.png&#34; alt=&#34;&#34; title=&#34;选择解压路径&#34;&gt;&lt;/p&gt;
@@ -2216,10 +2216,10 @@ $$&lt;/p&gt;
 在你的xampp安装路径下有个 &lt;code&gt;htdocs&lt;/code&gt; 文件夹，下面会有一个 &lt;code&gt;index.html&lt;/code&gt; 文件，127.0.0.1指的就是这个目录下的这个文件，可以自己创建一个 &lt;code&gt;index.html&lt;/code&gt; 文件替换掉它再刷新网页试试效果
 &lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/htdocs.png&#34; alt=&#34;&#34; title=&#34;index文件路径&#34;&gt;
 如果没有 &lt;code&gt;index.html&lt;/code&gt; 文件，那么浏览器将会显示当前文件夹包含的 ..所有文件列表..&lt;/p&gt;
-&lt;h1 id=&#34;下载php手册&#34;&gt;下载php手册&lt;/h1&gt;
+&lt;h2 id=&#34;下载php手册&#34;&gt;下载php手册&lt;/h2&gt;
 &lt;p&gt;浏览器地址栏输入 &lt;code&gt;https://www.php.net/&lt;/code&gt; 在里面找到中文版本的下载&lt;/p&gt;
 &lt;p&gt;其他php手册：这里是&lt;a href=&#34;https://www.w3school.com.cn/php/php_ref.asp&#34;&gt;w3school在线php手册&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装navicat&#34;&gt;安装navicat&lt;/h1&gt;
+&lt;h2 id=&#34;安装navicat&#34;&gt;安装navicat&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.navicat.com.cn/products/navicat-for-mysql&#34;&gt;Navicat for MySQL 官方下载地址&lt;/a&gt;&lt;br/&gt;
 下载安装好了之后点击连接
 &lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2019/navicat.png&#34; alt=&#34;&#34; title=&#34;navicat连接&#34;&gt;&lt;/p&gt;
@@ -2351,7 +2351,7 @@ $$&lt;/p&gt;
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+                    <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;折腾了两天，总算是把这个博客给搭建起来了😉😉!&lt;/p&gt;
 &lt;p&gt;在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！&lt;/p&gt;
 &lt;p&gt;首先要感谢👏几个博主，第一次看到这个 ..博客主题..  &lt;a href=&#34;https://github.com/reuixiy/hugo-theme-meme&#34;&gt;MemE&lt;/a&gt; 是从 &lt;a href=&#34;https://io-oi.me/&#34;&gt;reuixiy&lt;/a&gt; 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（&lt;code&gt;之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了&lt;/code&gt;）。说实话，我感觉 &lt;a href=&#34;https://io-oi.me/&#34;&gt;reuixiy&lt;/a&gt; 博主讲得实在太..详细..了，所以感觉自己只是在..照葫芦画瓢..🙃🙃🙃 。&lt;/p&gt;
@@ -2362,7 +2362,7 @@ $$&lt;/p&gt;
 &lt;p&gt;在更改各个配置的时候我所参考的大部分内容是来自 &lt;a href=&#34;https://blog.guanqr.com/&#34;&gt;Guanqr&lt;/a&gt; 博主提交到github中的&lt;code&gt;config.toml&lt;/code&gt;文件，里面所有的注释都是中文的，对我来说简直太爽了😁😁😁！！！。然后有一些博客的写作格式也是从该博主的 &lt;a href=&#34;https://github.com/guanqr/blog/commits/master&#34;&gt;commit&lt;/a&gt; 中找到的，自己也尝试着动手改改看，效果还不错！&lt;/p&gt;
 &lt;p&gt;所以，这里就先谢谢这两位博主了🎉🎉🎉，当然中途出现了一些问题都是从网上找到方法解决的，所以也要感谢那么多给我提供过帮助的博主们！！！🎉🎉🎉&lt;/p&gt;
 &lt;p&gt;好了，不多说了，步入..正题..，首先给大家看看我的..博客结构目录..：&lt;/p&gt;
-&lt;h1 id=&#34;博客目录结构&#34;&gt;博客目录结构&lt;/h1&gt;
+&lt;h2 id=&#34;博客目录结构&#34;&gt;博客目录结构&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;blog
 │
 ├── archetypes
@@ -2375,7 +2375,7 @@ $$&lt;/p&gt;
 ├── themes
 └── config.toml
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后我们按照&lt;code&gt;config.toml&lt;/code&gt;文件的大致内容依次梳理(会有部分内容与原文上下位置..不一致..)，其实大部分设置只需要..更改参数..就可以了，这里我就只把对应的..关键字..给出来，你们去自己的&lt;code&gt;config.toml&lt;/code&gt;中查找关键字然后自己..更改参数..试试。这里附上我的&lt;a href=&#34;https://github.com/ztygcs/config.toml/blob/master/config.toml&#34;&gt;config.toml&lt;/a&gt;文件。&lt;/p&gt;
-&lt;h1 id=&#34;每一分页文章数&#34;&gt;每一分页文章数&lt;/h1&gt;
+&lt;h2 id=&#34;每一分页文章数&#34;&gt;每一分页文章数&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2384,7 +2384,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;paginate&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;代码高亮&#34;&gt;代码高亮&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;代码高亮&#34;&gt;代码高亮&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2399,7 +2399,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;pygmentsOptions&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;linenos=table&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;作者信息&#34;&gt;作者信息&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;作者信息&#34;&gt;作者信息&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2432,8 +2432,8 @@ $$&lt;/p&gt;
     &lt;span class=&#34;c&#34;&gt;#twitter = &amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;菜单栏&#34;&gt;菜单栏&lt;/h1&gt;
-&lt;h2 id=&#34;菜单开关项&#34;&gt;菜单开关项&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;菜单栏&#34;&gt;菜单栏&lt;/h2&gt;
+&lt;h3 id=&#34;菜单开关项&#34;&gt;菜单开关项&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enableMenu&lt;/code&gt;:是否开启菜单栏&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;displayMenuInHome&lt;/code&gt;： 是否在首页显示&lt;/li&gt;
@@ -2454,7 +2454,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;activeInSection&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;菜单配置项&#34;&gt;菜单配置项&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;菜单配置项&#34;&gt;菜单配置项&lt;/h3&gt;
 &lt;p&gt;MemE 主题支持以下四种菜单：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2563,7 +2563,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;上面代码效果：
 &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/MenuBar.png&#34; alt=&#34;&#34; title=&#34;菜单栏&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;顶栏&#34;&gt;顶栏&lt;/h1&gt;
+&lt;h2 id=&#34;顶栏&#34;&gt;顶栏&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2580,8 +2580,8 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;displayHeaderInHome&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;品牌栏在顶栏内&#34;&gt;品牌栏（在顶栏内）&lt;/h2&gt;
-&lt;h3 id=&#34;品牌栏内容&#34;&gt;品牌栏内容&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;品牌栏在顶栏内&#34;&gt;品牌栏（在顶栏内）&lt;/h3&gt;
+&lt;h4 id=&#34;品牌栏内容&#34;&gt;品牌栏内容&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/TopBar.png&#34; alt=&#34;&#34; title=&#34;品牌栏&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;siteBrandSVG = true&lt;/code&gt; :显示SVG图片（请将你的 SVG 放到 &lt;code&gt;SVG.toml&lt;/code&gt; 文件内，并配置以下项。单位：px）&lt;/li&gt;
@@ -2618,7 +2618,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;siteBrandFontColor&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;#fff&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;品牌栏背景色&#34;&gt;品牌栏背景色&lt;/h3&gt;
+&lt;/div&gt;&lt;h4 id=&#34;品牌栏背景色&#34;&gt;品牌栏背景色&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;siteBrandBackgroundColor&lt;/code&gt;用来设置背景色（..hsl格式..）&lt;/p&gt;
@@ -2640,7 +2640,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;siteBrandBackgroundImage&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%)&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;首页布局&#34;&gt;首页布局&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;首页布局&#34;&gt;首页布局&lt;/h2&gt;
 &lt;p&gt;MemE 主题有以下四种首页布局：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;poetry&lt;/code&gt;   ..诗意人生..&lt;/li&gt;
@@ -2694,8 +2694,8 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;homeLinksDelimiter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;分类页面&#34;&gt;分类页面&lt;/h1&gt;
-&lt;h2 id=&#34;分类方式&#34;&gt;分类方式&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;分类页面&#34;&gt;分类页面&lt;/h2&gt;
+&lt;h3 id=&#34;分类方式&#34;&gt;分类方式&lt;/h3&gt;
 &lt;p&gt;MemE 主题支持以下两种分类方式：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;sections&lt;/code&gt;       ..分区..&lt;/li&gt;
@@ -2725,7 +2725,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;tag&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;分类设置&#34;&gt;分类设置&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;分类设置&#34;&gt;分类设置&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enableTree&lt;/code&gt;:是否开启树状布局&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;displayPosts&lt;/code&gt;:分类页面中是否显示文章标题&lt;/li&gt;
@@ -2746,7 +2746,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;displayPostsCount&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;文章分区范围&#34;&gt;文章分区范围&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;文章分区范围&#34;&gt;文章分区范围&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2766,7 +2766,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：如果&lt;code&gt;includeContent&lt;/code&gt;为&lt;code&gt;false&lt;/code&gt;，则只会包含文章的摘要。关于摘要，Hugo能按你设置的字数限制自动截取，你也可以在文章中通过&lt;code&gt; &amp;lt; !--more-- &amp;gt;&lt;/code&gt;(没有空格)手动控制，或者在文章的Front Matter中通&lt;code&gt;summary&lt;/code&gt; 手动指定。其中，应用的优先级顺序：手动指定 &amp;gt; 手动控制 &amp;gt; 自动截取。还需要注意的是，在MemE主题自定义的 Atom 和 RSS 的模板中，有一个比手动指定更高的优先级————Front Matter 中的 &lt;code&gt;description&lt;/code&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;文章首页摘要字数限制&#34;&gt;文章首页摘要字数限制&lt;/h2&gt;
+&lt;h3 id=&#34;文章首页摘要字数限制&#34;&gt;文章首页摘要字数限制&lt;/h3&gt;
 &lt;p&gt;查找关键字&lt;code&gt;summaryLength&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2776,7 +2776,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;summaryLength&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;150&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;标签页面&#34;&gt;标签页面&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;标签页面&#34;&gt;标签页面&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enableTagCloud&lt;/code&gt;:是否启用标签云&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;fontUnit&lt;/code&gt;:字号单位&lt;/li&gt;
@@ -2797,7 +2797,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;smallestFontSize&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;归档列表页面&#34;&gt;归档列表页面&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;归档列表页面&#34;&gt;归档列表页面&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;listWidth&lt;/code&gt;:宽度&lt;/li&gt;
 &lt;/ul&gt;
@@ -2842,8 +2842,8 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;i18nMonth&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;深色模式&#34;&gt;深色模式&lt;/h1&gt;
-&lt;h2 id=&#34;模式设置&#34;&gt;模式设置&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;深色模式&#34;&gt;深色模式&lt;/h2&gt;
+&lt;h3 id=&#34;模式设置&#34;&gt;模式设置&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enableDarkMode&lt;/code&gt;:是否开启&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;defaultTheme&lt;/code&gt;:默认模式&lt;/li&gt;
@@ -2872,7 +2872,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：如果开启了深色模式，即使你隐藏了开关，你的读者依然可能以深色模式阅读你的博客，如果该读者的系统设置为深色模式的话。类似，如果你开启深色模式并将默认模式修改为它，即使你隐藏开关，你的读者依然可能以浅色模式模式阅读你的博客。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;模式颜色&#34;&gt;模式颜色&lt;/h2&gt;
+&lt;h3 id=&#34;模式颜色&#34;&gt;模式颜色&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;primaryColorLight&lt;/code&gt;:浅色模式的主色&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;primaryColorDark&lt;/code&gt;:深色模式的主色&lt;/li&gt;
@@ -2890,7 +2890,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;注意：只支持 ..HSL.. 颜色值&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;文章设置&#34;&gt;文章设置&lt;/h1&gt;
+&lt;h2 id=&#34;文章设置&#34;&gt;文章设置&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;duration&lt;/code&gt;:超链接的颜色变化持续时间（单位：秒）&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;postWidth&lt;/code&gt;:文章的内容宽度&lt;/li&gt;
@@ -2916,7 +2916,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;displayPostDescription&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章元信息&#34;&gt;文章元信息&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章元信息&#34;&gt;文章元信息&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;enablePostMeta是否开启（全局设置）&lt;/li&gt;
 &lt;/ul&gt;
@@ -2988,7 +2988,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;readingTimeIcon&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;clock&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章目录&#34;&gt;文章目录&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章目录&#34;&gt;文章目录&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enableTOC&lt;/code&gt;:是否开启（全局设置）&lt;/li&gt;
 &lt;/ul&gt;
@@ -3011,7 +3011,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;linkHeadingsToTOC&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章分节标题锚点&#34;&gt;文章分节标题锚点&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章分节标题锚点&#34;&gt;文章分节标题锚点&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enableHeadingsAnchor&lt;/code&gt;:是否开启&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;headingsOpt&lt;/code&gt;:分节标题的级别范围&lt;/li&gt;
@@ -3053,7 +3053,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;enableAnchorAutoHide&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;说明文字&#34;&gt;说明文字&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;说明文字&#34;&gt;说明文字&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3070,7 +3070,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;captionPrefix&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;◎ &amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;图片外链&#34;&gt;图片外链&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;图片外链&#34;&gt;图片外链&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;说明：仅在生产环境（production）下渲染只支持相对于网站根目录的绝对链接比如：/images/meme.jpg(~/blog/static/images/meme.jpg)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3096,7 +3096,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;headAlso&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;视频外链&#34;&gt;视频外链&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;视频外链&#34;&gt;视频外链&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;说明：仅在生产环境（production）下渲染只支持相对于站点根目录的绝对链接比如：/videos/meme.mp4&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3116,7 +3116,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;videoHostURL&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://example.com/&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;脚注&#34;&gt;脚注&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;脚注&#34;&gt;脚注&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3149,11 +3149,11 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：如果是，则会将自动生成的分隔线删除。实际上，你自己添加的分隔线会被删除。如果你喜欢在 Markdown 中手动插入&lt;code&gt;---&lt;/code&gt; 以将文章的正文内容与脚注内容分隔开来，那么这项设置将会非常有用。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;字体排版&#34;&gt;字体排版&lt;/h1&gt;
+&lt;h2 id=&#34;字体排版&#34;&gt;字体排版&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;说明：任何一项留空，浏览器都会回退到主体字体 &lt;code&gt;fontFamilyBody&lt;/code&gt;，故没必要全部设置。此外，如果你的品牌栏用的 SVG，则可留空品牌栏字体。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;品牌栏&#34;&gt;品牌栏&lt;/h2&gt;
+&lt;h3 id=&#34;品牌栏&#34;&gt;品牌栏&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3162,7 +3162,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilySiteBrand&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;Liu Jian Mao Cao&amp;#39;, cursive&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;菜单栏-1&#34;&gt;菜单栏&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;菜单栏-1&#34;&gt;菜单栏&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3171,7 +3171,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyMenu&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;各类标题&#34;&gt;各类标题&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;各类标题&#34;&gt;各类标题&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3185,7 +3185,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;fontFamilyTitle&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;Cinzel Decorative&amp;#39;, &amp;#39;Noto Serif SC&amp;#39;, serif&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;目录分节标题&#34;&gt;目录、分节标题&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;目录分节标题&#34;&gt;目录、分节标题&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;分节标题、目录标题&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3199,7 +3199,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;fontFamilyHeadings&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;Cinzel Decorative&amp;#39;, &amp;#39;Noto Serif SC&amp;#39;, serif&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;代码上标&#34;&gt;代码、上标&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;代码上标&#34;&gt;代码、上标&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3213,7 +3213,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;fontFamilyCode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;Source Code Pro&amp;#39;, &amp;#39;Noto Serif SC&amp;#39;, monospace&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;引用&#34;&gt;引用&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3222,7 +3222,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyQuote&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;EB Garamond&amp;#39;, &amp;#39;STKaiti&amp;#39;, &amp;#39;KaiTi&amp;#39;, &amp;#39;SimKai&amp;#39;, &amp;#39;Noto Serif SC&amp;#39;, serif&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章目录-1&#34;&gt;文章目录&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章目录-1&#34;&gt;文章目录&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3231,7 +3231,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyTOC&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;说明文字-1&#34;&gt;说明文字&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;说明文字-1&#34;&gt;说明文字&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3240,7 +3240,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyCaption&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;页脚&#34;&gt;页脚&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;页脚&#34;&gt;页脚&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3249,7 +3249,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyFooter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;Ma Shan Zheng&amp;#39;, cursive&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;主体&#34;&gt;主体&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;主体&#34;&gt;主体&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3258,7 +3258,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyBody&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;EB Garamond&amp;#39;, &amp;#39;Noto Serif SC&amp;#39;, serif&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;网络字体链接&#34;&gt;网络字体链接&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;网络字体链接&#34;&gt;网络字体链接&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3267,7 +3267,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontsLink&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Noto+Serif+SC:400,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700|Ma+Shan+Zheng:|Liu+Jian+Mao+Cao:&amp;amp;display=swap&amp;amp;subset=chinese-simplified&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;具体设置方式&#34;&gt;具体设置方式&lt;/h3&gt;
+&lt;/div&gt;&lt;h4 id=&#34;具体设置方式&#34;&gt;具体设置方式&lt;/h4&gt;
 &lt;p&gt;进入https://fonts.google.com/ 之后，搜索或选择喜欢的字体库
 &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/FontSelect.png&#34; alt=&#34;&#34; title=&#34;选择字体&#34;&gt;
 点击加号，在屏幕右下角的弹框的&lt;code&gt;CUSTOMIZE&lt;/code&gt;标签中进一步选择
@@ -3283,7 +3283,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;说明：要想读者一定体验到你设置的字体，最好采用网络字体。MemE 主题目前仅支持Google Fonts 的链接，请前往 &lt;a href=&#34;https://fonts.google.com/&#34;&gt;https://fonts.google.com/&lt;/a&gt; 获取。此项留空，则不会采用网络字体。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;字号单位px&#34;&gt;字号（单位：px）&lt;/h2&gt;
+&lt;h3 id=&#34;字号单位px&#34;&gt;字号（单位：px）&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3292,7 +3292,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontSize&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;16&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;行间距&#34;&gt;行间距&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;行间距&#34;&gt;行间距&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3304,7 +3304,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：只会应用到文章的段落和目录&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;段首缩排&#34;&gt;段首缩排&lt;/h1&gt;
+&lt;h2 id=&#34;段首缩排&#34;&gt;段首缩排&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3324,7 +3324,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：段间距式（margin）或段首缩排（indent）文章的 Front Matter 中 &lt;code&gt;indent&lt;/code&gt;的优先级高于此处&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;两端对齐&#34;&gt;两端对齐&lt;/h1&gt;
+&lt;h2 id=&#34;两端对齐&#34;&gt;两端对齐&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3338,7 +3338,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：文章的 Front Matter 中的 &lt;code&gt;align&lt;/code&gt;的优先级高于此处&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;首字下沉&#34;&gt;首字下沉&lt;/h1&gt;
+&lt;h2 id=&#34;首字下沉&#34;&gt;首字下沉&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3378,7 +3378,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：文章的 Front Matter 中的 &lt;code&gt;deleteHrBeforeDropCap&lt;/code&gt;的优先级高于此处&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;大型小写英文&#34;&gt;大型小写（英文）&lt;/h1&gt;
+&lt;h2 id=&#34;大型小写英文&#34;&gt;大型小写（英文）&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3392,7 +3392,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：只会应用到分节标题和目录标题文章的 Front Matter 中的 &lt;code&gt;smallCaps&lt;/code&gt;的优先级高于此处&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;着重号&#34;&gt;着重号&lt;/h1&gt;
+&lt;h2 id=&#34;着重号&#34;&gt;着重号&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;说明：MemE 主题自创的新 Markdown, 语法为在内容左右两边分别加上两个半角状态下的点&lt;code&gt;..&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3406,7 +3406,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;enableEmphasisPoint&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;文章版权&#34;&gt;文章版权&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;文章版权&#34;&gt;文章版权&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3424,7 +3424,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：文章的 Front Matter 中的 &lt;code&gt;displayCopyright&lt;/code&gt;的优先级高于此处&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;文章更新徽章&#34;&gt;文章更新徽章&lt;/h1&gt;
+&lt;h2 id=&#34;文章更新徽章&#34;&gt;文章更新徽章&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3458,7 +3458,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;badgeTitlePrefix&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Updated @ &amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;相关文章&#34;&gt;相关文章&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;相关文章&#34;&gt;相关文章&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3492,7 +3492,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;relatedPostsIcon&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;plus-circle&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章标签&#34;&gt;文章标签&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章标签&#34;&gt;文章标签&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3507,7 +3507,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;postTagsIcon&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章上下篇&#34;&gt;文章上下篇&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章上下篇&#34;&gt;文章上下篇&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;说明：在 MemE 主题中，文章上下篇是从空间位置角度设计的，而不是像大多数其它主题所做的那样——从时间角度设计。因此，如果你点击左边的上篇，跳转的是一篇更新的文章；如果你点击右边的下篇，跳转的是一篇更旧的文章。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3527,7 +3527,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;postNavInSection&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;页脚-1&#34;&gt;页脚&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;页脚-1&#34;&gt;页脚&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3591,7 +3591,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;customFooter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;极简页脚&#34;&gt;极简页脚&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;极简页脚&#34;&gt;极简页脚&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3608,7 +3608,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;enableAboutPageMinimalFooter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;返回顶部按钮&#34;&gt;返回顶部按钮&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;返回顶部按钮&#34;&gt;返回顶部按钮&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3627,7 +3627,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;backToTopIcon&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;arrow-up&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;多语言&#34;&gt;多语言&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;多语言&#34;&gt;多语言&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3653,7 +3653,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：即仅当该文章有相应的翻译版本时才显示按钮&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;实现诗歌引用格式&#34;&gt;实现诗歌引用格式&lt;/h1&gt;
+&lt;h2 id=&#34;实现诗歌引用格式&#34;&gt;实现诗歌引用格式&lt;/h2&gt;
 &lt;p&gt;在&lt;code&gt;\static\images&lt;/code&gt;文件夹中..新建..&lt;code&gt;左引号&lt;/code&gt;文件&lt;code&gt;quote-l.svg&lt;/code&gt;与&lt;code&gt;右引号&lt;/code&gt;文件&lt;code&gt;quote-r.svg&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3813,7 +3813,7 @@ $$&lt;/p&gt;
 涉江采芙蓉&lt;br/&gt;兰泽多芳草&lt;br/&gt;愿君多采撷&lt;br/&gt;此物最相思
 &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;文字渐变色&#34;&gt;文字渐变色&lt;/h1&gt;
+&lt;h2 id=&#34;文字渐变色&#34;&gt;文字渐变色&lt;/h2&gt;
 &lt;p&gt;在文件&lt;code&gt;custom.scss&lt;/code&gt;中添加..渐变..样式：&lt;/p&gt;
 &lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_custom\custom.scss~~&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
@@ -3850,7 +3850,7 @@ $$&lt;/p&gt;
 &lt;font class = &#34;colorfulfont&#34;&gt;
 涉江采芙蓉&lt;br/&gt;兰泽多芳草&lt;br/&gt;愿君多采撷&lt;br/&gt;此物最相思
 &lt;/font&gt;
-&lt;h1 id=&#34;back-to-top样式&#34;&gt;back-to-top样式&lt;/h1&gt;
+&lt;h2 id=&#34;back-to-top样式&#34;&gt;back-to-top样式&lt;/h2&gt;
 &lt;p&gt;在文件&lt;code&gt;back-to-top.scss&lt;/code&gt;中：&lt;/p&gt;
 &lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_common\back-to-top.scss~~&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\components\back-to-top.scss&lt;/code&gt;&lt;/p&gt;
@@ -3876,8 +3876,8 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;归档分类及标签页样式&#34;&gt;归档、分类及标签页样式&lt;/h1&gt;
-&lt;h2 id=&#34;归档样式代码&#34;&gt;归档样式代码：&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;归档分类及标签页样式&#34;&gt;归档、分类及标签页样式&lt;/h2&gt;
+&lt;h3 id=&#34;归档样式代码&#34;&gt;归档样式代码：&lt;/h3&gt;
 &lt;p&gt;在文件&lt;code&gt;list.scss&lt;/code&gt;中：&lt;/p&gt;
 &lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_common\list.scss~~&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\layout\list.scss&lt;/code&gt;&lt;/p&gt;
@@ -4005,7 +4005,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;分类样式代码&#34;&gt;分类样式代码：&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;分类样式代码&#34;&gt;分类样式代码：&lt;/h3&gt;
 &lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\pages\\_tree-categories.scss&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4033,7 +4033,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;标签样式代码&#34;&gt;标签样式代码：&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;标签样式代码&#34;&gt;标签样式代码：&lt;/h3&gt;
 &lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\pages\\_tag-cloud.scss&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4055,8 +4055,8 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;插入音频&#34;&gt;插入音频&lt;/h1&gt;
-&lt;h2 id=&#34;audio标签&#34;&gt;audio标签&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;插入音频&#34;&gt;插入音频&lt;/h2&gt;
+&lt;h3 id=&#34;audio标签&#34;&gt;audio标签&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4075,7 +4075,7 @@ $$&lt;/p&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;video标签&#34;&gt;video标签&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;video标签&#34;&gt;video标签&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4090,7 +4090,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;video&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;通过网易云外链添加&#34;&gt;通过网易云外链添加&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;通过网易云外链添加&#34;&gt;通过网易云外链添加&lt;/h3&gt;
 &lt;p&gt;在网页版&lt;a href=&#34;https://www.baidu.com/link?url=rMp-eLGywbp55zR56zgyg3mbCHH4-y1cFGrhdaBOeJi&amp;amp;wd=&amp;amp;eqid=885cca3900008090000000065de22b10&#34;&gt;网易云音乐&lt;/a&gt;中搜索需要的歌（不支持 ..无版权.. 或 ..会员.. 歌曲）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/towers.png&#34; alt=&#34;&#34; title=&#34;搜索需要的歌&#34;&gt;&lt;/p&gt;
 &lt;p&gt;点击&lt;code&gt;生成外链播放器&lt;/code&gt;&lt;/p&gt;
@@ -4108,7 +4108,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;https://ztygcs.github.io//music.163.com/outchain/player?type=2&amp;id=2639477&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
-&lt;h1 id=&#34;卡片风格&#34;&gt;卡片风格&lt;/h1&gt;
+&lt;h2 id=&#34;卡片风格&#34;&gt;卡片风格&lt;/h2&gt;
 &lt;p&gt;在文件&lt;code&gt;custom.scss&lt;/code&gt;中加入以下样式：&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\_custom\custom.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;文件更新位置：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
@@ -4235,8 +4235,8 @@ $$&lt;/p&gt;
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h1 id=&#34;syntax-guide&#34;&gt;Syntax guide&lt;/h1&gt;
-&lt;h2 id=&#34;headers&#34;&gt;Headers&lt;/h2&gt;
+                    <description>&lt;h2 id=&#34;syntax-guide&#34;&gt;Syntax guide&lt;/h2&gt;
+&lt;h3 id=&#34;headers&#34;&gt;Headers&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;# This is an &amp;lt;h1&amp;gt; tag
 ## This is an &amp;lt;h2&amp;gt; tag
@@ -4244,7 +4244,7 @@ $$&lt;/p&gt;
 #### This is an &amp;lt;h4&amp;gt; tag
 ##### This is an &amp;lt;h5&amp;gt; tag
 ###### This is an &amp;lt;h6&amp;gt; tag
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;*This text will be italic*
 _This will also be italic_
@@ -4260,8 +4260,8 @@ _You **can** combine them_
 &lt;p&gt;&lt;code&gt;斜体+粗体&lt;/code&gt;：&lt;em&gt;You &lt;strong&gt;can&lt;/strong&gt; combine them&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;删除线&lt;/code&gt;:&lt;del&gt;This text will be strikethrough&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;Meme主题新增：&lt;code&gt;着重点&lt;/code&gt;: ..This..  ..will..  ..be..  ..emphasis..&lt;/p&gt;
-&lt;h2 id=&#34;lists&#34;&gt;Lists&lt;/h2&gt;
-&lt;h3 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h3&gt;
+&lt;h3 id=&#34;lists&#34;&gt;Lists&lt;/h3&gt;
+&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- Item 1
 - Item 2
@@ -4277,7 +4277,7 @@ _You **can** combine them_
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h3&gt;
+&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;1. Item 1
 1. Item 2
@@ -4295,14 +4295,14 @@ _You **can** combine them_
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;h3 id=&#34;images&#34;&gt;Images&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;![github_icon](/images/giuhub_icon.jpg)
 Format: ![Alt Text](url)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;demo:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/github_icon.png&#34; alt=&#34;github_icon&#34;&gt;
 Format: &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/github_icon.png&#34; alt=&#34;Alt Text&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;http://github.com - automatic!
 [GitHub](http://github.com)
@@ -4310,7 +4310,7 @@ Format: &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/github_ico
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;demo:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://github.com&#34;&gt;http://github.com&lt;/a&gt; - automatic!
 &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;blockquote&#34;&gt;Blockquote&lt;/h2&gt;
+&lt;h3 id=&#34;blockquote&#34;&gt;Blockquote&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;As Kanye West said:
 
@@ -4322,7 +4322,7 @@ Format: &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/github_ico
 &lt;p&gt;We&#39;re living the future so
 the present is our past.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;horizontal-rule&#34;&gt;Horizontal Rule&lt;/h2&gt;
+&lt;h3 id=&#34;horizontal-rule&#34;&gt;Horizontal Rule&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Three or more...
 
@@ -4345,16 +4345,16 @@ Underscores
 &lt;p&gt;Asterisks&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Underscores&lt;/p&gt;
-&lt;h2 id=&#34;inline-code&#34;&gt;Inline code&lt;/h2&gt;
+&lt;h3 id=&#34;inline-code&#34;&gt;Inline code&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;I think you should use an
 `&amp;lt;addr&amp;gt;` element here instead.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;demo:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I think you should use an
 &lt;code&gt;&amp;lt;addr&amp;gt;&lt;/code&gt; element here instead.&lt;/p&gt;
-&lt;h2 id=&#34;fenced-code-block&#34;&gt;Fenced code block&lt;/h2&gt;
+&lt;h3 id=&#34;fenced-code-block&#34;&gt;Fenced code block&lt;/h3&gt;
 &lt;p&gt;You can create fenced code blocks by placing triple backticks ``` before and after the code block.&lt;/p&gt;
-&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h3&gt;
+&lt;h4 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h4&gt;
 &lt;p&gt;You can add an optional language identifier to enable syntax highlighting in your fenced code block.&lt;/p&gt;
 &lt;p&gt;For example, to syntax highlight Ruby code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4369,7 +4369,7 @@ Underscores
 &lt;span class=&#34;nb&#34;&gt;puts&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;markdown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_html&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;code-block-class-mpe-extended-feature&#34;&gt;Code block class (MPE extended feature)&lt;/h3&gt;
+&lt;/div&gt;&lt;h4 id=&#34;code-block-class-mpe-extended-feature&#34;&gt;Code block class (MPE extended feature)&lt;/h4&gt;
 &lt;p&gt;You can set &lt;code&gt;class&lt;/code&gt; for your code blocks.&lt;/p&gt;
 &lt;p&gt;For example, to add &lt;code&gt;class1&lt;/code&gt; &lt;code&gt;class2&lt;/code&gt; to a code block&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4384,7 +4384,7 @@ Underscores
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;line-numbers&#34;&gt;line-numbers&lt;/h3&gt;
+&lt;/div&gt;&lt;h4 id=&#34;line-numbers&#34;&gt;line-numbers&lt;/h4&gt;
 &lt;p&gt;You can enable line number for a code block by adding &lt;code&gt;line-numbers&lt;/code&gt; class.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4399,7 +4399,7 @@ Underscores
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;highlighting-rows&#34;&gt;highlighting rows&lt;/h3&gt;
+&lt;/div&gt;&lt;h4 id=&#34;highlighting-rows&#34;&gt;highlighting rows&lt;/h4&gt;
 &lt;p&gt;You can highlight rows by add &lt;code&gt;highlight&lt;/code&gt; attribute:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4425,7 +4425,7 @@ Underscores
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;task-lists&#34;&gt;Task lists&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;task-lists&#34;&gt;Task lists&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- [x] @mentions, #refs, [links](abc.com), **formatting**, and &amp;lt;del&amp;gt;tags&amp;lt;/del&amp;gt; supported
 - [x] list syntax required (any unordered or ordered list supported)
@@ -4438,7 +4438,7 @@ Underscores
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; this is a complete item&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; this is an incomplete item&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
 &lt;p&gt;You can create tables by assembling a list of words and dividing them with hyphens &lt;code&gt;-&lt;/code&gt; (for the first row), and then separating each column with a pipe &lt;code&gt;|&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;|First Header | Second Header|
@@ -4464,26 +4464,26 @@ Underscores
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;extended-syntax&#34;&gt;Extended syntax&lt;/h1&gt;
-&lt;h2 id=&#34;table&#34;&gt;Table&lt;/h2&gt;
+&lt;h2 id=&#34;extended-syntax&#34;&gt;Extended syntax&lt;/h2&gt;
+&lt;h3 id=&#34;table&#34;&gt;Table&lt;/h3&gt;
 &lt;p&gt;Need to enable &lt;code&gt;enableExtendedTableSyntax&lt;/code&gt; in extension settings to get it work.&lt;/p&gt;
-&lt;h2 id=&#34;emoji--font-awesome&#34;&gt;Emoji &amp;amp; Font-Awesome&lt;/h2&gt;
+&lt;h3 id=&#34;emoji--font-awesome&#34;&gt;Emoji &amp;amp; Font-Awesome&lt;/h3&gt;
 &lt;p&gt;This only works for &lt;code&gt;markdown-it parser&lt;/code&gt; but not &lt;code&gt;pandoc parser&lt;/code&gt;.
 Enabled by default. You can disable it from the package settings.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;:smile:
 :fa-car:
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;superscript&#34;&gt;Superscript&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;superscript&#34;&gt;Superscript&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;30&amp;lt;sup&amp;gt;th&amp;lt;/sup&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;demo:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;30&lt;sup&gt;th&lt;/sup&gt;&lt;/p&gt;
-&lt;h2 id=&#34;subscript&#34;&gt;Subscript&lt;/h2&gt;
+&lt;h3 id=&#34;subscript&#34;&gt;Subscript&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;H&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;O
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;demo:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
-&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;h3 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;code:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Content [^1]
 [^1]: Hi! This is a footnote
@@ -4584,9 +4584,9 @@ Enabled by default. You can disable it from the package settings.&lt;/p&gt;
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h1 id=&#34;start&#34;&gt;start&lt;/h1&gt;
+                    <description>&lt;h2 id=&#34;start&#34;&gt;start&lt;/h2&gt;
 &lt;p&gt;今天用Hexo写博客的时候在本地加入了一个&lt;code&gt;大视频文件&lt;/code&gt;（270M）做本地测试，结果不小心使用&lt;code&gt;hexo d&lt;/code&gt;部署到了github上，中途出现问题。&lt;/p&gt;
-&lt;h1 id=&#34;一问题描述&#34;&gt;一、问题描述：&lt;/h1&gt;
+&lt;h2 id=&#34;一问题描述&#34;&gt;一、问题描述：&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/large_file.png&#34; alt=&#34;&#34; title=&#34;问题描述&#34;&gt;&lt;/p&gt;
 &lt;p&gt;上面标注的地方已经提示的很明显了，就是我上传的一个视频文件过大（大于100M），导致部署失败。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4612,7 +4612,7 @@ remote: error: File statics/file.mp4 is 271.90 MB&lt;span class=&#34;p&#34;&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;按照上面错误提示&lt;code&gt;第三行&lt;/code&gt;给出的一个地址&lt;code&gt; http://git.io/iEPt8g&lt;/code&gt;，里面github提供了一个方法（不过我用这个方法并没有解决）。&lt;/p&gt;
-&lt;h1 id=&#34;二定位问题&#34;&gt;二、定位问题&lt;/h1&gt;
+&lt;h2 id=&#34;二定位问题&#34;&gt;二、定位问题&lt;/h2&gt;
 &lt;p&gt;进入该&lt;a href=&#34;http://git.io/iEPt8g&#34;&gt;地址&lt;/a&gt;:
 &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/large_file2.png&#34; alt=&#34;&#34;&gt;
 主要看前两个介绍：
@@ -4623,8 +4623,8 @@ remote: error: File statics/file.mp4 is 271.90 MB&lt;span class=&#34;p&#34;&gt;;
 &lt;blockquote class=&#34;colorquote info&#34;&gt;&lt;p&gt;当单个push的文件大于`100M`时就会报错了（`error`），这时此次push操作会被拒绝（reject），commits 也不会保存到github的repository 中。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;根据前面的提示找到引起错误的文件，例如我的文件是放在&lt;code&gt;主题文件夹/source/statics/xxx.mp4&lt;/code&gt;里，引起错误的就是&lt;code&gt;xxx.mp4&lt;/code&gt;这个文件。&lt;/p&gt;
 &lt;p&gt;找到之后就想着怎么恢复之前的状态，来看看&lt;code&gt;Removing files from a repository&#39;s history&lt;/code&gt;里面怎么操作的吧！&lt;/p&gt;
-&lt;h1 id=&#34;三解决问题&#34;&gt;三、解决问题&lt;/h1&gt;
-&lt;h2 id=&#34;31方法一&#34;&gt;3.1方法一&lt;/h2&gt;
+&lt;h2 id=&#34;三解决问题&#34;&gt;三、解决问题&lt;/h2&gt;
+&lt;h3 id=&#34;31方法一&#34;&gt;3.1方法一&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Removing files from a repository&#39;s history&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;colorquote warning&#34;&gt;&lt;p&gt;注：这个方法并没有解决我的问题&lt;/p&gt;&lt;/blockquote&gt;
 ![](/images/tech/2019/11/large_file4.png)
@@ -4660,7 +4660,7 @@ push至github&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;按照要求，我们首先找到本地仓库在哪。我这里在Hexo文件夹下有一个&lt;code&gt;.deploy_git&lt;/code&gt;的文件夹，在这里面就是我们所有push到github的内容。可以看到我们之前的&lt;code&gt;大文件&lt;/code&gt;在这里面也有一份。进入路径后直接按照流程指令来操作，注意自己的文件位置和名称！
 &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/large_file5.png&#34; alt=&#34;&#34;&gt;
 结果以失败告终，后面push的时候还是提醒有大文件，说明前面的操作并没有移除文件。&lt;/p&gt;
-&lt;h2 id=&#34;32方法二&#34;&gt;3.2方法二&lt;/h2&gt;
+&lt;h3 id=&#34;32方法二&#34;&gt;3.2方法二&lt;/h3&gt;
 &lt;p&gt;因为是在提交的过程中报错，需要先撤销已提交的commit，直接重置到原来的commit
 目录切换至&lt;code&gt;.deploy_git&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -4696,7 +4696,7 @@ push至github&lt;br/&gt;&lt;/p&gt;
 &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/large_file9.png&#34; alt=&#34;&#34;&gt;
 每次都更改了哪些内容：
 &lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/large_file10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;end&#34;&gt;end&lt;/h1&gt;
+&lt;h2 id=&#34;end&#34;&gt;end&lt;/h2&gt;
 </description>
                 
                 
@@ -4956,21 +4956,21 @@ push至github&lt;br/&gt;&lt;/p&gt;
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h1 id=&#34;smileys--people&#34;&gt;Smileys &amp;amp; People&lt;/h1&gt;
+                    <description>&lt;h2 id=&#34;smileys--people&#34;&gt;Smileys &amp;amp; People&lt;/h2&gt;
 &lt;p&gt;😀😃😄😁😆😅😂🤣😊😇🙂🙃😉😌😍😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🤩😏😒😞😔😟😕🙁☹️😣😖😫😩😢😭😤😠😡🤬🤯😳😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦😧😮😲😴🤤😪😵🤐🤢🤮🤧😷🤒🤕🤑🤠😈👿👹👺🤡💩👻💀☠️👽👾🤖🎃😺😸😹😻😼😽🙀😿😾🤲👐🙌👏🤝👍👎👊✊🤛🤜🤞✌️🤟🤘👌👈👉👆👇☝️✋🤚🖐️🖖👋🤙💪🖕✍️🙏💄💋👄👅👂👃👣👁️👀🧠🗣️👤👥👶👧🧒👦👩🧑👨👱‍♀️👱👱‍♂️🧔👵🧓👴👲👳👳‍♀️👳‍♂️🧕👮👮‍♀️👮‍♂️👷👷‍♀️👷‍♂️💂‍♀️💂💂‍♂️🕵️🕵️‍♀️🕵️‍♂️👩‍⚕️👨‍⚕️👩‍🌾👨‍🌾👩‍🍳👨‍🍳👩‍🎓👨‍🎓👩‍🎤👨‍🎤👩‍🏫👨‍🏫👩‍🏭👨‍🏭👩‍💻👨‍💻👩‍💼👨‍💼👩‍🔧👨‍🔧👩‍🔬👨‍🔬👩‍🎨👨‍🎨👩‍🚒👨‍🚒👩‍✈️👨‍✈️👩‍🚀👨‍🚀👩‍⚖️👨‍⚖️👰🤵👸🤴🤶🎅🧙🧙‍♀️🧙‍♂️🧝🧝‍♀️🧝‍♂️🧛🧛‍♀️🧛‍♂️🧟🧟‍♀️🧟‍♂️🧞🧞‍♀️🧞‍♂️🧜🧜‍♀️🧜‍♂️🧚🧚‍♀️🧚‍♂️👼🤰🤱🙇🙇‍♀️🙇‍♂️💁💁‍♀️💁‍♂️🙅🙅‍♀️🙅‍♂️🙆🙆‍♀️🙆‍♂️🙋🙋‍♀️🙋‍♂️💃🕺👯👯‍♂️👯‍♀️🕴️🚶🚶‍♀️🚶‍♂️🏃🏃‍♀️🏃‍♂🧑‍🤝‍🧑👫👭👬💑👩‍❤️‍👨👩‍❤️‍👩👨‍❤️‍👨💏👩‍❤️‍💋👨👩‍❤️‍💋👩👨‍❤️‍💋👨👪👨‍👩‍👦👨‍👩‍👧👨‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👩‍👧‍👧👩‍👩‍👦👩‍👩‍👧👩‍👩‍👧‍👦👩‍👩‍👦‍👦👩‍👩‍👧‍👧👨‍👨‍👦👨‍👨‍👧👨‍👨‍👧‍👦👨‍👨‍👦‍👦👨‍👨‍👧‍👧👩‍👦👩‍👧👩‍👧‍👦👩‍👦‍👦👩‍👧‍👧👨‍👦👨‍👧👨‍👧‍👦👨‍👦‍👦👨‍👧‍👧🧥👚👕👖👔👗👙👘👠👡👢👞👟🧦🧤🧣🎩🧢👒🎓⛑️👑💍👝👛👜💼🎒👓🕶️🌂&lt;/p&gt;
-&lt;h1 id=&#34;animals--nature&#34;&gt;Animals &amp;amp; Nature&lt;/h1&gt;
+&lt;h2 id=&#34;animals--nature&#34;&gt;Animals &amp;amp; Nature&lt;/h2&gt;
 &lt;p&gt;🐶🐱🐭🐹🐰🦊🐻🐼🐨🐯🦁🐮🐷🐽🐸🐵🙈🙉🙊🐒🐔🐧🐦🐤🐣🐥🦆🦅🦉🦇🐺🐗🐴🦄🐝🐛🦋🐌🐚🐞🐜🦗🕷️🕸️🦂🐢🐍🦎🦖🦕🐙🦑🦐🦀🐡🐠🐟🐬🐳🐋🦈🐊🐅🐆🦓🦍🐘🦏🐪🐫🦒🐃🐂🐄🐎🐖🐏🐑🐐🐕🦌🐕‍🐩🐈🐓🦃🕊️🐇🐁🐀🐿️🦔🐾🐉🐲🌵🎄🌲🌳🌴🌱🌿☘️🍀🎍🎋🍃🍂🍁🍄🌾💐🌷🌹🥀🌺🌸🌼🌻🌞🌝🌛🌜🌚🌕🌖🌗🌘🌑🌒🌓🌔🌙🌎🌍🌏💫⭐🌟✨⚡☄️💥🔥🌪️🌈☀️🌤️⛅🌥️☁️🌦️🌧️⛈️🌩️🌨️❄️☃️⛄🌬️💨💧💦☔☂️🌊🌫️&lt;/p&gt;
-&lt;h1 id=&#34;food--drink&#34;&gt;Food &amp;amp; Drink&lt;/h1&gt;
+&lt;h2 id=&#34;food--drink&#34;&gt;Food &amp;amp; Drink&lt;/h2&gt;
 &lt;p&gt;🍏🍎🍐🍊🍋🍌🍉🍇🍓🍈🍒🍑🍍🥥🥝🍅🍆🥑🥦🥒🌶️🌽🥕🥔🍠🥐🍞🥖🥨🧀🥚🍳🥞🥓🥩🍗🍖🌭🍔🍟🍕🥪🥙🌮🌯🥗🥘🥫🍝🍜🍲🍛🍣🍱🥟🍤🍙🍚🍘🍥🥠🍢🍡🍧🍨🍦🥧🍰🎂🍮🍭🍬🍫🍿🍩🍪🌰🥜🍯🥛🍼☕🍵🥤🍶🍺🍻🥂🍷🥃🍸🍹🍾🥄🍴🍽️🥣🥡🥢&lt;/p&gt;
-&lt;h1 id=&#34;activity&#34;&gt;Activity&lt;/h1&gt;
+&lt;h2 id=&#34;activity&#34;&gt;Activity&lt;/h2&gt;
 &lt;p&gt;⚽🏀🏈⚾🎾🏐🏉🎱🏓🏸🏒🏑🏏🥅⛳🏹🎣🥊🥋🎽🛷⛸️🥌🎿⛷️🏂🏋️🏋️‍♀️🏋️‍♂️🤼🤼♀️🤼♂️🤸🤸‍♀️🤸‍♂️⛹️⛹️‍♀️⛹️‍♂️🤺🤾🤾‍♀️🤾‍♂️🏌️🏌️‍♀️🏌️‍♂️🏇🧘🧘‍♀️🧘‍♂️🏄🏄‍♀️🏄‍♂️🏊🏊‍♀️🏊‍♂️🤽🤽‍♀️🤽‍♂️🚣🚣‍♀️🚣‍♂️🧗🧗‍♀️🧗‍♂️🚵🚵‍♀️🚵‍♂️🚴🚴‍♀️🚴‍♂️🏆🥇🥈🥉🏅🎖️🏵️🎗️🎫🎟️🎪🤹🤹‍♀️🤹‍♂️🎭🎨🎬🎤🎧🎼🎹🥁🎷🎺🎸🎻🎲♟️🎯🎳🎮🎰&lt;/p&gt;
-&lt;h1 id=&#34;travel--places&#34;&gt;Travel &amp;amp; Places&lt;/h1&gt;
+&lt;h2 id=&#34;travel--places&#34;&gt;Travel &amp;amp; Places&lt;/h2&gt;
 &lt;p&gt;🚗🚕🚙🚌🚎🏎️🚓🚑🚐🚒🚚🚛🚜🛵🏍️🛴🚲🚨🚔🚍🚘🚖🚡🚠🚟🚃🚋🚞🚝🚄🚅🚈🚂🚆🚇🚊🚉✈️🛫🛬🛩️💺🛰️🚀🛸🚁🛶⛵🚤🛥️🛳️⛴️🚢⚓⛽🚧🚦🚥🚏🗺️🗿🗽🗼🏰🏯🏟️🎡🎢🎠⛲⛱️🏖️🏝️🏜️🌋⛰️🏔️🗻🏕️⛺🏠🏡🏘️🏚️🏗️🏭🏢🏬🏣🏤🏥🏦🏨🏪🏫🏩💒🏛️⛪🕌🕍🕋⛩️🛤️🛣️🗾🎑🏞️🌅🌄🌠🎇🎆🌇🌆🏙️🌃🌌🌉🌁&lt;/p&gt;
-&lt;h1 id=&#34;objects&#34;&gt;Objects&lt;/h1&gt;
+&lt;h2 id=&#34;objects&#34;&gt;Objects&lt;/h2&gt;
 &lt;p&gt;⌚📱📲💻⌨️🖥️🖨️🖱️🖲️🕹️🗜️💽💾💿📀📼📷📸📹🎥📽️🎞️📞☎️📟📠📺📻🎙️🎚️🎛️⏱️⏲️⏰🕰️⌛⏳📡🔋🔌💡🔦🕯️🛢️💸💵💴💶💷💰💳💎⚖️🔧🔨⚒️🛠️⛏️🔩⚙️⛓️⚔️🛡️🚬⚰️⚱️🏺🔮📿💈⚗️🔭🔬🕳️💊💉🌡️🚽🚰🚿🛁🛀🛎️🔑🗝️🚪🛋️🛏️🛌🖼️🛍️🛒🎁🎈🎏🎀🎊🎉🎎🏮🎐✉️📩📨📧💌📥📤📦🏷️📪📫📬📭📮📯📜📃📄📑🧾📊📈📉🗒️🗓️📆📅🗑️📇🗃️🗳️🗄️📋📁📂🗂️🗞️📰📓📔📒📕📗📘📙📚📖🔖🔗📎🖇️📐📏📌📍✂️🖊️🖋️✒️🖌️🖍️📝✏️🔍🔎🔏🔐🔒🔓&lt;/p&gt;
-&lt;h1 id=&#34;symbols&#34;&gt;Symbols&lt;/h1&gt;
+&lt;h2 id=&#34;symbols&#34;&gt;Symbols&lt;/h2&gt;
 &lt;p&gt;❤️🧡💛💚💙💜🖤💔❣️💕💞💓💗💖💘💝💟☮️✝️☪️🕉️☸️✡️🔯🕎☯️☦️🛐⛎♈♉♊♋♌♍♎♏♐♑♒♓🆔⚛️🉑☢️☣️📴📳🈶🈚🈸🈺🈷️✴️🆚💮🉐㊙️㊗️🈴🈵🈹🈲🅰️🅱️🆎🆑🅾️🆘❌⭕🛑⛔📛🚫💯💢♨️🚷🚯🚳🚱🔞📵🚭❗❕❓❔🔆️⚠️🚸🔱⚜️🔰♻️✅🈯💹❇️✳️🔣ℹ️🔤🔡🔠🆖🆗🆙🆒🆕🆓0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔢⏏️▶️⏸️⏯️⏹️⏺️⏭️⏮️⏩⏪⏬◀➡️⬅️⬆️⬇️↪️↩️⤴️⤵️🔀🔁🔂🔄🔃🎵🎶➕➖➗✖️💲🔚🔙🔛🔝🔜✔️☑️🔘⚪⚫🔴🔵🔺🔻🔶🔷🔳🔲🔈🔇🔉🔊🔔🔕📣📢🗨️👁️‍🗨️💬💭🗯️🃏🎴🀄🕐🕑🕒🕓🕔🕕🕖🕗🕘🕙🕚🕛🕜🕝🕞🕟🕠🕡🕢🕣🕤🕥🕦🕧️⚕️&lt;/p&gt;
-&lt;h1 id=&#34;flags&#34;&gt;Flags&lt;/h1&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
 &lt;p&gt;🏳️🏴🏁🚩🏳️‍🌈🏴‍☠️&lt;/p&gt;
 </description>
                 
@@ -5088,7 +5088,7 @@ push至github&lt;br/&gt;&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;一logo和favicon&#34;&gt;一、LOGO和FAVICON&lt;/h1&gt;
+&lt;h2 id=&#34;logo和favicon&#34;&gt;LOGO和FAVICON&lt;/h2&gt;
 &lt;p&gt;编辑&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;，设置&lt;code&gt;favicon&lt;/code&gt;和&lt;code&gt;logo&lt;/code&gt;的路径即可。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;当然，你可以使用..文字..logo或..图片..logo，即logo的值为空时，主题使用&lt;code&gt;title&lt;/code&gt;的值作为logo！&lt;/p&gt;
@@ -5118,7 +5118,7 @@ push至github&lt;br/&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;这里的..img..是指的&lt;code&gt;Hexo/themes/Annie/source/img&lt;/code&gt;目录&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;二页头背景图片&#34;&gt;二、页头背景图片&lt;/h1&gt;
+&lt;h2 id=&#34;页头背景图片&#34;&gt;页头背景图片&lt;/h2&gt;
 &lt;p&gt;文章详情页的..页头背景图片..为该文章的封面图，其他页的..页头背景图片..为随机图片或固定图片。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;原则上:&lt;br/&gt;
@@ -5204,7 +5204,7 @@ background_image:
 &lt;/div&gt;&lt;p&gt;你可以将&lt;strong&gt;随机图片集&lt;/strong&gt;上传到云（腾讯云、七牛云等），然后获取**https://....../Random-img/**格式的地址，最后将&lt;code&gt;random_url&lt;/code&gt;的值设置为该地址。&lt;/p&gt;
 &lt;p&gt;你也可以在主题目录下的img文件夹中新建Random-img文件夹，将&lt;strong&gt;0.jpg&lt;/strong&gt;、&lt;strong&gt;1.jpg&lt;/strong&gt;、&lt;strong&gt;2.jpg&lt;/strong&gt;、&lt;strong&gt;3.jpg&lt;/strong&gt;……&lt;strong&gt;110.jpg&lt;/strong&gt;命名格式的图片放入其中，然后将&lt;code&gt;random_url&lt;/code&gt;的值设置为**/img/Random-img/**。&lt;/p&gt;
 &lt;blockquote class=&#34;colorquote warning&#34;&gt;&lt;p&gt;图片的命名使用连续的整数，random_max的值小于等于（0、1、2、3…..110）的最大整数。（ps：如你偏爱访问速度🙃，尽可能使用固定图片）&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h1 id=&#34;三随机名言与当地时间&#34;&gt;三、随机名言与当地时间&lt;/h1&gt;
+&lt;h2 id=&#34;随机名言与当地时间&#34;&gt;随机名言与当地时间&lt;/h2&gt;
 &lt;p&gt;每次刷新网页，网页页头展示一条随机名言，获取并展示该时区的标准时间。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5229,7 +5229,7 @@ motto:
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;编辑&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;，设置&lt;code&gt;motto&lt;/code&gt;和&lt;code&gt;timejs&lt;/code&gt;下的enable为true的参数即可。&lt;/p&gt;
-&lt;h1 id=&#34;四预加载遮罩&#34;&gt;四、预加载遮罩&lt;/h1&gt;
+&lt;h2 id=&#34;预加载遮罩&#34;&gt;预加载遮罩&lt;/h2&gt;
 &lt;p&gt;预加载遮罩的作用为：确保背景图片加载完成和背景构造完成。&lt;br/&gt;
 当背景加载并构造完成时，主题立即移除遮罩。预加载行为的超时时间默认设为10s，即最多10s左右后，不管背景是否加载并构造完成，主题都移除遮罩。你可以决定是否使用：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5249,7 +5249,7 @@ preloader:
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;编辑&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;，设置&lt;code&gt;preloader&lt;/code&gt;下的enable为true并设置&lt;code&gt;animation&lt;/code&gt;参数（spinner, transition or cyclic）。&lt;/p&gt;
-&lt;h1 id=&#34;五首页文章展示样式&#34;&gt;五、首页文章展示样式&lt;/h1&gt;
+&lt;h2 id=&#34;首页文章展示样式&#34;&gt;首页文章展示样式&lt;/h2&gt;
 &lt;p&gt;首页文章展示有两种模式：..图文模式..&lt;code&gt;cart&lt;/code&gt;和..纯净模式..&lt;code&gt;pure&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;编辑&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;，设置&lt;code&gt;index_style&lt;/code&gt;的参数即可。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5273,7 +5273,7 @@ preloader:
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote class=&#34;colorquote info&#34;&gt;未设置图片的文章默认设置cover路径下的图片，文章图片未加载出来时显示lazy_image下的图片&lt;/blockquote&gt;
-&lt;h2 id=&#34;51设置文章封面图&#34;&gt;5.1设置文章封面图&lt;/h2&gt;
+&lt;h3 id=&#34;设置文章封面图&#34;&gt;设置文章封面图&lt;/h3&gt;
 &lt;p&gt;在每篇文章的头部添加&lt;code&gt;cover&lt;/code&gt;标签设置每篇文章的背景，路径可为相对路径或绝对路径。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5299,7 +5299,7 @@ preloader:
 &lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gd&#34;&gt;---
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;52首页的分页&#34;&gt;5.2首页的分页&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;首页的分页&#34;&gt;首页的分页&lt;/h3&gt;
 &lt;p&gt;hexo博客默认首页分页，编辑&lt;font color=#ff4444 face=&#34;幼圆&#34;&gt;站点配置文件&lt;/font&gt;，设置参数&lt;code&gt;per_page&lt;/code&gt;为1、2、3…..以达到分页目的，0则不分页。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5323,7 +5323,7 @@ preloader:
 &lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;  order_by: -date
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;53文字的截断&#34;&gt;5.3文字的截断&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文字的截断&#34;&gt;文字的截断&lt;/h3&gt;
 &lt;p&gt;编辑&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;
 &lt;code&gt;excerpt_cart&lt;/code&gt;为图文模式的截取字数，推荐小于等于100;
 &lt;code&gt;excerpt_pure&lt;/code&gt;为纯净模式的截取字数，推荐字数为300;
@@ -5342,8 +5342,8 @@ excerpt_pure: 300
 excerpt_link: true
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;六其他page的使用&#34;&gt;六、其他page的使用&lt;/h1&gt;
-&lt;h2 id=&#34;61归档页archive&#34;&gt;6.1归档页(archive)&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;其他page的使用&#34;&gt;其他page的使用&lt;/h2&gt;
+&lt;h3 id=&#34;归档页archive&#34;&gt;归档页(archive)&lt;/h3&gt;
 &lt;p&gt;Annie主题的归档页按年归档，不分页。当然，可以置参数&lt;code&gt;archive_generator.per_page&lt;/code&gt;（&lt;font color=#ff4444 face=&#34;幼圆&#34;&gt;站点配置文件&lt;/font&gt;）为1、2、3…..以达到分页目的。&lt;/p&gt;
 &lt;blockquote class=&#34;colorquote warning&#34;&gt;&lt;p&gt;Annie主题中无效，分页是对该页面[主页、归档页、标签页、分类页]的文章进行分页，即每次（每页）展示指定数量的文章&lt;/p&gt;&lt;/blockquote&gt;
 ```yml
@@ -5356,7 +5356,7 @@ per_page: 10&lt;/p&gt;
 per_page: 0&lt;/p&gt;
 &lt;p&gt;category_generator: 
 per_page: 0&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## 6.2分类页(categories)
+&lt;pre&gt;&lt;code&gt;### 分类页(categories)
 
 执行命令`$ hexo new page categories`，..创建分类页..
 ```bash
@@ -5378,7 +5378,7 @@ date: 2018-09-11 20:31:03
 &lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gd&#34;&gt;---
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;63标签页tags&#34;&gt;6.3标签页(tags)&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;标签页tags&#34;&gt;标签页(tags)&lt;/h3&gt;
 &lt;p&gt;执行命令&lt;code&gt;$ hexo new page tags&lt;/code&gt;，..创建标签页..&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5405,7 +5405,7 @@ date: 2018-09-11 21:41:02
 &lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gd&#34;&gt;---
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;64关于页about&#34;&gt;6.4关于页(about)&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;关于页about&#34;&gt;关于页(about)&lt;/h3&gt;
 &lt;p&gt;执行&lt;code&gt;$ hexo new page about&lt;/code&gt;命令，..创建关于页..&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5442,7 +5442,7 @@ date: 2018-09-11 20:30:08
 &lt;span class=&#34;gd&#34;&gt;---
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;65相册页gallery&#34;&gt;6.5相册页(gallery)&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;相册页gallery&#34;&gt;相册页(gallery)&lt;/h3&gt;
 &lt;p&gt;执行命令&lt;code&gt;$ hexo new page gallery&lt;/code&gt;，..创建相册页..&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5514,7 +5514,7 @@ gallery_limit: 0
 &lt;span class=&#34;gi&#34;&gt;+ gallery_data: plugin/gallerypage/data.json
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;七站内搜索&#34;&gt;七、站内搜索&lt;/h1&gt;
+&lt;/div&gt;&lt;h2 id=&#34;站内搜索&#34;&gt;站内搜索&lt;/h2&gt;
 &lt;p&gt;若此时仍未配置站内搜索，则执行命令，..安装插件..&lt;code&gt;hexo-generator-search-zip&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5568,8 +5568,8 @@ local_search:
     top_n_per_article: 2
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;八文章页问题&#34;&gt;八、文章页问题&lt;/h1&gt;
-&lt;h2 id=&#34;81相关的文章&#34;&gt;8.1相关的文章&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;文章页问题&#34;&gt;文章页问题&lt;/h2&gt;
+&lt;h3 id=&#34;相关的文章&#34;&gt;相关的文章&lt;/h3&gt;
 &lt;p&gt;文章页将展示与当前文章具有相同分类、相同标签的系列文章。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;排序规则：分类&amp;gt;标签&amp;gt;时间&amp;gt;不相关文章。&lt;/p&gt;
@@ -5585,7 +5585,7 @@ relate:
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;只有全站博客文章篇数..大于1..且relate.enable..为真..时，该模块有效。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;82阅读量计数&#34;&gt;8.2阅读量计数&lt;/h2&gt;
+&lt;h3 id=&#34;阅读量计数&#34;&gt;阅读量计数&lt;/h3&gt;
 &lt;p&gt;对于&lt;code&gt;leancloud_count&lt;/code&gt;，你必须设置appid、appkey；&lt;br/&gt;
 对于&lt;code&gt;busuanzi_count&lt;/code&gt;，你只需要开启它即可。&lt;/p&gt;
 &lt;ol&gt;
@@ -5666,7 +5666,7 @@ busuanzi_count:
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;该模块放置于页脚，文章页面只显示文章的阅读量，其他页面只显示总访问量和访客数（等待完善）&lt;/p&gt;
-&lt;h2 id=&#34;83文章点赞&#34;&gt;8.3文章点赞&lt;/h2&gt;
+&lt;h3 id=&#34;文章点赞&#34;&gt;文章点赞&lt;/h3&gt;
 &lt;p&gt;如果你完成了8.2阅读量计数的leancloud计数的设置，那么只需要开启&lt;code&gt;like_post&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5704,7 +5704,7 @@ busuanzi_count:
     enable: true
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;84文章排行&#34;&gt;8.4文章排行&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章排行&#34;&gt;文章排行&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -5742,14 +5742,14 @@ busuanzi_count:
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果你完成了8.2阅读量计数的leancloud计数的设置，那么只需要开启topN_post。（文章阅读排行依赖于8.2阅读量计数）&lt;/p&gt;
-&lt;h2 id=&#34;85文章目录&#34;&gt;8.5文章目录&lt;/h2&gt;
+&lt;h3 id=&#34;文章目录&#34;&gt;文章目录&lt;/h3&gt;
 &lt;p&gt;若一篇文章的正文存在h1、h2、h3等标题，则文章页展示目录按钮。点击目录按钮，页面左侧展示文章目录。当屏幕宽度小于1024px或页面滚动高度大于文章正文高度时，页面隐藏文章目录。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;# post_toc
 post_toc:
     enable: true
     katelog: true
 
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;86数学公式&#34;&gt;8.6数学公式&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;数学公式&#34;&gt;数学公式&lt;/h3&gt;
 &lt;p&gt;先设置&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;的&lt;code&gt;mathjax&lt;/code&gt;参数，再于文章的Front-matter中添加&lt;code&gt;mathjax&lt;/code&gt;: true&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5787,7 +5787,7 @@ tags:
 	- other tag
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;87代码块高亮&#34;&gt;8.7代码块高亮&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;代码块高亮&#34;&gt;代码块高亮&lt;/h3&gt;
 &lt;p&gt;综合考虑hexo自身的代码高亮插件和hexo-pism-plugin高亮插件的特性及代码块解析规则，2019-04-27日更新后，主题弃用&lt;a href=&#34;https://github.com/ele828/hexo-prism-plugin&#34;&gt;hexo-prism-plugin&lt;/a&gt;插件，参考&amp;amp;使用了next主题的代码高亮风格。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;编辑&lt;font color=#0099ff face=&#34;幼圆&#34;&gt;主题配置文件&lt;/font&gt;，选择并设置&lt;code&gt;highlight_theme&lt;/code&gt;的值&lt;/li&gt;
@@ -5847,7 +5847,7 @@ future: true
   tab_replace:
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;88代码块复制&#34;&gt;8.8代码块复制&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;代码块复制&#34;&gt;代码块复制&lt;/h3&gt;
 &lt;p&gt;只有&lt;code&gt;theme.code_copy.enable&lt;/code&gt;为真且&lt;code&gt;config.highlight.enable&lt;/code&gt;为真时，代码块的复制功能才有效&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5865,7 +5865,7 @@ code_copy:
 &lt;span class=&#34;gi&#34;&gt;+    enable: true
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;89文章评论功能&#34;&gt;8.9文章评论功能&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文章评论功能&#34;&gt;文章评论功能&lt;/h3&gt;
 &lt;p&gt;Hexo-theme-Annie主题集成了gitalk、DesertsP版的valine、livere评论插件。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -5894,7 +5894,7 @@ code_copy:
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;&lt;tr&gt;&lt;td bgcolor=PowderBlue&gt;注：对于gitalk，你必须设置clientID、clientSecret；对于Valine，你必须设置appid、appkey；对于livere，你必须设置livere_uid。&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;h2 id=&#34;810文章分享功能&#34;&gt;8.10文章分享功能&lt;/h2&gt;
+&lt;h3 id=&#34;文章分享功能&#34;&gt;文章分享功能&lt;/h3&gt;
 &lt;p&gt;Hexo-theme-Annie主题集成了addThis、baiduShare、shareThis、socialShare分享插件。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -5928,7 +5928,7 @@ code_copy:
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;&lt;tr&gt;&lt;td bgcolor=PowderBlue&gt;注：使用addThis、shareThis时，应注意关闭浏览器的内容拦截插件。&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;h1 id=&#34;九站点分析&#34;&gt;九、站点分析&lt;/h1&gt;
+&lt;h2 id=&#34;站点分析&#34;&gt;站点分析&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -5965,8 +5965,8 @@ code_copy:
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;十其他的问题&#34;&gt;十、其他的问题&lt;/h1&gt;
-&lt;h2 id=&#34;101社交链接&#34;&gt;10.1社交链接&lt;/h2&gt;
+&lt;h2 id=&#34;其他的问题&#34;&gt;其他的问题&lt;/h2&gt;
+&lt;h3 id=&#34;社交链接&#34;&gt;社交链接&lt;/h3&gt;
 &lt;p&gt;直接增加相应的社交图标、社交链接即可&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6022,7 +6022,7 @@ social:
 &lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;102rss订阅&#34;&gt;10.2RSS订阅&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;rss订阅&#34;&gt;RSS订阅&lt;/h3&gt;
 &lt;p&gt;主题将使用到 &lt;code&gt;hexo-generator-feed&lt;/code&gt; 插件来生成&lt;code&gt;atom.xml&lt;/code&gt; 文件。&lt;/p&gt;
 &lt;p&gt;执行命令安装该插件：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6039,13 +6039,13 @@ social:
 +  path: atom.xml
 +  limit: 20
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行 &lt;code&gt;hexo clean &amp;amp; hexo g &lt;/code&gt;重新生成博客文件，你将在 hexo/public/ 目录下看到 &lt;code&gt;atom.xml&lt;/code&gt; 文件，说明你已经安装成功了。 （rss的社交链接见于上一节：1. 社交链接）&lt;/p&gt;
-&lt;h2 id=&#34;103版权声明&#34;&gt;10.3版权声明&lt;/h2&gt;
+&lt;h3 id=&#34;版权声明&#34;&gt;版权声明&lt;/h3&gt;
 &lt;p&gt;对于copyright ，&lt;code&gt;since&lt;/code&gt;为站点建立年份，&lt;code&gt;cotent_author&lt;/code&gt;为站点作者。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;_config.yml
 # copyright  
 since: 2018
 cotent_author: author
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;104点击页面浮现桃心&#34;&gt;10.4点击页面浮现桃心&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;点击页面浮现桃心&#34;&gt;点击页面浮现桃心&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# when click, emerge heart
 love:
     enable: true
@@ -6054,8 +6054,8 @@ love:
 totop:
     enable: true
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对于&lt;code&gt;love&lt;/code&gt;，若设置为true，则点击页面时，会出现随机颜色的桃心💚💛💕。对于&lt;code&gt;totop&lt;/code&gt;，若设置为true，则启用返回顶部按钮。&lt;/p&gt;
-&lt;h1 id=&#34;十一开发定制问题&#34;&gt;十一、开发定制问题&lt;/h1&gt;
-&lt;h2 id=&#34;111主题项目结构&#34;&gt;11.1主题项目结构&lt;/h2&gt;
+&lt;h2 id=&#34;开发定制问题&#34;&gt;开发定制问题&lt;/h2&gt;
+&lt;h3 id=&#34;主题项目结构&#34;&gt;主题项目结构&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;ANNIE
 ├─languages					#国际化语言支持
 ├─layout					#html页面模板
@@ -6093,7 +6093,7 @@ totop:
         ├─toc
         └─vibrant
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Annie主题基于hexo 3.8.0、ejs、styl开发而成。一般来说，如果你想修改页面的html结构，请到layout目录下添加或修改相应的ejs文件； 如果你想修改页面元素的css样式，请到source/css目录下添加或修改相应的styl文件；如果你想添加一些js代码，原则上，自定义代码片段应添加于source/js/main.js文件中，引入的js文件应放置于source/plugin目录下&lt;/p&gt;
-&lt;h2 id=&#34;112主题字体问题&#34;&gt;11.2主题字体问题&lt;/h2&gt;
+&lt;h3 id=&#34;主题字体问题&#34;&gt;主题字体问题&lt;/h3&gt;
 &lt;p&gt;主题整体字体大小，修改html标签的&lt;code&gt;font-size&lt;/code&gt;属性&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -6138,7 +6138,7 @@ totop:
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;你可以检索style文件，查询相应的标签或类，进而设置相应元素的属性。&lt;/p&gt;
-&lt;h2 id=&#34;113页头菜单颜色&#34;&gt;11.3页头菜单颜色&lt;/h2&gt;
+&lt;h3 id=&#34;页头菜单颜色&#34;&gt;页头菜单颜色&lt;/h3&gt;
 &lt;p&gt;页头菜单颜色会根据背景的主题色变化非黑即白。亦即主题色为浅色时，字体为黑；主题色为深色时，字体为白。你可以参考main.js中函数&lt;code&gt;Annie_ColorExtraction(img)&lt;/code&gt;。&lt;/p&gt;
 </description>
                 
@@ -6192,11 +6192,12 @@ totop:
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;p&gt;&lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2019/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88.jpg&#34; alt=&#34;&#34; title=&#34;《无名之辈》&#34;&gt;
-&lt;audio controls style=&#34;clear:both;display:block;margin:auto&#34; &gt;&lt;/p&gt;
-&lt;source src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/audios/%E8%83%A1%E5%B9%BF%E7%94%9F.mp3&#34; width=&#34;100%&#34; &gt;
-你的浏览器暂不支持该音频！
+                    <description>&lt;p&gt;&lt;img src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/life/2019/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88.jpg&#34; alt=&#34;&#34; title=&#34;《无名之辈》&#34;&gt;&lt;/p&gt;
+&lt;audio controls height=&#34;100&#34; width=&#34;100&#34; style=&#34;clear:both;display:block;margin:auto&#34;&gt;
+  &lt;source src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/audios/%E8%83%A1%E5%B9%BF%E7%94%9F.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;embed height=&#34;50&#34; width=&#34;100&#34; src=&#34;https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/audios/%E8%83%A1%E5%B9%BF%E7%94%9F.mp3&#34;&gt;
 &lt;/audio&gt;
+&lt;/br&gt;
 &lt;p style=&#34;text-align:center;font-size:14px&#34; &gt;◎ 歌曲：《胡广生》·任素汐&lt;/p&gt;
 &lt;p&gt;第一次看《无名之辈》是因为这首歌，但不知道什么原因，没看完...
 第二次看《无名之辈》还是因为这首歌，这次一个人认真的看完了。
