@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 30 May 2020 14:59:45 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 30 May 2020 22:16:18 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -39,11 +39,11 @@
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
                     <description>&lt;p&gt;这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完善的，后续如果有需要更改或添加的地方，我会进行修改的。&lt;/p&gt;
-&lt;h2 id=&#34;1插入公式&#34;&gt;1.插入公式&lt;/h2&gt;
-&lt;h3 id=&#34;11行中公式&#34;&gt;1.1行中公式&lt;/h3&gt;
+&lt;h2 id=&#34;插入公式&#34;&gt;插入公式&lt;/h2&gt;
+&lt;h3 id=&#34;行中公式&#34;&gt;行中公式&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$y=x+1$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$y=x+1$&lt;/p&gt;
-&lt;h3 id=&#34;12独立公式&#34;&gt;1.2独立公式&lt;/h3&gt;
+&lt;h3 id=&#34;独立公式&#34;&gt;独立公式&lt;/h3&gt;
 &lt;p&gt;公式会另起一行居中显示&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$$y=x+1$$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$$y=x+1$$&lt;/p&gt;

@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-05-30T14:59:44&#43;08:00</updated>
+    <updated>2020-05-30T22:16:18&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">LaTeX数学符号与数学公式汇总</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/" />
             <id>https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/</id>
-            <updated>2020-05-28T23:32:09&#43;08:00</updated>
+            <updated>2020-05-30T20:39:31&#43;08:00</updated>
             <published>2020-02-21T11:30:55&#43;08:00</published>
             <author>
                     <name>天涯共此时</name>
@@ -32,11 +32,11 @@
     </summary>
             
                 <content type="html">&lt;p&gt;这篇文章主要是为了把大部分常用的LaTex数学符号和公式整理到一起，方便自己和大家以后查阅使用，虽然网上的相关文章很多，但我还是花了点时间自己整理了一下，基本上都是网友们整理过的相关内容。从公式的使用到公式的各种常用运算符再到一些数学常用符号和特定的数学公式形式以及其他相关符号的整理。内容肯定是不完善的，后续如果有需要更改或添加的地方，我会进行修改的。&lt;/p&gt;
-&lt;h2 id=&#34;1插入公式&#34;&gt;1.插入公式&lt;/h2&gt;
-&lt;h3 id=&#34;11行中公式&#34;&gt;1.1行中公式&lt;/h3&gt;
+&lt;h2 id=&#34;插入公式&#34;&gt;插入公式&lt;/h2&gt;
+&lt;h3 id=&#34;行中公式&#34;&gt;行中公式&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$y=x+1$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$y=x+1$&lt;/p&gt;
-&lt;h3 id=&#34;12独立公式&#34;&gt;1.2独立公式&lt;/h3&gt;
+&lt;h3 id=&#34;独立公式&#34;&gt;独立公式&lt;/h3&gt;
 &lt;p&gt;公式会另起一行居中显示&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$$y=x+1$$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;$$y=x+1$$&lt;/p&gt;
