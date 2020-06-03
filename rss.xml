@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 03 Jun 2020 13:36:35 &#43;0800</lastBuildDate>
+        <lastBuildDate>Thu, 04 Jun 2020 01:30:38 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -2353,15 +2353,15 @@ $$&lt;/p&gt;
                 
                     <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;折腾了两天，总算是把这个博客给搭建起来了😉😉!&lt;/p&gt;
-&lt;p&gt;在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一节吧！&lt;/p&gt;
+&lt;p&gt;在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一章节吧！&lt;/p&gt;
 &lt;p&gt;首先要感谢👏几个博主，第一次看到这个 ..博客主题..  &lt;a href=&#34;https://github.com/reuixiy/hugo-theme-meme&#34;&gt;MemE&lt;/a&gt; 是从 &lt;a href=&#34;https://io-oi.me/&#34;&gt;reuixiy&lt;/a&gt; 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一次搭建博客的兴趣（&lt;code&gt;之前我其实就搭建过一个博客，当时是用hexo搭建的，现在博客还在用，不过由于速度确实不太行，就很少在上面写东西了&lt;/code&gt;）。说实话，我感觉 &lt;a href=&#34;https://io-oi.me/&#34;&gt;reuixiy&lt;/a&gt; 博主讲得实在太..详细..了，所以感觉自己只是在..照葫芦画瓢..🙃🙃🙃 。&lt;/p&gt;
 &lt;p&gt;搭建博客的过程很简单，一般都不会有什么问题，所以这里我就写写关于&lt;code&gt;MemE&lt;/code&gt;主题的各个细节的配置问题:&lt;br/&gt;
 ..一来..是自己想要更改博客主题样式的时候知道去哪个地方改？怎么改？🖊️&lt;br/&gt;
 ..二来..可以提供给需要的朋友一些参考，让更多的人加入这个主题中来！❤️&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;虽然之前有看过 &lt;a href=&#34;https://io-oi.me/&#34;&gt;reuixiy&lt;/a&gt; 博主的详细 &lt;a href=&#34;https://github.com/reuixiy/hugo-theme-meme/blob/master/config-examples/en-us/config.toml&#34;&gt;站点配置文件&lt;/a&gt; ，不过都是英文的，看得实在有点累（我的英文太水了😐）。虽然基本上都是..见名知义..的，可我觉得还是一份中文的文档📄比较适合我。&lt;/p&gt;
-&lt;p&gt;在更改各个配置的时候我所参考的大部分内容是来自 &lt;a href=&#34;https://blog.guanqr.com/&#34;&gt;Guanqr&lt;/a&gt; 博主提交到github中的&lt;code&gt;config.toml&lt;/code&gt;文件，里面所有的注释都是中文的，对我来说简直太爽了😁😁😁！！！。然后有一些博客的写作格式也是从该博主的 &lt;a href=&#34;https://github.com/guanqr/blog/commits/master&#34;&gt;commit&lt;/a&gt; 中找到的，自己也尝试着动手改改看，效果还不错！&lt;/p&gt;
+&lt;p&gt;在更改各个配置的时候我所参考的大部分内容是来自 &lt;a href=&#34;https://blog.guanqr.com/&#34;&gt;Guanqr&lt;/a&gt; 博主提交到github中的&lt;span class=&#34;filenamestyle&#34;&gt;config.toml&lt;/span&gt;文件，里面所有的注释都是中文的，对我来说简直太爽了😁😁😁！！！。然后有一些博客的写作格式也是从该博主的 &lt;a href=&#34;https://github.com/guanqr/blog/commits/master&#34;&gt;commit&lt;/a&gt; 中找到的，自己也尝试着动手改改看，效果还不错！&lt;/p&gt;
 &lt;p&gt;所以，这里就先谢谢这两位博主了🎉🎉🎉，当然中途出现了一些问题都是从网上找到方法解决的，所以也要感谢那么多给我提供过帮助的博主们！！！🎉🎉🎉&lt;/p&gt;
-&lt;p&gt;好了，不多说了，步入..正题..，首先给大家看看我的..博客结构目录..：&lt;/p&gt;
+&lt;p&gt;好了，不多说了，步入正题，首先给大家看看我的..博客结构目录..：&lt;/p&gt;
 &lt;h2 id=&#34;博客目录结构&#34;&gt;博客目录结构&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;blog
 │
@@ -2374,7 +2374,7 @@ $$&lt;/p&gt;
 ├── static	
 ├── themes
 └── config.toml
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后我们按照&lt;code&gt;config.toml&lt;/code&gt;文件的大致内容依次梳理(会有部分内容与原文上下位置..不一致..)，其实大部分设置只需要..更改参数..就可以了，这里我就只把对应的..关键字..给出来，你们去自己的&lt;code&gt;config.toml&lt;/code&gt;中查找关键字然后自己..更改参数..试试。这里附上我的&lt;a href=&#34;https://github.com/ztygcs/config.toml/blob/master/config.toml&#34;&gt;config.toml&lt;/a&gt;文件。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后我们按照&lt;span class=&#34;filenamestyle&#34;&gt;config.toml&lt;/span&gt;文件的大致内容依次梳理(会有部分内容与原文上下位置..不一致..)，其实大部分设置只需要..更改参数..就可以了，这里我就只把对应的..关键字..给出来，你们去自己的&lt;span class=&#34;filenamestyle&#34;&gt;config.toml&lt;/span&gt;中查找关键字然后自己..更改参数..试试。这里附上我的&lt;a href=&#34;https://github.com/ztygcs/config.toml/blob/master/config.toml&#34;&gt;&lt;span class=&#34;filenamestyle&#34;&gt;config.toml&lt;/span&gt;&lt;/a&gt;文件。&lt;/p&gt;
 &lt;h2 id=&#34;每一分页文章数&#34;&gt;每一分页文章数&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3053,7 +3053,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;nx&#34;&gt;enableAnchorAutoHide&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;说明文字&#34;&gt;说明文字&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;图片说明文字&#34;&gt;图片说明文字&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3231,7 +3231,7 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fontFamilyTOC&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;说明文字-1&#34;&gt;说明文字&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;说明文字&#34;&gt;说明文字&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3653,207 +3653,12 @@ $$&lt;/p&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;说明：即仅当该文章有相应的翻译版本时才显示按钮&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;实现诗歌引用格式&#34;&gt;实现诗歌引用格式&lt;/h2&gt;
-&lt;p&gt;在&lt;code&gt;\static\images&lt;/code&gt;文件夹中..新建..&lt;code&gt;左引号&lt;/code&gt;文件&lt;code&gt;quote-l.svg&lt;/code&gt;与&lt;code&gt;右引号&lt;/code&gt;文件&lt;code&gt;quote-r.svg&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;文件地址： \static\images\quote-l.svg
-&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- License Agreement at http://iconmonstr.com/license/ --&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE svg PUBLIC &amp;#34;-//W3C//DTD SVG 1.1//EN&amp;#34; &amp;#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&amp;#34;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;version=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.1&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/2000/svg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns:xlink=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/1999/xlink&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;x=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;y=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt;
-	 &lt;span class=&#34;na&#34;&gt;width=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;enable-background=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;new 0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xml:space=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;preserve&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;quote-5-icon&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M55.178,332.895c-22.22-79.435,26.876-198.974,151.004-223.472l16.886,36.498
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c-38.022,14.331-63.218,47.064-66.943,81.466c42.757,6.73,75.459,43.737,75.459,88.385
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	C231.583,415.014,85.181,440.162,55.178,332.895z M285.595,332.895c-22.22-79.435,26.876-198.974,151.004-223.472l16.886,36.498
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c-38.022,14.331-63.218,47.064-66.943,81.466c42.757,6.73,75.459,43.737,75.459,88.385C462,415.014,315.598,440.162,285.595,332.895
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	z&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;文件地址： \static\images\quote-r.svg
-&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- License Agreement at http://iconmonstr.com/license/ --&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE svg PUBLIC &amp;#34;-//W3C//DTD SVG 1.1//EN&amp;#34; &amp;#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&amp;#34;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;version=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.1&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/2000/svg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns:xlink=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/1999/xlink&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;x=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;y=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt;
-	 &lt;span class=&#34;na&#34;&gt;width=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;enable-background=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;new 0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xml:space=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;preserve&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;quote-6-icon&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M456.822,179.107c22.219,79.434-26.877,198.973-151.004,223.471l-16.887-36.498
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c38.023-14.33,63.219-47.064,66.943-81.465c-42.756-6.73-75.459-43.739-75.459-88.385
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	C280.416,96.986,426.818,71.837,456.822,179.107z M226.405,179.107c22.22,79.434-26.876,198.973-151.004,223.471L58.515,366.08
-&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c38.022-14.33,63.218-47.064,66.943-81.465C82.702,277.885,50,240.876,50,196.23C50,96.986,196.402,71.837,226.405,179.107z&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在&lt;code&gt;custom.scss&lt;/code&gt;文件中添加以下代码：&lt;/p&gt;
-&lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_custom\custom.scss~~&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;#div-default&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;--color-div-default-bg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;	   
-    &lt;span class=&#34;nt&#34;&gt;border-left-color&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;--color-div-default&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;	    
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; 
-&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::after&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::before&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background-repeat&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;no-repeat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background-size&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;22px&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;22px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;block&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;24px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;.2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;//position: absolute;
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nt&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::before&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;images&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;quote-l&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;.svg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background-position&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;-6px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;border-top&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;solid&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;#ccc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;-20px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::after&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;images&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;quote-r&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;.svg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;background-position&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;8px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;border-bottom&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;solid&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;#ccc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;bottom&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;-20px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;text-align&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;center&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;important&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;border-left&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在博客文章中使用的时候，用以下代码块包起来&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;blockquote&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;blockquote-center&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-涉江采芙蓉&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;兰泽多芳草&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;愿君多采撷&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;此物最相思
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;blockquote&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这样就实现了下面的效果：&lt;/p&gt;
-&lt;blockquote class=&#34;blockquote-center&#34;&gt;
-&lt;p&gt;
-涉江采芙蓉&lt;br/&gt;兰泽多芳草&lt;br/&gt;愿君多采撷&lt;br/&gt;此物最相思
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;文字渐变色&#34;&gt;文字渐变色&lt;/h2&gt;
-&lt;p&gt;在文件&lt;code&gt;custom.scss&lt;/code&gt;中添加..渐变..样式：&lt;/p&gt;
-&lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_custom\custom.scss~~&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nc&#34;&gt;.colorfulfont&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;linear-gradient&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;red&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;#45ed63&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;-webkit-background-clip&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;transparent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在文章中进行引用：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;font&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;colorfulfont&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-涉江采芙蓉&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;兰泽多芳草&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;愿君多采撷&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;此物最相思
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
-&lt;font class = &#34;colorfulfont&#34;&gt;
-涉江采芙蓉&lt;br/&gt;兰泽多芳草&lt;br/&gt;愿君多采撷&lt;br/&gt;此物最相思
-&lt;/font&gt;
 &lt;h2 id=&#34;back-to-top样式&#34;&gt;back-to-top样式&lt;/h2&gt;
-&lt;p&gt;在文件&lt;code&gt;back-to-top.scss&lt;/code&gt;中：&lt;/p&gt;
-&lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_common\back-to-top.scss~~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在文件&lt;span class=&#34;filenamestyle&#34;&gt;back-to-top.scss&lt;/span&gt;中：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;文件原始位置：&lt;code&gt;\themes\meme\assets\scss\_common\back-to-top.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\components\back-to-top.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3878,9 +3683,11 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;归档分类及标签页样式&#34;&gt;归档、分类及标签页样式&lt;/h2&gt;
 &lt;h3 id=&#34;归档样式代码&#34;&gt;归档样式代码：&lt;/h3&gt;
-&lt;p&gt;在文件&lt;code&gt;list.scss&lt;/code&gt;中：&lt;/p&gt;
-&lt;p&gt;~~文件位置：&lt;code&gt;\themes\meme\assets\scss\\_common\list.scss~~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在文件&lt;span class=&#34;filenamestyle&#34;&gt;list.scss&lt;/span&gt;中：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;文件原始位置：&lt;code&gt;\themes\meme\assets\scss\_common\list.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\layout\list.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4006,7 +3813,9 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;分类样式代码&#34;&gt;分类样式代码：&lt;/h3&gt;
-&lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\pages\\_tree-categories.scss&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\pages\_tree-categories.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4034,7 +3843,9 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;标签样式代码&#34;&gt;标签样式代码：&lt;/h3&gt;
-&lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\pages\\_tag-cloud.scss&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\pages\_tag-cloud.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4055,7 +3866,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;插入音频&#34;&gt;插入音频&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;多媒体&#34;&gt;多媒体&lt;/h2&gt;
 &lt;h3 id=&#34;audio标签&#34;&gt;audio标签&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4090,7 +3901,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;video&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;通过网易云外链添加&#34;&gt;通过网易云外链添加&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;网易云外链方式添加音乐&#34;&gt;网易云外链方式添加音乐&lt;/h3&gt;
 &lt;p&gt;在网页版&lt;a href=&#34;https://www.baidu.com/link?url=rMp-eLGywbp55zR56zgyg3mbCHH4-y1cFGrhdaBOeJi&amp;amp;wd=&amp;amp;eqid=885cca3900008090000000065de22b10&#34;&gt;网易云音乐&lt;/a&gt;中搜索需要的歌（不支持 ..无版权.. 或 ..会员.. 歌曲）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ztygcs.github.io/images/tech/2019/11/towers.png&#34; alt=&#34;&#34; title=&#34;搜索需要的歌&#34;&gt;&lt;/p&gt;
 &lt;p&gt;点击&lt;code&gt;生成外链播放器&lt;/code&gt;&lt;/p&gt;
@@ -4108,10 +3919,177 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;https://ztygcs.github.io//music.163.com/outchain/player?type=2&amp;id=2639477&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;卡片风格&#34;&gt;卡片风格&lt;/h2&gt;
-&lt;p&gt;在文件&lt;code&gt;custom.scss&lt;/code&gt;中加入以下样式：&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\_custom\custom.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;自定义&#34;&gt;自定义&lt;/h2&gt;
+&lt;h3 id=&#34;实现诗歌引用格式&#34;&gt;实现诗歌引用格式&lt;/h3&gt;
+&lt;p&gt;在&lt;code&gt;\static\images&lt;/code&gt;文件夹中..新建..&lt;code&gt;左引号&lt;/code&gt;文件&lt;span class=&#34;filenamestyle&#34;&gt;quote-l.svg&lt;/span&gt;与&lt;code&gt;右引号&lt;/code&gt;文件&lt;span class=&#34;filenamestyle&#34;&gt;quote-r.svg&lt;/span&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文件地址： \static\images\quote-l.svg&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- License Agreement at http://iconmonstr.com/license/ --&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE svg PUBLIC &amp;#34;-//W3C//DTD SVG 1.1//EN&amp;#34; &amp;#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&amp;#34;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;version=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.1&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/2000/svg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns:xlink=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/1999/xlink&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;x=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;y=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt;
+	 &lt;span class=&#34;na&#34;&gt;width=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;enable-background=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;new 0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xml:space=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;preserve&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;quote-5-icon&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M55.178,332.895c-22.22-79.435,26.876-198.974,151.004-223.472l16.886,36.498
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c-38.022,14.331-63.218,47.064-66.943,81.466c42.757,6.73,75.459,43.737,75.459,88.385
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	C231.583,415.014,85.181,440.162,55.178,332.895z M285.595,332.895c-22.22-79.435,26.876-198.974,151.004-223.472l16.886,36.498
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c-38.022,14.331-63.218,47.064-66.943,81.466c42.757,6.73,75.459,43.737,75.459,88.385C462,415.014,315.598,440.162,285.595,332.895
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	z&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;文件地址： \static\images\quote-r.svg&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- License Agreement at http://iconmonstr.com/license/ --&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE svg PUBLIC &amp;#34;-//W3C//DTD SVG 1.1//EN&amp;#34; &amp;#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&amp;#34;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;version=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.1&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/2000/svg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns:xlink=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/1999/xlink&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;x=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;y=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0px&amp;#34;&lt;/span&gt;
+	 &lt;span class=&#34;na&#34;&gt;width=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;512px&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;enable-background=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;new 0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xml:space=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;preserve&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;quote-6-icon&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M456.822,179.107c22.219,79.434-26.877,198.973-151.004,223.471l-16.887-36.498
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c38.023-14.33,63.219-47.064,66.943-81.465c-42.756-6.73-75.459-43.739-75.459-88.385
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	C280.416,96.986,426.818,71.837,456.822,179.107z M226.405,179.107c22.22,79.434-26.876,198.973-151.004,223.471L58.515,366.08
+&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;	c38.022-14.33,63.218-47.064,66.943-81.465C82.702,277.885,50,240.876,50,196.23C50,96.986,196.402,71.837,226.405,179.107z&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在&lt;span class=&#34;filenamestyle&#34;&gt;custom.scss&lt;/span&gt;文件中添加以下代码：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\\_custom\custom.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;#div-default&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;--color-div-default-bg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;	   
+    &lt;span class=&#34;nt&#34;&gt;border-left-color&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;--color-div-default&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;	    
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; 
+&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::after&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::before&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background-repeat&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;no-repeat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background-size&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;22px&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;22px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;block&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;24px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;.2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;c1&#34;&gt;//position: absolute;
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nt&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::before&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;images&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;quote-l&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;.svg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background-position&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;-6px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;border-top&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;solid&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;#ccc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;-20px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;::after&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;images&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;quote-r&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;.svg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;background-position&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;8px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;border-bottom&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;solid&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;#ccc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;bottom&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;-20px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;text-align&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;center&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;important&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;nc&#34;&gt;.blockquote-center&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;border-left&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在博客文章中使用的时候，用以下代码块包起来&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;blockquote&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;blockquote-center&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+涉江采芙蓉&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;兰泽多芳草&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;愿君多采撷&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;此物最相思
+&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;blockquote&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这样就实现了下面的效果：&lt;/p&gt;
+&lt;blockquote class=&#34;blockquote-center&#34;&gt;
+&lt;p&gt;
+涉江采芙蓉&lt;br/&gt;兰泽多芳草&lt;br/&gt;愿君多采撷&lt;br/&gt;此物最相思
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;卡片风格&#34;&gt;卡片风格&lt;/h3&gt;
+&lt;p&gt;在文件&lt;span class=&#34;filenamestyle&#34;&gt;custom.scss&lt;/span&gt;中加入以下样式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;文件原始位置：&lt;code&gt;\themes\meme\assets\scss\_custom\custom.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;文件更新位置：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4158,7 +4136,7 @@ $$&lt;/p&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在文章中加入代码：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;在需要应用的地方加入以下代码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4183,7 +4161,192 @@ $$&lt;/p&gt;
    &lt;b&gt;&#34;少年贪玩，青年迷恋爱情，壮年汲汲于成名成家，暮年自安于自欺欺人。人寿几何，顽铁能炼成的精金，能有多少？但不同程度的锻炼，必有不同程度的成绩；不同程度的纵欲放肆，必积下不同程度的顽劣。&#34;&lt;br /&gt;上苍不会让所有幸福集中到某个人身上，得到爱情未必拥有金钱；拥有金钱未必得到快乐；得到快乐未必拥有健康；拥有健康未必一切都会如愿以偿。保持知足常乐的心态才是淬炼心智、净化心灵的最佳途径。一切快乐的享受都属于精神，这种快乐把忍受变为享受，是精神对于物质的胜利，这便是人生哲学。&#34;&lt;/b&gt;
 &lt;/p&gt;
 &lt;div style=&#34;text-align:right;margin:15px&#34; &gt;&lt;footer&gt;——&lt;cite&gt;杨绛&lt;/cite&gt;&lt;/footer&gt;&lt;/div&gt;	
-&lt;/div&gt;</description>
+&lt;/div&gt;
+&lt;h3 id=&#34;文字渐变色&#34;&gt;文字渐变色&lt;/h3&gt;
+&lt;p&gt;在文件&lt;span class=&#34;filenamestyle&#34;&gt;custom.scss&lt;/span&gt;中添加..渐变..样式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;文件位置：&lt;code&gt;\themes\meme\assets\scss\\_custom\custom.scss&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;文件位置更新为：&lt;code&gt;\themes\meme\assets\scss\custom\_custom.scss&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nc&#34;&gt;.colorfulfont&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;linear-gradient&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;red&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;#45ed63&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;-webkit-background-clip&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;transparent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在文章中进行引用：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;font&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;colorfulfont&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+涉江采芙蓉&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;兰泽多芳草&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;愿君多采撷&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;此物最相思
+&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
+&lt;font class = &#34;colorfulfont&#34;&gt;
+涉江采芙蓉&lt;br/&gt;兰泽多芳草&lt;br/&gt;愿君多采撷&lt;br/&gt;此物最相思
+&lt;/font&gt;
+&lt;h3 id=&#34;添加博客已运行时间&#34;&gt;添加博客已运行时间&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.vipshan.com/zhoubian/79.html&#34;&gt;参考网址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在文件&lt;span class=&#34;filenamestyle&#34;&gt;custom.js&lt;/span&gt;中添加自定义的js代码&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文件位置：&lt;code&gt;\themes\meme\assets\js\custom.js&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//计算博客运行时间（2020.06.03添加）
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;siteTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;siteTime()&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;seconds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;minutes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;seconds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hours&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;minutes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;days&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hours&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;years&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;days&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;365&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;todayYear&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getFullYear&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;todayMonth&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getMonth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;todayDate&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getDate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;todayHour&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getHours&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;todayMinute&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getMinutes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;todaySecond&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;today&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getSeconds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;t1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;UTC&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2019&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;06&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;t2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;UTC&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;todayYear&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;todayMonth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;todayDate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;todayHour&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;todayMinute&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;todaySecond&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;diff&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;t2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;t1&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Math&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;floor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;diffDays&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Math&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;floor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;days&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;365&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;diffHours&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Math&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;floor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;365&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffDays&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;days&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hours&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;diffMinutes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Math&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;floor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;365&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffDays&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;days&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffHours&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hours&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minutes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;diffSeconds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Math&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;floor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;365&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffDays&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;days&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffHours&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hours&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffMinutes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minutes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;seconds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+        &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getElementById&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;sitetime&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffDays&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 天 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffHours&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 小时 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffMinutes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 分钟 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffSeconds&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 秒&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getElementById&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;sitetime&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffYears&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 年 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffDays&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 天 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffHours&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 小时 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffMinutes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 分钟 &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;diffSeconds&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34; 秒&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+    &lt;span class=&#34;nx&#34;&gt;siteTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中&lt;code&gt;var t1 = Date.UTC(2019, 11, 26, 19, 06, 00)&lt;/code&gt;设置为需要计算的起始日期，如时间是：2020年01月01号00点00分00秒则设置为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;t1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;UTC&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2020&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在需要应用的地方使用以下语句实现&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;sitetime&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;color:#fb7312&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;DEMO:
+本站已运行&lt;span id=&#34;sitetime&#34; style=&#34;color:#fb7312&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;添加hugo-notice&#34;&gt;添加hugo-notice&lt;/h3&gt;
+&lt;p&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;文件夹下新建文件&lt;span class=&#34;filenamestyle&#34;&gt;notice.html&lt;/span&gt;,并将原作者的&lt;a href=&#34;https://github.com/martignoni/hugo-notice&#34;&gt;&lt;span class=&#34;filenamestyle&#34;&gt;notice.html&lt;/span&gt;&lt;/a&gt;文件内容复制进来。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{/* Available notice types: warning, info, note, tip */}}
+{{- $noticeType := .Get 0 -}}
+{{/* Workaround markdownify inconsistency for single/multiple paragraphs */}}
+{{- $raw := (markdownify .Inner | chomp) -}}
+{{- $block := findRE &amp;#34;(?is)^&lt;span class=&#34;err&#34;&gt;&amp;lt;&lt;/span&gt;(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b&amp;#34; $raw 1 -}}
+{{/* Count how many times we&amp;#39;ve called this shortcode and load the css if it&amp;#39;s the first time */}}
+{{- if not ($.Page.Scratch.Get &amp;#34;noticecount&amp;#34;) -}}
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;style&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;line-height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;margin-bottom&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;border-radius&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#444&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#e7f2fa&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;last-child&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;margin-bottom&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice-title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;-18&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;-18&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;border-radius&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;font-weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;700&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#fff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#6ab0de&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;warning&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice-title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;rgba&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;217&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;83&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;79&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;.9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#fae2e2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;info&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice-title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#f0b37e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;info&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#fff2db&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;note&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice-title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#6ab0de&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;note&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#e7f2fA&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;tip&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice-title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;rgba&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;92&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;184&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;92&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;.8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;tip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;#e6f9e6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;icon-notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;inline&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;flex&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;align-self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;center&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;margin-right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;icon-notice&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;icon-notice&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;em&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;em&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fill&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;currentColor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;icon-notice&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;icon-notice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;baseline&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.125&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;em&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;position&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;relative&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;none&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;xmlns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://www.w3.org/2000/svg&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;tip-notice&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;preserveAspectRatio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;xMidYMid meet&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;note-notice&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;preserveAspectRatio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;xMidYMid meet&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;warning-notice&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 576 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;preserveAspectRatio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;xMidYMid meet&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;info-notice&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;viewBox&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;0 0 512 512&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;preserveAspectRatio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;xMidYMid meet&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;symbol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+{{- end -}}
+{{- $.Page.Scratch.Add &amp;#34;noticecount&amp;#34; 1 -}}
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;notice {{ $noticeType }}&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;len&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;Params&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;eq&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;}}&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{{ .Get 1 }}&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;end&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;}}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;first notice-title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;icon-notice baseline&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#{{- $noticeType -}}-notice&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;{{- i18n $noticeType -}}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+{{- if or $block (not $raw) }}{{ $raw }}{{ else }}&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;{{ $raw }}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;{{ end -}}
+&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;warning&#34;&gt;warning&lt;/h4&gt;
+&lt;style type=&#34;text/css&#34;&gt;.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}&lt;/style&gt;
+&lt;svg width=&#34;0&#34; height=&#34;0&#34; display=&#34;none&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;symbol id=&#34;tip-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;note-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;warning-notice&#34; viewBox=&#34;0 0 576 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;info-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z&#34;/&gt;&lt;/symbol&gt;&lt;/svg&gt;&lt;div class=&#34;notice warning&#34; &gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#warning-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;This is warning&lt;/p&gt;&lt;/div&gt;
+&lt;h4 id=&#34;note&#34;&gt;note&lt;/h4&gt;
+&lt;div class=&#34;notice note&#34; &gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#note-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;This is note&lt;/p&gt;&lt;/div&gt;
+&lt;h4 id=&#34;info&#34;&gt;info&lt;/h4&gt;
+&lt;div class=&#34;notice info&#34; &gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#info-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;This is info&lt;/p&gt;&lt;/div&gt;
+&lt;h4 id=&#34;tip&#34;&gt;tip&lt;/h4&gt;
+&lt;div class=&#34;notice tip&#34; &gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://ztygcs.github.io/posts/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#tip-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;This is tip&lt;/p&gt;&lt;/div&gt;
+</description>
                 
                 
                 
