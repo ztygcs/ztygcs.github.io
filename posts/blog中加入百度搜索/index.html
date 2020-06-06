@@ -54,13 +54,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2020-01-07T14:56:04+08:00",
-        "dateModified": "2020-01-07T20:36:34+08:00",
+        "dateModified": "2020-06-06T21:13:00+08:00",
         "url": "https://ztygcs.github.io/posts/blog%E4%B8%AD%E5%8A%A0%E5%85%A5%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2/",
         "headline": "Blog中加入百度搜索",
         "description": "前几天参照网上的资源自己弄了个搜索框，主要是因为现在大部分的网页搜索首页老是会有一些杂乱的东西弹出来，关还关不掉。于是就自己想着整一个搜索界面。我的目的很简单，让界面看起来尽量简洁，因为是用来搜索资源的，所以一些无关紧要的东西都可以不要。参考Google浏览器的样式，于是就有了下面的极简搜索页面：只……\r\n    \r\n    ",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  1223 ,
+        "wordCount":  1179 ,
         "image": ["https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/Google_search.png","https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/search.png","https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/%E6%96%B0%E5%A2%9E%E7%99%BE%E5%BA%A6%E8%8F%9C%E5%8D%95%E9%A1%B9.png","https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/search_final.png"],
         "author": {
             "@type": "Person",
@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/Google_search.png" />
 <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2020-01-07T14:56:04&#43;08:00" />
-    <meta property="article:modified_time" content="2020-01-07T20:36:34&#43;08:00" />
+    <meta property="article:modified_time" content="2020-06-06T21:13:00&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -257,7 +257,7 @@
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1223</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1179</span>
     
     
     
@@ -272,7 +272,10 @@
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/search.png" alt=""><span class="caption">◎ 自定义搜索界面</span></p>
 <p>今天突然想把这个搜索框整合到我的blog中来，哈哈哈，好像没多大的用，不过就是瞎折腾。这里我主要是记录一下加入百度搜索功能我做了哪些改变，说不定哪天不喜欢了我还可以参考这个记录把它给删掉。</p>
 <h1 id="新增一个菜单项"><a href="#新增一个菜单项" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:新增一个菜单项" class="headings">新增一个菜单项</a></h1>
-<p>首先在<code>config.toml</code>配置文件(<code>文件位置：Hugo\Sites\blog\config.toml</code>)中的相应位置添加以下代码</p>
+<p>首先在<span class="filenamestyle">config.toml</span>配置文件中的相应位置添加以下代码</p>
+<blockquote>
+<p>文件位置：Hugo\Sites\blog\config.toml</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -287,11 +290,9 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-diff" data-lang="diff"><span class="gd">- 文件位置：Hugo\Sites\blog\config.toml
-</span><span class="gd"></span>     [[menu.main]]
+<pre class="chroma"><code class="language-diff" data-lang="diff">     [[menu.main]]
          url = &#34;/about/&#34;
          name = &#34;关于&#34;
          weight = 5
@@ -307,11 +308,13 @@
 </div>
 </div><p>下面是效果图
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/%E6%96%B0%E5%A2%9E%E7%99%BE%E5%BA%A6%E8%8F%9C%E5%8D%95%E9%A1%B9.png" alt=""><span class="caption">◎ 新增百度菜单项</span></p>
-<p><code>post = &quot;user-circle&quot;</code>定义了菜单图标，这里我们先用<code>关于</code>菜单项的图标，等其他的问题解决了最后再来改图标。</p>
+<p><code>post = &quot;user-circle&quot;</code>定义了菜单图标，这里我们先用<em class="emphasis-point">关于</em>菜单项的图标，等其他的问题解决了最后再来改图标。</p>
 <h1 id="添加搜索样式"><a href="#添加搜索样式" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:添加搜索样式" class="headings">添加搜索样式</a></h1>
-<p>打开文件<code>custom.scss</code></p>
-<p>（<code>文件位置：Hugo\Sites\blog\themes\meme\assets\scss\_custom\custom.scss</code>）
+<p>打开文件<span class="filenamestyle">custom.scss</span></p>
+<blockquote>
+<p>文件位置：Hugo\Sites\blog\themes\meme\assets\scss_custom\custom.scss
 在文件末尾加入样式代码</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -371,7 +374,7 @@
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="新建百度菜单的_indexmd"><a href="#新建百度菜单的_indexmd" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:新建百度菜单的_indexmd" class="headings">新建“百度”菜单的_index.md</a></h1>
-<p>在文件夹<code>blog/content</code>下新建文件夹<code>search</code>，并在search文件夹下新建文件<code>_index.md</code>，并写入以下代码</p>
+<p>在文件夹<code>blog/content</code>下新建文件夹<code>search</code>，并在search文件夹下新建文件<span class="filenamestyle">_index.md</span>，并写入以下代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -389,7 +392,10 @@
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="修改图标"><a href="#修改图标" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:修改图标" class="headings">修改图标</a></h1>
-<p>在<a href="https://fontawesome.com/icons?d=gallery&amp;m=free" target="_blank" rel="noopener">SVG图标下载</a>里找到相应的图标（直接搜索关键词<code>search</code>），下载下来之后将该图标的svg代码复制进<code>SVG.toml</code>文件中(有些小地方需要修改，svg标签中加入class=&quot;icon&quot;)，SVG.toml<code>文件位置：Hugo\Sites\blog\themes\meme\data\SVG.toml</code>，例如，下面是我的SVG.toml文件：</p>
+<p>在<a href="https://fontawesome.com/icons?d=gallery&amp;m=free" target="_blank" rel="noopener">SVG图标下载</a>里找到相应的图标（直接搜索关键词<code>search</code>），下载下来之后将该图标的svg代码复制进<span class="filenamestyle">SVG.toml</span>文件中(有些小地方需要修改，svg标签中加入class=&quot;icon&quot;)，例如，下面是我的SVG.toml文件：</p>
+<blockquote>
+<p>文件位置：Hugo\Sites\blog\themes\meme\data\SVG.toml</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -402,7 +408,7 @@
 </span><span class="gi"></span>
 </code></pre></td></tr></table>
 </div>
-</div><p>再到<code>config.toml</code>文件中将百度菜单下的 <code>post = &quot;user-circle&quot;</code> 改为 <code>post = &quot;search&quot;</code></p>
+</div><p>再到<span class="filenamestyle">config.toml</span>文件中将百度菜单下的 <code>post = &quot;user-circle&quot;</code> 改为 <code>post = &quot;search&quot;</code></p>
 <h1 id="最后效果"><a href="#最后效果" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:最后效果" class="headings">最后效果</a></h1>
 <p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/search_final.png" alt=""><span class="caption">◎ 最后的效果</span></p>
 
@@ -417,9 +423,9 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-01-07 20:36:34 CST" style="cursor:help">
+        <span title="Updated @ 2020-06-06 21:13:00 CST" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-01-07</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-01-07</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-06-06</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-06-06</text></g></svg>
         </span></div>
 
 
