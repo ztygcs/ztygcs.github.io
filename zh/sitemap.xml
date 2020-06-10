@@ -39,7 +39,7 @@
   
   <url>
     <loc>https://ztygcs.github.io/</loc>
-    <lastmod>2020-06-09T19:18:08+08:00</lastmod>
+    <lastmod>2020-06-10T19:21:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -174,7 +174,7 @@
   
   <url>
     <loc>https://ztygcs.github.io/about/</loc>
-    <lastmod>2020-06-09T11:27:33+08:00</lastmod>
+    <lastmod>2020-06-10T16:31:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -545,6 +545,11 @@
   <url>
     <loc>https://ztygcs.github.io/baidu/</loc>
     <lastmod>2020-06-09T19:18:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ztygcs.github.io/friends/</loc>
+    <lastmod>2020-06-10T19:21:16+08:00</lastmod>
   </url>
   
 </urlset>
