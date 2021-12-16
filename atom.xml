@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">天涯共此时</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2021-12-16T18:55:39&#43;08:00</updated>
+    <updated>2021-12-16T19:55:56&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,14 +20,14 @@
             <title type="text">TypeScript入门介绍</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/typescript%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/" />
             <id>https://ztygcs.github.io/posts/typescript%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/</id>
-            <updated>2021-06-04T19:27:31&#43;08:00</updated>
+            <updated>2021-12-16T19:21:39&#43;08:00</updated>
             <published>2021-06-04T15:03:07&#43;08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">学习之前 理论基础 TypeScript并不是一门新的语言，准确来说它是JavaScript的超集。也就是说所有合法的JavaScript语言都可以在TypeScript中运行。 TypeScript给JavaScript带来了强类型的定义。 注意：TypeScript无法在浏览器中运行 因此我们编写完了Ty……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">学习之前 理论基础 TypeScript并不是一门新的语言，准确来说它是JavaScript的超集。也就是说所有合法的JavaScript语言都可以在TypeScr……
     
     </summary>
             
@@ -455,7 +455,7 @@ TypeScript给JavaScript带来了强类型的定义。&lt;/p&gt;
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">1. 百度地图API SDK之Web服务API 1.1 服务介绍 1.1.1 普通IP定位 普通IP定位1是一套以HTTP/HTTPS形式提供的轻量级定位接口，用户可以通过该服务，根据IP定位来获取大致位置。 目前该服务同时支持 IPv4 和 IPv6 来获取位置信息。 1.1.2 功能介绍 利用IP获取大致位置，调用API接口，返回请求参数中指定上网IP的大致……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">1. 百度地图API SDK之Web服务API 1.1 服务介绍 1.1.1 普通IP定位 普通IP定位1是一套以HTTP/HTTPS形式提供的轻量级定位接口，用户可以通过该服务，根据IP……
     
     </summary>
             
@@ -1094,14 +1094,14 @@ TypeScript给JavaScript带来了强类型的定义。&lt;/p&gt;
             <title type="text">LaTeX数学符号公式汇总</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/" />
             <id>https://ztygcs.github.io/posts/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/</id>
-            <updated>2021-12-16T18:21:34&#43;08:00</updated>
+            <updated>2021-12-16T19:28:57&#43;08:00</updated>
             <published>2020-02-21T11:30:55&#43;08:00</published>
             <author>
                     <name>天涯共此时</name>
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">公式 行中公式：$y=x+1$ $y=x+1$ 独立公式：$$y=x+1$$ $$y=x+1$$ 独立公式会另起一行居中显示 角标 符号 说明 ^ 上角标 _ 下角标 使用{}将内容括成一个整体 上下角标..可以嵌套.. $$ x^{y^z}=(1+e_1)^{xy^w} $$ $$ x^{y^z}=(1+e_1)^{xy^w} $$ 另外，如果要在左右两边都有上下标，可以用 \sideset 命令。 例： $$ \sideset{^1_2}{^3_4}x $$ $$ \sideset{^1_2}{^3_4}x $$ 括号 命令 说明 预览 ( 圆括号（左） $($ ) 圆括号（右） $)$ [ 方括号（左……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">公式 行中公式：$y=x+1$ $y=x+1$ 独立公式：$$y=x+1$$ $$y=x+1$$ 独立公式会另起一行居中显示 角标 符号 说明 ^ 上角标 _ 下角标 使用{}将内容括成一个整体 上下角标..可以嵌套……
     
     </summary>
             
@@ -2467,7 +2467,7 @@ $$&lt;/p&gt;
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">如何使用MathJax渲染数学公式？ 添加代码 文件路径：\themes\meme\layouts\partials\custom\footer.html 在footer.html文件中，添加下面代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 +&amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; + MathJax.Hub.Config({ + tex2jax: { + inlineMath: [[&amp;#39;$&amp;#39;,&amp;#39;$&amp;#39;], [&amp;#39;\\(&amp;#39;,&amp;#39;\\)&amp;#39;]], + displayMath: [[&amp;#39;$$&amp;#39;,&amp;#39;$$&amp;#39;], [&amp;#39;\[&amp;#39;,&amp;#39;\]&amp;#39;]], + processEscapes: true, + processEnvironments: true, + skipTags: [&amp;#39;script&amp;#39;, &amp;#39;noscript&amp;#39;, &amp;#39;style&amp;#39;, &amp;#39;textarea&amp;#39;, &amp;#39;pre&amp;#39;], + TeX: { + equationNumbers: { autoNumber: &amp;#34;AMS&amp;#34; },……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">如何使用MathJax渲染数学公式？ 添加代码 文件路径：\themes\meme\layouts\partials\custom\footer.html 在foot……
     
     </summary>
             
@@ -2565,7 +2565,7 @@ $$&lt;/p&gt;
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">前几天参照网上的资源自己弄了个搜索框，主要是因为现在大部分的网页搜索首页老是会有一些杂乱的东西弹出来，关还关不掉。于是就自己想着整一个搜索界面。我的目的很简单，让界面看起来尽量简洁，因为是用来搜索资源的，所以一些无关紧要的东西都可以不要。参考Google浏览器的样式，于是就有了下面的极简搜索页面：只……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">前几天参照网上的资源自己弄了个搜索框，主要是因为现在大部分的网页搜索首页老是会有一些杂乱的东西弹出来，关还关不掉。于是就自己想着整一个搜索界面。我的目的很简单，……
     
     </summary>
             
@@ -2766,7 +2766,7 @@ $$&lt;/p&gt;
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">字体排版 说明：任何一项留空，浏览器都会回退到主体字体 fontFamilyBody，故没必要全部设置。此外，如果你的品牌栏用的 SVG，则可留空品牌栏字体。 品牌栏 1 fontFamilySiteBrand = &amp;#34;&amp;#39;Liu Jian Mao Cao&amp;#39;, cursive&amp;#34; 菜单栏 1 fontFamilyMenu = &amp;#34;&amp;#34; 各类标题 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题 1 2 #fontFamilyTitle = &amp;#34;Comfortaa, sans-serif&amp;#34; fontFamilyTitle = &amp;#34;&amp;#39;Cinzel Decorative&amp;#39;, &amp;#39;Noto……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">字体排版 说明：任何一项留空，浏览器都会回退到主体字体 fontFamilyBody，故没必要全部设置。此外，如果你的品牌栏用的 SVG，则可留空品牌栏字体。 品牌栏 1……
     
     </summary>
             
@@ -4182,7 +4182,7 @@ This is tip
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这段直接到第一章节吧！ 首先要感谢👏几个博主，第一次看到这个 ..博客主题.. MemE 是从 reuixiy 博客上看到的。第一眼就觉得这个主题特别干净，也就激起了我又一……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">前言 折腾了两天，总算是把这个博客给搭建起来了😉😉! 在写这篇文章之前，让我先啰嗦一下，毕竟认真搞了这么久，总有些话想说，想直接看..正文..的同学就..跳过..这……
     
     </summary>
             
@@ -5037,7 +5037,7 @@ This is tip
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Smileys &amp;amp; People 😀😃😄😁😆😅😂🤣😊😇🙂🙃😉😌😍😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🤩😏😒😞😔😟😕🙁☹️😣😖😫😩😢😭😤😠😡🤬🤯😳😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦😧😮😲😴🤤😪😵🤐🤢🤮🤧😷🤒🤕🤑🤠😈👿👹👺🤡💩👻💀☠️👽👾🤖🎃😺😸😹😻😼😽🙀😿😾🤲👐🙌👏🤝👍👎👊✊🤛🤜🤞✌️🤟🤘👌👈👉👆👇☝️✋🤚🖐️🖖👋🤙💪🖕✍️🙏💄💋👄👅👂👃……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Smileys &amp;amp; People 😀😃😄😁😆😅😂🤣😊😇🙂🙃😉😌😍😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🤩😏😒😞😔😟😕🙁☹️😣😖😫😩😢😭😤😠😡🤬🤯😳😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦😧😮😲😴🤤😪😵🤐🤢🤮……
     
     </summary>
             
@@ -5104,7 +5104,7 @@ This is tip
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">要全局使用 emoji, 需要在你的网站配置中设置 enableEmoji 为 true, 然后你就可以直接在文章中输入 emoji 的代码1。 它们以冒号开头和结尾，并且包含 emoji 的 代码: 1 :代码: 以下符号清单是 emoji 代码的非常有用的参考. 表情与情感 笑脸表情 图标 代码 图标 代码 😀 grinning 😃 smiley 😄 smile 😁 grin 😆 laughing satisfied 😅 sweat_smile 🤣 rofl 😂 joy 🙂 slightly_smiling_face 🙃 upside_down_face 😉 wink 😊 blush 😇 innocent 爱意表情 图标 代码 图标 代码 😍 heart_eyes 😘 kissing_heart 😗 kissing ☺️ relaxed……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">要全局使用 emoji, 需要在你的网站配置中设置 enableEmoji 为 true, 然后你就可以直接在文章中输入 emoji 的代码1。 它们以冒号开头和结尾，并且包含 emoji 的 代码: 1 :代码: 以下符号清单是 emoji 代码的非常有……
     
     </summary>
             
@@ -10890,7 +10890,7 @@ This is tip
                     <uri>https://ztygcs.github.io</uri>
                     <email>zccon1996@163.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">概念 HTTP ..HTTP.. （HyperText Transfer Protocol：超文本传输协议）是一种用于分布式、协作式和超媒体信息系统的应用层协议。 简单来说就是一种发布和接收 HTML 页面的方法，被用于在 Web 浏览器和网站服务器之间传递信息。 HTTPS ..HTTPS.. （Hypertext Transfer Protocol Secure：超文本传输安全协议或HTT Pover SSL）是一种透过计算机网络进……
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">概念 HTTP ..HTTP.. （HyperText Transfer Protocol：超文本传输协议）是一种用于分布式、协作式和超媒体信息系统的应用层协议。 简单来说就是一种发布和接收 HTML 页面的方法，被……
     
     </summary>
             
