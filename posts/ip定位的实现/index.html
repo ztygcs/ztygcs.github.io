@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -54,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "2020-06-19T13:46:31+08:00",
-        "dateModified": "2020-06-19T23:58:02+08:00",
+        "dateModified": "2020-06-19T23:58:04+08:00",
         "url": "https://ztygcs.github.io/posts/ip%E5%AE%9A%E4%BD%8D%E7%9A%84%E5%AE%9E%E7%8E%B0/",
         "name": "IP定位的实现",
         "description": "1. 百度地图API SDK之Web服务API 1.1 服务介绍 1.1.1 普通IP定位 普通IP定位1是一套以HTTP/HTTPS形式提供的轻量级定位接口，用户可以通过该服务，根据IP定位来获取大致位置。 目前该服务同时支持 IPv4 和 IPv6 来获取位置信息。 1.1.2 功能介绍 利用IP获取大致位置，调用API接口，返回请求参数中指定上网IP的大致……\r\n    \r\n    ",
@@ -310,38 +310,38 @@
 <table>
 <thead>
 <tr>
-<th align="center">参数名称</th>
-<th align="center">参数含义</th>
-<th align="center">类型</th>
-<th align="center">备注</th>
+<th style="text-align:center">参数名称</th>
+<th style="text-align:center">参数含义</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">备注</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">ip</td>
-<td align="center">用户上网的IP地址，请求中如果不出现或为空，会针对发来请求的IP进行定位。如您需要通过IPv6来获取位置信息，请提交工单申请。</td>
-<td align="center">string</td>
-<td align="center">可选</td>
+<td style="text-align:center">ip</td>
+<td style="text-align:center">用户上网的IP地址，请求中如果不出现或为空，会针对发来请求的IP进行定位。如您需要通过IPv6来获取位置信息，请提交工单申请。</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">可选</td>
 </tr>
 <tr>
-<td align="center">ak</td>
-<td align="center">开发者密钥，可在API控制台申请获得</td>
-<td align="center">string</td>
-<td align="center">必填</td>
+<td style="text-align:center">ak</td>
+<td style="text-align:center">开发者密钥，可在API控制台申请获得</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">必填</td>
 </tr>
 <tr>
-<td align="center">sn</td>
-<td align="center">若用户所用AK的校验方式为SN校验时该参数必填（什么是SN校验？）。其他AK校验方式的可不填写</td>
-<td align="center">string</td>
-<td align="center">可选</td>
+<td style="text-align:center">sn</td>
+<td style="text-align:center">若用户所用AK的校验方式为SN校验时该参数必填（什么是SN校验？）。其他AK校验方式的可不填写</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">可选</td>
 </tr>
 <tr>
-<td align="center">coor</td>
-<td align="center">设置返回位置信息中，经纬度的坐标类型，分别如下：<br>coor不出现、或为空：百度墨卡托坐标，即百度米制坐标<br>coor = bd09ll：百度经纬度坐标，在国测局坐标基础上二次加密而来<br>coor = gcj02：国测局02坐标，在原始GPS坐标基础上，按照国家测绘行业统一要求，加密后的坐标<br>
+<td style="text-align:center">coor</td>
+<td style="text-align:center">设置返回位置信息中，经纬度的坐标类型，分别如下：<br>coor不出现、或为空：百度墨卡托坐标，即百度米制坐标<br>coor = bd09ll：百度经纬度坐标，在国测局坐标基础上二次加密而来<br>coor = gcj02：国测局02坐标，在原始GPS坐标基础上，按照国家测绘行业统一要求，加密后的坐标<br>
 <div class="notice notice-warning" >
     <div class="notice-title"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512"><path d="M570 440c18 32-5 72-42 72H48c-37 0-60-40-42-72L246 24c19-32 65-32 84 0l240 416zm-282-86a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z"/></svg></div><p>百度地图的坐标类型为bd09ll，如果结合百度地图使用，请注意坐标选择</p ></div></td>
-<td align="center">string</td>
-<td align="center">可选</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">可选</td>
 </tr>
 </tbody>
 </table>
@@ -408,131 +408,131 @@
 <table>
 <thead>
 <tr>
-<th align="center">状态码</th>
-<th align="center">定义</th>
-<th align="center">注释</th>
+<th style="text-align:center">状态码</th>
+<th style="text-align:center">定义</th>
+<th style="text-align:center">注释</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">0</td>
-<td align="center">正常</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">正常</td>
 <td></td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="center">服务器内部错误</td>
-<td align="center">该服务响应超时或系统内部错误</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">服务器内部错误</td>
+<td style="text-align:center">该服务响应超时或系统内部错误</td>
 </tr>
 <tr>
-<td align="center">10</td>
-<td align="center">上传内容超过8M</td>
-<td align="center">Post上传数据不能超过8M</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">上传内容超过8M</td>
+<td style="text-align:center">Post上传数据不能超过8M</td>
 </tr>
 <tr>
-<td align="center">101</td>
-<td align="center">AK参数不存在</td>
-<td align="center">请求消息没有携带AK参数</td>
+<td style="text-align:center">101</td>
+<td style="text-align:center">AK参数不存在</td>
+<td style="text-align:center">请求消息没有携带AK参数</td>
 </tr>
 <tr>
-<td align="center">102</td>
-<td align="center">Mcode参数不存在，mobile类型mcode参数必需</td>
-<td align="center">对于Mobile类型的应用请求需要携带mcode参数，该错误码代表服务器没有解析到mcode</td>
+<td style="text-align:center">102</td>
+<td style="text-align:center">Mcode参数不存在，mobile类型mcode参数必需</td>
+<td style="text-align:center">对于Mobile类型的应用请求需要携带mcode参数，该错误码代表服务器没有解析到mcode</td>
 </tr>
 <tr>
-<td align="center">200</td>
-<td align="center">APP不存在，AK有误请检查再重试</td>
-<td align="center">根据请求的AK，找不到对应的APP</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">APP不存在，AK有误请检查再重试</td>
+<td style="text-align:center">根据请求的AK，找不到对应的APP</td>
 </tr>
 <tr>
-<td align="center">201</td>
-<td align="center">APP被用户自己禁用，请在控制台解禁</td>
+<td style="text-align:center">201</td>
+<td style="text-align:center">APP被用户自己禁用，请在控制台解禁</td>
 <td></td>
 </tr>
 <tr>
-<td align="center">202</td>
-<td align="center">APP被管理员删除</td>
-<td align="center">恶意APP被管理员删除</td>
+<td style="text-align:center">202</td>
+<td style="text-align:center">APP被管理员删除</td>
+<td style="text-align:center">恶意APP被管理员删除</td>
 </tr>
 <tr>
-<td align="center">203</td>
-<td align="center">APP类型错误</td>
-<td align="center">当前API控制台支持Server(类型1), Mobile(类型2, 新版控制台区分为Mobile_Android(类型21)及Mobile_IPhone（类型22）及Browser（类型3），除此之外的其他类型被认为是APP类型错误</td>
+<td style="text-align:center">203</td>
+<td style="text-align:center">APP类型错误</td>
+<td style="text-align:center">当前API控制台支持Server(类型1), Mobile(类型2, 新版控制台区分为Mobile_Android(类型21)及Mobile_IPhone（类型22）及Browser（类型3），除此之外的其他类型被认为是APP类型错误</td>
 </tr>
 <tr>
-<td align="center">210</td>
-<td align="center">APP IP校验失败</td>
-<td align="center">在申请Server类型应用的时候选择IP校验，需要填写IP白名单，如果当前请求的IP地址不在IP白名单或者不是0.0.0.0/0就认为IP校验失败</td>
+<td style="text-align:center">210</td>
+<td style="text-align:center">APP IP校验失败</td>
+<td style="text-align:center">在申请Server类型应用的时候选择IP校验，需要填写IP白名单，如果当前请求的IP地址不在IP白名单或者不是0.0.0.0/0就认为IP校验失败</td>
 </tr>
 <tr>
-<td align="center">211</td>
-<td align="center">APP SN校验失败</td>
-<td align="center">SERVER类型APP有两种校验方式：IP校验和SN校验，当用户请求的SN和服务端计算出来的SN不相等的时候，提示SN校验失败</td>
+<td style="text-align:center">211</td>
+<td style="text-align:center">APP SN校验失败</td>
+<td style="text-align:center">SERVER类型APP有两种校验方式：IP校验和SN校验，当用户请求的SN和服务端计算出来的SN不相等的时候，提示SN校验失败</td>
 </tr>
 <tr>
-<td align="center">220</td>
-<td align="center">APP Referer校验失败</td>
-<td align="center">浏览器类型的APP会校验referer字段是否存在，且在referer白名单里面，否则返回该错误码</td>
+<td style="text-align:center">220</td>
+<td style="text-align:center">APP Referer校验失败</td>
+<td style="text-align:center">浏览器类型的APP会校验referer字段是否存在，且在referer白名单里面，否则返回该错误码</td>
 </tr>
 <tr>
-<td align="center">230</td>
-<td align="center">APP Mcode码校验失败</td>
-<td align="center">服务器能解析到mcode，但和数据库中不一致，请携带正确的mcode</td>
+<td style="text-align:center">230</td>
+<td style="text-align:center">APP Mcode码校验失败</td>
+<td style="text-align:center">服务器能解析到mcode，但和数据库中不一致，请携带正确的mcode</td>
 </tr>
 <tr>
-<td align="center">240</td>
-<td align="center">APP 服务被禁用</td>
-<td align="center">用户在API控制台中创建或设置某APP的时候禁用了某项服务</td>
+<td style="text-align:center">240</td>
+<td style="text-align:center">APP 服务被禁用</td>
+<td style="text-align:center">用户在API控制台中创建或设置某APP的时候禁用了某项服务</td>
 </tr>
 <tr>
-<td align="center">250</td>
-<td align="center">用户不存在</td>
-<td align="center">根据请求的user_id, 数据库中找不到该用户的信息，请携带正确的user_id</td>
+<td style="text-align:center">250</td>
+<td style="text-align:center">用户不存在</td>
+<td style="text-align:center">根据请求的user_id, 数据库中找不到该用户的信息，请携带正确的user_id</td>
 </tr>
 <tr>
-<td align="center">251</td>
-<td align="center">用户被自己删除</td>
-<td align="center">该用户处于未激活状态</td>
+<td style="text-align:center">251</td>
+<td style="text-align:center">用户被自己删除</td>
+<td style="text-align:center">该用户处于未激活状态</td>
 </tr>
 <tr>
-<td align="center">252</td>
-<td align="center">用户被管理员删除</td>
-<td align="center">恶意用户被加入黑名单</td>
+<td style="text-align:center">252</td>
+<td style="text-align:center">用户被管理员删除</td>
+<td style="text-align:center">恶意用户被加入黑名单</td>
 </tr>
 <tr>
-<td align="center">260</td>
-<td align="center">服务不存在</td>
-<td align="center">服务器解析不到用户请求的服务名称</td>
+<td style="text-align:center">260</td>
+<td style="text-align:center">服务不存在</td>
+<td style="text-align:center">服务器解析不到用户请求的服务名称</td>
 </tr>
 <tr>
-<td align="center">261</td>
-<td align="center">服务被禁用</td>
-<td align="center">该服务已下线</td>
+<td style="text-align:center">261</td>
+<td style="text-align:center">服务被禁用</td>
+<td style="text-align:center">该服务已下线</td>
 </tr>
 <tr>
-<td align="center">301</td>
-<td align="center">永久配额超限，限制访问</td>
-<td align="center">配额超限</td>
+<td style="text-align:center">301</td>
+<td style="text-align:center">永久配额超限，限制访问</td>
+<td style="text-align:center">配额超限</td>
 </tr>
 <tr>
-<td align="center">302</td>
-<td align="center">天配额超限，限制访问</td>
-<td align="center">配额超限</td>
+<td style="text-align:center">302</td>
+<td style="text-align:center">天配额超限，限制访问</td>
+<td style="text-align:center">配额超限</td>
 </tr>
 <tr>
-<td align="center">401</td>
-<td align="center">当前并发量已经超过约定并发配额，限制访问</td>
-<td align="center">并发控制超限，请控制并发量</td>
+<td style="text-align:center">401</td>
+<td style="text-align:center">当前并发量已经超过约定并发配额，限制访问</td>
+<td style="text-align:center">并发控制超限，请控制并发量</td>
 </tr>
 <tr>
-<td align="center">402</td>
-<td align="center">当前并发量已经超过约定并发配额，并且服务总并发量也已经超过设定的总并发配额，限制访问</td>
-<td align="center">并发控制超限，请控制并发量</td>
+<td style="text-align:center">402</td>
+<td style="text-align:center">当前并发量已经超过约定并发配额，并且服务总并发量也已经超过设定的总并发配额，限制访问</td>
+<td style="text-align:center">并发控制超限，请控制并发量</td>
 </tr>
 <tr>
-<td align="center">1001</td>
-<td align="center">没有IPv6地址访问的权限</td>
-<td align="center">如需通过IPv6来获取位置信息，请提交工单申请</td>
+<td style="text-align:center">1001</td>
+<td style="text-align:center">没有IPv6地址访问的权限</td>
+<td style="text-align:center">如需通过IPv6来获取位置信息，请提交工单申请</td>
 </tr>
 </tbody>
 </table>

@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -54,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "2019-11-23T13:21:36+08:00",
-        "dateModified": "2019-12-05T20:56:20+08:00",
+        "dateModified": "2019-12-05T20:56:22+08:00",
         "url": "https://ztygcs.github.io/posts/annie%E4%B8%BB%E9%A2%98-gitalk%E8%AF%84%E8%AE%BA/",
         "name": "Annie主题+Gitalk评论",
         "description": "本文是以Annie主题+Gitalk评论插件搭建的博客评论功能，其中涉及到Github仓库的创建和OAuth应用的申请。 新建github仓库 首先登陆个人的github,点击 New repository创建..新的仓库.. 注册OAuth应用 Gitalk评论插件的授权机制依赖于OAuth Application……\r\n    \r\n    ",
@@ -253,31 +253,31 @@
 <table>
 <thead>
 <tr>
-<th align="center">参数</th>
-<th align="center">说明</th>
-<th align="center">示例</th>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">示例</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">Application name</td>
-<td align="center">应用名称(可任意填写)</td>
-<td align="center"><code>Gitalk</code></td>
+<td style="text-align:center">Application name</td>
+<td style="text-align:center">应用名称(可任意填写)</td>
+<td style="text-align:center"><code>Gitalk</code></td>
 </tr>
 <tr>
-<td align="center">Homepage URL</td>
-<td align="center">仓库地址(这里填写<code>步骤一</code>中仓库<code>Blog-Comments</code>的地址)</td>
-<td align="center"><code>https://github.com/zccon/Blog-Comments</code></td>
+<td style="text-align:center">Homepage URL</td>
+<td style="text-align:center">仓库地址(这里填写<code>步骤一</code>中仓库<code>Blog-Comments</code>的地址)</td>
+<td style="text-align:center"><code>https://github.com/zccon/Blog-Comments</code></td>
 </tr>
 <tr>
-<td align="center">Application description</td>
-<td align="center">应用描述（可任意填写）</td>
-<td align="center"><code>Gitalk</code></td>
+<td style="text-align:center">Application description</td>
+<td style="text-align:center">应用描述（可任意填写）</td>
+<td style="text-align:center"><code>Gitalk</code></td>
 </tr>
 <tr>
-<td align="center">Authorization callback URL</td>
-<td align="center">博客地址（这里填写个人博客主页地址）</td>
-<td align="center"><code>https://zccon.github.io/</code></td>
+<td style="text-align:center">Authorization callback URL</td>
+<td style="text-align:center">博客地址（这里填写个人博客主页地址）</td>
+<td style="text-align:center"><code>https://zccon.github.io/</code></td>
 </tr>
 </tbody>
 </table>
@@ -304,81 +304,81 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="k">comment</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">comment</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">
-</span><span class="w"></span><span class="k">gitalk</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">    </span><span class="k">clientID</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;1a2...&#39;</span><span class="w"> 
-</span><span class="w">    </span><span class="k">clientSecret</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3cf...&#39;</span><span class="w"> 
-</span><span class="w">    </span><span class="k">id</span><span class="p">:</span><span class="w"> </span>location.pathname<span class="w">
-</span><span class="w">    </span><span class="k">repo</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Blog-Comments&#39;</span><span class="w">
-</span><span class="w">    </span><span class="k">owner</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;zccon&#39;</span><span class="w"> 
-</span><span class="w">    </span><span class="k">admin</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;zccon&#39;</span><span class="w">
-</span><span class="w">    </span><span class="k">distractionFreeMode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nt">gitalk</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    </span><span class="nt">clientID</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;1a2...&#39;</span><span class="w"> 
+</span><span class="w">    </span><span class="nt">clientSecret</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3cf...&#39;</span><span class="w"> 
+</span><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">location.pathname</span><span class="w">
+</span><span class="w">    </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Blog-Comments&#39;</span><span class="w">
+</span><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;zccon&#39;</span><span class="w"> 
+</span><span class="w">    </span><span class="nt">admin</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;zccon&#39;</span><span class="w">
+</span><span class="w">    </span><span class="nt">distractionFreeMode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">    </span><span class="c">#去除 more、index.html、?query=123等格式尾部 </span><span class="w">
-</span><span class="w">    </span><span class="k">hrefTrimend</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#.*$,\\?.*$,index.html$&#39;</span><span class="w"> 
+</span><span class="w">    </span><span class="nt">hrefTrimend</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#.*$,\\?.*$,index.html$&#39;</span><span class="w"> 
 </span><span class="w">    
 </span></code></pre></td></tr></table>
 </div>
 </div><table>
 <thead>
 <tr>
-<th align="center">参数</th>
-<th align="center">说明</th>
-<th align="center">示例</th>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">示例</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">comment中的enable</td>
-<td align="center">comment总开关，<code>true</code>：启用</td>
-<td align="center">true</td>
+<td style="text-align:center">comment中的enable</td>
+<td style="text-align:center">comment总开关，<code>true</code>：启用</td>
+<td style="text-align:center">true</td>
 </tr>
 <tr>
-<td align="center">gitalk中的enable</td>
-<td align="center">gitalk开关，<code>true</code>：启用</td>
-<td align="center">true</td>
+<td style="text-align:center">gitalk中的enable</td>
+<td style="text-align:center">gitalk开关，<code>true</code>：启用</td>
+<td style="text-align:center">true</td>
 </tr>
 <tr>
-<td align="center">clientID</td>
-<td align="center"><code>步骤三</code>中获取的<code>Client ID</code></td>
-<td align="center">'1a2...'</td>
+<td style="text-align:center">clientID</td>
+<td style="text-align:center"><code>步骤三</code>中获取的<code>Client ID</code></td>
+<td style="text-align:center">'1a2...'</td>
 </tr>
 <tr>
-<td align="center">clientSecret</td>
-<td align="center"><code>步骤三</code>中获取的<code>Client Secret</code></td>
-<td align="center">'3cf...'</td>
+<td style="text-align:center">clientSecret</td>
+<td style="text-align:center"><code>步骤三</code>中获取的<code>Client Secret</code></td>
+<td style="text-align:center">'3cf...'</td>
 </tr>
 <tr>
-<td align="center">id</td>
-<td align="center">解决“未找到相关的issue进行评论，请联系@XXX初始化创建”问题</td>
-<td align="center">location.pathname</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">解决“未找到相关的issue进行评论，请联系@XXX初始化创建”问题</td>
+<td style="text-align:center">location.pathname</td>
 </tr>
 <tr>
-<td align="center">repo</td>
-<td align="center"><code>步骤一</code>中创建的仓库名（issues的容器）</td>
-<td align="center">'Blog-Comments'</td>
+<td style="text-align:center">repo</td>
+<td style="text-align:center"><code>步骤一</code>中创建的仓库名（issues的容器）</td>
+<td style="text-align:center">'Blog-Comments'</td>
 </tr>
 <tr>
-<td align="center">owner</td>
-<td align="center">博客仓库的拥有者</td>
-<td align="center">'zccon'</td>
+<td style="text-align:center">owner</td>
+<td style="text-align:center">博客仓库的拥有者</td>
+<td style="text-align:center">'zccon'</td>
 </tr>
 <tr>
-<td align="center">admin</td>
-<td align="center">博客仓库的管理者</td>
-<td align="center">'zccon'</td>
+<td style="text-align:center">admin</td>
+<td style="text-align:center">博客仓库的管理者</td>
+<td style="text-align:center">'zccon'</td>
 </tr>
 <tr>
-<td align="center">distractionFreeMode</td>
-<td align="center">Gitalk插件的参数（无干扰模式，<code>true</code>启用）</td>
-<td align="center">true</td>
+<td style="text-align:center">distractionFreeMode</td>
+<td style="text-align:center">Gitalk插件的参数（无干扰模式，<code>true</code>启用）</td>
+<td style="text-align:center">true</td>
 </tr>
 <tr>
-<td align="center">hrefTrimend</td>
-<td align="center"><code>Post url</code>处理（删除url中的#、index等字符，缩短url）</td>
-<td align="center">默认不变</td>
+<td style="text-align:center">hrefTrimend</td>
+<td style="text-align:center"><code>Post url</code>处理（删除url中的#、index等字符，缩短url）</td>
+<td style="text-align:center">默认不变</td>
 </tr>
 </tbody>
 </table>
@@ -397,7 +397,7 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2019-12-05 20:56:20 CST" style="cursor:help">
+        <span title="Updated @ 2019-12-05 20:56:22 CST" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2019-12-05</text><text x="915" y="140" textLength="650" transform="scale(.1)">2019-12-05</text></g></svg>
         </span></div>

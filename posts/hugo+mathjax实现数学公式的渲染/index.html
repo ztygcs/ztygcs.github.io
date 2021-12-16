@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.71.0" /><meta name="theme-color" content="#fff" />
+    <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -54,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "2020-02-20T21:30:12+08:00",
-        "dateModified": "2020-06-22T01:40:58+08:00",
+        "dateModified": "2020-06-22T01:41:00+08:00",
         "url": "https://ztygcs.github.io/posts/hugo+mathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93/",
         "name": "MathJax渲染数学公式",
         "description": "今天被一个博友咨询如何往博客中添加数学公式，（在这篇文章没写之前，我的博客还是不支持数学公式的），由于还没有支持数学公式的需求，所以我也一直没有折腾过这个。不过之前有看到过相关的文章，于是在网上找找资料便自己试了试，下面的内容是从网上摘录下来的部分笔记，完整的内容我已贴在了文章的最下面，欢迎访问原文……\r\n    \r\n    ",
@@ -280,7 +280,7 @@
         <span class="p">}</span>
     <span class="p">});</span>
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
-<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="nx">async</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="kr">async</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>这样自己的博客就已经可以插入数学公式了。</p>
@@ -303,7 +303,7 @@
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-06-22 01:40:58 CST" style="cursor:help">
+        <span title="Updated @ 2020-06-22 01:41:00 CST" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-06-22</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-06-22</text></g></svg>
         </span></div>
@@ -385,7 +385,7 @@
     var typeNumber = 0;
     var errorCorrectionLevel = 'L';
     var qr = qrcode(typeNumber, errorCorrectionLevel);
-    qr.addData('https:\/\/ztygcs.github.io\/posts\/hugo\x2bmathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93\/');
+    qr.addData('https:\/\/ztygcs.github.io\/posts\/hugo\u002bmathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93\/');
     qr.make();
     document.getElementById('qrcode-img').innerHTML = qr.createImgTag();
 </script>
