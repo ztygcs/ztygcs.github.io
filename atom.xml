@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">我有一只猫</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2021-12-18T17:15:03&#43;08:00</updated>
+    <updated>2021-12-18T17:19:21&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -3428,7 +3428,7 @@ $$&lt;/p&gt;
             <title type="text">MemE主题优化（二）</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%BA%8C/" />
             <id>https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%BA%8C/</id>
-            <updated>2021-12-18T17:11:22&#43;08:00</updated>
+            <updated>2021-12-18T17:18:17&#43;08:00</updated>
             <published>2019-11-27T21:55:38&#43;08:00</published>
             <author>
                     <name>我有一只猫</name>
@@ -4231,6 +4231,7 @@ DEMO:
 &lt;/div&gt;&lt;p&gt;效果：&lt;/p&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;https://ztygcs.github.io//music.163.com/outchain/player?type=2&amp;id=167732&amp;auto=0&amp;height=66&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;自定义&#34;&gt;自定义&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-shortcodes-%E7%AE%80%E7%A0%81/&#34;&gt;自定义 Hugo Shortcodes 简码&lt;/a&gt;&lt;/p&gt;
 </content>
             
             
