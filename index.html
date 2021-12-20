@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
 
-    <meta name="author" content="我有一只猫" /><meta name="description" content="风筝飞得很高 是我从未爬上去过的高度 --" />
+    <meta name="author" content="我有一只猫" /><meta name="description" content="风筝飞得很高 是我从未爬上去过的高度" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -59,9 +59,9 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "datePublished": "2019-11-26T20:17:43+00:00",
-        "dateModified": "2021-12-17T14:18:25+08:00",
+        "dateModified": "2021-12-20T13:59:09+08:00",
         "url": "https://ztygcs.github.io/",
-        "description": "风筝飞得很高 是我从未爬上去过的高度 --",
+        "description": "风筝飞得很高 是我从未爬上去过的高度",
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
@@ -86,7 +86,7 @@
 
 
 <meta property="og:title" content="我有一只猫" />
-<meta property="og:description" content="风筝飞得很高 是我从未爬上去过的高度 --" />
+<meta property="og:description" content="风筝飞得很高 是我从未爬上去过的高度" />
 <meta property="og:url" content="https://ztygcs.github.io/" />
 <meta property="og:site_name" content="我有一只猫" />
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
@@ -462,7 +462,7 @@
 
                 
                 <summary class="summary p-summary">
-                    如何使用MathJax渲染数学公式？ 添加代码 文件路径：\themes\meme\layouts\partials\custom\footer.html 在footer.html文件中，添加下面代码 1 2 3……
+                    文件路径：\themes\meme\layouts\partials\custom\footer.html 在footer.html文件中，添加下面代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 +&lt;script type=&#34;text/x-mathjax-config&#34;&gt; + MathJax.Hub.Config({ + tex2jax: { + inlineMath:……
                 </summary>
                 
                     <div class="read-more-container">
@@ -502,7 +502,27 @@
             
 
 
-            
+            <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [['$$','$$'], ['\[','\]']],
+          processEscapes: true,
+          processEnvironments: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+         TeX: {
+             equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"]
+          }
+      }
+  });
+</script>
+<script
+  type="text/javascript"
+  async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+></script>
+
         </div>
     </footer>
 
