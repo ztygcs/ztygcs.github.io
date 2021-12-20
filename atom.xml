@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">我有一只猫</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2021-12-19T20:50:28&#43;08:00</updated>
+    <updated>2021-12-20T10:37:34&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">自定义 Hugo Shortcodes 简码</title>
             <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-shortcodes-%E7%AE%80%E7%A0%81/" />
             <id>https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-shortcodes-%E7%AE%80%E7%A0%81/</id>
-            <updated>2021-12-19T20:48:02&#43;08:00</updated>
+            <updated>2021-12-20T10:36:28&#43;08:00</updated>
             <published>2021-12-18T17:09:38&#43;08:00</published>
             <author>
                     <name>我有一只猫</name>
@@ -34,20 +34,36 @@
 &lt;p&gt;直接新建一个 ~/blog/assets/scss/custom/_custom.scss 并将你自己的样式加入其中，就能覆盖主题的 ~/blog/themes/meme/assets/scss/custom/_custom.scss 文件，且其会正确地被应用。&lt;/p&gt;
 &lt;p&gt;事实上，在 Hugo 中你可以覆盖主题的任何模板，见这个非官方的镜像网页：https://gohugobrasil.netlify.com/themes/customizing/&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在这里自定义的组件均采用&lt;code&gt;shortcodes + 自定义样式&lt;/code&gt;实现，其中：
-&lt;code&gt;.html&lt;/code&gt; 文件定义在&lt;code&gt;\blog\layouts\shortcodes&lt;/code&gt; 文件夹 📂 下，样式文件定义在&lt;code&gt;\blog\assets\scss\custom&lt;/code&gt; 文件夹 📂 下。
-注意：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;若不存在对应文件夹\文件则自行创建&lt;/li&gt;
-&lt;li&gt;所有的独立样式文件需要 import 到 &lt;code&gt;\_custom.scss&lt;/code&gt; 文件中&lt;/li&gt;
+&lt;p&gt;在这里自定义的组件均采用&lt;code&gt;shortcodes + 自定义样式&lt;/code&gt;的方式实现，其中：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;文件&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;文件路径 📂&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;.html&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;~\blog\layouts\shortcodes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;.scss&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;~\blog\assets\scss\custom&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;文中所涉及到的文件夹\文件若不存在则需自行创建&lt;/li&gt;
+&lt;li&gt;所有的独立样式文件需要 import 到 &lt;code&gt;\_custom.scss&amp;gt;&lt;/code&gt; 文件中&lt;/li&gt;
 &lt;li&gt;具体使用方法请查看每个组件的详细使用教程&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&#34;https://guanqr.com/tech/website/hugo-shortcodes-customization/#quote-center&#34;&gt;参考：《自定义 Hugo Shortcodes 简码》&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;排版&#34;&gt;排版&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;下新建 &lt;span class=&#34;filenamestyle&#34;&gt;align.html&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes\align.html&lt;/code&gt;中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -92,7 +108,7 @@
 
 &lt;h2 id=&#34;下划线&#34;&gt;下划线&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;下新建 &lt;span class=&#34;filenamestyle&#34;&gt;underline.html&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes\underline.html&lt;/code&gt;中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -116,7 +132,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;underline&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#ff0000&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;谁在用琵琶弹奏一曲东风破&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;underline&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#ffdd00&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;谁在用琵琶弹奏一曲东风破&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
 &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
 {{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;underline&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#ff2200&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;岁月在墙上剥落看见小时候&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -132,7 +148,7 @@
 &lt;/p&gt;
 &lt;h2 id=&#34;诗歌引用&#34;&gt;诗歌引用&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;下新建 &lt;span class=&#34;filenamestyle&#34;&gt;quote-center.html&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes\quote-center.html&lt;/code&gt;中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -153,7 +169,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom&lt;/code&gt; 下新建&lt;span class=&#34;filenamestyle&#34;&gt;_shortcodes.scss&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_shortcodes.scss&lt;/code&gt; 中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -224,7 +240,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入&lt;code&gt;_shortcodes.scss&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入样式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -254,7 +270,7 @@
 
 &lt;h2 id=&#34;卡片&#34;&gt;卡片&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;下新建 &lt;span class=&#34;filenamestyle&#34;&gt;card.html&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes\card.html&lt;/code&gt;中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -275,7 +291,7 @@ $raw 1 -}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom&lt;/code&gt; 下新建&lt;span class=&#34;filenamestyle&#34;&gt;_card.scss&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_card.scss&lt;/code&gt; 中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -308,7 +324,7 @@ $raw 1 -}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入&lt;code&gt;_card.scss&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入样式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -347,7 +363,7 @@ $raw 1 -}}
 
 &lt;h2 id=&#34;文字渐变&#34;&gt;文字渐变&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom&lt;/code&gt; 下新建&lt;span class=&#34;filenamestyle&#34;&gt;_colorfont.scss&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_colorfont.scss&lt;/code&gt; 中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -357,11 +373,9 @@ $raw 1 -}}
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 文字渐变色
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;.colorfulfont&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nc&#34;&gt;.colorfulfont&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
   &lt;span class=&#34;nt&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;linear-gradient&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;red&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;#45ed63&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
   &lt;span class=&#34;nt&#34;&gt;-webkit-background-clip&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
   &lt;span class=&#34;nt&#34;&gt;background-clip&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -370,7 +384,7 @@ $raw 1 -}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入&lt;code&gt;_colorfont.scss&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入样式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -396,7 +410,7 @@ $raw 1 -}}
 &lt;/font&gt;
 &lt;h2 id=&#34;hugo-notice&#34;&gt;hugo-notice&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;下新建 &lt;span class=&#34;filenamestyle&#34;&gt;notice.html&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes\notice.html&lt;/code&gt;中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -425,7 +439,7 @@ $raw 1 -}} {{ $icon := (replace (index $.Site.Data.SVG $noticeType) &amp;#34;ico
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_shortcodes.scss&lt;/code&gt; 下 👇 写入以下代码&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_shortcodes.scss&lt;/code&gt; 中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -600,7 +614,7 @@ $raw 1 -}} {{ $icon := (replace (index $.Site.Data.SVG $noticeType) &amp;#34;ico
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入&lt;code&gt;_shortcodes.scss&lt;/code&gt;（前面已经导入则此处无需重复导入）&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;\blog\assets\scss\custom\_custom.scss&lt;/code&gt;中导入样式（若前面已导入则无需重复导入）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -658,7 +672,7 @@ This is tip
     &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;This is tip&lt;/p &gt;&lt;/div&gt;
 &lt;h2 id=&#34;github-风格&#34;&gt;github 风格&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes&lt;/code&gt;下新建 &lt;span class=&#34;filenamestyle&#34;&gt;github.html&lt;/span&gt; 文件，其内容如下：&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;blog\layouts\shortcodes\github.html&lt;/code&gt;中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -689,7 +703,7 @@ This is tip
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_shortcodes.scss&lt;/code&gt; 中加入以下代码：&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;\blog\assets\scss\custom\_shortcodes.scss&lt;/code&gt; 中增加以下内容：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
