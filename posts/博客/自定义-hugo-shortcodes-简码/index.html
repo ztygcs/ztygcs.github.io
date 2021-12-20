@@ -57,13 +57,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2021-12-18T17:09:38+08:00",
-        "dateModified": "2021-12-19T20:48:02+08:00",
+        "dateModified": "2021-12-20T10:36:28+08:00",
         "url": "https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-shortcodes-%E7%AE%80%E7%A0%81/",
         "headline": "自定义 Hugo Shortcodes 简码",
         "description": "MemE 通过 Hugo 管道实现使用 SCSS 生成 CSS，而非静态的 CSS 文件，同时提供一个 \\_custom.scss 文件以供用户定制。 直接新建一个 ~/blog/assets/scss/custom/_custom.scss 并将你自己的样式加入其中，就能覆盖主题的 ~/blog/themes/meme/assets/scss/custom/_custom.scss 文件，且其会正确地被应用。 事实上，在 Hugo 中你可以覆盖主题的任何……",
         "inLanguage" : "zh-CN",
         "articleSection": "posts",
-        "wordCount":  2968 ,
+        "wordCount":  2849 ,
         "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2021-12-18T17:09:38&#43;08:00" />
-    <meta property="article:modified_time" content="2021-12-19T20:48:02&#43;08:00" />
+    <meta property="article:modified_time" content="2021-12-20T10:36:28&#43;08:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -270,20 +270,36 @@
 <p>直接新建一个 ~/blog/assets/scss/custom/_custom.scss 并将你自己的样式加入其中，就能覆盖主题的 ~/blog/themes/meme/assets/scss/custom/_custom.scss 文件，且其会正确地被应用。</p>
 <p>事实上，在 Hugo 中你可以覆盖主题的任何模板，见这个非官方的镜像网页：https://gohugobrasil.netlify.com/themes/customizing/</p>
 </blockquote>
-<blockquote>
-<p>在这里自定义的组件均采用<code>shortcodes + 自定义样式</code>实现，其中：
-<code>.html</code> 文件定义在<code>\blog\layouts\shortcodes</code> 文件夹 📂 下，样式文件定义在<code>\blog\assets\scss\custom</code> 文件夹 📂 下。
-注意：</p>
-<ol>
-<li>若不存在对应文件夹\文件则自行创建</li>
-<li>所有的独立样式文件需要 import 到 <code>\_custom.scss</code> 文件中</li>
+<p>在这里自定义的组件均采用<code>shortcodes + 自定义样式</code>的方式实现，其中：</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">文件路径 📂</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>.html</code></td>
+<td style="text-align:center">~\blog\layouts\shortcodes</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>.scss</code></td>
+<td style="text-align:center">~\blog\assets\scss\custom</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="notice notice-note" >
+    <div class="notice-title"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 512 512"><path d="M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z"/></svg></div><ol>
+<li>文中所涉及到的文件夹\文件若不存在则需自行创建</li>
+<li>所有的独立样式文件需要 import 到 <code>\_custom.scss&gt;</code> 文件中</li>
 <li>具体使用方法请查看每个组件的详细使用教程</li>
-</ol>
-</blockquote>
+</ol></div>
 <p><a href="https://guanqr.com/tech/website/hugo-shortcodes-customization/#quote-center" target="_blank" rel="noopener">参考：《自定义 Hugo Shortcodes 简码》</a></p>
 <h2 id="排版"><a href="#排版" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:排版" class="headings">排版</a></h2>
 <ol>
-<li>在<code>blog\layouts\shortcodes</code>下新建 <span class="filenamestyle">align.html</span> 文件，其内容如下：</li>
+<li>在<code>blog\layouts\shortcodes\align.html</code>中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -328,7 +344,7 @@
 
 <h2 id="下划线"><a href="#下划线" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:下划线" class="headings">下划线</a></h2>
 <ol>
-<li>在<code>blog\layouts\shortcodes</code>下新建 <span class="filenamestyle">underline.html</span> 文件，其内容如下：</li>
+<li>在<code>blog\layouts\shortcodes\underline.html</code>中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -352,7 +368,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">{{<span class="p">&lt;</span> <span class="nt">underline</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;#ff0000&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;谁在用琵琶弹奏一曲东风破&#34;</span> <span class="p">&gt;</span>}}
+<pre class="chroma"><code class="language-html" data-lang="html">{{<span class="p">&lt;</span> <span class="nt">underline</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;#ffdd00&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;谁在用琵琶弹奏一曲东风破&#34;</span> <span class="p">&gt;</span>}}
 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 {{<span class="p">&lt;</span> <span class="nt">underline</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;#ff2200&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;岁月在墙上剥落看见小时候&#34;</span> <span class="p">&gt;</span>}}
 </code></pre></td></tr></table></div>
@@ -368,7 +384,7 @@
 </p>
 <h2 id="诗歌引用"><a href="#诗歌引用" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:诗歌引用" class="headings">诗歌引用</a></h2>
 <ol>
-<li>在<code>blog\layouts\shortcodes</code>下新建 <span class="filenamestyle">quote-center.html</span> 文件，其内容如下：</li>
+<li>在<code>blog\layouts\shortcodes\quote-center.html</code>中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -389,7 +405,7 @@
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="2">
-<li>在 <code>\blog\assets\scss\custom</code> 下新建<span class="filenamestyle">_shortcodes.scss</span> 文件，其内容如下：</li>
+<li>在 <code>\blog\assets\scss\custom\_shortcodes.scss</code> 中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -460,7 +476,7 @@
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="3">
-<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入<code>_shortcodes.scss</code></li>
+<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入样式</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -490,7 +506,7 @@
 
 <h2 id="卡片"><a href="#卡片" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:卡片" class="headings">卡片</a></h2>
 <ol>
-<li>在<code>blog\layouts\shortcodes</code>下新建 <span class="filenamestyle">card.html</span> 文件，其内容如下：</li>
+<li>在<code>blog\layouts\shortcodes\card.html</code>中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -511,7 +527,7 @@ $raw 1 -}}
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="2">
-<li>在 <code>\blog\assets\scss\custom</code> 下新建<span class="filenamestyle">_card.scss</span> 文件，其内容如下：</li>
+<li>在 <code>\blog\assets\scss\custom\_card.scss</code> 中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -544,7 +560,7 @@ $raw 1 -}}
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="3">
-<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入<code>_card.scss</code></li>
+<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入样式</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -583,7 +599,7 @@ $raw 1 -}}
 
 <h2 id="文字渐变"><a href="#文字渐变" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:文字渐变" class="headings">文字渐变</a></h2>
 <ol>
-<li>在 <code>\blog\assets\scss\custom</code> 下新建<span class="filenamestyle">_colorfont.scss</span> 文件，其内容如下：</li>
+<li>在 <code>\blog\assets\scss\custom\_colorfont.scss</code> 中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -593,11 +609,9 @@ $raw 1 -}}
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// 文字渐变色
-</span><span class="c1"></span><span class="nc">.colorfulfont</span> <span class="p">{</span>
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.colorfulfont</span> <span class="p">{</span>
   <span class="nt">background</span><span class="nd">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">to</span> <span class="nt">right</span><span class="o">,</span> <span class="nt">red</span><span class="o">,</span> <span class="nn">#45ed63</span><span class="o">)</span><span class="p">;</span>
   <span class="nt">-webkit-background-clip</span><span class="nd">:</span> <span class="nt">text</span><span class="p">;</span>
   <span class="nt">background-clip</span><span class="nd">:</span> <span class="nt">text</span><span class="p">;</span>
@@ -606,7 +620,7 @@ $raw 1 -}}
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="2">
-<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入<code>_colorfont.scss</code></li>
+<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入样式</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -632,7 +646,7 @@ $raw 1 -}}
 </font>
 <h2 id="hugo-notice"><a href="#hugo-notice" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:hugo-notice" class="headings">hugo-notice</a></h2>
 <ol>
-<li>在<code>blog\layouts\shortcodes</code>下新建 <span class="filenamestyle">notice.html</span> 文件，其内容如下：</li>
+<li>在<code>blog\layouts\shortcodes\notice.html</code>中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -661,7 +675,7 @@ $raw 1 -}} {{ $icon := (replace (index $.Site.Data.SVG $noticeType) &#34;icon&#3
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="2">
-<li>在 <code>\blog\assets\scss\custom\_shortcodes.scss</code> 下 👇 写入以下代码</li>
+<li>在 <code>\blog\assets\scss\custom\_shortcodes.scss</code> 中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -836,7 +850,7 @@ $raw 1 -}} {{ $icon := (replace (index $.Site.Data.SVG $noticeType) &#34;icon&#3
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="3">
-<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入<code>_shortcodes.scss</code>（前面已经导入则此处无需重复导入）</li>
+<li>在<code>\blog\assets\scss\custom\_custom.scss</code>中导入样式（若前面已导入则无需重复导入）</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -894,7 +908,7 @@ This is tip
     <div class="notice-title"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 512 512"><path d="M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z"/></svg></div><p>This is tip</p ></div>
 <h2 id="github-风格"><a href="#github-风格" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:github-风格" class="headings">github 风格</a></h2>
 <ol>
-<li>在<code>blog\layouts\shortcodes</code>下新建 <span class="filenamestyle">github.html</span> 文件，其内容如下：</li>
+<li>在<code>blog\layouts\shortcodes\github.html</code>中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -925,7 +939,7 @@ This is tip
 </code></pre></td></tr></table></div>
 </div>
 </div><ol start="2">
-<li>在 <code>\blog\assets\scss\custom\_shortcodes.scss</code> 中加入以下代码：</li>
+<li>在 <code>\blog\assets\scss\custom\_shortcodes.scss</code> 中增加以下内容：</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <div class="table-container"><table class="lntable"><tr><td class="lntd">
@@ -1075,9 +1089,9 @@ This is tip
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2021-12-19 20:48:02 CST" style="cursor:help">
+        <span title="Updated @ 2021-12-20 10:36:28 CST" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2021-12-19</text><text x="915" y="140" textLength="650" transform="scale(.1)">2021-12-19</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2021-12-20</text><text x="915" y="140" textLength="650" transform="scale(.1)">2021-12-20</text></g></svg>
         </span></div>
 
 
