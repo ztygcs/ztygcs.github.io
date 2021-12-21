@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>我有一只猫</title>
+        <title>一路向北</title>
         <link>https://ztygcs.github.io/</link>
         <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
         <generator>Hugo 0.81.0 https://gohugo.io/</generator>
@@ -15,15 +15,15 @@
             <language>zh-CN</language>
         
         
-            <managingEditor>zccon1996@163.com (我有一只猫)</managingEditor>
+            <managingEditor>zccon1996@163.com (一路向北)</managingEditor>
         
         
-            <webMaster>zccon1996@163.com (我有一只猫)</webMaster>
+            <webMaster>zccon1996@163.com (一路向北)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 20 Dec 2021 17:18:23 &#43;0800</lastBuildDate>
+        <lastBuildDate>Tue, 21 Dec 2021 16:43:19 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -34,7 +34,7 @@
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-shortcodes-%E7%AE%80%E7%A0%81/</guid>
                 <pubDate>Sat, 18 Dec 2021 17:09:38 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -999,7 +999,7 @@ This is tip
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;friends&lt;/span&gt;
 &lt;span class=&#34;na&#34;&gt;imgSrc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://ztygcs.github.io/icons/android-chrome-512x512.png&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;na&#34;&gt;blogSrc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://ztygcs.github.io/&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;我有一只猫&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;一路向北&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;na&#34;&gt;desc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;学习笔记，生活杂碎&amp;#34;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -1007,7 +1007,7 @@ This is tip
 &lt;/div&gt;&lt;div class=&#34;blogroll&#34;&gt;
   &lt;img class=&#34;avatar medium-zoom-image&#34; src=&#34;https://ztygcs.github.io/icons/android-chrome-512x512.png&#34; /&gt;
   &lt;a class=&#34;friend&#34; href=&#34;https://ztygcs.github.io/&#34; target=&#34;_blank&#34;&gt;
-    &lt;div class=&#34;name&#34;&gt;我有一只猫&lt;/div&gt;
+    &lt;div class=&#34;name&#34;&gt;一路向北&lt;/div&gt;
     &lt;div class=&#34;excerpt&#34;&gt;学习笔记，生活杂碎&lt;/div&gt;
   &lt;/a&gt;
 &lt;/div&gt;
@@ -1056,7 +1056,7 @@ This is tip
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/typescript%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/</guid>
                 <pubDate>Fri, 04 Jun 2021 15:03:07 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1554,7 +1554,7 @@ This is tip
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%85%B6%E4%BB%96/ip%E5%AE%9A%E4%BD%8D%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
                 <pubDate>Fri, 19 Jun 2020 13:46:31 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2205,7 +2205,7 @@ This is tip
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%85%B6%E4%BB%96/latex%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B1%87%E6%80%BB/</guid>
                 <pubDate>Fri, 21 Feb 2020 11:30:55 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3562,7 +3562,7 @@ $$&lt;/p&gt;
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/hugo&#43;mathjax%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E6%B8%B2%E6%9F%93/</guid>
                 <pubDate>Thu, 20 Feb 2020 21:30:12 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3647,7 +3647,7 @@ $$&lt;/p&gt;
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/blog%E4%B8%AD%E5%8A%A0%E5%85%A5%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2/</guid>
                 <pubDate>Tue, 07 Jan 2020 14:56:04 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3833,7 +3833,7 @@ $$&lt;/p&gt;
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%BA%8C/</guid>
                 <pubDate>Wed, 27 Nov 2019 21:55:38 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4730,7 +4730,7 @@ DEMO:
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/meme%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%B8%80/</guid>
                 <pubDate>Wed, 27 Nov 2019 21:45:38 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5616,7 +5616,7 @@ DEMO:
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%85%B6%E4%BB%96/emoji%E8%A1%A8%E6%83%85%E5%BA%93%E4%B8%80/</guid>
                 <pubDate>Fri, 22 Nov 2019 22:47:32 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5680,7 +5680,7 @@ DEMO:
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%85%B6%E4%BB%96/emoji%E8%A1%A8%E6%83%85%E5%BA%93%E4%BA%8C/</guid>
                 <pubDate>Fri, 22 Nov 2019 22:47:32 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -11453,7 +11453,7 @@ DEMO:
                 <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%85%B6%E4%BB%96/%E6%B5%85%E8%B0%88http%E4%B8%8Ehttps/</guid>
                 <pubDate>Sat, 20 Apr 2019 20:25:00 &#43;0800</pubDate>
                 
-                    <author>zccon1996@163.com (我有一只猫)</author>
+                    <author>zccon1996@163.com (一路向北)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
