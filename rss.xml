@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 22 Dec 2021 10:53:17 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 22 Dec 2021 11:24:40 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ztygcs.github.io/rss.xml" />
         
@@ -1693,6 +1693,222 @@ This is tip
                                 
                                 
                                     <category domain="https://ztygcs.github.io/tags/typescript/">TypeScript</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>从0到1打造Hugo博客</title>
+                <link>https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E4%BB%8E0%E5%88%B01%E6%89%93%E9%80%A0hugo%E5%8D%9A%E5%AE%A2/</link>
+                <guid isPermaLink="true">https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/%E4%BB%8E0%E5%88%B01%E6%89%93%E9%80%A0hugo%E5%8D%9A%E5%AE%A2/</guid>
+                <pubDate>Fri, 05 Mar 2021 11:00:00 &#43;0800</pubDate>
+                
+                    <author>zccon1996@163.com (一路向北)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;本篇博文主要记录本 Hugo 博客从 0 到 1 的简要步骤，但其适用于其他大多数 hugo 博客的搭建流程，仅仅区别于主题的不同。&lt;/p&gt;
+&lt;h2 id=&#34;具体流程&#34;&gt;具体流程&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  准备Hugo文件
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;下载 hugo 文件&lt;/a&gt;（extended 扩展版）并解压到自定义文件夹（例：我存放的目录为&lt;code&gt;D:\Hugo\bin&lt;/code&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  配置环境变量
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;我的电脑 --&amp;gt; 属性 --&amp;gt; 高级系统设置 --&amp;gt; 环境变量 --&amp;gt; 系统变量 --&amp;gt; Path&lt;/code&gt; 中增加一条&lt;code&gt;D:\Hugo\bin&lt;/code&gt;，即解压后的 hugo.exe 文件存放的目录。&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;&lt;span style=&#34;border-bottom: #7db9de 2px solid&#34;&gt;
+  D:\Hugo\bin
+&lt;/span&gt;
+修改为自己对应文件位置路径&lt;/p &gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  检查版本
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;打开 cmd 终端执行以下命令查看是否安装成功（是否输出 Hugo 版本信息）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  生成博客
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;打开命令窗口，进入&lt;code&gt;D:\Hugo\Sites&lt;/code&gt;文件夹（生成站点的文件夹，自定义），输入命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site myblog
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;命令执行完成之后在&lt;code&gt;D:\Hugo\Sites\myblog&lt;/code&gt;文件夹下会自动生成博客需要的文件&lt;/p &gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  安装主题
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;hugo 主题网站&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本篇博客使用的 meme 主题，作者：&lt;a href=&#34;https://io-oi.me&#34;&gt;reuixiy&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;github&#34;&gt;
+    &lt;div class=&#34;logo&#34;&gt;
+        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon github-icon&#34; viewBox=&#34;0 0 16 16&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; clip-rule=&#34;evenodd&#34; d=&#34;M2 2.5C2 1.83696 2.26339 1.20107 2.73223 0.732233C3.20108 0.263392 3.83696 0 4.5 0L13.25 0C13.4489 0 13.6397 0.0790176 13.7803 0.21967C13.921 0.360322 14 0.551088 14 0.75V13.25C14 13.4489 13.921 13.6397 13.7803 13.7803C13.6397 13.921 13.4489 14 13.25 14H10.75C10.5511 14 10.3603 13.921 10.2197 13.7803C10.079 13.6397 10 13.4489 10 13.25C10 13.0511 10.079 12.8603 10.2197 12.7197C10.3603 12.579 10.5511 12.5 10.75 12.5H12.5V10.5H4.5C4.30308 10.5 4.11056 10.5582 3.94657 10.6672C3.78257 10.7762 3.65442 10.9312 3.57816 11.1128C3.50191 11.2943 3.48096 11.4943 3.51793 11.6878C3.5549 11.8812 3.64816 12.0594 3.786 12.2C3.92524 12.3422 4.0023 12.5338 4.00024 12.7328C3.99818 12.9318 3.91716 13.1218 3.775 13.261C3.63285 13.4002 3.4412 13.4773 3.24222 13.4752C3.04325 13.4732 2.85324 13.3922 2.714 13.25C2.25571 12.7829 1.99929 12.1544 2 11.5V2.5ZM12.5 1.5V9H4.5C4.144 9 3.806 9.074 3.5 9.208V2.5C3.5 2.23478 3.60536 1.98043 3.79289 1.79289C3.98043 1.60536 4.23478 1.5 4.5 1.5H12.5ZM5 12.25V15.5C5 15.5464 5.01293 15.5919 5.03734 15.6314C5.06175 15.6709 5.09667 15.7028 5.1382 15.7236C5.17972 15.7444 5.22621 15.7532 5.27245 15.749C5.31869 15.7448 5.36286 15.7279 5.4 15.7L6.85 14.613C6.89328 14.5805 6.94591 14.563 7 14.563C7.05409 14.563 7.10673 14.5805 7.15 14.613L8.6 15.7C8.63714 15.7279 8.68131 15.7448 8.72755 15.749C8.77379 15.7532 8.82028 15.7444 8.8618 15.7236C8.90333 15.7028 8.93826 15.6709 8.96266 15.6314C8.98707 15.5919 9 15.5464 9 15.5V12.25C9 12.1837 8.97366 12.1201 8.92678 12.0732C8.87989 12.0263 8.81631 12 8.75 12H5.25C5.1837 12 5.12011 12.0263 5.07322 12.0732C5.02634 12.1201 5 12.1837 5 12.25Z&#34;/&gt;&lt;/svg&gt;
+        &lt;a class=&#34;name&#34; href=https://github.com/reuixiy/hugo-theme-meme target=&#34;_blank&#34;&gt;hugo-theme-meme&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;description&#34;&gt;MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。MemE 主题专注于优雅、简约、现代，以及代码的正确性。同时，希望你将像欣赏一个模因一样欣赏 MemE，希望你将像分享一个模因一样分享 MemE，就像你的博客和文章所做的那样😝！&lt;/div&gt; 
+    &lt;div class=&#34;language&#34;&gt;
+        &lt;span class=&#34;language-color&#34; style=&#34;background-color: #E34C26&#34;&gt;&lt;/span&gt;
+        &lt;span class=&#34;language-name&#34;&gt;HTML&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;执行以下命令完成 meme 主题的安装。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; myblog
+git init
+git submodule add --depth &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; https://github.com/reuixiy/hugo-theme-meme.git themes/meme
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  开始写作
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将 &lt;code&gt;config.toml&lt;/code&gt; 替换为示例配置。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;rm config.toml &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; cp themes/meme/config-examples/zh-cn/config.toml config.toml
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;新建一篇文章和一个关于页面：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new &lt;span class=&#34;s2&#34;&gt;&amp;#34;posts/hello-world.md&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new &lt;span class=&#34;s2&#34;&gt;&amp;#34;about/_index.md&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  本地预览
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server -t meme --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server -D
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  准备个人 GitHub 账号
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;创建个人 GitHub 账号与仓库（命名：&lt;code&gt;账号名.github.io&lt;/code&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  部署到 GitHub
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo --theme&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;meme --baseUrl&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;https://ztygcs.github.io/&amp;#34;&lt;/span&gt; --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;在当前myblog文件夹下会生成 public 文件夹&lt;/p &gt;&lt;/div&gt;
+&lt;p&gt;接着将 public 文件夹上传至 GitHub 仓库&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+git init
+git add .
+git commit -m &lt;span class=&#34;s1&#34;&gt;&amp;#39;model：博客第一次提交&amp;#39;&lt;/span&gt;
+git remote add origin https://github.com/ztygcs/ztygcs.github.io.git
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;border-bottom: #ffdd00 2px solid&#34;&gt;
+  在线访问网站
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;访问网址：&lt;a href=&#34;https://ztygcs.github.io&#34;&gt;ztygcs.github.io&lt;/a&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="https://ztygcs.github.io/posts/%E5%8D%9A%E5%AE%A2/">posts\博客\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ztygcs.github.io/tags/hugo/">hugo</category>
                                 
                             
                         
