@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
 
     <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
-    <meta name="color-scheme" content="light dark">
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -57,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "2019-11-26T20:17:43+00:00",
-        "dateModified": "2021-12-21T15:04:50+08:00",
+        "dateModified": "2021-12-21T16:57:49+08:00",
         "url": "https://ztygcs.github.io/about/",
         "name": "About",
         "description": "-- 用撼动一座岩石的力量 生长 春雨和冰霜同样 只能带来一段故事 沉睡的是这个世界的爱意 如果不能睁开眼睛 就用每一只手触摸你 前世冰冷 来世温暖 只在此生纠缠不清 谁也无法把两种根连在一起 这是我们的命运 哪怕是死后 或者被山……",
@@ -95,9 +92,6 @@
 <meta property="og:locale" content="zh" /><meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
 
-
-    
-    
 
     
 </head>
@@ -216,7 +210,7 @@
             
 
             <div class="post-body e-content">
-                <!--来源：https://aplayer.js.org/#/zh-Hans/-->
+              <!--来源：https://aplayer.js.org/#/zh-Hans/-->
 <!-- <script src="https://unpkg.com/meting@1.2/dist/Meting.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -275,6 +269,8 @@
 
 
         
+    
+
 
 
         <div class="post-share">
@@ -423,26 +419,9 @@
             
 
 
-            <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          displayMath: [['$$','$$'], ['\[','\]']],
-          processEscapes: true,
-          processEnvironments: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-         TeX: {
-             equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"]
-          }
-      }
-  });
-</script>
-<script
-  type="text/javascript"
-  async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
-></script>
+            
+
+
 
         </div>
     </footer>
@@ -454,6 +433,32 @@
         
 
 
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
+
+
 
 
 
@@ -463,10 +468,7 @@
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
 
 <script>
-    let imgNodes = document.querySelectorAll('div.post-body img');
-    imgNodes = Array.from(imgNodes).filter(node => node.parentNode.tagName !== "A");
-
-    mediumZoom(imgNodes, {
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
         background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
     })
 </script>

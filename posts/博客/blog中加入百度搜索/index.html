@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
 
     <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
-    <meta name="color-scheme" content="light dark">
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -112,9 +109,6 @@
     <meta property="article:section" content="posts" />
 
 
-
-    
-    
 
     
 </head>
@@ -256,7 +250,7 @@
             
 
             <nav class="contents"></nav><div class="post-body e-content">
-                <p>前几天参照网上的资源自己弄了个搜索框，主要是因为现在大部分的网页搜索首页老是会有一些杂乱的东西弹出来，关还关不掉。于是就自己想着整一个搜索界面。我的目的很简单，让界面看起来尽量简洁，因为是用来搜索资源的，所以一些无关紧要的东西都可以不要。参考Google浏览器的样式，于是就有了下面的极简搜索页面：只显示一个搜索框，其他的东西统统扔掉。</p>
+              <p>前几天参照网上的资源自己弄了个搜索框，主要是因为现在大部分的网页搜索首页老是会有一些杂乱的东西弹出来，关还关不掉。于是就自己想着整一个搜索界面。我的目的很简单，让界面看起来尽量简洁，因为是用来搜索资源的，所以一些无关紧要的东西都可以不要。参考Google浏览器的样式，于是就有了下面的极简搜索页面：只显示一个搜索框，其他的东西统统扔掉。</p>
 <p><img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/Google_search.png" alt=""><span class="caption">◎ Google搜索界面</span>
 <img src="https://zccon.oss-cn-beijing.aliyuncs.com/Hugo/images/tech/2020/01/search.png" alt=""><span class="caption">◎ 自定义搜索界面</span></p>
 <p>今天突然想把这个搜索框整合到我的blog中来，哈哈哈，好像没多大的用，不过就是瞎折腾。这里我主要是记录一下加入百度搜索功能我做了哪些改变，说不定哪天不喜欢了我还可以参考这个记录把它给删掉。</p>
@@ -613,26 +607,9 @@
             
 
 
-            <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          displayMath: [['$$','$$'], ['\[','\]']],
-          processEscapes: true,
-          processEnvironments: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-         TeX: {
-             equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"]
-          }
-      }
-  });
-</script>
-<script
-  type="text/javascript"
-  async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
-></script>
+            
+
+
 
         </div>
     </footer>
@@ -644,6 +621,32 @@
         
 
 
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
+
+
 
 
 
@@ -653,10 +656,7 @@
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
 
 <script>
-    let imgNodes = document.querySelectorAll('div.post-body img');
-    imgNodes = Array.from(imgNodes).filter(node => node.parentNode.tagName !== "A");
-
-    mediumZoom(imgNodes, {
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
         background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
     })
 </script>

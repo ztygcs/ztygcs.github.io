@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
 
     <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
-    <meta name="color-scheme" content="light dark">
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -111,9 +108,6 @@
     <meta property="article:section" content="posts" />
 
 
-
-    
-    
 
     
 </head>
@@ -266,7 +260,7 @@
     <li><a id="contents:友链样式" href="#友链样式">友链样式</a></li>
   </ol>
 </nav><div class="post-body e-content">
-                <blockquote>
+              <blockquote>
 <p>MemE 通过 Hugo 管道实现使用 SCSS 生成 CSS，而非静态的 CSS 文件，同时提供一个 <code>\_custom.scss</code> 文件以供用户定制。</p>
 <p>直接新建一个 ~/blog/assets/scss/custom/_custom.scss 并将你自己的样式加入其中，就能覆盖主题的 ~/blog/themes/meme/assets/scss/custom/_custom.scss 文件，且其会正确地被应用。</p>
 <p>事实上，在 Hugo 中你可以覆盖主题的任何模板，见这个非官方的镜像网页：https://gohugobrasil.netlify.com/themes/customizing/</p>
@@ -1453,26 +1447,9 @@ This is tip
             
 
 
-            <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          displayMath: [['$$','$$'], ['\[','\]']],
-          processEscapes: true,
-          processEnvironments: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-         TeX: {
-             equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"]
-          }
-      }
-  });
-</script>
-<script
-  type="text/javascript"
-  async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
-></script>
+            
+
+
 
         </div>
     </footer>
@@ -1484,6 +1461,32 @@ This is tip
         
 
 
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
+
+
 
 
 
@@ -1493,10 +1496,7 @@ This is tip
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
 
 <script>
-    let imgNodes = document.querySelectorAll('div.post-body img');
-    imgNodes = Array.from(imgNodes).filter(node => node.parentNode.tagName !== "A");
-
-    mediumZoom(imgNodes, {
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
         background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
     })
 </script>
