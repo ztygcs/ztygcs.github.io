@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">一路向北</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2021-12-25T20:29:52&#43;08:00</updated>
+    <updated>2021-12-27T19:04:23&#43;08:00</updated>
     <id>https://ztygcs.github.io/</id>
     <link rel="alternate" type="text/html" href="https://ztygcs.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ztygcs.github.io/atom.xml" />
@@ -1177,6 +1177,193 @@ success = &amp;#39;&lt;span class=&#34;nt&#34;&gt;&amp;lt;svg&lt;/span&gt; &lt;s
                             
                             
                                 <category scheme="https://ztygcs.github.io/tags/hugo/" term="hugo" label="hugo" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">正则表达式</title>
+            <link rel="alternate" type="text/html" href="https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+            <id>https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
+            <updated>2021-12-27T19:04:03&#43;08:00</updated>
+            <published>2021-06-08T10:20:15&#43;08:00</published>
+            <author>
+                    <name>一路向北</name>
+                    <uri>https://ztygcs.github.io</uri>
+                    <email>zccon1996@163.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">字符 描述 \ 将下一字符标记为一个特殊字符、一个原义字符、一个后向引用、或一个八进制转义符。 ^ 匹配输入字符串的开始位置。 $ 匹配输入字符串的结束位置。 * 匹配前面的子表达式零次或多次。等价于{0,}。 + 匹配前……</summary>
+            
+                <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;字符&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;\&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;将下一字符标记为一个特殊字符、一个原义字符、一个后向引用、或一个八进制转义符。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;^&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配输入字符串的开始位置。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配输入字符串的结束位置。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配前面的子表达式零次或多次。等价于{0,}。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;+&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配前面的子表达式一次或多次。等价于 {1,}。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配前面的子表达式零次或一次。等价于 {0,1}。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;{n}&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;n 是一个非负整数。匹配确定的 n 次。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;{n,}&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;n 是一个非负整数。至少匹配 n 次。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;{n,m}&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;m 和 n 均为非负整数，其中 n &amp;lt;= m。最少匹配 n 次且最多匹配 m 次。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;当该字符紧跟在任何一个其他限制符 (*, +, ?, {n}, {n,}, {n,m}) 后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串 &amp;quot;oooo&amp;quot;，&#39;o+?&#39; 将匹配单个 &amp;quot;o&amp;quot;，而 &#39;o+&#39; 将匹配所有 &#39;o&#39;。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;.&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配除 &amp;quot;\n&amp;quot; 之外的任何单个字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;(pattern)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配 pattern 并使用 &lt;code&gt;$0…$9&lt;/code&gt; 属性获取结果&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;(?:pattern)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配 pattern 但不获取匹配结果。 &lt;code&gt;industr(?:y|ies)&lt;/code&gt; 相当于 &lt;code&gt;industry|industries&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;(?=pattern)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;正向预查，在任何匹配 pattern 的字符串开始处匹配查找字符串。这是一个非获取匹配&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;(?!pattern)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;负向预查，在任何不匹配 pattern 的字符串开始处匹配查找字符串。这是一个非获取匹配&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;x|y&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配 x 或 y。例如，&lt;code&gt;z|food&lt;/code&gt; 能匹配 &amp;quot;z&amp;quot; 或 &amp;quot;food&amp;quot;。&lt;code&gt;(z|f)ood&lt;/code&gt; 则匹配 &amp;quot;zood&amp;quot; 或 &amp;quot;food&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[xyz]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;字符集合。匹配所包含的任意一个字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[^xyz]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;负值字符集合。匹配未包含的任意字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[a-z]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;字符范围。匹配指定范围内的任意字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\b&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个单词边界&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\B&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配非单词边界&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\d&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个数字字符。等价于 [0-9]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\D&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个非数字字符。等价于 [^0-9]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\s&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配任何空白字符，包括空格、制表符、换页符等等。等价于 &lt;code&gt;[ \f\n\r\t\v]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\S&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配任何非空白字符。等价于 &lt;code&gt;[^ \f\n\r\t\v]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\w&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配包括下划线的任何单词字符。等价于&lt;code&gt;[A-Za-z0-9_]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\W&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配任何非单词字符。等价于 &lt;code&gt;[^A-Za-z0-9_]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\f&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个换页符。等价于 \x0c 和 \cL。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\n&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个换行符。等价于 \x0a 和 \cJ。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\r&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个回车符。等价于 \x0d 和 \cM。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\t&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个制表符。等价于 \x09 和 \cI。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\v&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配一个垂直制表符。等价于 \x0b 和 \cK。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;\cx&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;匹配由 x 指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。 x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 &#39;c&#39; 字符。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/" term="posts\前端\" label="posts\前端\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ztygcs.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" term="正则表达式" label="正则表达式" />
                             
                         
                     
