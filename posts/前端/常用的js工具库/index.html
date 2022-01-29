@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.81.0" /><meta name="theme-color" content="#fff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>常用的js工具库 | 一路向北</title>
+
+    <link rel="stylesheet" href="/css/meme.min.css" />
+
+    
+    
+        <script src="/js/meme.min.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB&#43;Garamond:400,400i,700,700i%7cNoto&#43;Serif&#43;SC:400,700%7cSource&#43;Code&#43;Pro:400,400i,700,700i%7cCinzel&#43;Decorative:700%7cMa&#43;Shan&#43;Zheng:%7cLiu&#43;Jian&#43;Mao&#43;Cao:&amp;display=swap&amp;subset=chinese-simplified" /></noscript>
+
+    <meta name="author" content="一路向北" /><meta name="description" content="Day.js 一个极简的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持一样, 但体积仅有 2KB。 1 npm install dayjs 基本用法 1 2 3 4 5 6 7 import dayjs from &#39;dayjs&#39; // =&gt; 2022-01-03 15:06 dayjs().format(&#39;YYYY-MM-DD HH:mm&#39;) // =&gt; Mon Jan 03 2022 15:06:00 GMT&#43;0800 (中国标准时间) dayjs(&#39;2022-1-3 15:06&#39;).toDate() qs 一个轻量的 url 参数转换的 JavaScript 库 1 npm install qs 基本……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="一路向北" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="一路向北" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2022-01-29T10:16:03+08:00",
+        "dateModified": "2022-01-29T11:15:36+08:00",
+        "url": "https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/",
+        "headline": "常用的js工具库",
+        "description": "Day.js 一个极简的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持一样, 但体积仅有 2KB。 1 npm install dayjs 基本用法 1 2 3 4 5 6 7 import dayjs from 'dayjs' // =\u003e 2022-01-03 15:06 dayjs().format('YYYY-MM-DD HH:mm') // =\u003e Mon Jan 03 2022 15:06:00 GMT+0800 (中国标准时间) dayjs('2022-1-3 15:06').toDate() qs 一个轻量的 url 参数转换的 JavaScript 库 1 npm install qs 基本……",
+        "inLanguage" : "zh-CN",
+        "articleSection": "posts",
+        "wordCount":  1266 ,
+        "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
+        "author": {
+            "@type": "Person",
+            "description": "ever youthful ever weeping",
+            "email": "zccon1996@163.com",
+            "image": "https://ztygcs.github.io/icons/apple-touch-icon.png",
+            "url": "https://ztygcs.github.io",
+            "name": "一路向北"
+        },
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
+        "publisher": {
+            "@type": "Organization",
+            "name": "一路向北",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://ztygcs.github.io/icons/apple-touch-icon.png"
+            },
+            "url": "https://ztygcs.github.io/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://ztygcs.github.io/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="常用的js工具库" />
+<meta property="og:description" content="Day.js 一个极简的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持一样, 但体积仅有 2KB。 1 npm install dayjs 基本用法 1 2 3 4 5 6 7 import dayjs from &#39;dayjs&#39; // =&gt; 2022-01-03 15:06 dayjs().format(&#39;YYYY-MM-DD HH:mm&#39;) // =&gt; Mon Jan 03 2022 15:06:00 GMT&#43;0800 (中国标准时间) dayjs(&#39;2022-1-3 15:06&#39;).toDate() qs 一个轻量的 url 参数转换的 JavaScript 库 1 npm install qs 基本……" />
+<meta property="og:url" content="https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/" />
+<meta property="og:site_name" content="一路向北" />
+<meta property="og:locale" content="zh" /><meta property="og:image" content="https://ztygcs.github.io/icons/apple-touch-icon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2022-01-29T10:16:03&#43;08:00" />
+    <meta property="article:modified_time" content="2022-01-29T11:15:36&#43;08:00" />
+    
+    <meta property="article:section" content="posts" />
+
+
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">一路向北</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item"><a href="/posts/"><span class="menu-item-name">归档</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><span class="menu-item-name">分类</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><span class="menu-item-name">标签</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                </li>
+            
+        
+            
+                
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="posts" data-toc-num="true">
+
+            <h1 class="post-title p-name">常用的js工具库</h1>
+
+            
+
+            
+                
+            
+
+            
+                
+
+<div class="post-meta">
+    
+        
+        <time datetime="2022-01-29T10:16:03&#43;08:00" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2022.01.29</time>
+    
+    
+    
+    
+        
+        
+            
+            
+                
+                
+                
+                
+                    
+                    
+                    
+                        
+                            
+                            
+                        
+                    
+                
+            
+            
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/posts/%E5%89%8D%E7%AB%AF/" class="category-link p-category">前端</a></span>
+            
+        
+        
+    
+    
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+              <h2 id="hahahugoshortcode-s0-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  Day.js
+</span>
+</code></h2>
+<blockquote>
+<p>一个极简的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持一样, 但体积仅有 2KB。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install dayjs
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">dayjs</span> <span class="nx">from</span> <span class="s1">&#39;dayjs&#39;</span>
+
+<span class="c1">// =&gt; 2022-01-03 15:06
+</span><span class="c1"></span><span class="nx">dayjs</span><span class="p">().</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;YYYY-MM-DD HH:mm&#39;</span><span class="p">)</span>
+
+<span class="c1">// =&gt; Mon Jan 03 2022 15:06:00 GMT+0800 (中国标准时间)
+</span><span class="c1"></span><span class="nx">dayjs</span><span class="p">(</span><span class="s1">&#39;2022-1-3 15:06&#39;</span><span class="p">).</span><span class="nx">toDate</span><span class="p">()</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s1-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  qs
+</span>
+</code></h2>
+<blockquote>
+<p>一个轻量的 url 参数转换的 JavaScript 库</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install qs
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">qs</span> <span class="nx">from</span> <span class="s1">&#39;qs&#39;</span>
+
+<span class="c1">// =&gt; { user: &#34;tom&#34;, age: &#34;22&#34; }
+</span><span class="c1"></span><span class="nx">qs</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="s1">&#39;user=tom&amp;age=22&#39;</span><span class="p">)</span>
+
+<span class="c1">// =&gt; user=tom&amp;age=22
+</span><span class="c1"></span><span class="nx">qs</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span> <span class="nx">user</span><span class="o">:</span> <span class="s1">&#39;tom&#39;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="s1">&#39;22&#39;</span> <span class="p">})</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s2-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  js-cookie
+</span>
+</code></h2>
+<blockquote>
+<p>一个简单的、轻量的处理 cookies 的 js API</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install js-cookie
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">Cookies</span> <span class="nx">from</span> <span class="s1">&#39;js-cookie&#39;</span>
+
+<span class="c1">// 有效期7天
+</span><span class="c1"></span><span class="nx">Cookies</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">expires</span><span class="o">:</span> <span class="mi">7</span> <span class="p">})</span>
+
+<span class="c1">// =&gt; &#39;value&#39;
+</span><span class="c1"></span><span class="nx">Cookies</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s3-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  flv.js
+</span>
+</code></h2>
+<blockquote>
+<p>bilibili 开源的 html5 flash 视频播放器，使浏览器在不借助 flash 插件的情况下可以播放 flv，目前主流的直播、点播解决方案。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install flv.js
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">video</span> <span class="na">autoplay</span> <span class="na">controls</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;500&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myVideo&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kr">import</span> <span class="nx">flvjs</span> <span class="nx">from</span> <span class="s1">&#39;flv.js&#39;</span>
+
+  <span class="c1">// 页面渲染完成后执行
+</span><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="nx">flvjs</span><span class="p">.</span><span class="nx">isSupported</span><span class="p">())</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">myVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myVideo&#39;</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">flvPlayer</span> <span class="o">=</span> <span class="nx">flvjs</span><span class="p">.</span><span class="nx">createPlayer</span><span class="p">({</span>
+      <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;flv&#39;</span><span class="p">,</span>
+      <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://localhost:8080/test.flv&#39;</span> <span class="c1">// 视频 url 地址
+</span><span class="c1"></span>    <span class="p">})</span>
+    <span class="nx">flvPlayer</span><span class="p">.</span><span class="nx">attachMediaElement</span><span class="p">(</span><span class="nx">myVideo</span><span class="p">)</span>
+    <span class="nx">flvPlayer</span><span class="p">.</span><span class="nx">load</span><span class="p">()</span>
+    <span class="nx">flvPlayer</span><span class="p">.</span><span class="nx">play</span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s4-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  vConsole
+</span>
+</code></h2>
+<blockquote>
+<p>一个轻量、可拓展、针对手机网页的前端开发者调试面板。如果你还苦于在手机上如何调试代码，用它就对了。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install vconsole
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">VConsole</span> <span class="nx">from</span> <span class="s1">&#39;vconsole&#39;</span>
+
+<span class="kr">const</span> <span class="nx">vConsole</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VConsole</span><span class="p">()</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s5-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  Animate.css
+</span>
+</code></h2>
+<blockquote>
+<p>一个跨浏览器的 css3 动画库，内置了很多典型的 css3 动画，兼容性好，使用方便。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install animate.css
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;animate__animated animate__bounce&#34;</span><span class="p">&gt;</span>An animated element<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+import &#39;animate.css&#39;
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s6-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  animejs
+</span>
+</code></h2>
+<blockquote>
+<p>一款功能强大的 JavaScript 动画库。可以与 CSS3 属性、SVG、DOM 元素、JS 对象一起工作，制作出各种高性能、平滑过渡的动画效果。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install animejs
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ball&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 50px; height: 50px; background: blue&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kr">import</span> <span class="nx">anime</span> <span class="nx">from</span> <span class="s1">&#39;animejs/lib/anime.es.js&#39;</span>
+
+  <span class="c1">// 页面渲染完成之后执行
+</span><span class="c1"></span>  <span class="nx">anime</span><span class="p">({</span>
+    <span class="nx">targets</span><span class="o">:</span> <span class="s1">&#39;.ball&#39;</span><span class="p">,</span>
+    <span class="nx">translateX</span><span class="o">:</span> <span class="mi">250</span><span class="p">,</span>
+    <span class="nx">rotate</span><span class="o">:</span> <span class="s1">&#39;1turn&#39;</span><span class="p">,</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#F00&#39;</span><span class="p">,</span>
+    <span class="nx">duration</span><span class="o">:</span> <span class="mi">800</span>
+  <span class="p">})</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s7-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  lodash.js
+</span>
+</code></h2>
+<blockquote>
+<p>一个一致性、模块化、高性能的 JavaScript 实用工具库</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install lodash
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">_</span> <span class="nx">from</span> <span class="s1">&#39;lodash&#39;</span>
+
+<span class="c1">// 返回数组中的最大值 =&gt; 8
+</span><span class="c1"></span><span class="nx">_</span><span class="p">.</span><span class="nx">max</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+
+<span class="c1">// 返回多个数组的交集 =&gt; [2, 3]
+</span><span class="c1"></span><span class="nx">_</span><span class="p">.</span><span class="nx">intersection</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s8-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  mescroll.js
+</span>
+</code></h2>
+<blockquote>
+<p>一款精致的、在 H5 端运行的下拉刷新和上拉加载插件，主要用于列表分页、刷新等场景。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install mescroll.js
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法（vue 组件）</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mescroll-vue</span> <span class="na">ref</span><span class="o">=</span><span class="s">&#34;mescroll&#34;</span> <span class="na">:down</span><span class="o">=</span><span class="s">&#34;mescrollDown&#34;</span> <span class="na">:up</span><span class="o">=</span><span class="s">&#34;mescrollUp&#34;</span> <span class="err">@</span><span class="na">init</span><span class="o">=</span><span class="s">&#34;mescrollInit&#34;</span><span class="p">&gt;</span>
+      <span class="c">&lt;!--内容...--&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">mescroll-vue</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kr">import</span> <span class="nx">MescrollVue</span> <span class="nx">from</span> <span class="s1">&#39;mescroll.js/mescroll.vue&#39;</span>
+
+  <span class="kr">export</span> <span class="k">default</span> <span class="p">{</span>
+    <span class="nx">components</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">MescrollVue</span>
+    <span class="p">},</span>
+    <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">mescroll</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="c1">// mescroll实例对象
+</span><span class="c1"></span>        <span class="nx">mescrollDown</span><span class="o">:</span> <span class="p">{},</span> <span class="c1">//下拉刷新的配置
+</span><span class="c1"></span>        <span class="nx">mescrollUp</span><span class="o">:</span> <span class="p">{</span>
+          <span class="c1">// 上拉加载的配置
+</span><span class="c1"></span>          <span class="nx">callback</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">upCallback</span>
+        <span class="p">},</span>
+        <span class="nx">dataList</span><span class="o">:</span> <span class="p">[]</span> <span class="c1">// 列表数据
+</span><span class="c1"></span>      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+      <span class="c1">// 初始化的回调,可获取到mescroll对象
+</span><span class="c1"></span>      <span class="nx">mescrollInit</span><span class="p">(</span><span class="nx">mescroll</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">mescroll</span> <span class="o">=</span> <span class="nx">mescroll</span>
+      <span class="p">},</span>
+      <span class="c1">// 上拉回调 page = {num:1, size:10};
+</span><span class="c1"></span>      <span class="c1">// num:当前页 ,默认从1开始; size:每页数据条数,默认10
+</span><span class="c1"></span>      <span class="nx">upCallback</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="nx">mescroll</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 发送请求
+</span><span class="c1"></span>        <span class="nx">axios</span>
+          <span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;xxxxxx&#39;</span><span class="p">,</span> <span class="p">{</span>
+            <span class="nx">params</span><span class="o">:</span> <span class="p">{</span>
+              <span class="nx">num</span><span class="o">:</span> <span class="nx">page</span><span class="p">.</span><span class="nx">num</span><span class="p">,</span> <span class="c1">// 当前页码
+</span><span class="c1"></span>              <span class="nx">size</span><span class="o">:</span> <span class="nx">page</span><span class="p">.</span><span class="nx">size</span> <span class="c1">// 每页长度
+</span><span class="c1"></span>            <span class="p">}</span>
+          <span class="p">})</span>
+          <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="c1">// 请求的列表数据
+</span><span class="c1"></span>            <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">data</span>
+            <span class="c1">// 如果是第一页需手动置空列表
+</span><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="nx">page</span><span class="p">.</span><span class="nx">num</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">this</span><span class="p">.</span><span class="nx">dataList</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="c1">// 把请求到的数据添加到列表
+</span><span class="c1"></span>            <span class="k">this</span><span class="p">.</span><span class="nx">dataList</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">dataList</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+            <span class="c1">// 数据渲染成功后,隐藏下拉刷新的状态
+</span><span class="c1"></span>            <span class="k">this</span><span class="p">.</span><span class="nx">$nextTick</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+              <span class="nx">mescroll</span><span class="p">.</span><span class="nx">endSuccess</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+            <span class="p">})</span>
+          <span class="p">})</span>
+          <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="c1">// 请求失败的回调,隐藏下拉刷新和上拉加载的状态;
+</span><span class="c1"></span>            <span class="nx">mescroll</span><span class="p">.</span><span class="nx">endErr</span><span class="p">()</span>
+          <span class="p">})</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span> <span class="na">scoped</span><span class="p">&gt;</span>
+  <span class="p">.</span><span class="nc">mescroll</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">44</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></td></tr></table></div>
+</div>
+</div><h2 id="hahahugoshortcode-s9-hbhb"><code><span style="border-bottom: #ffdd00 2px solid">
+  Chart.js
+</span>
+</code></h2>
+<blockquote>
+<p>一套基于 HTML5 的简单、干净并且有吸引力的 JavaScript 图表库</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">npm install chart.js
+</code></pre></td></tr></table></div>
+</div>
+</div><p>基本用法</p>
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">canvas</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myChart&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;400&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;400&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kr">import</span> <span class="nx">Chart</span> <span class="nx">from</span> <span class="s1">&#39;chart.js/auto&#39;</span>
+
+  <span class="c1">// 页面渲染完成后执行
+</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myChart&#39;</span><span class="p">)</span>
+  <span class="kr">const</span> <span class="nx">myChart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">labels</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;Blue&#39;</span><span class="p">,</span> <span class="s1">&#39;Yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;Green&#39;</span><span class="p">,</span> <span class="s1">&#39;Purple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">],</span>
+      <span class="nx">datasets</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;# of Votes&#39;</span><span class="p">,</span>
+          <span class="nx">data</span><span class="o">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+          <span class="nx">backgroundColor</span><span class="o">:</span> <span class="p">[</span>
+            <span class="s1">&#39;rgba(255, 99, 132, 0.2)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(54, 162, 235, 0.2)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(255, 206, 86, 0.2)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(75, 192, 192, 0.2)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(153, 102, 255, 0.2)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(255, 159, 64, 0.2)&#39;</span>
+          <span class="p">],</span>
+          <span class="nx">borderColor</span><span class="o">:</span> <span class="p">[</span>
+            <span class="s1">&#39;rgba(255, 99, 132, 1)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(54, 162, 235, 1)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(255, 206, 86, 1)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(75, 192, 192, 1)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(153, 102, 255, 1)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;rgba(255, 159, 64, 1)&#39;</span>
+          <span class="p">],</span>
+          <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">scales</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">y</span><span class="o">:</span> <span class="p">{</span>
+          <span class="nx">beginAtZero</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></td></tr></table></div>
+</div>
+</div>
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+    <div class="updated-badge-container">
+        <span title="Updated @ 2022-01-29 11:15:36 CST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2022-01-29</text><text x="915" y="140" textLength="650" transform="scale(.1)">2022-01-29</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        <div class="post-share">
+
+        
+
+        <div class="share-items">
+
+            
+                <div class="share-item twitter">
+                    
+                    <a href="https://twitter.com/share?url=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;text=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93&amp;hashtags=JavaScript,&amp;via=%25!s%28%3cnil%3e%29" title="分享到「Twitter」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon twitter-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item facebook">
+                    
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;hashtag=%23JavaScript" title="分享到「Facebook」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon facebook-icon"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item linkedin">
+                    
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;title=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93&amp;summary=Day.js%20%e4%b8%80%e4%b8%aa%e6%9e%81%e7%ae%80%e7%9a%84%e5%a4%84%e7%90%86%e6%97%b6%e9%97%b4%e5%92%8c%e6%97%a5%e6%9c%9f%e7%9a%84%20JavaScript%20%e5%ba%93%ef%bc%8c%e5%92%8c%20Moment.js%20%e7%9a%84%20API%20%e8%ae%be%e8%ae%a1%e4%bf%9d%e6%8c%81%e4%b8%80%e6%a0%b7,%20%e4%bd%86%e4%bd%93%e7%a7%af%e4%bb%85%e6%9c%89%202KB%e3%80%82%201%20npm%20install%20dayjs%20%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95%201%202%203%204%205%206%207%20import%20dayjs%20from%20%27dayjs%27%20//%20=%3e%202022-01-03%2015:06%20dayjs%28%29.format%28%27YYYY-MM-DD%20HH:mm%27%29%20//%20=%3e%20Mon%20Jan%2003%202022%2015:06:00%20GMT&#43;0800%20%28%e4%b8%ad%e5%9b%bd%e6%a0%87%e5%87%86%e6%97%b6%e9%97%b4%29%20dayjs%28%272022-1-3%2015:06%27%29.toDate%28%29%20qs%20%e4%b8%80%e4%b8%aa%e8%bd%bb%e9%87%8f%e7%9a%84%20url%20%e5%8f%82%e6%95%b0%e8%bd%ac%e6%8d%a2%e7%9a%84%20JavaScript%20%e5%ba%93%201%20npm%20install%20qs%20%e5%9f%ba%e6%9c%ac%e2%80%a6%e2%80%a6&amp;source=%e4%b8%80%e8%b7%af%e5%90%91%e5%8c%97" title="分享到「LinkedIn」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon linkedin-icon"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item telegram">
+                    
+                    <a href="https://t.me/share/url?url=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;text=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93" title="分享到「Telegram」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon telegram-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item weibo">
+                    
+                    <a href="https://service.weibo.com/share/share.php?&amp;url=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;title=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93&amp;pic=https://ztygcs.github.io/icons/apple-touch-icon.png&amp;searchPic=false" title="分享到「新浪微博」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon weibo-icon"><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item douban">
+                    
+                    <a href="https://www.douban.com/share/service?href=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;name=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93&amp;text=Day.js%20%e4%b8%80%e4%b8%aa%e6%9e%81%e7%ae%80%e7%9a%84%e5%a4%84%e7%90%86%e6%97%b6%e9%97%b4%e5%92%8c%e6%97%a5%e6%9c%9f%e7%9a%84%20JavaScript%20%e5%ba%93%ef%bc%8c%e5%92%8c%20Moment.js%20%e7%9a%84%20API%20%e8%ae%be%e8%ae%a1%e4%bf%9d%e6%8c%81%e4%b8%80%e6%a0%b7,%20%e4%bd%86%e4%bd%93%e7%a7%af%e4%bb%85%e6%9c%89%202KB%e3%80%82%201%20npm%20install%20dayjs%20%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95%201%202%203%204%205%206%207%20import%20dayjs%20from%20%27dayjs%27%20//%20=%3e%202022-01-03%2015:06%20dayjs%28%29.format%28%27YYYY-MM-DD%20HH:mm%27%29%20//%20=%3e%20Mon%20Jan%2003%202022%2015:06:00%20GMT&#43;0800%20%28%e4%b8%ad%e5%9b%bd%e6%a0%87%e5%87%86%e6%97%b6%e9%97%b4%29%20dayjs%28%272022-1-3%2015:06%27%29.toDate%28%29%20qs%20%e4%b8%80%e4%b8%aa%e8%bd%bb%e9%87%8f%e7%9a%84%20url%20%e5%8f%82%e6%95%b0%e8%bd%ac%e6%8d%a2%e7%9a%84%20JavaScript%20%e5%ba%93%201%20npm%20install%20qs%20%e5%9f%ba%e6%9c%ac%e2%80%a6%e2%80%a6" title="分享到「豆瓣」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon douban-icon"><path d="M.643.92v2.412h22.714V.92H.643zm1.974 4.926v9.42h18.764v-9.42H2.617zm2.72 2.408H18.69v4.605H5.338V8.254zm1.657 7.412l-2.512.938c1.037 1.461 1.87 2.825 2.512 4.091H0v2.385h24v-2.385h-6.678c.818-1.176 1.589-2.543 2.303-4.091l-2.73-.938a29.952 29.952 0 01-2.479 5.03h-4.75c-.786-1.962-1.677-3.641-2.672-5.03Z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item qq">
+                    
+                    <a href="https://connect.qq.com/widget/shareqq/index.html?url=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;title=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93&amp;summary=Day.js%20%e4%b8%80%e4%b8%aa%e6%9e%81%e7%ae%80%e7%9a%84%e5%a4%84%e7%90%86%e6%97%b6%e9%97%b4%e5%92%8c%e6%97%a5%e6%9c%9f%e7%9a%84%20JavaScript%20%e5%ba%93%ef%bc%8c%e5%92%8c%20Moment.js%20%e7%9a%84%20API%20%e8%ae%be%e8%ae%a1%e4%bf%9d%e6%8c%81%e4%b8%80%e6%a0%b7,%20%e4%bd%86%e4%bd%93%e7%a7%af%e4%bb%85%e6%9c%89%202KB%e3%80%82%201%20npm%20install%20dayjs%20%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95%201%202%203%204%205%206%207%20import%20dayjs%20from%20%27dayjs%27%20//%20=%3e%202022-01-03%2015:06%20dayjs%28%29.format%28%27YYYY-MM-DD%20HH:mm%27%29%20//%20=%3e%20Mon%20Jan%2003%202022%2015:06:00%20GMT&#43;0800%20%28%e4%b8%ad%e5%9b%bd%e6%a0%87%e5%87%86%e6%97%b6%e9%97%b4%29%20dayjs%28%272022-1-3%2015:06%27%29.toDate%28%29%20qs%20%e4%b8%80%e4%b8%aa%e8%bd%bb%e9%87%8f%e7%9a%84%20url%20%e5%8f%82%e6%95%b0%e8%bd%ac%e6%8d%a2%e7%9a%84%20JavaScript%20%e5%ba%93%201%20npm%20install%20qs%20%e5%9f%ba%e6%9c%ac%e2%80%a6%e2%80%a6&amp;pics=https://ztygcs.github.io/icons/apple-touch-icon.png&amp;site=%e4%b8%80%e8%b7%af%e5%90%91%e5%8c%97" title="分享到「QQ」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon qq-icon"><path d="M433.754 420.445c-11.526 1.393-44.86-52.741-44.86-52.741 0 31.345-16.136 72.247-51.051 101.786 16.842 5.192 54.843 19.167 45.803 34.421-7.316 12.343-125.51 7.881-159.632 4.037-34.122 3.844-152.316 8.306-159.632-4.037-9.045-15.25 28.918-29.214 45.783-34.415-34.92-29.539-51.059-70.445-51.059-101.792 0 0-33.334 54.134-44.859 52.741-5.37-.65-12.424-29.644 9.347-99.704 10.261-33.024 21.995-60.478 40.144-105.779C60.683 98.063 108.982.006 224 0c113.737.006 163.156 96.133 160.264 214.963 18.118 45.223 29.912 72.85 40.144 105.778 21.768 70.06 14.716 99.053 9.346 99.704z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item qzone">
+                    
+                    <a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ztygcs.github.io/posts/%E5%89%8D%E7%AB%AF/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93/&amp;title=%e5%b8%b8%e7%94%a8%e7%9a%84js%e5%b7%a5%e5%85%b7%e5%ba%93&amp;summary=Day.js%20%e4%b8%80%e4%b8%aa%e6%9e%81%e7%ae%80%e7%9a%84%e5%a4%84%e7%90%86%e6%97%b6%e9%97%b4%e5%92%8c%e6%97%a5%e6%9c%9f%e7%9a%84%20JavaScript%20%e5%ba%93%ef%bc%8c%e5%92%8c%20Moment.js%20%e7%9a%84%20API%20%e8%ae%be%e8%ae%a1%e4%bf%9d%e6%8c%81%e4%b8%80%e6%a0%b7,%20%e4%bd%86%e4%bd%93%e7%a7%af%e4%bb%85%e6%9c%89%202KB%e3%80%82%201%20npm%20install%20dayjs%20%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95%201%202%203%204%205%206%207%20import%20dayjs%20from%20%27dayjs%27%20//%20=%3e%202022-01-03%2015:06%20dayjs%28%29.format%28%27YYYY-MM-DD%20HH:mm%27%29%20//%20=%3e%20Mon%20Jan%2003%202022%2015:06:00%20GMT&#43;0800%20%28%e4%b8%ad%e5%9b%bd%e6%a0%87%e5%87%86%e6%97%b6%e9%97%b4%29%20dayjs%28%272022-1-3%2015:06%27%29.toDate%28%29%20qs%20%e4%b8%80%e4%b8%aa%e8%bd%bb%e9%87%8f%e7%9a%84%20url%20%e5%8f%82%e6%95%b0%e8%bd%ac%e6%8d%a2%e7%9a%84%20JavaScript%20%e5%ba%93%201%20npm%20install%20qs%20%e5%9f%ba%e6%9c%ac%e2%80%a6%e2%80%a6&amp;pics=https://ztygcs.github.io/icons/apple-touch-icon.png&amp;site=%e4%b8%80%e8%b7%af%e5%90%91%e5%8c%97" title="分享到「QQ 空间」" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon qzone-icon"><path d="M23.985 9.202c-.032-.099-.127-.223-.334-.258-.207-.036-7.351-1.406-7.351-1.406s-.105-.022-.198-.07c-.092-.047-.127-.167-.127-.167S12.447.956 12.349.77C12.25.583 12.104.532 12 .532c-.104 0-.251.051-.349.238-.098.186-3.626 6.531-3.626 6.531s-.035.12-.128.167c-.092.047-.197.07-.197.07S.556 8.908.348 8.943c-.208.036-.302.16-.333.258a.477.477 0 0 0 .125.449l5.362 5.49s.072.08.119.172c.016.104.005.21.005.21s-1.189 7.242-1.22 7.45.075.369.159.43c.083.062.233.106.421.013.189-.093 6.812-3.261 6.812-3.261s.098-.044.201-.061c.103-.017.201.061.201.061s6.623 3.168 6.812 3.261c.188.094.338.049.421-.013a.463.463 0 0 0 .159-.43c-.021-.14-.93-5.677-.93-5.677.876-.54 1.425-1.039 1.849-1.747-2.594.969-6.006 1.717-9.415 1.866-.915.041-2.41.097-3.473-.015-.678-.071-1.17-.144-1.243-.438-.053-.215.054-.46.545-.831a2640.5 2640.5 0 0 1 2.861-2.155c1.285-.968 3.559-2.47 3.559-2.731 0-.285-2.144-.781-4.037-.781-1.945 0-2.275.132-2.811.168-.488.034-.769.005-.804-.138-.06-.248.183-.389.588-.568.709-.314 1.86-.594 1.984-.626.194-.052 3.082-.805 5.618-.535 1.318.14 3.244.668 3.244 1.276 0 .342-1.721 1.494-3.225 2.597-1.149.843-2.217 1.561-2.217 1.688 0 .342 3.533 1.241 6.689 1.01l.003-.022c.048-.092.119-.172.119-.172l5.362-5.49a.477.477 0 0 0 .127-.449z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item qrcode">
+                    <div class="qrcode-container" title="通过「二维码」"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon qrcode-icon"><path d="M0 224h192V32H0v192zM64 96h64v64H64V96zm192-64v192h192V32H256zm128 128h-64V96h64v64zM0 480h192V288H0v192zm64-128h64v64H64v-64zm352-64h32v128h-96v-32h-32v96h-64V288h96v32h64v-32zm0 160h32v32h-32v-32zm-64 0h32v32h-32v-32z"/></svg><div id="qrcode-img"></div>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+
+<script>
+    var typeNumber = 0;
+    var errorCorrectionLevel = 'L';
+    var qr = qrcode(typeNumber, errorCorrectionLevel);
+    qr.addData('https:\/\/ztygcs.github.io\/posts\/%E5%89%8D%E7%AB%AF\/%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%BA%93\/');
+    qr.make();
+    document.getElementById('qrcode-img').innerHTML = qr.createImgTag();
+</script>
+
+                </div>
+            
+
+        </div>
+
+    </div>
+
+
+
+
+        
+    
+    
+        <div class="related-posts">
+            <h2 class="related-title">相关文章：<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
+            <ul class="related-list">
+                
+                    <li class="related-item">
+                        <a href="/posts/%E5%89%8D%E7%AB%AF/%E4%BC%98%E9%9B%85%E7%9A%84javascript%E4%BB%A3%E7%A0%81%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="related-link">优雅的JavaScript代码小技巧</a>
+                    </li>
+                
+            </ul>
+        </div>
+    
+
+
+
+        
+
+
+        
+    <footer class="minimal-footer">
+        
+            <div class="post-tag"><a href="/tags/javascript/" rel="tag" class="post-tag-link">#javascript</a></div>
+        
+        
+            <div class="post-category">
+                
+                    
+                    
+                    
+                        
+                            
+                                
+                                    
+                                
+                            
+                        
+                    
+                    <a href="/posts/%E5%89%8D%E7%AB%AF/" class="post-category-link">前端</a>
+                
+            </div>
+        
+        
+    </footer>
+
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+            
+                <li class="post-nav-next">
+                    <a href="/posts/%E5%8A%9B%E6%89%A3/%E4%B8%80%E5%B9%B4%E4%B8%AD%E7%9A%84%E7%AC%AC%E5%87%A0%E5%A4%A9/" rel="next">一年中的第几天 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2019–2022&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;一路向北</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div>
+
+            
+
+
+            
+
+
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+
+
+
+    </body>
+</html>
